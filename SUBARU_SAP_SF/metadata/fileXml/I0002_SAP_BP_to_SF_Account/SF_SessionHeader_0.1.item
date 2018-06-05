@@ -1,14 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
-  <TalendMetadata:XmlFileConnection xmi:id="_OOEmUDisEeiWV5j5kWJyXA" name="SF_SessionHeader" dataPackage="_OOEmVDisEeiWV5j5kWJyXA" XmlFilePath="C:/Users/sba/OneDrive - Hicron Sp. z o.o/Documents/_prj/Subaru - SF/intefaces/messages/SessionHeader.xsd" Encoding="UTF-8" inputModel="false" outputFilePath="" fileContent="3C3F786D6C2076657273696F6E3D27312E302720656E636F64696E673D275554462D3827203F3E0D0A0D0A3C7873643A736368656D61207461726765744E616D6573706163653D22687474703A2F2F736F61702E73666F7263652E636F6D2F736368656D61732F636C6173732F534150746F53462220786D6C6E733D22687474703A2F2F736F61702E73666F7263652E636F6D2F736368656D61732F636C6173732F534150746F53462220786D6C6E733A7873643D22687474703A2F2F7777772E77332E6F72672F323030312F584D4C536368656D61223E0D0A093C7873643A656C656D656E74206E616D653D22486561646572223E0D0A09093C7873643A636F6D706C6578547970653E0D0A0909093C7873643A73657175656E63653E0D0A090909093C7873643A656C656D656E74206E616D653D2253657373696F6E486561646572223E0D0A09090909093C7873643A636F6D706C6578547970653E0D0A0909090909093C7873643A73657175656E63653E0D0A090909090909093C7873643A656C656D656E74206E616D653D2273657373696F6E49642220747970653D227873643A737472696E67222F3E0D0A0909090909093C2F7873643A73657175656E63653E0D0A09090909093C2F7873643A636F6D706C6578547970653E0D0A090909093C2F7873643A656C656D656E743E0D0A0909093C2F7873643A73657175656E63653E0D0A09093C2F7873643A636F6D706C6578547970653E0D0A093C2F7873643A656C656D656E743E0D0A3C2F7873643A736368656D613E0D0A0D0A0D0A0D0A0D0A0D0A0D0A">
-    <root xmi:id="_49GRIDitEeiWV5j5kWJyXA" XMLPath="/Header" RelatedColumn="" Attribute="main" Order="1" Type="id_String"/>
-    <root xmi:id="_49GRITitEeiWV5j5kWJyXA" XMLPath="" RelatedColumn="" DefaultValue="http://soap.sforce.com/schemas/class/SAPtoSF" Attribute="ns" Order="1" Type="id_String"/>
-    <root xmi:id="_49GRIjitEeiWV5j5kWJyXA" XMLPath="/Header/SessionHeader" RelatedColumn="" Attribute="main" Order="2" Type="id_String"/>
-    <loop xmi:id="_49GRIzitEeiWV5j5kWJyXA" XMLPath="/Header/SessionHeader/sessionId" RelatedColumn="sessionId" Attribute="main" Order="3" Type="id_String"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:XmlFileConnection Encoding="UTF-8" XmlFilePath="C:/Users/sba/OneDrive - Hicron Sp. z o.o/Documents/_prj/Subaru - SF/intefaces/messages/SessionHeader.xsd" dataPackage="_OOEmVDisEeiWV5j5kWJyXA" fileContent="3C3F786D6C2076657273696F6E3D27312E302720656E636F64696E673D275554462D3827203F3E0D0A0D0A3C7873643A736368656D61207461726765744E616D6573706163653D22687474703A2F2F736F61702E73666F7263652E636F6D2F736368656D61732F636C6173732F534150746F53462220786D6C6E733D22687474703A2F2F736F61702E73666F7263652E636F6D2F736368656D61732F636C6173732F534150746F53462220786D6C6E733A7873643D22687474703A2F2F7777772E77332E6F72672F323030312F584D4C536368656D61223E0D0A093C7873643A656C656D656E74206E616D653D22486561646572223E0D0A09093C7873643A636F6D706C6578547970653E0D0A0909093C7873643A73657175656E63653E0D0A090909093C7873643A656C656D656E74206E616D653D2253657373696F6E486561646572223E0D0A09090909093C7873643A636F6D706C6578547970653E0D0A0909090909093C7873643A73657175656E63653E0D0A090909090909093C7873643A656C656D656E74206E616D653D2273657373696F6E49642220747970653D227873643A737472696E67222F3E0D0A0909090909093C2F7873643A73657175656E63653E0D0A09090909093C2F7873643A636F6D706C6578547970653E0D0A090909093C2F7873643A656C656D656E743E0D0A0909093C2F7873643A73657175656E63653E0D0A09093C2F7873643A636F6D706C6578547970653E0D0A093C2F7873643A656C656D656E743E0D0A3C2F7873643A736368656D613E0D0A0D0A0D0A0D0A0D0A0D0A0D0A" inputModel="false" name="SF_SessionHeader" outputFilePath="" xmi:id="_OOEmUDisEeiWV5j5kWJyXA">
+    <root Attribute="main" Order="1" RelatedColumn="" Type="id_String" XMLPath="/Header" xmi:id="_49GRIDitEeiWV5j5kWJyXA"/>
+    <root Attribute="ns" DefaultValue="http://soap.sforce.com/schemas/class/SAPtoSF" Order="1" RelatedColumn="" Type="id_String" XMLPath="" xmi:id="_49GRITitEeiWV5j5kWJyXA"/>
+    <root Attribute="main" Order="2" RelatedColumn="" Type="id_String" XMLPath="/Header/SessionHeader" xmi:id="_49GRIjitEeiWV5j5kWJyXA"/>
+    <loop Attribute="main" Order="3" RelatedColumn="sessionId" Type="id_String" XMLPath="/Header/SessionHeader/sessionId" xmi:id="_49GRIzitEeiWV5j5kWJyXA"/>
   </TalendMetadata:XmlFileConnection>
-  <orgomg.cwm.resource.record:RecordFile xmi:id="_OOEmVDisEeiWV5j5kWJyXA" name="default" dataManager="_OOEmUDisEeiWV5j5kWJyXA">
-    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_OOEmVTisEeiWV5j5kWJyXA" id="_9Gk54DirEeiWV5j5kWJyXA" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_4Diy8DitEeiWV5j5kWJyXA" name="sessionId" label="sessionId" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+  <orgomg.cwm.resource.record:RecordFile dataManager="_OOEmUDisEeiWV5j5kWJyXA" name="default" xmi:id="_OOEmVDisEeiWV5j5kWJyXA">
+    <ownedElement id="_9Gk54DirEeiWV5j5kWJyXA" label="metadata" xmi:id="_OOEmVTisEeiWV5j5kWJyXA" xsi:type="TalendMetadata:MetadataTable">
+      <feature label="sessionId" length="-1" name="sessionId" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_4Diy8DitEeiWV5j5kWJyXA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
-</xmi:XMI>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0e100964-115e-433f-b15e-146c5f841b13"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CckXQod6maWYrsESERMVfEPcyUqqYprtXvjucLCXcbbEkIsjytQWD6fT5pGkjcDUdFC5JszlrMkF
+j1iYwhnmVA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b4902072-831f-4726-8756-4597d75cb221"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hH9tXcEgvw8od37o3eXULdarWQEOfEv4S3q2H/svSd9dpHMemPZD0R8lr44bIRKB7B190IQrHUDE
+WqcRO7UyJA==</DigestValue></Reference></SignedInfo><SignatureValue>z6pWw3GQLvBqFcVIm7wspxWvuw3Vw8hTMhiI/cDkdZCW2hX8NQlx2cn0lo03ulIkm7J/kAGx6hKi
+ax/ecPjIcR/7kLVg/TtjCPVpUdTmd7QWiVbZ1e++A5y1OGuwIfyZxBKwUafWGOMKgN/0NybAutcp
+NaorE7KG0oGUHIdH8btH3A4K4xuV6fbUZnfT59aAecTncVRHtHgvBijxuJ5N9qc5/UynHuivdqe0
+Io+IuK/6nMnwFabsMm6XYpaeuyZRk2HvTq6gCJAHMVzfONnFCh7I9H4cCu3k2zCWUEfjlCyqBggX
+qdy1FGKAJhOJo9iLa1zYsiSei/90Sfugjkaoog==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b4902072-831f-4726-8756-4597d75cb221" Target="#_0e100964-115e-433f-b15e-146c5f841b13"><Timestamp>2018-06-05 08:54:02</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
