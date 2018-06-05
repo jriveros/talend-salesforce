@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
+  <Services:ServiceConnection xmi:id="_xG8OoEbOEeih8KkJgV_NKQ" servicePort="_sQJoYEbaEeih8KkJgV_NKQ"/>
+  <Services:ServicePort xmi:id="_sQJoYEbaEeih8KkJgV_NKQ" name="SAP_fetch_BP_from_SFPortType" id="_xHBuMEbOEeih8KkJgV_NKQ" serviceOperation="_sQJoYUbaEeih8KkJgV_NKQ"/>
+  <Services:ServiceOperation xmi:id="_sQJoYUbaEeih8KkJgV_NKQ" label="SAP_fetch_BP_from_SFOperation-SAP_fetch_BP_from_SF_job" name="SAP_fetch_BP_from_SFOperation" id="_xHBuMUbOEeih8KkJgV_NKQ" referenceJobId="_GiHq4EbcEei1q46PFiTS6w"/>
+</xmi:XMI>

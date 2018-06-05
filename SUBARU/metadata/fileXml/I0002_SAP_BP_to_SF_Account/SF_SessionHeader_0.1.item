@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:XmlFileConnection xmi:id="_OOEmUDisEeiWV5j5kWJyXA" name="SF_SessionHeader" dataPackage="_OOEmVDisEeiWV5j5kWJyXA" XmlFilePath="C:/Users/sba/OneDrive - Hicron Sp. z o.o/Documents/_prj/Subaru - SF/intefaces/messages/SessionHeader.xsd" Encoding="UTF-8" inputModel="false" outputFilePath="" fileContent="3C3F786D6C2076657273696F6E3D27312E302720656E636F64696E673D275554462D3827203F3E0D0A0D0A3C7873643A736368656D61207461726765744E616D6573706163653D22687474703A2F2F736F61702E73666F7263652E636F6D2F736368656D61732F636C6173732F534150746F53462220786D6C6E733D22687474703A2F2F736F61702E73666F7263652E636F6D2F736368656D61732F636C6173732F534150746F53462220786D6C6E733A7873643D22687474703A2F2F7777772E77332E6F72672F323030312F584D4C536368656D61223E0D0A093C7873643A656C656D656E74206E616D653D22486561646572223E0D0A09093C7873643A636F6D706C6578547970653E0D0A0909093C7873643A73657175656E63653E0D0A090909093C7873643A656C656D656E74206E616D653D2253657373696F6E486561646572223E0D0A09090909093C7873643A636F6D706C6578547970653E0D0A0909090909093C7873643A73657175656E63653E0D0A090909090909093C7873643A656C656D656E74206E616D653D2273657373696F6E49642220747970653D227873643A737472696E67222F3E0D0A0909090909093C2F7873643A73657175656E63653E0D0A09090909093C2F7873643A636F6D706C6578547970653E0D0A090909093C2F7873643A656C656D656E743E0D0A0909093C2F7873643A73657175656E63653E0D0A09093C2F7873643A636F6D706C6578547970653E0D0A093C2F7873643A656C656D656E743E0D0A3C2F7873643A736368656D613E0D0A0D0A0D0A0D0A0D0A0D0A0D0A">
+    <root xmi:id="_49GRIDitEeiWV5j5kWJyXA" XMLPath="/Header" RelatedColumn="" Attribute="main" Order="1" Type="id_String"/>
+    <root xmi:id="_49GRITitEeiWV5j5kWJyXA" XMLPath="" RelatedColumn="" DefaultValue="http://soap.sforce.com/schemas/class/SAPtoSF" Attribute="ns" Order="1" Type="id_String"/>
+    <root xmi:id="_49GRIjitEeiWV5j5kWJyXA" XMLPath="/Header/SessionHeader" RelatedColumn="" Attribute="main" Order="2" Type="id_String"/>
+    <loop xmi:id="_49GRIzitEeiWV5j5kWJyXA" XMLPath="/Header/SessionHeader/sessionId" RelatedColumn="sessionId" Attribute="main" Order="3" Type="id_String"/>
+  </TalendMetadata:XmlFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_OOEmVDisEeiWV5j5kWJyXA" name="default" dataManager="_OOEmUDisEeiWV5j5kWJyXA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_OOEmVTisEeiWV5j5kWJyXA" id="_9Gk54DirEeiWV5j5kWJyXA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_4Diy8DitEeiWV5j5kWJyXA" name="sessionId" label="sessionId" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

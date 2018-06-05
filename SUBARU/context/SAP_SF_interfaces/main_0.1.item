@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_pWb7cEPIEeih8KkJgV_NKQ" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_pWb7cUPIEeih8KkJgV_NKQ" comment="" name="sysENVTYPE" prompt="sysENVTYPE?" promptNeeded="false" type="id_String" value="DEV"/>
+    <contextParameter xmi:id="_pWb7ckPIEeih8KkJgV_NKQ" comment="" name="SalesForce_userPassword_userId" prompt="SalesForce_userPassword_userId?" promptNeeded="false" type="id_String" value="it@subaru.it.test"/>
+    <contextParameter xmi:id="_pWb7c0PIEeih8KkJgV_NKQ" comment="" name="SalesForce_clientId" prompt="SalesForce_clientId?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_pWb7dEPIEeih8KkJgV_NKQ" comment="" name="SalesForce_oauth_tokenFile" prompt="SalesForce_oauth_tokenFile?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_pWb7dUPIEeih8KkJgV_NKQ" comment="" name="SalesForce_sessionDirectory" prompt="SalesForce_sessionDirectory?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_pWb7dkPIEeih8KkJgV_NKQ" comment="" name="SalesForce_proxy_port" prompt="SalesForce_proxy_port?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_pWb7d0PIEeih8KkJgV_NKQ" comment="" name="SalesForce_apiVersion" prompt="SalesForce_apiVersion?" promptNeeded="false" type="id_String" value="39.0"/>
+    <contextParameter xmi:id="_pWb7eEPIEeih8KkJgV_NKQ" comment="" name="SalesForce_proxy_userPassword_userId" prompt="SalesForce_proxy_userPassword_userId?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_pWb7eUPIEeih8KkJgV_NKQ" comment="" name="SalesForce_proxy_userPassword_password" prompt="SalesForce_proxy_userPassword_password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_pWb7ekPIEeih8KkJgV_NKQ" comment="" name="SalesForce_timeout" prompt="SalesForce_timeout?" promptNeeded="false" type="id_Integer" value="60000"/>
+    <contextParameter xmi:id="_pWb7e0PIEeih8KkJgV_NKQ" comment="" name="SalesForce_oauth_clientSecret" prompt="SalesForce_oauth_clientSecret?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_pWb7fEPIEeih8KkJgV_NKQ" comment="" name="SalesForce_proxy_host" prompt="SalesForce_proxy_host?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_pWb7fUPIEeih8KkJgV_NKQ" comment="" name="SalesForce_oauth_callbackHost" prompt="SalesForce_oauth_callbackHost?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_pWb7fkPIEeih8KkJgV_NKQ" comment="" name="SalesForce_endpoint" prompt="SalesForce_endpoint?" promptNeeded="false" type="id_String" value="https://cs87.salesforce.com/services/Soap/u/39.0"/>
+    <contextParameter xmi:id="_pWb7f0PIEeih8KkJgV_NKQ" comment="" name="SalesForce_userPassword_securityKey" prompt="SalesForce_userPassword_securityKey?" promptNeeded="false" type="id_Password" value="N9cVWDEUszEyeoZ8qu2goVdUdHOFgUU2mQPA2vPVFl4="/>
+    <contextParameter xmi:id="_pWb7gEPIEeih8KkJgV_NKQ" comment="" name="SalesForce_oauth_callbackPort" prompt="SalesForce_oauth_callbackPort?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_pWb7gUPIEeih8KkJgV_NKQ" comment="" name="SalesForce_oauth_clientId" prompt="SalesForce_oauth_clientId?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_pWb7gkPIEeih8KkJgV_NKQ" comment="" name="SalesForce_userPassword_password" prompt="SalesForce_userPassword_password?" promptNeeded="false" type="id_Password" value="Ig7k9u5UlHy3buq9ECIxWw=="/>
+    <contextParameter xmi:id="_pWb7g0PIEeih8KkJgV_NKQ" comment="" name="SAP_userId" prompt="SAP_userId?" promptNeeded="false" type="id_String" value="BATCH_SF"/>
+    <contextParameter xmi:id="_pWb7hEPIEeih8KkJgV_NKQ" comment="" name="SAP_userPasswd" prompt="SAP_userPasswd?" promptNeeded="false" type="id_Password" value="7fAoWUEUeyYm2X6Uoatz8sjNKTg6922/"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_pWb7hUPIEeih8KkJgV_NKQ" confirmationNeeded="false" name="TEST">
+    <contextParameter xmi:id="_pWb7hkPIEeih8KkJgV_NKQ" comment="" name="sysENVTYPE" prompt="sysENVTYPE?" promptNeeded="false" type="id_String" value="TEST"/>
+    <contextParameter xmi:id="_pWb7h0PIEeih8KkJgV_NKQ" comment="" name="SalesForce_userPassword_userId" prompt="SalesForce_userPassword_userId?" promptNeeded="false" type="id_String" value="it@subaru.it.test"/>
+    <contextParameter xmi:id="_pWb7iEPIEeih8KkJgV_NKQ" comment="" name="SalesForce_clientId" prompt="SalesForce_clientId?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_pWb7iUPIEeih8KkJgV_NKQ" comment="" name="SalesForce_oauth_tokenFile" prompt="SalesForce_oauth_tokenFile?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_pWb7ikPIEeih8KkJgV_NKQ" comment="" name="SalesForce_sessionDirectory" prompt="SalesForce_sessionDirectory?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_pWb7i0PIEeih8KkJgV_NKQ" comment="" name="SalesForce_proxy_port" prompt="SalesForce_proxy_port?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_pWb7jEPIEeih8KkJgV_NKQ" comment="" name="SalesForce_apiVersion" prompt="SalesForce_apiVersion?" promptNeeded="false" type="id_String" value="39.0"/>
+    <contextParameter xmi:id="_pWb7jUPIEeih8KkJgV_NKQ" comment="" name="SalesForce_proxy_userPassword_userId" prompt="SalesForce_proxy_userPassword_userId?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_pWb7jkPIEeih8KkJgV_NKQ" comment="" name="SalesForce_proxy_userPassword_password" prompt="SalesForce_proxy_userPassword_password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_pWb7j0PIEeih8KkJgV_NKQ" comment="" name="SalesForce_timeout" prompt="SalesForce_timeout?" promptNeeded="false" type="id_Integer" value="60000"/>
+    <contextParameter xmi:id="_pWb7kEPIEeih8KkJgV_NKQ" comment="" name="SalesForce_oauth_clientSecret" prompt="SalesForce_oauth_clientSecret?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_pWb7kUPIEeih8KkJgV_NKQ" comment="" name="SalesForce_proxy_host" prompt="SalesForce_proxy_host?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_pWb7kkPIEeih8KkJgV_NKQ" comment="" name="SalesForce_oauth_callbackHost" prompt="SalesForce_oauth_callbackHost?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_pWb7k0PIEeih8KkJgV_NKQ" comment="" name="SalesForce_endpoint" prompt="SalesForce_endpoint?" promptNeeded="false" type="id_String" value="https://cs87.salesforce.com/services/Soap/u/39.0"/>
+    <contextParameter xmi:id="_pWb7lEPIEeih8KkJgV_NKQ" comment="" name="SalesForce_userPassword_securityKey" prompt="SalesForce_userPassword_securityKey?" promptNeeded="false" type="id_Password" value="N9cVWDEUszEyeoZ8qu2goVdUdHOFgUU2mQPA2vPVFl4="/>
+    <contextParameter xmi:id="_pWb7lUPIEeih8KkJgV_NKQ" comment="" name="SalesForce_oauth_callbackPort" prompt="SalesForce_oauth_callbackPort?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_pWb7lkPIEeih8KkJgV_NKQ" comment="" name="SalesForce_oauth_clientId" prompt="SalesForce_oauth_clientId?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_pWb7l0PIEeih8KkJgV_NKQ" comment="" name="SalesForce_userPassword_password" prompt="SalesForce_userPassword_password?" promptNeeded="false" type="id_Password" value="Ig7k9u5UlHy3buq9ECIxWw=="/>
+    <contextParameter xmi:id="_pWb7mEPIEeih8KkJgV_NKQ" comment="" name="SAP_userId" prompt="SAP_userId?" promptNeeded="false" type="id_String" value="BATCH_SF"/>
+    <contextParameter xmi:id="_pWb7mUPIEeih8KkJgV_NKQ" comment="" name="SAP_userPasswd" prompt="SAP_userPasswd?" promptNeeded="false" type="id_Password" value="7fAoWUEUeyYm2X6Uoatz8sjNKTg6922/"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_pWb7mkPIEeih8KkJgV_NKQ" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_pWb7m0PIEeih8KkJgV_NKQ" comment="" name="sysENVTYPE" prompt="sysENVTYPE?" promptNeeded="false" type="id_String" value="PROD"/>
+    <contextParameter xmi:id="_pWb7nEPIEeih8KkJgV_NKQ" comment="" name="SalesForce_userPassword_userId" prompt="SalesForce_userPassword_userId?" promptNeeded="false" type="id_String" value="it@subaru.it.????"/>
+    <contextParameter xmi:id="_pWb7nUPIEeih8KkJgV_NKQ" comment="" name="SalesForce_clientId" prompt="SalesForce_clientId?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_pWb7nkPIEeih8KkJgV_NKQ" comment="" name="SalesForce_oauth_tokenFile" prompt="SalesForce_oauth_tokenFile?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_pWb7n0PIEeih8KkJgV_NKQ" comment="" name="SalesForce_sessionDirectory" prompt="SalesForce_sessionDirectory?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_pWb7oEPIEeih8KkJgV_NKQ" comment="" name="SalesForce_proxy_port" prompt="SalesForce_proxy_port?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_pWb7oUPIEeih8KkJgV_NKQ" comment="" name="SalesForce_apiVersion" prompt="SalesForce_apiVersion?" promptNeeded="false" type="id_String" value="39.0"/>
+    <contextParameter xmi:id="_pWb7okPIEeih8KkJgV_NKQ" comment="" name="SalesForce_proxy_userPassword_userId" prompt="SalesForce_proxy_userPassword_userId?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_pWb7o0PIEeih8KkJgV_NKQ" comment="" name="SalesForce_proxy_userPassword_password" prompt="SalesForce_proxy_userPassword_password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_pWb7pEPIEeih8KkJgV_NKQ" comment="" name="SalesForce_timeout" prompt="SalesForce_timeout?" promptNeeded="false" type="id_Integer" value="60000"/>
+    <contextParameter xmi:id="_pWb7pUPIEeih8KkJgV_NKQ" comment="" name="SalesForce_oauth_clientSecret" prompt="SalesForce_oauth_clientSecret?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_pWb7pkPIEeih8KkJgV_NKQ" comment="" name="SalesForce_proxy_host" prompt="SalesForce_proxy_host?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_pWb7p0PIEeih8KkJgV_NKQ" comment="" name="SalesForce_oauth_callbackHost" prompt="SalesForce_oauth_callbackHost?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_pWb7qEPIEeih8KkJgV_NKQ" comment="" name="SalesForce_endpoint" prompt="SalesForce_endpoint?" promptNeeded="false" type="id_String" value="https://cs87.salesforce.com/services/Soap/u/39.0"/>
+    <contextParameter xmi:id="_pWb7qUPIEeih8KkJgV_NKQ" comment="" name="SalesForce_userPassword_securityKey" prompt="SalesForce_userPassword_securityKey?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_pWb7qkPIEeih8KkJgV_NKQ" comment="" name="SalesForce_oauth_callbackPort" prompt="SalesForce_oauth_callbackPort?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_pWb7q0PIEeih8KkJgV_NKQ" comment="" name="SalesForce_oauth_clientId" prompt="SalesForce_oauth_clientId?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_pWb7rEPIEeih8KkJgV_NKQ" comment="" name="SalesForce_userPassword_password" prompt="SalesForce_userPassword_password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_pWb7rUPIEeih8KkJgV_NKQ" comment="" name="SAP_userId" prompt="SAP_userId?" promptNeeded="false" type="id_String" value="BATCH_SF"/>
+    <contextParameter xmi:id="_pWb7rkPIEeih8KkJgV_NKQ" comment="" name="SAP_userPasswd" prompt="SAP_userPasswd?" promptNeeded="false" type="id_Password" value="7fAoWUEUeyYm2X6Uoatz8sjNKTg6922/"/>
+  </talendfile:ContextType>
+</xmi:XMI>

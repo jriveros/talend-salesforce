@@ -3,15 +3,15 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.example.subaru</groupId>
+    <groupId>org.example.subaru_sap_sf</groupId>
     <artifactId>code.Master</artifactId>
     <version>7.0.1</version>
     <relativePath>../../</relativePath>
   </parent>
-  <groupId>org.example.subaru.code</groupId>
+  <groupId>org.example.subaru_sap_sf.code</groupId>
   <artifactId>routines</artifactId>
   <version>7.0.1</version>
-  <name>SUBARU Routines</name>
+  <name>SUBARU_SAP_SF Routines</name>
   <properties>
     <talend.codes.package>routines</talend.codes.package>
   </properties>
@@ -24,11 +24,6 @@
     <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>dom4j-1.6.1</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>talend_file_enhanced_20070724</artifactId>
       <version>6.0.0</version>
     </dependency>
   </dependencies>

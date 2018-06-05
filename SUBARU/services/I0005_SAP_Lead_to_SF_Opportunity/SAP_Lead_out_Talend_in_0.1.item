@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
+  <Services:ServiceConnection xmi:id="_jWY4sDGtEei9wNmXZlJ8Ng" name="SAP_Lead_out_Talend_in" label="SAP_Lead_out_Talend_in" servicePort="__RhUIENDEeih8KkJgV_NKQ"/>
+  <Services:ServicePort xmi:id="__RhUIENDEeih8KkJgV_NKQ" name="SAP_Lead_out_Talend_in" id="_zwFjMENBEeih8KkJgV_NKQ" serviceOperation="__RhUIUNDEeih8KkJgV_NKQ"/>
+  <Services:ServiceOperation xmi:id="__RhUIUNDEeih8KkJgV_NKQ" label="SAP_Lead_out_Talend_in-SAP_Lead_out_Talend_in" name="SAP_Lead_out_Talend_in" id="_zwFjMUNBEeih8KkJgV_NKQ" referenceJobId="_bCaoMENEEeih8KkJgV_NKQ"/>
+</xmi:XMI>

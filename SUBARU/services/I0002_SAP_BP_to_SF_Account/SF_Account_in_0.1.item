@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
+  <Services:ServiceConnection xmi:id="_bApHwDcpEeiQmICcSooLXw" WSDLPath="C:/Users/sba/OneDrive - Hicron Sp. z o.o/Documents/_prj/Subaru - SF/od klienta/SAPtoSFb.wsdl" servicePort="_bCuycDcpEeiQmICcSooLXw"/>
+  <Services:ServicePort xmi:id="_bCuycDcpEeiQmICcSooLXw" name="SAPtoSFPortType" id="_bCtkUDcpEeiQmICcSooLXw" serviceOperation="_bCuycTcpEeiQmICcSooLXw"/>
+  <Services:ServiceOperation xmi:id="_bCuycTcpEeiQmICcSooLXw" label="upsertAccount" name="upsertAccount" id="_bCtkUTcpEeiQmICcSooLXw"/>
+</xmi:XMI>

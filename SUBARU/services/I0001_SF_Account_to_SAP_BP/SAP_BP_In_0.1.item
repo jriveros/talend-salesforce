@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
+  <Services:ServiceConnection xmi:id="_JaZbgFjjEei8c8UMrAWq6w" WSDLPath="C:/Users/sba/OneDrive - Hicron Sp. z o.o/Documents/_prj/Subaru - SF/intefaces/xml_xsd_wsdl/I0001 - SF Account to SAP BP/SAP_BP_In.wsdl" servicePort="_E0m3wGAYEeiFLebCuz2HfA"/>
+  <Services:ServicePort xmi:id="_E0m3wGAYEeiFLebCuz2HfA" name="ZII_G81_SAP_BP_INB" id="_JazrMFjjEei8c8UMrAWq6w" serviceOperation="_E0m3wWAYEeiFLebCuz2HfA"/>
+  <Services:ServiceOperation xmi:id="_E0m3wWAYEeiFLebCuz2HfA" label="ZFg81EndcustReceive" name="ZFg81EndcustReceive" id="_Ja0SQFjjEei8c8UMrAWq6w"/>
+</xmi:XMI>

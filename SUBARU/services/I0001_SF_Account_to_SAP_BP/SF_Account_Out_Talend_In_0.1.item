@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
+  <Services:ServiceConnection xmi:id="_jWY4sDGtEei9wNmXZlJ8Ng" name="SF_Account_Out_Talend_In" label="SF_Account_Out_Talend_In" servicePort="_87b9oD5NEeih8KkJgV_NKQ">
+    <additionalInfo xmi:id="_40MtYD5LEeih8KkJgV_NKQ" key="UseSAM" value="false"/>
+    <additionalInfo xmi:id="_40MtYT5LEeih8KkJgV_NKQ" key="UseSL" value="false"/>
+    <additionalInfo xmi:id="_40MtYj5LEeih8KkJgV_NKQ" key="Security.Basic" value="true"/>
+    <additionalInfo xmi:id="_40MtYz5LEeih8KkJgV_NKQ" key="Security.SAML" value="false"/>
+    <additionalInfo xmi:id="_40MtZD5LEeih8KkJgV_NKQ" key="Authorization" value="false"/>
+    <additionalInfo xmi:id="_40MtZT5LEeih8KkJgV_NKQ" key="Encryption" value="false"/>
+    <additionalInfo xmi:id="_40MtZj5LEeih8KkJgV_NKQ" key="UseServiceRegisrty" value="false"/>
+    <additionalInfo xmi:id="_40MtZz5LEeih8KkJgV_NKQ" key="LogMessages" value="true"/>
+    <additionalInfo xmi:id="_40MtaD5LEeih8KkJgV_NKQ" key="WsdlSchemaValidation" value="false"/>
+    <additionalInfo xmi:id="_40MtaT5LEeih8KkJgV_NKQ" key="useBusinessCorrelation" value="false"/>
+  </Services:ServiceConnection>
+  <Services:ServicePort xmi:id="_87b9oD5NEeih8KkJgV_NKQ" name="SF_Account_Out_Talend_In" id="_yxf4AD4zEeih8KkJgV_NKQ" serviceOperation="_87b9oT5NEeih8KkJgV_NKQ"/>
+  <Services:ServiceOperation xmi:id="_87b9oT5NEeih8KkJgV_NKQ" label="SF_Account_Out_Talend_in-SF_Account_to_SAP_BP_job" name="SF_Account_Out_Talend_in" id="_x34JkD5NEeih8KkJgV_NKQ" referenceJobId="_9P7uUD5KEeih8KkJgV_NKQ"/>
+</xmi:XMI>
