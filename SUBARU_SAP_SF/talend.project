@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_K_D6QWicEei9trtHIMDDDA" label="SUBARU_SAP_SF" description="" language="java" technicalLabel="SUBARU_SAP_SF" creationDate="2018-06-05T10:38:45.579+0200" author="_K_D6QmicEei9trtHIMDDDA" productVersion="Talend ESB-7.0.1.20180411_1414" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/thejeziera/subarutest.git&quot;,&quot;login&quot;:&quot;thejeziera&quot;,&quot;passwd&quot;:&quot;HZ7QPm8jOPl/Lvh0m3b5gw==&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" bigData="false"/>
+  <TalendProperties:User xmi:id="_K_D6QmicEei9trtHIMDDDA" login="mje@hicron.com" firstName="Michal" lastName="Jezierski" type="DI" additionnalData="{}"/>
+</xmi:XMI>
