@@ -17,7 +17,7 @@
     <contextParameter comment="" name="SalesForce_userPassword_securityKey" prompt="SalesForce_userPassword_securityKey?" promptNeeded="false" type="id_Password" value="N9cVWDEUszEyeoZ8qu2goVdUdHOFgUU2mQPA2vPVFl4=" xmi:id="_pWb7f0PIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_oauth_callbackPort" prompt="SalesForce_oauth_callbackPort?" promptNeeded="false" type="id_Integer" value="" xmi:id="_pWb7gEPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_oauth_clientId" prompt="SalesForce_oauth_clientId?" promptNeeded="false" type="id_String" value="" xmi:id="_pWb7gUPIEeih8KkJgV_NKQ"/>
-    <contextParameter comment="" name="SalesForce_userPassword_password" prompt="SalesForce_userPassword_password?" promptNeeded="false" type="id_Password" value="Ig7k9u5UlHy3buq9ECIxWw==" xmi:id="_pWb7gkPIEeih8KkJgV_NKQ"/>
+    <contextParameter comment="" name="SalesForce_userPassword_password" prompt="SalesForce_userPassword_password?" promptNeeded="false" type="id_Password" value="Ig7k9u5UlHzcrFUEacy9RA==" xmi:id="_pWb7gkPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SAP_userId" prompt="SAP_userId?" promptNeeded="false" type="id_String" value="BATCH_SF" xmi:id="_pWb7g0PIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SAP_userPasswd" prompt="SAP_userPasswd?" promptNeeded="false" type="id_Password" value="7fAoWUEUeyYm2X6Uoatz8sjNKTg6922/" xmi:id="_pWb7hEPIEeih8KkJgV_NKQ"/>
   </talendfile:ContextType>
@@ -39,7 +39,7 @@
     <contextParameter comment="" name="SalesForce_userPassword_securityKey" prompt="SalesForce_userPassword_securityKey?" promptNeeded="false" type="id_Password" value="N9cVWDEUszEyeoZ8qu2goVdUdHOFgUU2mQPA2vPVFl4=" xmi:id="_pWb7lEPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_oauth_callbackPort" prompt="SalesForce_oauth_callbackPort?" promptNeeded="false" type="id_Integer" value="" xmi:id="_pWb7lUPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_oauth_clientId" prompt="SalesForce_oauth_clientId?" promptNeeded="false" type="id_String" value="" xmi:id="_pWb7lkPIEeih8KkJgV_NKQ"/>
-    <contextParameter comment="" name="SalesForce_userPassword_password" prompt="SalesForce_userPassword_password?" promptNeeded="false" type="id_Password" value="Ig7k9u5UlHy3buq9ECIxWw==" xmi:id="_pWb7l0PIEeih8KkJgV_NKQ"/>
+    <contextParameter comment="" name="SalesForce_userPassword_password" prompt="SalesForce_userPassword_password?" promptNeeded="false" type="id_Password" value="Ig7k9u5UlHzcrFUEacy9RA==" xmi:id="_pWb7l0PIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SAP_userId" prompt="SAP_userId?" promptNeeded="false" type="id_String" value="BATCH_SF" xmi:id="_pWb7mEPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SAP_userPasswd" prompt="SAP_userPasswd?" promptNeeded="false" type="id_Password" value="7fAoWUEUeyYm2X6Uoatz8sjNKTg6922/" xmi:id="_pWb7mUPIEeih8KkJgV_NKQ"/>
   </talendfile:ContextType>
@@ -65,13 +65,13 @@
     <contextParameter comment="" name="SAP_userId" prompt="SAP_userId?" promptNeeded="false" type="id_String" value="BATCH_SF" xmi:id="_pWb7rUPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SAP_userPasswd" prompt="SAP_userPasswd?" promptNeeded="false" type="id_Password" value="7fAoWUEUeyYm2X6Uoatz8sjNKTg6922/" xmi:id="_pWb7rkPIEeih8KkJgV_NKQ"/>
   </talendfile:ContextType>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bb17dfb1-6d7d-4a65-91bc-52d881bad1ef"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ZS+UQW0a5gfRzBXDR7hADWexleEm0mTquI3R0ieNT3ykj+TarNd362ow9bswG3/Hd+Hnjhc84tWg
-l6E/iY/KfQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2adc2417-7f0f-4146-a4b2-13d03adb90e3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GoYEIQq4PmylYwqRbP4BN2iwTIk8Ae678s7znK3Loqkk343dPzyeOLTGgHdwzyvm2TtGUIMsGRHk
-asM+z785EA==</DigestValue></Reference></SignedInfo><SignatureValue>pmshRQsYu2ALPbqBncqSDN2jW8AGI9la/yOEr/e+taUcuAtOBUgdpt0dJyqCTHh/6cfH+1hmf7Zq
-aKcFMbEr64wt8tlaJH4Pr0gJsLl6zMcitdhFpF0Ujl2+yn3eCGKqbOdqHIULivI9x9OIc6kSdS2y
-NgSZNCMZRuCU/uox9k8M078Uko1amAAvqiKBy12nI6ctHp3mGqWb7FW8hluIP63nEeCfwc7XzUBj
-KrXl25MxHbfDqbXISkqkjCxQvc4ydt+wJDa/Pio/7uLNhE4QiDrzjv5jAlEmjZcNuok6aV76MUaH
-Nmfa9kHJg8TprWoXuKPBsT4mMBCDMj6fxkHQGg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bdf4f90d-ccb5-4df6-bcfe-7c2169bf1ce9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YTb/m08btWcE/tvgl4zbuQUVN9QcLF4AFxIC8I/a+rznpdDXxxUU/so5PxqHLDQqDMrDap2qElq2
+Jr/Jl6v/fg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bcb0821a-3bc3-4284-8dbe-e38d59024c1a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>03WYoyvaxNKb3etgLEcB6eZekYzmVyE3hgIYe+RYdQ8mlhcKbvQEb9FgpkdKJjQAzOvHSjvH307W
+FFz2gdO7Fw==</DigestValue></Reference></SignedInfo><SignatureValue>B6vmEPhaVe03Umybp/ZaZ55sDAQrAmeHgeaHzBEd2H2YrEZ80l6vKArdfqdHhqX2A2haUEmgnmGm
+R0gkfY379pnAno91DuLHFSSb2n5eyIYvh3Sqj+iB/rBrWSssv+UQx/+uOf0C+IW61aqJTk752Bhq
+vTKfn/tnTkeNpiYXeeg3F7Pn2OsSt0f1kwQH2ucQrMnUtCi7adWcnwrGBh3pm84jw/gdFo+hZU++
+xHa4I/iZRVZku8fq/McxzbYerKyV/EKwy6W3lvsIfaufHlwcqj6cyDdWN4L3pbgmlRZ13PHMvRnj
+OljQqwOkRaoxCM3H36wyZvieP+5yRB3voVHLPQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -95,4 +95,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2adc2417-7f0f-4146-a4b2-13d03adb90e3" Target="#_bb17dfb1-6d7d-4a65-91bc-52d881bad1ef"><Timestamp>2018-06-05 08:54:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bcb0821a-3bc3-4284-8dbe-e38d59024c1a" Target="#_bdf4f90d-ccb5-4df6-bcfe-7c2169bf1ce9"><Timestamp>2018-06-12 12:26:13</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
