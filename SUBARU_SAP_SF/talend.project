@@ -101,6 +101,7 @@
       <relatedItems xmi:id="_Au18zWieEeiAqtZF3XOJww" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Au18zmieEeiAqtZF3XOJww" id="_Z6utUEPGEeih8KkJgV_NKQ - Opportunity" version="Latest" type="schema"/>
       <relatedItems xmi:id="_Au18z2ieEeiAqtZF3XOJww" id="_ZOfT0ENBEeih8KkJgV_NKQ" version="0.1" type="services"/>
+      <relatedItems xmi:id="_OzGPgG4hEeiEXriOXIhzEg" id="SQLike" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_Au180GieEeiAqtZF3XOJww">
       <baseItem xmi:id="_Au180WieEeiAqtZF3XOJww" id="_bCaoMENEEeih8KkJgV_NKQ" version="0.2" type="job"/>
