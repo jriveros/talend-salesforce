@@ -14,7 +14,7 @@
     <contextParameter comment="" name="SalesForce_proxy_host" prompt="SalesForce_proxy_host?" promptNeeded="false" type="id_String" value="" xmi:id="_pWb7fEPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_oauth_callbackHost" prompt="SalesForce_oauth_callbackHost?" promptNeeded="false" type="id_String" value="" xmi:id="_pWb7fUPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_endpoint" prompt="SalesForce_endpoint?" promptNeeded="false" type="id_String" value="https://cs87.salesforce.com/services/Soap/u/39.0" xmi:id="_pWb7fkPIEeih8KkJgV_NKQ"/>
-    <contextParameter comment="" name="SalesForce_userPassword_securityKey" prompt="SalesForce_userPassword_securityKey?" promptNeeded="false" type="id_Password" value="N9cVWDEUszEyeoZ8qu2goVdUdHOFgUU2mQPA2vPVFl4=" xmi:id="_pWb7f0PIEeih8KkJgV_NKQ"/>
+    <contextParameter comment="" name="SalesForce_userPassword_securityKey" prompt="SalesForce_userPassword_securityKey?" promptNeeded="false" type="id_Password" value="tzDrPq8KSa6M/J1nnKkFCB99UMgiYcxtkeb0XV9yNWM=" xmi:id="_pWb7f0PIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_oauth_callbackPort" prompt="SalesForce_oauth_callbackPort?" promptNeeded="false" type="id_Integer" value="" xmi:id="_pWb7gEPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_oauth_clientId" prompt="SalesForce_oauth_clientId?" promptNeeded="false" type="id_String" value="" xmi:id="_pWb7gUPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_userPassword_password" prompt="SalesForce_userPassword_password?" promptNeeded="false" type="id_Password" value="Ig7k9u5UlHzcrFUEacy9RA==" xmi:id="_pWb7gkPIEeih8KkJgV_NKQ"/>
@@ -36,7 +36,7 @@
     <contextParameter comment="" name="SalesForce_proxy_host" prompt="SalesForce_proxy_host?" promptNeeded="false" type="id_String" value="" xmi:id="_pWb7kUPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_oauth_callbackHost" prompt="SalesForce_oauth_callbackHost?" promptNeeded="false" type="id_String" value="" xmi:id="_pWb7kkPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_endpoint" prompt="SalesForce_endpoint?" promptNeeded="false" type="id_String" value="https://cs87.salesforce.com/services/Soap/u/39.0" xmi:id="_pWb7k0PIEeih8KkJgV_NKQ"/>
-    <contextParameter comment="" name="SalesForce_userPassword_securityKey" prompt="SalesForce_userPassword_securityKey?" promptNeeded="false" type="id_Password" value="N9cVWDEUszEyeoZ8qu2goVdUdHOFgUU2mQPA2vPVFl4=" xmi:id="_pWb7lEPIEeih8KkJgV_NKQ"/>
+    <contextParameter comment="" name="SalesForce_userPassword_securityKey" prompt="SalesForce_userPassword_securityKey?" promptNeeded="false" type="id_Password" value="tzDrPq8KSa6M/J1nnKkFCB99UMgiYcxtkeb0XV9yNWM=" xmi:id="_pWb7lEPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_oauth_callbackPort" prompt="SalesForce_oauth_callbackPort?" promptNeeded="false" type="id_Integer" value="" xmi:id="_pWb7lUPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_oauth_clientId" prompt="SalesForce_oauth_clientId?" promptNeeded="false" type="id_String" value="" xmi:id="_pWb7lkPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_userPassword_password" prompt="SalesForce_userPassword_password?" promptNeeded="false" type="id_Password" value="Ig7k9u5UlHzcrFUEacy9RA==" xmi:id="_pWb7l0PIEeih8KkJgV_NKQ"/>
@@ -65,13 +65,13 @@
     <contextParameter comment="" name="SAP_userId" prompt="SAP_userId?" promptNeeded="false" type="id_String" value="BATCH_SF" xmi:id="_pWb7rUPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SAP_userPasswd" prompt="SAP_userPasswd?" promptNeeded="false" type="id_Password" value="7fAoWUEUeyYm2X6Uoatz8sjNKTg6922/" xmi:id="_pWb7rkPIEeih8KkJgV_NKQ"/>
   </talendfile:ContextType>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bdf4f90d-ccb5-4df6-bcfe-7c2169bf1ce9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YTb/m08btWcE/tvgl4zbuQUVN9QcLF4AFxIC8I/a+rznpdDXxxUU/so5PxqHLDQqDMrDap2qElq2
-Jr/Jl6v/fg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bcb0821a-3bc3-4284-8dbe-e38d59024c1a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>03WYoyvaxNKb3etgLEcB6eZekYzmVyE3hgIYe+RYdQ8mlhcKbvQEb9FgpkdKJjQAzOvHSjvH307W
-FFz2gdO7Fw==</DigestValue></Reference></SignedInfo><SignatureValue>B6vmEPhaVe03Umybp/ZaZ55sDAQrAmeHgeaHzBEd2H2YrEZ80l6vKArdfqdHhqX2A2haUEmgnmGm
-R0gkfY379pnAno91DuLHFSSb2n5eyIYvh3Sqj+iB/rBrWSssv+UQx/+uOf0C+IW61aqJTk752Bhq
-vTKfn/tnTkeNpiYXeeg3F7Pn2OsSt0f1kwQH2ucQrMnUtCi7adWcnwrGBh3pm84jw/gdFo+hZU++
-xHa4I/iZRVZku8fq/McxzbYerKyV/EKwy6W3lvsIfaufHlwcqj6cyDdWN4L3pbgmlRZ13PHMvRnj
-OljQqwOkRaoxCM3H36wyZvieP+5yRB3voVHLPQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f012495d-4b05-4c04-b1da-a7a46e6db464"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7mdy+YMRy+kVxst7/YqDYVm0to20aFqYBMZefaaK457W2zSJ19ySN/+eumTB38uxkHPveO0ZOJ2V
+Hu1Nh1cy3w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_13d8c13d-3fa4-48c5-80a9-f46d7bd26caf"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>U+r2z5QWpxEirnmIe7I1zrD0V5+tgDvBRUgrtnqKiibuUO+8tYGWucmVz5eCom6Fs5b8H0lOrrth
+R477UnliIg==</DigestValue></Reference></SignedInfo><SignatureValue>2VS5rgkuPmjxR+66wY8hOu1TyKFQpxYu4JzxEbE4Z/97TmDHvqKHsGh7Xfb66+7NBKiu4545W0aj
+bMIc6fUf2Fg5Uh60mB9IxXPeEjVSYVCtHIIjBB7o6yz/EUUYF1L2h7CWTgF2K3ElSLEvRExWQoLq
+il+CgRHHiclGx1syNeqj7tbKj6tqaOFwMx03hhRxWJ3G/dltmzp2ZbLtl6XFvr5V9rKMcA9ATw+p
+fRdFeffA3ynRpp67NJ50qhVD3nme5GtAK6UOxGiCwn/TSLaE/OBlxMH3Ky9yxCsCe2/r0yF6NmTX
+4/DzgO7cOpRyRbMLa0d/8755xzhsgVANz3RlYA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -95,4 +95,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bcb0821a-3bc3-4284-8dbe-e38d59024c1a" Target="#_bdf4f90d-ccb5-4df6-bcfe-7c2169bf1ce9"><Timestamp>2018-06-12 12:26:13</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_13d8c13d-3fa4-48c5-80a9-f46d7bd26caf" Target="#_f012495d-4b05-4c04-b1da-a7a46e6db464"><Timestamp>2018-06-12 12:28:29</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
