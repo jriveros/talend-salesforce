@@ -286,6 +286,7 @@
       <relatedItems xmi:id="_Au3LBGieEeiAqtZF3XOJww" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Au3LBWieEeiAqtZF3XOJww" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Au3LBmieEeiAqtZF3XOJww" id="_jWYRoDGtEei9wNmXZlJ8Ng" version="0.1" type="services"/>
+      <relatedItems xmi:id="_ZXDiMG48EeiEXriOXIhzEg" id="SQLike" version="Latest" type="routine"/>
     </ItemsRelations>
     <deletedFolders>route_resources/I0002_SAP_BP_to_SF_Account</deletedFolders>
     <deletedFolders>process/SAP_fetch_BP_from_SF/SAP_fetch_BP_from_SFPortType/SAP_fetch_BP_from_SFOperation</deletedFolders>
