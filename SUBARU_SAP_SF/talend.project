@@ -318,7 +318,7 @@
       <relatedItems xmi:id="_T2YDe3PEEeiy0OvzOh77bg" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_T2YDfHPEEeiy0OvzOh77bg" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_T2YDfXPEEeiy0OvzOh77bg" id="TalendStringUtil" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_T2YDfnPEEeiy0OvzOh77bg" id="_jWYRoDGtEei9wNmXZlJ8Ng" version="0.1" type="services"/>
+      <relatedItems xmi:id="_JMbz0HPFEeiy0OvzOh77bg" id="_jWYRoDGtEei9wNmXZlJ8Ng" version="0.2" type="services"/>
     </ItemsRelations>
     <deletedFolders>route_resources/I0002_SAP_BP_to_SF_Account</deletedFolders>
     <deletedFolders>process/SAP_fetch_BP_from_SF/SAP_fetch_BP_from_SFPortType/SAP_fetch_BP_from_SFOperation</deletedFolders>
