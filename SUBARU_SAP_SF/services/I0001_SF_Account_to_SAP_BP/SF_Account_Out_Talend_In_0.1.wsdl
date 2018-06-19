@@ -60,48 +60,56 @@
 							</xsd:restriction>
 						</xsd:simpleType>
 					</xsd:element>
-					<xsd:element minOccurs="1" maxOccurs="1" name="FirstName" nillable="true">
+					<xsd:element minOccurs="1" maxOccurs="1" name="FirstName">
 						<xsd:simpleType>
 							<xsd:restriction base="xsd:string">
 								<xsd:maxLength value="40"></xsd:maxLength>
 							</xsd:restriction>
 						</xsd:simpleType>
 					</xsd:element>
-					<xsd:element minOccurs="1" maxOccurs="1" name="LastName" nillable="true">
+					<xsd:element name="FirstNameX" type="xsd:boolean" />
+					<xsd:element minOccurs="1" maxOccurs="1" name="LastName">
 						<xsd:simpleType>
 							<xsd:restriction base="xsd:string">
 								<xsd:maxLength value="40"></xsd:maxLength>
 							</xsd:restriction>
 						</xsd:simpleType>
 					</xsd:element>
-					<xsd:element minOccurs="1" maxOccurs="1" name="EmailAddress" nillable="true">
+					<xsd:element name="LastNameX" type="xsd:boolean" />
+					<xsd:element minOccurs="1" maxOccurs="1" name="EmailAddress">
 						<xsd:simpleType>
 							<xsd:restriction base="xsd:string">
 								<xsd:maxLength value="241"></xsd:maxLength>
 							</xsd:restriction>
 						</xsd:simpleType>
 					</xsd:element>
-					<xsd:element minOccurs="1" maxOccurs="1" name="FiscalCode" nillable="true">
+					<xsd:element name="EmailAddressX" type="xsd:boolean" />
+					<xsd:element minOccurs="1" maxOccurs="1" name="FiscalCode" >
 						<xsd:simpleType>
 							<xsd:restriction base="xsd:string">
 								<xsd:maxLength value="16"></xsd:maxLength>
 							</xsd:restriction>
 						</xsd:simpleType>
 					</xsd:element>
-					<xsd:element minOccurs="1" maxOccurs="1" name="PreSalesConsent" nillable="true" type="xsd:boolean">
+					<xsd:element name="FiscalCodeX" type="xsd:boolean" />
+					<xsd:element minOccurs="1" maxOccurs="1" name="PreSalesConsent" type="xsd:boolean">
 					</xsd:element>
-					<xsd:element minOccurs="1" maxOccurs="1" name="MarketingConsent" nillable="true" type="xsd:boolean">
+					<xsd:element name="PreSalesConsentX" type="xsd:boolean" />
+					<xsd:element minOccurs="1" maxOccurs="1" name="MarketingConsent" type="xsd:boolean">
 					</xsd:element>
-					<xsd:element minOccurs="1" maxOccurs="1" name="ProfilingConsent" nillable="true" type="xsd:boolean">
+					<xsd:element name="MarketingConsentX" type="xsd:boolean" />
+					<xsd:element minOccurs="1" maxOccurs="1" name="ProfilingConsent" type="xsd:boolean">
 					</xsd:element>
-					<xsd:element minOccurs="1" maxOccurs="1" name="PrivacyDate" nillable="true" type="xsd:date">
+					<xsd:element name="ProfilingConsentX" type="xsd:boolean" />
+					<xsd:element minOccurs="1" maxOccurs="1" name="PrivacyDate" type="xsd:date">
 					</xsd:element>
-					<xsd:element minOccurs="1" maxOccurs="1" name="PrivacyTime" nillable="true" type="xsd:time">
+					<xsd:element name="PrivacyDateX" type="xsd:boolean" />
+					<xsd:element minOccurs="1" maxOccurs="1" name="PrivacyTime" type="xsd:time">
 					</xsd:element>
-					<xsd:element minOccurs="1" maxOccurs="1" name="Gender" nillable="true">
+					<xsd:element name="PrivacyTimeX" type="xsd:boolean" />
+					<xsd:element minOccurs="1" maxOccurs="1" name="Gender">
 						<xsd:simpleType>
 							<xsd:restriction base="xsd:string">
-
 								<xsd:length value="1"></xsd:length>
 								<xsd:enumeration value="f"></xsd:enumeration>
 								<xsd:enumeration value="m"></xsd:enumeration>
@@ -109,75 +117,82 @@
 							</xsd:restriction>
 						</xsd:simpleType>
 					</xsd:element>
-					<xsd:element minOccurs="1" maxOccurs="1" name="BirthDate" nillable="true" type="xsd:date">
+					<xsd:element name="GenderX" type="xsd:boolean" />
+					<xsd:element minOccurs="1" maxOccurs="1" name="BirthDate" type="xsd:date">
 					</xsd:element>
-
-
-
-					<xsd:element minOccurs="1" maxOccurs="1" name="Street" nillable="true">
+					<xsd:element name="BirthDateX" type="xsd:boolean" />
+					<xsd:element minOccurs="1" maxOccurs="1" name="Street">
 						<xsd:simpleType>
 							<xsd:restriction base="xsd:string">
 								<xsd:maxLength value="60"></xsd:maxLength>
 							</xsd:restriction>
 						</xsd:simpleType>
 					</xsd:element>
-					<xsd:element minOccurs="1" maxOccurs="1" name="HouseNumber" nillable="true">
+					<xsd:element name="StreetX" type="xsd:boolean" />
+					<xsd:element minOccurs="1" maxOccurs="1" name="HouseNumber">
 						<xsd:simpleType>
 							<xsd:restriction base="xsd:string">
 								<xsd:maxLength value="10"></xsd:maxLength>
 							</xsd:restriction>
 						</xsd:simpleType>
 					</xsd:element>
-					<xsd:element minOccurs="1" maxOccurs="1" name="City" nillable="true">
+					<xsd:element name="HouseNumberX" type="xsd:boolean" />
+					<xsd:element minOccurs="1" maxOccurs="1" name="City">
 						<xsd:simpleType>
 							<xsd:restriction base="xsd:string">
 								<xsd:maxLength value="40"></xsd:maxLength>
 							</xsd:restriction>
 						</xsd:simpleType>
 					</xsd:element>
-					<xsd:element minOccurs="1" maxOccurs="1" name="Region" nillable="true">
+					<xsd:element name="CityX" type="xsd:boolean" />
+					<xsd:element minOccurs="1" maxOccurs="1" name="Region">
 						<xsd:simpleType>
 							<xsd:restriction base="xsd:string">
 								<xsd:maxLength value="3"></xsd:maxLength>
 							</xsd:restriction>
 						</xsd:simpleType>
 					</xsd:element>
-					<xsd:element minOccurs="1" maxOccurs="1" name="PostalCode" nillable="true">
+					<xsd:element name="RegionX" type="xsd:boolean" />
+					<xsd:element minOccurs="1" maxOccurs="1" name="PostalCode">
 						<xsd:simpleType>
 							<xsd:restriction base="xsd:string">
 								<xsd:maxLength value="10"></xsd:maxLength>
 							</xsd:restriction>
 						</xsd:simpleType>
 					</xsd:element>
-					<xsd:element minOccurs="1" maxOccurs="1" name="CountryCode" nillable="true">
+					<xsd:element name="PostalCodeX" type="xsd:boolean" />
+					<xsd:element minOccurs="1" maxOccurs="1" name="CountryCode">
 						<xsd:simpleType>
 							<xsd:restriction base="xsd:string">
 								<xsd:maxLength value="3"></xsd:maxLength>
 							</xsd:restriction>
 						</xsd:simpleType>
 					</xsd:element>
-					<xsd:element minOccurs="1" maxOccurs="1" name="Phone" nillable="true">
+					<xsd:element name="CountryCodeX" type="xsd:boolean" />
+					<xsd:element minOccurs="1" maxOccurs="1" name="Phone">
 						<xsd:simpleType>
 							<xsd:restriction base="xsd:string">
 								<xsd:maxLength value="30"></xsd:maxLength>
 							</xsd:restriction>
 						</xsd:simpleType>
 					</xsd:element>
-					<xsd:element minOccurs="1" maxOccurs="1" name="MobilePhone" nillable="true">
+					<xsd:element name="PhoneX" type="xsd:boolean" />
+					<xsd:element minOccurs="1" maxOccurs="1" name="MobilePhone">
 						<xsd:simpleType>
 							<xsd:restriction base="xsd:string">
 								<xsd:maxLength value="30"></xsd:maxLength>
 							</xsd:restriction>
 						</xsd:simpleType>
 					</xsd:element>
-
-					<xsd:element name="DealerCode" nillable="true" maxOccurs="1" minOccurs="1">
+					<xsd:element name="MobilePhoneX" type="xsd:boolean" />
+					<xsd:element name="DealerCode" maxOccurs="1" minOccurs="1">
 						<xsd:simpleType>
 							<xsd:restriction base="xsd:string">
 								<xsd:maxLength value="10"></xsd:maxLength>
 							</xsd:restriction>
 						</xsd:simpleType>
 					</xsd:element>
+					<xsd:element name="DealerCodeX" type="xsd:boolean" />
 					<xsd:element name="BpPartnerType" maxOccurs="1" minOccurs="1">
 						<xsd:simpleType>
 							<xsd:restriction base="xsd:string">
@@ -185,6 +200,7 @@
 							</xsd:restriction>
 						</xsd:simpleType>
 					</xsd:element>
+					<xsd:element name="BpPartnerTypeX" type="xsd:boolean" />
 					<xsd:element name="LanguageCode" maxOccurs="1" minOccurs="1">
 						<xsd:simpleType>
 							<xsd:restriction base="xsd:string">
@@ -192,19 +208,20 @@
 							</xsd:restriction>
 						</xsd:simpleType>
 					</xsd:element>
-					<xsd:element name="StorageLocation" nillable="true" maxOccurs="1" minOccurs="1">
+					<xsd:element name="LanguageCodeX" type="xsd:boolean" />
+					<xsd:element name="StorageLocation" maxOccurs="1" minOccurs="1">
 						<xsd:simpleType>
 							<xsd:restriction base="xsd:string">
 								<xsd:maxLength value="10"></xsd:maxLength>
 							</xsd:restriction>
 						</xsd:simpleType>
 					</xsd:element>
+					<xsd:element name="StorageLocationX" type="xsd:boolean" />
 					<xsd:element minOccurs="1" maxOccurs="1" name="LastUpdateDate" type="xsd:dateTime">
 					</xsd:element>
+					<xsd:element name="LastUpdateDateX" type="xsd:boolean" />
 				</xsd:sequence>
 			</xsd:complexType>
-
-
 			<xsd:element name="SF_Account_Out_Talend_In_Fault">
 				<xsd:complexType>
 					<xsd:sequence>
