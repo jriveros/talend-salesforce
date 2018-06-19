@@ -304,6 +304,22 @@
       <relatedItems xmi:id="_ROe0LXPEEeiy0OvzOh77bg" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_ROe0LnPEEeiy0OvzOh77bg" id="_bsr4kD4zEeih8KkJgV_NKQ" version="0.2" type="services"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_T2YDcHPEEeiy0OvzOh77bg">
+      <baseItem xmi:id="_T2YDcXPEEeiy0OvzOh77bg" id="_j66JcDfsEeiIvauO6eCPcA" version="3.1" type="job"/>
+      <relatedItems xmi:id="_T2YDcnPEEeiy0OvzOh77bg" id="_JvmscDfnEeiIvauO6eCPcA" version="Latest" type="context"/>
+      <relatedItems xmi:id="_T2YDc3PEEeiy0OvzOh77bg" id="_jWYRoDGtEei9wNmXZlJ8Ng - _zu9_cDfpEeiIvauO6eCPcA - _zu9_cTfpEeiIvauO6eCPcA" version="Latest" type="property"/>
+      <relatedItems xmi:id="_T2YDdHPEEeiy0OvzOh77bg" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_T2YDdXPEEeiy0OvzOh77bg" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_T2YDdnPEEeiy0OvzOh77bg" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_T2YDd3PEEeiy0OvzOh77bg" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_T2YDeHPEEeiy0OvzOh77bg" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_T2YDeXPEEeiy0OvzOh77bg" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_T2YDenPEEeiy0OvzOh77bg" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_T2YDe3PEEeiy0OvzOh77bg" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_T2YDfHPEEeiy0OvzOh77bg" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_T2YDfXPEEeiy0OvzOh77bg" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_T2YDfnPEEeiy0OvzOh77bg" id="_jWYRoDGtEei9wNmXZlJ8Ng" version="0.1" type="services"/>
+    </ItemsRelations>
     <deletedFolders>route_resources/I0002_SAP_BP_to_SF_Account</deletedFolders>
     <deletedFolders>process/SAP_fetch_BP_from_SF/SAP_fetch_BP_from_SFPortType/SAP_fetch_BP_from_SFOperation</deletedFolders>
     <deletedFolders>process/SAP_fetch_BP_from_SF/SAP_fetch_BP_from_SFPortType</deletedFolders>
