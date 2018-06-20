@@ -31,41 +31,165 @@
   </TalendMetadata:XmlFileConnection>
   <orgomg.cwm.resource.record:RecordFile dataManager="_xTXggT8MEeih8KkJgV_NKQ" name="default" xmi:id="_xTXgnj8MEeih8KkJgV_NKQ">
     <ownedElement id="_xTW5cD8MEeih8KkJgV_NKQ" label="metadata" xmi:id="_xTXgnz8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataTable">
-      <feature label="SalesforceID" talendType="id_String" xmi:id="_xTYHkD8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="SapBpCode" talendType="id_String" xmi:id="_xTYHkT8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="FirstName" talendType="id_String" xmi:id="_xTYHkj8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="LastName" talendType="id_String" xmi:id="_xTYHkz8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="EmailAddress" talendType="id_String" xmi:id="_xTYHlD8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="FiscalCode" talendType="id_String" xmi:id="_xTYHlT8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="PreSalesConsent" talendType="id_Boolean" xmi:id="_xTYHlj8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="MarketingConsent" talendType="id_Boolean" xmi:id="_xTYHlz8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="ProfilingConsent" talendType="id_Boolean" xmi:id="_xTYHmD8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="PrivacyDate" talendType="id_Date" xmi:id="_xTYHmT8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="PrivacyTime" talendType="id_Date" xmi:id="_xTYHmj8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Gender" talendType="id_String" xmi:id="_xTYHmz8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="BirthDate" talendType="id_Date" xmi:id="_xTYHnD8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Street" talendType="id_String" xmi:id="_xTYHnT8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="HouseNumber" talendType="id_String" xmi:id="_xTYHnj8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="City" talendType="id_String" xmi:id="_xTYHnz8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Region" talendType="id_String" xmi:id="_xTYHoD8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="PostalCode" talendType="id_String" xmi:id="_xTYHoT8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="CountryCode" talendType="id_String" xmi:id="_xTYHoj8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Phone" talendType="id_String" xmi:id="_xTYHoz8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="MobilePhone" talendType="id_String" xmi:id="_xTYHpD8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="DealerCode" talendType="id_String" xmi:id="_xTYHpT8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="BpPartnerType" talendType="id_String" xmi:id="_xTYHpj8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="LanguageCode" talendType="id_String" xmi:id="_xTYHpz8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="StorageLocation" talendType="id_String" xmi:id="_xTYHqD8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="LastUpdateDate" talendType="id_Date" xmi:id="_xTYHqT8MEeih8KkJgV_NKQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="SalesforceID" name="" nullable="false" originalLength="-1" talendType="id_String" xmi:id="_ZWowUHRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWowUXRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="SapBpCode" name="" nullable="false" originalLength="-1" talendType="id_String" xmi:id="_ZWowUnRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWowU3RvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="FirstName" name="" nullable="false" originalLength="-1" talendType="id_String" xmi:id="_ZWowVHRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWowVXRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="FirstNameX" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWowVnRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWowV3RvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="LastName" name="" nullable="false" originalLength="-1" talendType="id_String" xmi:id="_ZWowWHRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWowWXRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="LastNameX" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWowWnRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWowW3RvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="EmailAddress" name="" nullable="false" originalLength="-1" talendType="id_String" xmi:id="_ZWowXHRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWowXXRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="EmailAddressX" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWowXnRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWowX3RvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="FiscalCode" name="" nullable="false" originalLength="-1" talendType="id_String" xmi:id="_ZWowYHRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWowYXRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="FiscalCodeX" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWowYnRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWowY3RvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="PreSalesConsent" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWowZHRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWowZXRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="PreSalesConsentX" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWowZnRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWowZ3RvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="MarketingConsent" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWowaHRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWowaXRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="MarketingConsentX" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWowanRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWowa3RvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="ProfilingConsent" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWowbHRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWowbXRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="ProfilingConsentX" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWowbnRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWowb3RvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="PrivacyDate" name="" nullable="false" originalLength="-1" talendType="id_Date" xmi:id="_ZWowcHRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWowcXRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="PrivacyDateX" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWowcnRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWowc3RvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="PrivacyTime" name="" nullable="false" originalLength="-1" talendType="id_Date" xmi:id="_ZWowdHRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWowdXRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="PrivacyTimeX" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWowdnRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXYHRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="Gender" name="" nullable="false" originalLength="-1" talendType="id_String" xmi:id="_ZWpXYXRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXYnRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="GenderX" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWpXY3RvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXZHRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="BirthDate" name="" nullable="false" originalLength="-1" talendType="id_Date" xmi:id="_ZWpXZXRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXZnRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="BirthDateX" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWpXZ3RvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXaHRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="Street" name="" nullable="false" originalLength="-1" talendType="id_String" xmi:id="_ZWpXaXRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXanRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="StreetX" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWpXa3RvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXbHRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="HouseNumber" name="" nullable="false" originalLength="-1" talendType="id_String" xmi:id="_ZWpXbXRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXbnRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="HouseNumberX" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWpXb3RvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXcHRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="City" name="" nullable="false" originalLength="-1" talendType="id_String" xmi:id="_ZWpXcXRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXcnRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="CityX" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWpXc3RvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXdHRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="Region" name="" nullable="false" originalLength="-1" talendType="id_String" xmi:id="_ZWpXdXRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXdnRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="RegionX" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWpXd3RvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXeHRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="PostalCode" name="" nullable="false" originalLength="-1" talendType="id_String" xmi:id="_ZWpXeXRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXenRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="PostalCodeX" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWpXe3RvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXfHRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="CountryCode" name="" nullable="false" originalLength="-1" talendType="id_String" xmi:id="_ZWpXfXRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXfnRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="CountryCodeX" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWpXf3RvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXgHRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="Phone" name="" nullable="false" originalLength="-1" talendType="id_String" xmi:id="_ZWpXgXRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXgnRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="PhoneX" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWpXg3RvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXhHRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="MobilePhone" name="" nullable="false" originalLength="-1" talendType="id_String" xmi:id="_ZWpXhXRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXhnRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="MobilePhoneX" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWpXh3RvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXiHRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="DealerCode" name="" nullable="false" originalLength="-1" talendType="id_String" xmi:id="_ZWpXiXRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXinRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="DealerCodeX" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWpXi3RvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXjHRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="BpPartnerType" name="" nullable="false" originalLength="-1" talendType="id_String" xmi:id="_ZWpXjXRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXjnRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="BpPartnerTypeX" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWpXj3RvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXkHRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="LanguageCode" name="" nullable="false" originalLength="-1" talendType="id_String" xmi:id="_ZWpXkXRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXknRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="LanguageCodeX" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWpXk3RvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXlHRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="StorageLocation" name="" nullable="false" originalLength="-1" talendType="id_String" xmi:id="_ZWpXlXRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXlnRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="StorageLocationX" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWpXl3RvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXmHRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="LastUpdateDate" name="" nullable="false" originalLength="-1" talendType="id_Date" xmi:id="_ZWpXmXRvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXmnRvEeisnoFqrwS0HA"/>
+      </feature>
+      <feature label="LastUpdateDateX" name="" nullable="false" originalLength="-1" talendType="id_Boolean" xmi:id="_ZWpXm3RvEeisnoFqrwS0HA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ZWpXnHRvEeisnoFqrwS0HA"/>
+      </feature>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3c96f46d-f875-4c50-9bdb-842718805462"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bMLQMJJztCdi4ny1+Dl5tUIHvMvk6TkN/3kT/6jRvr3LynH0S0gf9O7ovtwzOpviNnvXfxn7XlHX
-/7iXT3tCvg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_cb631f2b-3412-4852-a3fa-8269fd376d9f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3+YVF/lUZSEm8pY2ym46c8fqH5SqHXbzQ/H/Lm06u0YyD828I7Jg4cGKBVHYZWBOIoufQOAeEl99
-ZzxQHnQ4aw==</DigestValue></Reference></SignedInfo><SignatureValue>woXykml6lBvJiEBnjGcDYUyFvuvQUiVEk6JHlcBu6pkKmNgmj1X8EuLPdrvVC43m2GFyeGrWxttU
-RWLoduRQDySh/+FEV7rBrT2eTXY0lJCVfay0etpRJz1aRAq4UVii2+LeWSLv0YZe2LFJu/iTVa53
-Rlc8modAMf8gWZ/7M7mqNJtEvqGXzD4sb54b6Q/2BNeXTHEBmjVq+M2y98+fxY7ljR6UUCrf4yyr
-rVwGzIu6TMPk1P1BAUg5mhmYeeYBT4kXf6q4M891rQMATx+iXLk1fJ+3IYxFSivvgXUilXtSr08M
-bvm+EufQF4Py4Sbx10b+5INzg4nkaDQjJUhGbQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ff5bf8cd-e310-4267-863d-8ec31e94735c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ebnuYfho9L4wOdkQW3xwGl00EhqMXOcaij98TR86QiuDmeqPsJFyPJsT+tYu7gIFT27/J/G6yPDU
+yc2wEHOsRA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c7407420-dbaf-404d-9dcd-449f01f92440"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hA+5i+pEJYRfzBOKLbJs8PgnhHhzjvLOOyWqAW8DIPAEUxGQycl+gyKFvkRh+b5Vc6r6perl4RNT
+1Ggv8KR/xA==</DigestValue></Reference></SignedInfo><SignatureValue>EJwy7u7MvIC6XQwrfoHrynguT03V44Df3hxOkfqw0+XteqnnbeMMWO6spRc+bhkdRLjBOIITcXIm
+uKNm88rGIgZnG+FLqeeBRQ2B+PcUK+n5xI0XTtIkkdnZyd1fNjxz9Dekue/k5cbNOtEtv5rW8S+c
+PUa0XGfhfWg0ZCuqL0bpZic6oiI6CeUK4C37OgV5gPpP6cw9uIibLHI/yR7eL4Gf2eMGykRg5jz7
+h8al9ihLLklxgEoxeGUHNxsjXBeTvngYLf3y6S4LLUcZ7ourSa18D0rnEXeUcMXjNTBkS6GKN8Zt
+T6Aco8e2iDnlr1JK3sDcGDzLcIsUka4K7bs4pQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -89,4 +213,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_cb631f2b-3412-4852-a3fa-8269fd376d9f" Target="#_3c96f46d-f875-4c50-9bdb-842718805462"><Timestamp>2018-06-05 08:54:02</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c7407420-dbaf-404d-9dcd-449f01f92440" Target="#_ff5bf8cd-e310-4267-863d-8ec31e94735c"><Timestamp>2018-06-20 09:50:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
