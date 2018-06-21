@@ -60,6 +60,7 @@
 							</xsd:restriction>
 						</xsd:simpleType>
 					</xsd:element>
+					<xsd:element name="SapBpCodeX" type="xsd:boolean" />
 					<xsd:element minOccurs="1" maxOccurs="1" name="FirstName">
 						<xsd:simpleType>
 							<xsd:restriction base="xsd:string">
