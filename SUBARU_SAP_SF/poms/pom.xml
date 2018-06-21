@@ -39,6 +39,7 @@
     <module>jobs/process/I0001_SF_Account_to_SAP_BP/sf_account_to_sap_bp_job_0.3</module>
     <module>jobs/services/I0001_SF_Account_to_SAP_BP/sap_bp_in_0.3</module>
     <module>jobs/services/I0001_SF_Account_to_SAP_BP/sf_account_out_talend_in_0.3</module>
+    <module>jobs/services/I0001_SF_Account_to_SAP_BP/sf_account_out_talend_in_0.4</module>
   </modules>
   <properties>
     <talend.project.name>SUBARU_SAP_SF</talend.project.name>
