@@ -67,7 +67,7 @@
 							</xsd:restriction>
 						</xsd:simpleType>
 					</xsd:element>
-					<xsd:element name="FirstNameX" type="xsd:boolean" />
+					<xsd:element name="FirstNameX" type="xsd:boolean" /> 
 					<xsd:element minOccurs="1" maxOccurs="1" name="LastName">
 						<xsd:simpleType>
 							<xsd:restriction base="xsd:string">
