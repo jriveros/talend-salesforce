@@ -723,4 +723,6 @@
   <TalendProperties:User xmi:id="_ugCC8GidEeiAqtZF3XOJww" login="mje@hicron.com" firstName="Michal" lastName="Jezierski" type="DI" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_ugCC8WidEeiAqtZF3XOJww" login="mje@hicron.com" firstName="Michal" lastName="Jezierski" type="DI" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_fadXsG2PEeizk-RFAI4zSg" login="marco.fanti@enigen.eu" firstName="Marco" lastName="Fanti" type="DI" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_IItZgHhFEei1WLF7Vj90Vg" login="admin@hicron.com" firstName="admin" lastName="admin" type="DI" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_IItZgXhFEei1WLF7Vj90Vg" login="admin@hicron.com" firstName="admin" lastName="admin" type="DI" additionnalData="{}"/>
 </xmi:XMI>
