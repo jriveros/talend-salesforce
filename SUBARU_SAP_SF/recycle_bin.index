@@ -1,5 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2018-06-26T10:27:18.884+0200">
-  <deletedItems id="_8sEHQXkZEei-zed9Z2u7VA" path="I0002_SAP_BP_to_SF_Account/soap-sforce-com/schemas/class/SAPtoSF/SAPtoSFPortType/upsertAccount" type="METADATA_FILE_XML"/>
-  <deletedItems id="_8hGNYHkZEei-zed9Z2u7VA" path="I0002_SAP_BP_to_SF_Account/soap-sforce-com/schemas/class/SAPtoSF/SAPtoSFPortType/upsertAccount" type="METADATA_FILE_XML"/>
-</recyclebin:RecycleBin>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2018-06-26T10:27:51.952+0200"/>
