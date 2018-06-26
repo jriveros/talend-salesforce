@@ -214,6 +214,277 @@
       <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="upsertRequestRow1">
+      <column comment="" key="false" length="-1" name="payload" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="ts_str" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="requestRow2">
+        <nodes expression="" name="payload" type="id_Document" xpath="requestRow2/payload">
+          <children main="true" name="tns:SAP_BP_out_Talend_in_Req" type="id_String" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req">
+            <children defaultValue="urn:subaru.eu:ECC:MDM:BpOut" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/xmlns:tns"/>
+            <children loop="true" name="SalesforceID" outgoingConnections="//@node.2/@nodeData/@connections.1" type="id_String" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/SalesforceID"/>
+            <children name="SapBpCode" outgoingConnections="//@node.2/@nodeData/@connections.2" type="id_String" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/SapBpCode"/>
+            <children name="FirstName" outgoingConnections="//@node.2/@nodeData/@connections.3" type="id_String" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/FirstName"/>
+            <children name="LastName" outgoingConnections="//@node.2/@nodeData/@connections.4" type="id_String" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/LastName"/>
+            <children name="EmailAddress" outgoingConnections="//@node.2/@nodeData/@connections.5" type="id_String" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/EmailAddress"/>
+            <children name="FiscalCode" outgoingConnections="//@node.2/@nodeData/@connections.6" type="id_String" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/FiscalCode"/>
+            <children name="PreSalesConsent" outgoingConnections="//@node.2/@nodeData/@connections.7" type="id_Boolean" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/PreSalesConsent"/>
+            <children name="MarketingConsent" outgoingConnections="//@node.2/@nodeData/@connections.8" type="id_Boolean" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/MarketingConsent"/>
+            <children name="ProfilingConsent" outgoingConnections="//@node.2/@nodeData/@connections.9" type="id_Boolean" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/ProfilingConsent"/>
+            <children name="PrivacyDate" outgoingConnections="//@node.2/@nodeData/@connections.10" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/PrivacyDate"/>
+            <children name="PrivacyTime" outgoingConnections="//@node.2/@nodeData/@connections.11" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/PrivacyTime"/>
+            <children name="Gender" outgoingConnections="//@node.2/@nodeData/@connections.12" type="id_String" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Gender"/>
+            <children name="BirthDate" outgoingConnections="//@node.2/@nodeData/@connections.13" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/BirthDate"/>
+            <children name="Source" outgoingConnections="//@node.2/@nodeData/@connections.14" type="id_String" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Source"/>
+            <children name="SourceInfo" outgoingConnections="//@node.2/@nodeData/@connections.15" type="id_String" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/SourceInfo"/>
+            <children name="Campaign_ActivityOfOrigin" type="id_String" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Campaign_ActivityOfOrigin"/>
+            <children name="Street" outgoingConnections="//@node.2/@nodeData/@connections.16" type="id_String" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Street"/>
+            <children name="HouseNumber" outgoingConnections="//@node.2/@nodeData/@connections.17" type="id_String" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/HouseNumber"/>
+            <children name="City" outgoingConnections="//@node.2/@nodeData/@connections.18" type="id_String" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/City"/>
+            <children name="Region" outgoingConnections="//@node.2/@nodeData/@connections.19" type="id_String" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Region"/>
+            <children name="PostalCode" outgoingConnections="//@node.2/@nodeData/@connections.20" type="id_String" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/PostalCode"/>
+            <children name="CountryCode" outgoingConnections="//@node.2/@nodeData/@connections.21" type="id_String" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/CountryCode"/>
+            <children name="Phone" outgoingConnections="//@node.2/@nodeData/@connections.22" type="id_String" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Phone"/>
+            <children name="MobilePhone" outgoingConnections="//@node.2/@nodeData/@connections.23" type="id_String" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/MobilePhone"/>
+            <children name="RecordTypeId" outgoingConnections="//@node.2/@nodeData/@connections.24" type="id_String" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/RecordTypeId"/>
+            <children name="SapLastUpdateDate" outgoingConnections="//@node.2/@nodeData/@connections.25" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/SapLastUpdateDate"/>
+          </children>
+        </nodes>
+      </inputTrees>
+      <outputTrees activateCondensedTool="true" enableEmptyElement="false" name="upsertRequestRow1">
+        <nodes expression="" name="payload" nullable="false" type="id_Document" xpath="upsertRequestRow1/payload">
+          <children main="true" name="tns:upsertAccount" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount" xsi:type="TalendXMLMap:OutputTreeNode">
+            <children defaultValue="http://soap.sforce.com/schemas/class/SAPtoSF" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children defaultValue="http://www.w3.org/2001/XMLSchema-instance" name="xsi" nodeType="NAME_SPACE" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/xmlns:xsi" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children loop="true" main="true" name="tns:sap_acc" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc" xsi:type="TalendXMLMap:OutputTreeNode">
+              <children expression="&quot;Street&quot;" name="tns:fieldsToNull" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:fieldsToNull" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression=" [requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/SalesforceID]" incomingConnections="//@node.2/@nodeData/@connections.1" name="tns:Id" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Id" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="" name="tns:A_M__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:A_M__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="" name="tns:AccountNumber" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:AccountNumber" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:AccountSource" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:AccountSource" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="" name="tns:Alimentazione__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Alimentazione__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Alimentazione__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Alimentazione__pc" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Anno_immatricolazione__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Anno_immatricolazione__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Anno_immatricolazione__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Anno_immatricolazione__pc" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:AnnualRevenue" pattern="&quot;dd-MM-yyyy&quot;" type="id_Double" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:AnnualRevenue" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Area_sito__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Area_sito__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Auto_posseduta__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Auto_posseduta__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Auto_posseduta__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Auto_posseduta__pc" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:BillingCity" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:BillingCity" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:BillingCountry" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:BillingCountry" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:BillingGeocodeAccuracy" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:BillingGeocodeAccuracy" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:BillingLatitude" pattern="&quot;dd-MM-yyyy&quot;" type="id_Double" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:BillingLatitude" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:BillingLongitude" pattern="&quot;dd-MM-yyyy&quot;" type="id_Double" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:BillingLongitude" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="" name="tns:BillingPostalCode" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:BillingPostalCode" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:BillingState" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:BillingState" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:BillingStreet" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:BillingStreet" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Cambio_auto__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Cambio_auto__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="" name="tns:Campagna_Attivit_di_origine__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Campagna_Attivit_di_origine__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Cod_Lead__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Cod_Lead__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Cod_Lead__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Cod_Lead__pc" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/SapBpCode]" incomingConnections="//@node.2/@nodeData/@connections.2" name="tns:Codice_cliente_SAP__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Codice_cliente_SAP__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="" name="tns:Codice_concessionario_SAP__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Codice_concessionario_SAP__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression=" [requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/FiscalCode]" incomingConnections="//@node.2/@nodeData/@connections.6" name="tns:Codice_fiscale__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Codice_fiscale__c" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/FiscalCode/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Codice_fiscale__c/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              </children>
+              <children name="tns:Concessionario_di_competenza__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Concessionario_di_competenza__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Consenso_dati_personali__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Consenso_dati_personali__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/PreSalesConsent]" incomingConnections="//@node.2/@nodeData/@connections.7" name="tns:Consenso_dati_personali__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Consenso_dati_personali__pc" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/PreSalesConsent/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Consenso_dati_personali__pc/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              </children>
+              <children name="tns:Consenso_invio_comunicaz_posta_cartacea__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Consenso_invio_comunicaz_posta_cartacea__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Consenso_invio_comunicaz_posta_cartacea__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Consenso_invio_comunicaz_posta_cartacea__pc" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Consenso_invio_comunicazioni__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Consenso_invio_comunicazioni__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/MarketingConsent]" incomingConnections="//@node.2/@nodeData/@connections.8" name="tns:Consenso_invio_comunicazioni__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Consenso_invio_comunicazioni__pc" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/MarketingConsent/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Consenso_invio_comunicazioni__pc/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              </children>
+              <children name="tns:Consenso_profilazione__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Consenso_profilazione__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/ProfilingConsent]" incomingConnections="//@node.2/@nodeData/@connections.9" name="tns:Consenso_profilazione__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Consenso_profilazione__pc" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/ProfilingConsent/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Consenso_profilazione__pc/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              </children>
+              <children name="tns:CreatedById" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:CreatedById" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:CreatedDate" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:CreatedDate" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/BirthDate]" incomingConnections="//@node.2/@nodeData/@connections.13" name="tns:Data_di_nascita__c" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Data_di_nascita__c" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/BirthDate/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Data_di_nascita__c/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              </children>
+              <children name="tns:Data_fuori_lista_email__pc" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Data_fuori_lista_email__pc" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Data_ultima_privacy__c" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Data_ultima_privacy__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/PrivacyDate]" incomingConnections="//@node.2/@nodeData/@connections.10" name="tns:Data_ultima_privacy__pc" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Data_ultima_privacy__pc" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/PrivacyDate/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Data_ultima_privacy__pc/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              </children>
+              <children name="tns:Data_ultimo_passaggio_in_officina__c" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Data_ultimo_passaggio_in_officina__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Data_ultimo_passaggio_in_officina__pc" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Data_ultimo_passaggio_in_officina__pc" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Description" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Description" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Email_DEM__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Email_DEM__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Email__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Email__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Eta__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_Double" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Eta__pc" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:F_M__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:F_M__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Fax" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Fax" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/FirstName]" incomingConnections="//@node.2/@nodeData/@connections.3" name="tns:FirstName" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:FirstName" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/SourceInfo]" incomingConnections="//@node.2/@nodeData/@connections.15" name="tns:Fonte_info__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Fonte_info__c" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/SourceInfo/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Fonte_info__c/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              </children>
+              <children name="tns:Indirizzo_mantenuto__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Indirizzo_mantenuto__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Indirizzo_validato__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Indirizzo_validato__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Industry" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Industry" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:IsDeleted" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:IsDeleted" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:IsPersonAccount" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:IsPersonAccount" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Jigsaw" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Jigsaw" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:JigsawCompanyId" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:JigsawCompanyId" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:LastActivityDate" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:LastActivityDate" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:LastModifiedById" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:LastModifiedById" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:LastModifiedDate" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:LastModifiedDate" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/LastName]" incomingConnections="//@node.2/@nodeData/@connections.4" name="tns:LastName" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:LastName" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:LastReferencedDate" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:LastReferencedDate" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:LastViewedDate" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:LastViewedDate" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:MasterRecordId" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:MasterRecordId" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:MiddleName" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:MiddleName" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Modello_interessato__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Modello_interessato__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Name" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Name" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Next_Birthday__c" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Next_Birthday__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Nome_commerciale__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Nome_commerciale__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:NumberOfEmployees" pattern="&quot;dd-MM-yyyy&quot;" type="id_Integer" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:NumberOfEmployees" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/HouseNumber]" incomingConnections="//@node.2/@nodeData/@connections.17" name="tns:Numero_civico__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Numero_civico__pc" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/HouseNumber/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Numero_civico__pc/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              </children>
+              <children name="tns:OLD_SalesForce_ID__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:OLD_SalesForce_ID__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Officina_di_competenza__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Officina_di_competenza__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/PrivacyTime]" incomingConnections="//@node.2/@nodeData/@connections.11" name="tns:Ora_ultima_privacy__pc" pattern="&quot;HH:mm:ss&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Ora_ultima_privacy__pc" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/PrivacyTime/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Ora_ultima_privacy__pc/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              </children>
+              <children name="tns:OutputAddress__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:OutputAddress__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:OwnerId" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:OwnerId" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Ownership" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Ownership" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:ParentId" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:ParentId" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Partita_IVA__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Partita_IVA__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:PersonAssistantName" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonAssistantName" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:PersonAssistantPhone" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonAssistantPhone" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:PersonBirthdate" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonBirthdate" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:PersonContactId" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonContactId" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:PersonDepartment" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonDepartment" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:PersonDoNotCall" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonDoNotCall" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/EmailAddress]" incomingConnections="//@node.2/@nodeData/@connections.5" name="tns:PersonEmail" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonEmail" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:PersonEmailBouncedDate" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonEmailBouncedDate" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:PersonEmailBouncedReason" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonEmailBouncedReason" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:PersonHasOptedOutOfEmail" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonHasOptedOutOfEmail" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:PersonHasOptedOutOfFax" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonHasOptedOutOfFax" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:PersonHomePhone" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonHomePhone" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:PersonLastCURequestDate" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonLastCURequestDate" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:PersonLastCUUpdateDate" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonLastCUUpdateDate" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:PersonLeadSource" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonLeadSource" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/City]" incomingConnections="//@node.2/@nodeData/@connections.18" name="tns:PersonMailingCity" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingCity" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/City/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingCity/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              </children>
+              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/CountryCode]" incomingConnections="//@node.2/@nodeData/@connections.21" name="tns:PersonMailingCountry" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingCountry" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/CountryCode/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingCountry/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              </children>
+              <children name="tns:PersonMailingGeocodeAccuracy" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingGeocodeAccuracy" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:PersonMailingLatitude" pattern="&quot;dd-MM-yyyy&quot;" type="id_Double" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingLatitude" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:PersonMailingLongitude" pattern="&quot;dd-MM-yyyy&quot;" type="id_Double" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingLongitude" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/PostalCode]" incomingConnections="//@node.2/@nodeData/@connections.20" name="tns:PersonMailingPostalCode" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingPostalCode" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/PostalCode/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingPostalCode/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              </children>
+              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Region]" incomingConnections="//@node.2/@nodeData/@connections.19" name="tns:PersonMailingState" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingState" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Region/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingState/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              </children>
+              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Street]" incomingConnections="//@node.2/@nodeData/@connections.16" name="tns:PersonMailingStreet" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingStreet" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Street/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingStreet/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              </children>
+              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/MobilePhone]" incomingConnections="//@node.2/@nodeData/@connections.23" name="tns:PersonMobilePhone" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMobilePhone" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/MobilePhone/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMobilePhone/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              </children>
+              <children name="tns:PersonOtherCity" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonOtherCity" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:PersonOtherCountry" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonOtherCountry" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:PersonOtherGeocodeAccuracy" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonOtherGeocodeAccuracy" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:PersonOtherLatitude" pattern="&quot;dd-MM-yyyy&quot;" type="id_Double" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonOtherLatitude" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:PersonOtherLongitude" pattern="&quot;dd-MM-yyyy&quot;" type="id_Double" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonOtherLongitude" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:PersonOtherPhone" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonOtherPhone" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:PersonOtherPostalCode" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonOtherPostalCode" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:PersonOtherState" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonOtherState" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:PersonOtherStreet" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonOtherStreet" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:PersonTitle" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonTitle" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression=" [requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Phone]" incomingConnections="//@node.2/@nodeData/@connections.22" name="tns:Phone" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Phone" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Phone/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Phone/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              </children>
+              <children name="tns:PhotoUrl" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PhotoUrl" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Rating" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Rating" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/RecordTypeId]" incomingConnections="//@node.2/@nodeData/@connections.24" name="tns:RecordTypeId" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:RecordTypeId" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Regione__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Regione__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:ResponseAddressVal__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:ResponseAddressVal__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression=" [requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/SapLastUpdateDate]" incomingConnections="//@node.2/@nodeData/@connections.25" name="tns:SAP_last_update_date__c" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:SAP_last_update_date__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Salutation" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Salutation" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Scadenza_patente__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Scadenza_patente__pc" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Gender]" incomingConnections="//@node.2/@nodeData/@connections.12" name="tns:Sesso__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Sesso__pc" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Gender/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Sesso__pc/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              </children>
+              <children name="tns:ShippingCity" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:ShippingCity" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:ShippingCountry" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:ShippingCountry" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:ShippingGeocodeAccuracy" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:ShippingGeocodeAccuracy" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:ShippingLatitude" pattern="&quot;dd-MM-yyyy&quot;" type="id_Double" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:ShippingLatitude" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:ShippingLongitude" pattern="&quot;dd-MM-yyyy&quot;" type="id_Double" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:ShippingLongitude" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:ShippingPostalCode" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:ShippingPostalCode" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:ShippingState" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:ShippingState" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:ShippingStreet" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:ShippingStreet" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Sic" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Sic" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:SicDesc" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:SicDesc" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Site" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Site" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression=" [requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Source]" incomingConnections="//@node.2/@nodeData/@connections.14" name="tns:Source__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Source__c" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Source/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Source__c/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              </children>
+              <children name="tns:Stato_dealer__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Stato_dealer__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Suffix" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Suffix" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:SystemModstamp" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:SystemModstamp" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Targa__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Targa__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Targa__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Targa__pc" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:TickerSymbol" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:TickerSymbol" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Tipologia_dealer__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Tipologia_dealer__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Type" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:URL_Landing_Page__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:URL_Landing_Page__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Web_to_Lead__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Web_to_Lead__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="tns:Website" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Website" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            </children>
+          </children>
+        </nodes>
+        <nodes expression=" Var.ts_str" incomingConnections="//@node.2/@nodeData/@connections.0" key="true" name="ts_str" nullable="false" pattern="" type="id_String" xpath="upsertRequestRow1/ts_str"/>
+      </outputTrees>
+      <varTables name="Var">
+        <nodes expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new Date()) " name="ts_str" outgoingConnections="//@node.2/@nodeData/@connections.0" type="id_String"/>
+      </varTables>
+      <connections source="//@node.2/@nodeData/@varTables.0/@nodes.0" target="//@node.2/@nodeData/@outputTrees.0/@nodes.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.25" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.51" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.4" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.63" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.88" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.27" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.7" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.30" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.8" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.34" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.9" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.36" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.10" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.42" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.11" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.76" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.12" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.125" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.13" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.39" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.14" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.137" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.15" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.52" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.17" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.104" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.18" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.73" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.19" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.97" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.20" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.103" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.21" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.102" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.22" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.98" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.23" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.116" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.24" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.105" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.25" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.119" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.26" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.122" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
+  </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_4"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
@@ -461,12 +732,12 @@
             <children defaultValue="http://soap.sforce.com/schemas/class/SAPtoSF" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="row2.payload:/tns:upsertAccountResponse/xmlns:tns"/>
             <children main="true" name="tns:result" type="id_String" xpath="row2.payload:/tns:upsertAccountResponse/tns:result">
               <children loop="true" main="true" name="tns:conflicting_fields" optional="true" type="id_String" xpath="row2.payload:/tns:upsertAccountResponse/tns:result/tns:conflicting_fields">
-                <children name="tns:name" optional="true" outgoingConnections="//@node.9/@nodeData/@connections.3" type="id_String" xpath="row2.payload:/tns:upsertAccountResponse/tns:result/tns:conflicting_fields/tns:name"/>
-                <children name="tns:value" optional="true" outgoingConnections="//@node.9/@nodeData/@connections.4" type="id_String" xpath="row2.payload:/tns:upsertAccountResponse/tns:result/tns:conflicting_fields/tns:value"/>
+                <children name="tns:name" optional="true" outgoingConnections="//@node.10/@nodeData/@connections.3" type="id_String" xpath="row2.payload:/tns:upsertAccountResponse/tns:result/tns:conflicting_fields/tns:name"/>
+                <children name="tns:value" optional="true" outgoingConnections="//@node.10/@nodeData/@connections.4" type="id_String" xpath="row2.payload:/tns:upsertAccountResponse/tns:result/tns:conflicting_fields/tns:value"/>
               </children>
-              <children name="tns:message" optional="true" outgoingConnections="//@node.9/@nodeData/@connections.0" type="id_String" xpath="row2.payload:/tns:upsertAccountResponse/tns:result/tns:message"/>
-              <children name="tns:SF_record_ID" optional="true" outgoingConnections="//@node.9/@nodeData/@connections.1" type="id_String" xpath="row2.payload:/tns:upsertAccountResponse/tns:result/tns:SF_record_ID"/>
-              <children name="tns:status" optional="true" outgoingConnections="//@node.9/@nodeData/@connections.2" type="id_String" xpath="row2.payload:/tns:upsertAccountResponse/tns:result/tns:status"/>
+              <children name="tns:message" optional="true" outgoingConnections="//@node.10/@nodeData/@connections.0" type="id_String" xpath="row2.payload:/tns:upsertAccountResponse/tns:result/tns:message"/>
+              <children name="tns:SF_record_ID" optional="true" outgoingConnections="//@node.10/@nodeData/@connections.1" type="id_String" xpath="row2.payload:/tns:upsertAccountResponse/tns:result/tns:SF_record_ID"/>
+              <children name="tns:status" optional="true" outgoingConnections="//@node.10/@nodeData/@connections.2" type="id_String" xpath="row2.payload:/tns:upsertAccountResponse/tns:result/tns:status"/>
             </children>
           </children>
         </nodes>
@@ -477,22 +748,22 @@
             <children defaultValue="urn:subaru.eu:ECC:MDM:BpOut" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="responseRow.payload:/tns:SAP_BP_out_Talend_in_Resp/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
             <children main="true" name="result" type="id_String" xpath="responseRow.payload:/tns:SAP_BP_out_Talend_in_Resp/result" xsi:type="TalendXMLMap:OutputTreeNode">
               <children loop="true" main="true" name="conflicting_fields" type="id_String" xpath="responseRow.payload:/tns:SAP_BP_out_Talend_in_Resp/result/conflicting_fields" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children expression=" [row2.payload:/tns:upsertAccountResponse/tns:result/tns:conflicting_fields/tns:name]" incomingConnections="//@node.9/@nodeData/@connections.3" name="name" type="id_String" xpath="responseRow.payload:/tns:SAP_BP_out_Talend_in_Resp/result/conflicting_fields/name" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                <children expression=" [row2.payload:/tns:upsertAccountResponse/tns:result/tns:conflicting_fields/tns:value]" incomingConnections="//@node.9/@nodeData/@connections.4" name="value" type="id_String" xpath="responseRow.payload:/tns:SAP_BP_out_Talend_in_Resp/result/conflicting_fields/value" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression=" [row2.payload:/tns:upsertAccountResponse/tns:result/tns:conflicting_fields/tns:name]" incomingConnections="//@node.10/@nodeData/@connections.3" name="name" type="id_String" xpath="responseRow.payload:/tns:SAP_BP_out_Talend_in_Resp/result/conflicting_fields/name" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression=" [row2.payload:/tns:upsertAccountResponse/tns:result/tns:conflicting_fields/tns:value]" incomingConnections="//@node.10/@nodeData/@connections.4" name="value" type="id_String" xpath="responseRow.payload:/tns:SAP_BP_out_Talend_in_Resp/result/conflicting_fields/value" xsi:type="TalendXMLMap:OutputTreeNode"/>
               </children>
-              <children expression=" [row2.payload:/tns:upsertAccountResponse/tns:result/tns:message]" incomingConnections="//@node.9/@nodeData/@connections.0" name="message" type="id_String" xpath="responseRow.payload:/tns:SAP_BP_out_Talend_in_Resp/result/message" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression=" [row2.payload:/tns:upsertAccountResponse/tns:result/tns:SF_record_ID]" incomingConnections="//@node.9/@nodeData/@connections.1" name="SF_record_ID" type="id_String" xpath="responseRow.payload:/tns:SAP_BP_out_Talend_in_Resp/result/SF_record_ID" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression=" [row2.payload:/tns:upsertAccountResponse/tns:result/tns:status]" incomingConnections="//@node.9/@nodeData/@connections.2" name="status" type="id_String" xpath="responseRow.payload:/tns:SAP_BP_out_Talend_in_Resp/result/status" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression=" [row2.payload:/tns:upsertAccountResponse/tns:result/tns:message]" incomingConnections="//@node.10/@nodeData/@connections.0" name="message" type="id_String" xpath="responseRow.payload:/tns:SAP_BP_out_Talend_in_Resp/result/message" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression=" [row2.payload:/tns:upsertAccountResponse/tns:result/tns:SF_record_ID]" incomingConnections="//@node.10/@nodeData/@connections.1" name="SF_record_ID" type="id_String" xpath="responseRow.payload:/tns:SAP_BP_out_Talend_in_Resp/result/SF_record_ID" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression=" [row2.payload:/tns:upsertAccountResponse/tns:result/tns:status]" incomingConnections="//@node.10/@nodeData/@connections.2" name="status" type="id_String" xpath="responseRow.payload:/tns:SAP_BP_out_Talend_in_Resp/result/status" xsi:type="TalendXMLMap:OutputTreeNode"/>
             </children>
           </children>
         </nodes>
       </outputTrees>
       <varTables minimized="true" name="Var"/>
-      <connections source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.1" target="//@node.9/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.2" target="//@node.9/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.3" target="//@node.9/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.3" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0" target="//@node.9/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.1" target="//@node.9/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.10/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.1" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.10/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.2" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.10/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.3" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.10/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.10/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.1" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1184" posY="480">
@@ -546,37 +817,37 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row4">
-        <nodes name="faultCode" outgoingConnections="//@node.11/@nodeData/@connections.0" type="id_String" xpath="row4/faultCode"/>
-        <nodes name="faultString" outgoingConnections="//@node.11/@nodeData/@connections.1" type="id_String" xpath="row4/faultString"/>
-        <nodes name="faultActor" outgoingConnections="//@node.11/@nodeData/@connections.3" type="id_String" xpath="row4/faultActor"/>
-        <nodes name="faultNode" outgoingConnections="//@node.11/@nodeData/@connections.4" type="id_String" xpath="row4/faultNode"/>
-        <nodes name="faultRole" outgoingConnections="//@node.11/@nodeData/@connections.5" type="id_String" xpath="row4/faultRole"/>
-        <nodes expression="" name="faultDetail" outgoingConnections="//@node.11/@nodeData/@connections.2" type="id_String" xpath="row4/faultDetail"/>
+        <nodes name="faultCode" outgoingConnections="//@node.12/@nodeData/@connections.0" type="id_String" xpath="row4/faultCode"/>
+        <nodes name="faultString" outgoingConnections="//@node.12/@nodeData/@connections.1" type="id_String" xpath="row4/faultString"/>
+        <nodes name="faultActor" outgoingConnections="//@node.12/@nodeData/@connections.3" type="id_String" xpath="row4/faultActor"/>
+        <nodes name="faultNode" outgoingConnections="//@node.12/@nodeData/@connections.4" type="id_String" xpath="row4/faultNode"/>
+        <nodes name="faultRole" outgoingConnections="//@node.12/@nodeData/@connections.5" type="id_String" xpath="row4/faultRole"/>
+        <nodes expression="" name="faultDetail" outgoingConnections="//@node.12/@nodeData/@connections.2" type="id_String" xpath="row4/faultDetail"/>
       </inputTrees>
       <outputTrees name="responseFaultRow">
         <nodes expression="" name="payload" type="id_Document" xpath="responseFaultRow/payload">
           <children main="true" name="tns:SAP_BP_out_Talend_inFault" type="id_String" xpath="responseFaultRow.payload:/tns:SAP_BP_out_Talend_inFault" xsi:type="TalendXMLMap:OutputTreeNode">
             <children defaultValue="urn:subaru.eu:ECC:MDM:BpOut" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="responseFaultRow.payload:/tns:SAP_BP_out_Talend_inFault/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
             <children loop="true" main="true" name="standard" type="id_String" xpath="responseFaultRow.payload:/tns:SAP_BP_out_Talend_inFault/standard" xsi:type="TalendXMLMap:OutputTreeNode">
-              <children expression="row4.faultString" incomingConnections="//@node.11/@nodeData/@connections.1" name="faultText" type="id_String" xpath="responseFaultRow.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultText" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row4.faultCode" incomingConnections="//@node.11/@nodeData/@connections.0" name="faultUrl" type="id_String" xpath="responseFaultRow.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultUrl" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row4.faultString" incomingConnections="//@node.12/@nodeData/@connections.1" name="faultText" type="id_String" xpath="responseFaultRow.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultText" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row4.faultCode" incomingConnections="//@node.12/@nodeData/@connections.0" name="faultUrl" type="id_String" xpath="responseFaultRow.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultUrl" xsi:type="TalendXMLMap:OutputTreeNode"/>
               <children main="true" name="faultDetail" type="id_String" xpath="responseFaultRow.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultDetail" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children expression="row4.faultRole" incomingConnections="//@node.11/@nodeData/@connections.5" name="severity" type="id_String" xpath="responseFaultRow.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultDetail/severity" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                <children expression="row4.faultDetail" incomingConnections="//@node.11/@nodeData/@connections.2" name="text" type="id_String" xpath="responseFaultRow.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultDetail/text" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                <children expression="row4.faultNode" incomingConnections="//@node.11/@nodeData/@connections.4" name="url" type="id_String" xpath="responseFaultRow.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultDetail/url" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                <children expression="row4.faultActor" incomingConnections="//@node.11/@nodeData/@connections.3" name="id" type="id_String" xpath="responseFaultRow.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultDetail/id" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="row4.faultRole" incomingConnections="//@node.12/@nodeData/@connections.5" name="severity" type="id_String" xpath="responseFaultRow.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultDetail/severity" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="row4.faultDetail" incomingConnections="//@node.12/@nodeData/@connections.2" name="text" type="id_String" xpath="responseFaultRow.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultDetail/text" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="row4.faultNode" incomingConnections="//@node.12/@nodeData/@connections.4" name="url" type="id_String" xpath="responseFaultRow.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultDetail/url" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="row4.faultActor" incomingConnections="//@node.12/@nodeData/@connections.3" name="id" type="id_String" xpath="responseFaultRow.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultDetail/id" xsi:type="TalendXMLMap:OutputTreeNode"/>
               </children>
             </children>
           </children>
         </nodes>
       </outputTrees>
       <varTables minimized="true" name="Var"/>
-      <connections source="//@node.11/@nodeData/@inputTrees.0/@nodes.0" target="//@node.11/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.11/@nodeData/@inputTrees.0/@nodes.1" target="//@node.11/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.0" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.11/@nodeData/@inputTrees.0/@nodes.5" target="//@node.11/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.11/@nodeData/@inputTrees.0/@nodes.2" target="//@node.11/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.3" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.11/@nodeData/@inputTrees.0/@nodes.3" target="//@node.11/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.2" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.11/@nodeData/@inputTrees.0/@nodes.4" target="//@node.11/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.12/@nodeData/@inputTrees.0/@nodes.0" target="//@node.12/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.12/@nodeData/@inputTrees.0/@nodes.1" target="//@node.12/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.12/@nodeData/@inputTrees.0/@nodes.5" target="//@node.12/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.12/@nodeData/@inputTrees.0/@nodes.2" target="//@node.12/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.12/@nodeData/@inputTrees.0/@nodes.3" target="//@node.12/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.12/@nodeData/@inputTrees.0/@nodes.4" target="//@node.12/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.0" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
   <node componentName="tESBProviderFault" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1536" posY="480">
@@ -616,7 +887,7 @@
       <column comment="" key="true" length="-1" name="ts_str" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="352">
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
     <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
@@ -661,7 +932,7 @@
               <children name="tns:passwordExpired" type="id_Boolean" xpath="loginResponseRow2.payload:/tns:loginResponse/tns:result/tns:passwordExpired"/>
               <children name="tns:sandbox" type="id_Boolean" xpath="loginResponseRow2.payload:/tns:loginResponse/tns:result/tns:sandbox"/>
               <children name="tns:serverUrl" type="id_String" xpath="loginResponseRow2.payload:/tns:loginResponse/tns:result/tns:serverUrl"/>
-              <children name="tns:sessionId" outgoingConnections="//@node.15/@nodeData/@connections.0" type="id_String" xpath="loginResponseRow2.payload:/tns:loginResponse/tns:result/tns:sessionId"/>
+              <children name="tns:sessionId" outgoingConnections="//@node.16/@nodeData/@connections.0" type="id_String" xpath="loginResponseRow2.payload:/tns:loginResponse/tns:result/tns:sessionId"/>
               <children name="tns:userId" type="id_String" xpath="loginResponseRow2.payload:/tns:loginResponse/tns:result/tns:userId"/>
               <children main="true" name="tns:userInfo" type="id_String" xpath="loginResponseRow2.payload:/tns:loginResponse/tns:result/tns:userInfo">
                 <children name="tns:accessibilityMode" type="id_Boolean" xpath="loginResponseRow2.payload:/tns:loginResponse/tns:result/tns:userInfo/tns:accessibilityMode"/>
@@ -698,17 +969,17 @@
           <children main="true" name="Header" type="id_String" xpath="loginResponseMapped.header:/Header" xsi:type="TalendXMLMap:OutputTreeNode">
             <children defaultValue="http://soap.sforce.com/schemas/class/SAPtoSF" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="loginResponseMapped.header:/Header/xmlns:(default)" xsi:type="TalendXMLMap:OutputTreeNode"/>
             <children main="true" name="SessionHeader" type="id_String" xpath="loginResponseMapped.header:/Header/SessionHeader" xsi:type="TalendXMLMap:OutputTreeNode">
-              <children expression=" [loginResponseRow2.payload:/tns:loginResponse/tns:result/tns:sessionId]" incomingConnections="//@node.15/@nodeData/@connections.0" loop="true" main="true" name="sessionId" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="loginResponseMapped.header:/Header/SessionHeader/sessionId" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression=" [loginResponseRow2.payload:/tns:loginResponse/tns:result/tns:sessionId]" incomingConnections="//@node.16/@nodeData/@connections.0" loop="true" main="true" name="sessionId" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="loginResponseMapped.header:/Header/SessionHeader/sessionId" xsi:type="TalendXMLMap:OutputTreeNode"/>
             </children>
           </children>
         </nodes>
         <nodes expression="(String) globalMap.get(&quot;ts_str&quot;) " key="true" name="ts_str" pattern="" type="id_String" xpath="loginResponseMapped/ts_str"/>
       </outputTrees>
       <varTables minimized="true" name="Var"/>
-      <connections source="//@node.15/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.4" target="//@node.15/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.16/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.4" target="//@node.16/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.0" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
-  <node componentName="tESBConsumer" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="384">
+  <node componentName="tESBConsumer" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tESBConsumer_2"/>
     <elementParameter field="EXTERNAL" name="SERVICE_CONFIGURATION" value=""/>
     <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
@@ -804,7 +1075,7 @@
       <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="576">
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="160" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_4"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
@@ -815,26 +1086,26 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="credentialsRow">
-        <nodes name="userId" outgoingConnections="//@node.18/@nodeData/@connections.0" type="id_String" xpath="credentialsRow/userId"/>
-        <nodes name="password" outgoingConnections="//@node.18/@nodeData/@connections.1" type="id_String" xpath="credentialsRow/password"/>
-        <nodes name="token" outgoingConnections="//@node.18/@nodeData/@connections.2" type="id_String" xpath="credentialsRow/token"/>
+        <nodes name="userId" outgoingConnections="//@node.19/@nodeData/@connections.0" type="id_String" xpath="credentialsRow/userId"/>
+        <nodes name="password" outgoingConnections="//@node.19/@nodeData/@connections.1" type="id_String" xpath="credentialsRow/password"/>
+        <nodes name="token" outgoingConnections="//@node.19/@nodeData/@connections.2" type="id_String" xpath="credentialsRow/token"/>
       </inputTrees>
       <outputTrees name="loginRequestRow">
         <nodes expression="" name="payload" type="id_Document" xpath="loginRequestRow/payload">
           <children main="true" name="tns:login" type="id_String" xpath="loginRequestRow.payload:/tns:login" xsi:type="TalendXMLMap:OutputTreeNode">
             <children defaultValue="urn:partner.soap.sforce.com" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="loginRequestRow.payload:/tns:login/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="credentialsRow.userId" incomingConnections="//@node.18/@nodeData/@connections.0" loop="true" name="tns:username" type="id_String" xpath="loginRequestRow.payload:/tns:login/tns:username" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="credentialsRow.password + credentialsRow.token" incomingConnections="//@node.18/@nodeData/@connections.1 //@node.18/@nodeData/@connections.2" name="tns:password" type="id_String" xpath="loginRequestRow.payload:/tns:login/tns:password" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="credentialsRow.userId" incomingConnections="//@node.19/@nodeData/@connections.0" loop="true" name="tns:username" type="id_String" xpath="loginRequestRow.payload:/tns:login/tns:username" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="credentialsRow.password + credentialsRow.token" incomingConnections="//@node.19/@nodeData/@connections.1 //@node.19/@nodeData/@connections.2" name="tns:password" type="id_String" xpath="loginRequestRow.payload:/tns:login/tns:password" xsi:type="TalendXMLMap:OutputTreeNode"/>
           </children>
         </nodes>
       </outputTrees>
       <varTables minimized="true" name="Var"/>
-      <connections source="//@node.18/@nodeData/@inputTrees.0/@nodes.0" target="//@node.18/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.18/@nodeData/@inputTrees.0/@nodes.1" target="//@node.18/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.18/@nodeData/@inputTrees.0/@nodes.2" target="//@node.18/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.19/@nodeData/@inputTrees.0/@nodes.0" target="//@node.19/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.19/@nodeData/@inputTrees.0/@nodes.1" target="//@node.19/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.19/@nodeData/@inputTrees.0/@nodes.2" target="//@node.19/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="544">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="640">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_6"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -923,17 +1194,17 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row9">
-        <nodes name="moment" outgoingConnections="//@node.22/@nodeData/@connections.5" type="id_Date" xpath="row9/moment"/>
+        <nodes name="moment" outgoingConnections="//@node.23/@nodeData/@connections.5" type="id_Date" xpath="row9/moment"/>
         <nodes name="pid" type="id_String" xpath="row9/pid"/>
         <nodes name="root_pid" type="id_String" xpath="row9/root_pid"/>
         <nodes name="father_pid" type="id_String" xpath="row9/father_pid"/>
         <nodes name="project" type="id_String" xpath="row9/project"/>
-        <nodes name="job" outgoingConnections="//@node.22/@nodeData/@connections.3" type="id_String" xpath="row9/job"/>
-        <nodes name="context" outgoingConnections="//@node.22/@nodeData/@connections.2" type="id_String" xpath="row9/context"/>
+        <nodes name="job" outgoingConnections="//@node.23/@nodeData/@connections.3" type="id_String" xpath="row9/job"/>
+        <nodes name="context" outgoingConnections="//@node.23/@nodeData/@connections.2" type="id_String" xpath="row9/context"/>
         <nodes name="priority" type="id_Integer" xpath="row9/priority"/>
-        <nodes name="type" outgoingConnections="//@node.22/@nodeData/@connections.1" type="id_String" xpath="row9/type"/>
-        <nodes name="origin" outgoingConnections="//@node.22/@nodeData/@connections.4" type="id_String" xpath="row9/origin"/>
-        <nodes name="message" outgoingConnections="//@node.22/@nodeData/@connections.0" type="id_String" xpath="row9/message"/>
+        <nodes name="type" outgoingConnections="//@node.23/@nodeData/@connections.1" type="id_String" xpath="row9/type"/>
+        <nodes name="origin" outgoingConnections="//@node.23/@nodeData/@connections.4" type="id_String" xpath="row9/origin"/>
+        <nodes name="message" outgoingConnections="//@node.23/@nodeData/@connections.0" type="id_String" xpath="row9/message"/>
         <nodes name="code" type="id_Integer" xpath="row9/code"/>
       </inputTrees>
       <outputTrees name="teret">
@@ -941,25 +1212,25 @@
           <children main="true" name="tns:SAP_BP_out_Talend_inFault" type="id_String" xpath="teret.payload:/tns:SAP_BP_out_Talend_inFault" xsi:type="TalendXMLMap:OutputTreeNode">
             <children defaultValue="urn:subaru.eu:ECC:MDM:BpOut" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="teret.payload:/tns:SAP_BP_out_Talend_inFault/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
             <children main="true" name="standard" type="id_String" xpath="teret.payload:/tns:SAP_BP_out_Talend_inFault/standard" xsi:type="TalendXMLMap:OutputTreeNode">
-              <children expression=" row9.message" incomingConnections="//@node.22/@nodeData/@connections.0" name="faultText" type="id_String" xpath="teret.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultText" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression=" row9.moment" incomingConnections="//@node.22/@nodeData/@connections.5" name="faultUrl" type="id_String" xpath="teret.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultUrl" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression=" row9.message" incomingConnections="//@node.23/@nodeData/@connections.0" name="faultText" type="id_String" xpath="teret.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultText" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression=" row9.moment" incomingConnections="//@node.23/@nodeData/@connections.5" name="faultUrl" type="id_String" xpath="teret.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultUrl" xsi:type="TalendXMLMap:OutputTreeNode"/>
               <children loop="true" main="true" name="faultDetail" optional="true" type="id_String" xpath="teret.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultDetail" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children expression=" row9.type" incomingConnections="//@node.22/@nodeData/@connections.1" name="severity" type="id_String" xpath="teret.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultDetail/severity" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                <children expression="&quot;Context: &quot; + row9.context" incomingConnections="//@node.22/@nodeData/@connections.2" name="text" type="id_String" xpath="teret.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultDetail/text" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                <children expression="&quot;Component: &quot;+ row9.origin" incomingConnections="//@node.22/@nodeData/@connections.4" name="url" type="id_String" xpath="teret.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultDetail/url" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                <children expression=" row9.job" incomingConnections="//@node.22/@nodeData/@connections.3" name="id" type="id_String" xpath="teret.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultDetail/id" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression=" row9.type" incomingConnections="//@node.23/@nodeData/@connections.1" name="severity" type="id_String" xpath="teret.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultDetail/severity" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="&quot;Context: &quot; + row9.context" incomingConnections="//@node.23/@nodeData/@connections.2" name="text" type="id_String" xpath="teret.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultDetail/text" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="&quot;Component: &quot;+ row9.origin" incomingConnections="//@node.23/@nodeData/@connections.4" name="url" type="id_String" xpath="teret.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultDetail/url" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression=" row9.job" incomingConnections="//@node.23/@nodeData/@connections.3" name="id" type="id_String" xpath="teret.payload:/tns:SAP_BP_out_Talend_inFault/standard/faultDetail/id" xsi:type="TalendXMLMap:OutputTreeNode"/>
               </children>
             </children>
           </children>
         </nodes>
       </outputTrees>
       <varTables minimized="true" name="Var"/>
-      <connections source="//@node.22/@nodeData/@inputTrees.0/@nodes.10" target="//@node.22/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.0" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.22/@nodeData/@inputTrees.0/@nodes.8" target="//@node.22/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.0" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.22/@nodeData/@inputTrees.0/@nodes.6" target="//@node.22/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.22/@nodeData/@inputTrees.0/@nodes.5" target="//@node.22/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.3" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.22/@nodeData/@inputTrees.0/@nodes.9" target="//@node.22/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.2" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.22/@nodeData/@inputTrees.0/@nodes.0" target="//@node.22/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.23/@nodeData/@inputTrees.0/@nodes.10" target="//@node.23/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.23/@nodeData/@inputTrees.0/@nodes.8" target="//@node.23/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.23/@nodeData/@inputTrees.0/@nodes.6" target="//@node.23/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.23/@nodeData/@inputTrees.0/@nodes.5" target="//@node.23/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.23/@nodeData/@inputTrees.0/@nodes.9" target="//@node.23/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.23/@nodeData/@inputTrees.0/@nodes.0" target="//@node.23/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.1" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
   <node componentName="tESBProviderFault" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1472" posY="608">
@@ -972,226 +1243,17 @@
       <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="128">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
-    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="upsertRequestRow1">
-      <column comment="" key="false" length="-1" name="payload" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
-      <column comment="" key="true" length="-1" name="ts_str" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <outputTrees activateCondensedTool="true" enableEmptyElement="false" name="upsertRequestRow1">
-        <nodes expression="" name="payload" nullable="false" type="id_Document" xpath="upsertRequestRow1/payload">
-          <children main="true" name="tns:upsertAccount" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount" xsi:type="TalendXMLMap:OutputTreeNode">
-            <children defaultValue="http://soap.sforce.com/schemas/class/SAPtoSF" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children defaultValue="http://www.w3.org/2001/XMLSchema-instance" name="xsi" nodeType="NAME_SPACE" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/xmlns:xsi" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children loop="true" main="true" name="tns:sap_acc" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc" xsi:type="TalendXMLMap:OutputTreeNode">
-              <children expression="&quot;Street&quot;" name="tns:fieldsToNull" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:fieldsToNull" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression=" [requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/SalesforceID]" name="tns:Id" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Id" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="" name="tns:A_M__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:A_M__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="" name="tns:AccountNumber" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:AccountNumber" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:AccountSource" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:AccountSource" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="" name="tns:Alimentazione__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Alimentazione__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Alimentazione__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Alimentazione__pc" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Anno_immatricolazione__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Anno_immatricolazione__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Anno_immatricolazione__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Anno_immatricolazione__pc" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:AnnualRevenue" pattern="&quot;dd-MM-yyyy&quot;" type="id_Double" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:AnnualRevenue" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Area_sito__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Area_sito__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Auto_posseduta__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Auto_posseduta__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Auto_posseduta__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Auto_posseduta__pc" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:BillingCity" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:BillingCity" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:BillingCountry" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:BillingCountry" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:BillingGeocodeAccuracy" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:BillingGeocodeAccuracy" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:BillingLatitude" pattern="&quot;dd-MM-yyyy&quot;" type="id_Double" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:BillingLatitude" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:BillingLongitude" pattern="&quot;dd-MM-yyyy&quot;" type="id_Double" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:BillingLongitude" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="" name="tns:BillingPostalCode" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:BillingPostalCode" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:BillingState" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:BillingState" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:BillingStreet" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:BillingStreet" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Cambio_auto__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Cambio_auto__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="" name="tns:Campagna_Attivit_di_origine__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Campagna_Attivit_di_origine__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Cod_Lead__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Cod_Lead__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Cod_Lead__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Cod_Lead__pc" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/SapBpCode]" name="tns:Codice_cliente_SAP__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Codice_cliente_SAP__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="" name="tns:Codice_concessionario_SAP__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Codice_concessionario_SAP__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression=" [requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/FiscalCode]" name="tns:Codice_fiscale__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Codice_fiscale__c" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/FiscalCode/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Codice_fiscale__c/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              </children>
-              <children name="tns:Concessionario_di_competenza__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Concessionario_di_competenza__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Consenso_dati_personali__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Consenso_dati_personali__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/PreSalesConsent]" name="tns:Consenso_dati_personali__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Consenso_dati_personali__pc" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/PreSalesConsent/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Consenso_dati_personali__pc/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              </children>
-              <children name="tns:Consenso_invio_comunicaz_posta_cartacea__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Consenso_invio_comunicaz_posta_cartacea__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Consenso_invio_comunicaz_posta_cartacea__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Consenso_invio_comunicaz_posta_cartacea__pc" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Consenso_invio_comunicazioni__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Consenso_invio_comunicazioni__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/MarketingConsent]" name="tns:Consenso_invio_comunicazioni__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Consenso_invio_comunicazioni__pc" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/MarketingConsent/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Consenso_invio_comunicazioni__pc/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              </children>
-              <children name="tns:Consenso_profilazione__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Consenso_profilazione__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/ProfilingConsent]" name="tns:Consenso_profilazione__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Consenso_profilazione__pc" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/ProfilingConsent/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Consenso_profilazione__pc/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              </children>
-              <children name="tns:CreatedById" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:CreatedById" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:CreatedDate" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:CreatedDate" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/BirthDate]" name="tns:Data_di_nascita__c" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Data_di_nascita__c" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/BirthDate/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Data_di_nascita__c/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              </children>
-              <children name="tns:Data_fuori_lista_email__pc" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Data_fuori_lista_email__pc" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Data_ultima_privacy__c" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Data_ultima_privacy__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/PrivacyDate]" name="tns:Data_ultima_privacy__pc" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Data_ultima_privacy__pc" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/PrivacyDate/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Data_ultima_privacy__pc/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              </children>
-              <children name="tns:Data_ultimo_passaggio_in_officina__c" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Data_ultimo_passaggio_in_officina__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Data_ultimo_passaggio_in_officina__pc" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Data_ultimo_passaggio_in_officina__pc" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Description" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Description" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Email_DEM__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Email_DEM__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Email__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Email__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Eta__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_Double" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Eta__pc" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:F_M__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:F_M__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Fax" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Fax" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/FirstName]" name="tns:FirstName" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:FirstName" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/SourceInfo]" name="tns:Fonte_info__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Fonte_info__c" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/SourceInfo/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Fonte_info__c/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              </children>
-              <children name="tns:Indirizzo_mantenuto__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Indirizzo_mantenuto__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Indirizzo_validato__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Indirizzo_validato__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Industry" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Industry" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:IsDeleted" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:IsDeleted" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:IsPersonAccount" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:IsPersonAccount" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Jigsaw" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Jigsaw" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:JigsawCompanyId" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:JigsawCompanyId" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:LastActivityDate" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:LastActivityDate" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:LastModifiedById" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:LastModifiedById" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:LastModifiedDate" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:LastModifiedDate" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/LastName]" name="tns:LastName" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:LastName" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:LastReferencedDate" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:LastReferencedDate" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:LastViewedDate" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:LastViewedDate" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:MasterRecordId" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:MasterRecordId" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:MiddleName" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:MiddleName" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Modello_interessato__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Modello_interessato__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Name" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Name" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Next_Birthday__c" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Next_Birthday__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Nome_commerciale__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Nome_commerciale__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:NumberOfEmployees" pattern="&quot;dd-MM-yyyy&quot;" type="id_Integer" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:NumberOfEmployees" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/HouseNumber]" name="tns:Numero_civico__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Numero_civico__pc" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/HouseNumber/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Numero_civico__pc/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              </children>
-              <children name="tns:OLD_SalesForce_ID__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:OLD_SalesForce_ID__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Officina_di_competenza__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Officina_di_competenza__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/PrivacyTime]" name="tns:Ora_ultima_privacy__pc" pattern="&quot;HH:mm:ss&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Ora_ultima_privacy__pc" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/PrivacyTime/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Ora_ultima_privacy__pc/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              </children>
-              <children name="tns:OutputAddress__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:OutputAddress__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:OwnerId" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:OwnerId" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Ownership" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Ownership" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:ParentId" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:ParentId" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Partita_IVA__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Partita_IVA__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:PersonAssistantName" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonAssistantName" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:PersonAssistantPhone" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonAssistantPhone" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:PersonBirthdate" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonBirthdate" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:PersonContactId" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonContactId" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:PersonDepartment" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonDepartment" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:PersonDoNotCall" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonDoNotCall" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/EmailAddress]" name="tns:PersonEmail" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonEmail" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:PersonEmailBouncedDate" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonEmailBouncedDate" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:PersonEmailBouncedReason" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonEmailBouncedReason" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:PersonHasOptedOutOfEmail" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonHasOptedOutOfEmail" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:PersonHasOptedOutOfFax" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonHasOptedOutOfFax" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:PersonHomePhone" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonHomePhone" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:PersonLastCURequestDate" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonLastCURequestDate" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:PersonLastCUUpdateDate" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonLastCUUpdateDate" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:PersonLeadSource" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonLeadSource" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/City]" name="tns:PersonMailingCity" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingCity" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/City/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingCity/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              </children>
-              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/CountryCode]" name="tns:PersonMailingCountry" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingCountry" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/CountryCode/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingCountry/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              </children>
-              <children name="tns:PersonMailingGeocodeAccuracy" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingGeocodeAccuracy" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:PersonMailingLatitude" pattern="&quot;dd-MM-yyyy&quot;" type="id_Double" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingLatitude" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:PersonMailingLongitude" pattern="&quot;dd-MM-yyyy&quot;" type="id_Double" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingLongitude" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/PostalCode]" name="tns:PersonMailingPostalCode" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingPostalCode" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/PostalCode/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingPostalCode/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              </children>
-              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Region]" name="tns:PersonMailingState" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingState" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Region/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingState/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              </children>
-              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Street]" name="tns:PersonMailingStreet" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingStreet" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Street/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMailingStreet/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              </children>
-              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/MobilePhone]" name="tns:PersonMobilePhone" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMobilePhone" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/MobilePhone/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonMobilePhone/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              </children>
-              <children name="tns:PersonOtherCity" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonOtherCity" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:PersonOtherCountry" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonOtherCountry" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:PersonOtherGeocodeAccuracy" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonOtherGeocodeAccuracy" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:PersonOtherLatitude" pattern="&quot;dd-MM-yyyy&quot;" type="id_Double" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonOtherLatitude" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:PersonOtherLongitude" pattern="&quot;dd-MM-yyyy&quot;" type="id_Double" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonOtherLongitude" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:PersonOtherPhone" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonOtherPhone" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:PersonOtherPostalCode" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonOtherPostalCode" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:PersonOtherState" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonOtherState" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:PersonOtherStreet" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonOtherStreet" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:PersonTitle" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PersonTitle" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression=" [requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Phone]" name="tns:Phone" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Phone" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Phone/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Phone/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              </children>
-              <children name="tns:PhotoUrl" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:PhotoUrl" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Rating" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Rating" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/RecordTypeId]" name="tns:RecordTypeId" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:RecordTypeId" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Regione__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Regione__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:ResponseAddressVal__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:ResponseAddressVal__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression=" [requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/SapLastUpdateDate]" name="tns:SAP_last_update_date__c" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:SAP_last_update_date__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Salutation" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Salutation" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Scadenza_patente__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Scadenza_patente__pc" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Gender]" name="tns:Sesso__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Sesso__pc" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Gender/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Sesso__pc/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              </children>
-              <children name="tns:ShippingCity" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:ShippingCity" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:ShippingCountry" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:ShippingCountry" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:ShippingGeocodeAccuracy" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:ShippingGeocodeAccuracy" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:ShippingLatitude" pattern="&quot;dd-MM-yyyy&quot;" type="id_Double" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:ShippingLatitude" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:ShippingLongitude" pattern="&quot;dd-MM-yyyy&quot;" type="id_Double" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:ShippingLongitude" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:ShippingPostalCode" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:ShippingPostalCode" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:ShippingState" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:ShippingState" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:ShippingStreet" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:ShippingStreet" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Sic" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Sic" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:SicDesc" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:SicDesc" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Site" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Site" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression=" [requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Source]" name="tns:Source__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Source__c" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/Source/@xsi:nil]" name="xsi:nil" nodeType="ATTRIBUT" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Source__c/@xsi:nil" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              </children>
-              <children name="tns:Stato_dealer__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Stato_dealer__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Suffix" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Suffix" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:SystemModstamp" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:SystemModstamp" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Targa__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Targa__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Targa__pc" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Targa__pc" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:TickerSymbol" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:TickerSymbol" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Tipologia_dealer__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Tipologia_dealer__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Type" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Type" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:URL_Landing_Page__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:URL_Landing_Page__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Web_to_Lead__c" pattern="&quot;dd-MM-yyyy&quot;" type="id_Boolean" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Web_to_Lead__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="tns:Website" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Website" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            </children>
-          </children>
-        </nodes>
-        <nodes expression=" Var.ts_str" incomingConnections="//@node.24/@nodeData/@connections.0" key="true" name="ts_str" nullable="false" pattern="" type="id_String" xpath="upsertRequestRow1/ts_str"/>
-      </outputTrees>
-      <varTables name="Var">
-        <nodes expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new Date()) " name="ts_str" outgoingConnections="//@node.24/@nodeData/@connections.0" type="id_String"/>
-      </varTables>
-      <connections source="//@node.24/@nodeData/@varTables.0/@nodes.0" target="//@node.24/@nodeData/@outputTrees.0/@nodes.1" xsi:type="TalendXMLMap:Connection"/>
-    </nodeData>
-  </node>
   <connection connectorName="FLOW" label="requestRow1" lineStyle="0" metaname="tESBProviderRequest_1" offsetLabelX="0" offsetLabelY="0" source="tESBProviderRequest_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="requestRow1"/>
   </connection>
-  <connection connectorName="FLOW" label="row10" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tLogRow_4">
+  <connection connectorName="FLOW" label="requestRow2" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tXMLMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row10"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="requestRow2"/>
+  </connection>
+  <connection connectorName="FLOW" label="upsertRequestRow1" lineStyle="0" metaname="upsertRequestRow1" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tLogRow_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="upsertRequestRow1"/>
   </connection>
   <connection connectorName="FLOW" label="upsertRequestRow2" lineStyle="0" metaname="tLogRow_4" offsetLabelX="0" offsetLabelY="0" source="tLogRow_4" target="tMap_3">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -1345,18 +1407,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b9730f09-d1d3-456d-8385-178cfd90f718"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>K/ZgiBqOriO/cbPGoJTSXRjMYaDcNO6MeradjZ0tQKtc7IaDU8YyJLlnpJhUxeR2gVRIWKIl61gn
-5OnbuKwpmw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1b52d6e9-2dd1-40a8-b4cb-16d9942730b3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>MegJS6WdkNLUK2zSLta6j/pP7GLHYDOvTZuEB+HL3tJV+zUBTrqYVzIGC92ULE2I8bp+zrd3cy5c
-M4oDm72u3Q==</DigestValue></Reference></SignedInfo><SignatureValue>JFPoO/5x0Dq8TZbf14TY36FJ/YUgfGC9OJjk9+ApbFIyxGsPEdyJ0GnTatKGeLNvKV7BwtRSKz+H
-zeA46iQI5f31mQLDW5kcPpnJHYp+fJxqB6x8SDgvnfGTfRT3nv9aiH5Ao+k1ojMqgOQoEQoxUGxc
-/5uG0fQ/27Ct09f5qpw14ncSGbXWeUFEW7jr3N8ESpsdpdZ1L+GWyVjCbcHf7zYN7FrUvPO4WKk1
-I4nqyp1RHZM0TlZW5la/LTYVxf4TYnNppr2lr3iyxfW+vjsa681J3Vsyse8jXRzb2E+rgVDcdG3F
-z2X05xUcVwexNM4s19Or8QV8W6KVIq7iqhjEIw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4ed081b6-4460-4262-87a1-32b736b0685b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jBNo2OFmGRftn+Z5I9EUsxCnA6AaEpDBcJl3nuRQPtGmqP5iU2ii2+iuZ33xpxUS9ch23Rbr/98W
+o1sRZNxrkA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e069001c-889a-4f92-b32e-19b028235258"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qzDMA5tCtnDNUss/SUmOOmrBe5BH6nlCNj0Uwo74ZMxnxRJSBI7Xs6CxLPx0qFIm0omB5sAFM+FF
+qN5WSCOphA==</DigestValue></Reference></SignedInfo><SignatureValue>cqm23eS3+ylOFTF7nXnfXBs8UusZqn1PW/kQIY+xQXiS5H9K9MoACGqNI57GywX06dvfQVQm6Svn
+F/Al5kxaEwNfHNWbOXC/x+QH5DWU/fAurHm7gqPc4aeooUQKphJfo77xNEs7k/61cio8QHf0bbTl
+psgwdId4N4ZH1g/Za8LKqLv4JQ/VmxDL2w/cSqE6EvOEBVyiCfCVYAz6XlZymfwYG3x3BStWcBQ8
+0drT7WIrdG0hikFz9CnfHP22Jqwsk17dtOfkOfaF7plqllLHqjbvaIf15VOQvILHL9+brMWUxO1x
+OjCgndCZ6zLmQY3NeVZ8d2aCur7Xb+gfZL1QHA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1380,4 +1437,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1b52d6e9-2dd1-40a8-b4cb-16d9942730b3" Target="#_b9730f09-d1d3-456d-8385-178cfd90f718"><Timestamp>2018-06-26 07:41:05</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e069001c-889a-4f92-b32e-19b028235258" Target="#_4ed081b6-4460-4262-87a1-32b736b0685b"><Timestamp>2018-06-26 07:45:25</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
