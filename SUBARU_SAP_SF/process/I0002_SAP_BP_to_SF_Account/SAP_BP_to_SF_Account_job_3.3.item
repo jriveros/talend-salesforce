@@ -262,8 +262,8 @@
         <nodes expression="" name="payload" nullable="false" type="id_Document" xpath="upsertRequestRow1/payload">
           <children main="true" name="tns:upsertAccount" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount" xsi:type="TalendXMLMap:OutputTreeNode">
             <children defaultValue="http://soap.sforce.com/schemas/class/SAPtoSF" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children loop="true" main="true" name="tns:sap_acc" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc" xsi:type="TalendXMLMap:OutputTreeNode">
-              <children expression="&quot;Phone&quot;" name="tns:fieldsToNull" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:fieldsToNull" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="&quot;Phone&quot;" loop="true" name="tns:fieldsToIgnore" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:fieldsToIgnore" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children main="true" name="tns:sap_acc" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc" xsi:type="TalendXMLMap:OutputTreeNode">
               <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/SalesforceID]" incomingConnections="//@node.2/@nodeData/@connections.1" name="tns:Id" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Id" xsi:type="TalendXMLMap:OutputTreeNode"/>
               <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/SapBpCode]" incomingConnections="//@node.2/@nodeData/@connections.2" name="tns:Codice_cliente_SAP__c" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Codice_cliente_SAP__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
               <children expression="[requestRow2.payload:/tns:SAP_BP_out_Talend_in_Req/FiscalCode]" incomingConnections="//@node.2/@nodeData/@connections.3" name="tns:Codice_fiscale__c" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAccount/tns:sap_acc/tns:Codice_fiscale__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
@@ -297,30 +297,30 @@
         <nodes expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new Date()) " name="ts_str" outgoingConnections="//@node.2/@nodeData/@connections.0" type="id_String"/>
       </varTables>
       <connections source="//@node.2/@nodeData/@varTables.0/@nodes.0" target="//@node.2/@nodeData/@outputTrees.0/@nodes.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.3" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.7" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.4" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.8" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.5" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.9" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.6" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.13" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.7" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.10" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.8" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.9" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.15" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.10" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.4" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.11" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.18" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.12" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.11" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.13" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.14" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.19" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.15" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.22" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.16" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.21" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.17" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.20" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.18" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.17" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.19" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.24" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.20" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.23" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.21" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.25" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.22" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.26" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.23" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.14" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.24" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.7" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.8" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.9" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.5" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.13" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.6" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.10" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.7" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.8" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.15" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.9" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.4" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.10" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.18" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.11" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.11" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.12" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.13" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.19" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.14" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.22" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.15" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.21" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.16" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.20" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.17" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.17" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.18" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.24" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.19" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.23" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.20" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.25" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.21" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.26" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.22" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.14" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.23" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="224">
@@ -1245,13 +1245,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_587246be-b98f-44a3-904d-4b5370814cb0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1lelQmm5+hxFDv8KsC+zjdfh18kFKeP+pL7qI2xFQBK5gIz4dyQgJSMzHOXwSru+6OGHHpJRM69E
-6404tgdU2g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_84f2bc92-b94c-4f67-a32f-f59c47a9de6e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>efjX091c7eUm6oQJf7gzy/T0sDHmEeLtffQ4klsWIwnam/PbCTQJZOCRCZ5cSz/zXMKIMQmXYLxk
-s5ALbszObA==</DigestValue></Reference></SignedInfo><SignatureValue>1IP3601hDvBN0NeVWFCAM3IjCV4S+BPinuMNyEF7n/8Cj4Jqq0/OcDvKCFdxfqyUg0xP5AEE067/
-eVcPLgsuOL4N0DUu/TxSyjxboyoHonW8b6/CHHGEBfG1PfmSaaJag7AxRzhB2vyXKpKNbyv4+ni0
-c0AMLQPwGTWKM/lDAerl3TwDb/v9+DE+qEJr17CAY5LKTgvV1c/TpkbJHxgwFaCvc4vq6sw0u/v+
-iyQmet/up7YEbLemR9UDCF6P8vI0HJcBtjIUtrgNiCMu8cdAWmrjkoYbE26nrLtjggm0uB1rba+N
-X6jmJPdu02nRrQyEblsMLMj5M7zvrx2uf9NXzA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5351f990-5450-48de-a4c6-0d0bca875510"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zzkpwQcF9+lBIft91P/jWo+n19nR/ryMfQMOa9wi7Dxrsi66dPkck8pA9N1+6n3p+gslzR+zBrx5
+59cuZ0CdTg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4dd8a537-565a-4280-a2eb-f081d5d46ced"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>A19KuDlEcPDbvM1HxnH4+xeWqvHEofvwBHGs+dbFibZWf7UQ/U15B4ms+cecNgJYi3ppLvQTtL0r
+snYhHSVYAA==</DigestValue></Reference></SignedInfo><SignatureValue>id1z4Lz+n7sXtPGddRHzmyDirDYlCJd6U+WlAJbuIqF4L1Rx9IwXys7gUXYkGm70b+YuTPHCdfPD
+88F0TlX5qAF2CPWFjd+jViOOZhatvWPLil/9/HlkTDUog9dqL838zMdJCafuPshrf3QlMGqzIbJq
+cwqgfhFosQkuFMQuRBNTLeMvXUnH6LjcQQrCHL+1dmRpabZkNI7euefOTCkpDbN/zNiPYAzbXHI7
+Xj82i+qSAwrSNb+6MmLaAPqXlctT3Yb9Lw1XECw05Ly3N/zFeogZcmEIsBfiMKwUZ2C1ohh4vcTM
+BJRYFoaVDVUFqZ99H0317CLbutQGkLoAETa4eA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1275,4 +1275,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_84f2bc92-b94c-4f67-a32f-f59c47a9de6e" Target="#_587246be-b98f-44a3-904d-4b5370814cb0"><Timestamp>2018-06-27 08:43:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4dd8a537-565a-4280-a2eb-f081d5d46ced" Target="#_5351f990-5450-48de-a4c6-0d0bca875510"><Timestamp>2018-06-27 08:52:12</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
