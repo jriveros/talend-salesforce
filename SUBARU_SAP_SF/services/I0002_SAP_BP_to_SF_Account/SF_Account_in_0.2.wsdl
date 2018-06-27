@@ -92,7 +92,6 @@
    </xsd:complexType>
    <xsd:complexType name="sObject">
     <xsd:sequence>
-     <xsd:element maxOccurs="unbounded" minOccurs="0" name="fieldsToNull" nillable="true" type="xsd:string"/>
      <xsd:element name="Id" nillable="true" type="tns:ID"/>
     </xsd:sequence>
    </xsd:complexType>
@@ -172,6 +171,7 @@
    <xsd:element name="upsertAccount">
     <xsd:complexType>
      <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="fieldsToIgnore" type="xsd:string"/>
       <xsd:element name="sap_acc" nillable="true" type="tns:Account"/>
      </xsd:sequence>
     </xsd:complexType>
