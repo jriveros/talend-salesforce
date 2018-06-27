@@ -384,7 +384,6 @@
       <relatedItems xmi:id="_FVapDXnmEeihKc1EbjjkjQ" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_FVapDnnmEeihKc1EbjjkjQ" id="_jWYRoDGtEei9wNmXZlJ8Ng" version="0.6" type="services"/>
     </ItemsRelations>
-    <deletedFolders>metadata/fileXml/I0002_SAP_BP_to_SF_Account/upsertAccount</deletedFolders>
     <migrationTask xmi:id="_OD7-gDfeEei4GOOz00i4JQ" id="org.talend.designer.core.ui.preferences.migration.ChangeMysqlVersionForProjectSetting" breaks="5.2.0" version="5.1.3" status="ok"/>
     <migrationTask xmi:id="_OD7-gTfeEei4GOOz00i4JQ" id="org.talend.designer.core.ui.preferences.migration.ChangeOracleVersionForProjectSetting" breaks="5.2.0" version="5.2.1" status="ok"/>
     <migrationTask xmi:id="_OD7-gjfeEei4GOOz00i4JQ" id="org.talend.designer.maven.ui.ConfigMavenRepositoryRemove" breaks="6.0.1" version="6.0.2" status="ok"/>
