@@ -334,8 +334,7 @@
       <relatedItems xmi:id="_55BmLHVvEei579Wte5nadw" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_55BmLXVvEei579Wte5nadw" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_9pEaoHngEeiBOqE0ORv0Zw" id="_bsr4kD4zEeih8KkJgV_NKQ - _yxf4AD4zEeih8KkJgV_NKQ - _x34JkD5NEeih8KkJgV_NKQ" version="Latest" type="property"/>
-      <relatedItems xmi:id="_9pEaoXngEeiBOqE0ORv0Zw" id="_JqoP4FjjEei8c8UMrAWq6w - metadata" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_9pEaonngEeiBOqE0ORv0Zw" id="_bsr4kD4zEeih8KkJgV_NKQ" version="0.11" type="services"/>
+      <relatedItems xmi:id="_yWQ0MHnhEeiBOqE0ORv0Zw" id="_bsr4kD4zEeih8KkJgV_NKQ" version="0.12" type="services"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_NobXIHndEeiBOqE0ORv0Zw">
       <baseItem xmi:id="_NobXIXndEeiBOqE0ORv0Zw" id="_j66JcDfsEeiIvauO6eCPcA" version="3.2" type="job"/>
