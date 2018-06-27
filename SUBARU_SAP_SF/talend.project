@@ -382,7 +382,7 @@
       <relatedItems xmi:id="_FVapC3nmEeihKc1EbjjkjQ" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_FVapDHnmEeihKc1EbjjkjQ" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_FVapDXnmEeihKc1EbjjkjQ" id="TalendStringUtil" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_YmSnUHnnEeihKc1EbjjkjQ" id="_jWYRoDGtEei9wNmXZlJ8Ng" version="0.7" type="services"/>
+      <relatedItems xmi:id="_VAh9YHnuEeihKc1EbjjkjQ" id="_jWYRoDGtEei9wNmXZlJ8Ng" version="1.0" type="services"/>
     </ItemsRelations>
     <deletedFolders>metadata/fileXml/soap-sforce-com/schemas/class</deletedFolders>
     <deletedFolders>metadata/fileXml/soap-sforce-com/schemas</deletedFolders>
