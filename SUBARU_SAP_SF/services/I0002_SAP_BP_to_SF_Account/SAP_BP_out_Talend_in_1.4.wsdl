@@ -73,16 +73,16 @@
 						name="ProfilingConsent" nillable="true" type="xsd:boolean">
 					</xsd:element>
 					<xsd:element minOccurs="1" maxOccurs="1"
-						name="PrivacyDate" nillable="true" type="xsd:date">
+						name="PrivacyDate" nillable="true" type="xsd:string">
 					</xsd:element>
 					<xsd:element minOccurs="1" maxOccurs="1"
-						name="PrivacyTime" nillable="true" type="xsd:time">
+						name="PrivacyTime" nillable="true" type="xsd:string">
 					</xsd:element>
 					<xsd:element minOccurs="1" maxOccurs="1"
 						name="Gender" nillable="true" type="xsd:string">
 					</xsd:element>
 					<xsd:element minOccurs="1" maxOccurs="1"
-						name="BirthDate" nillable="true" type="xsd:date">
+						name="BirthDate" nillable="true" type="xsd:string">
 					</xsd:element>
 					<xsd:element minOccurs="1" maxOccurs="1"
 						name="Source" nillable="true" type="xsd:string">
@@ -122,7 +122,7 @@
 						name='RecordTypeId' type="tns:SF_ID">
 					</xsd:element>
 					<xsd:element minOccurs="1" maxOccurs="1"
-						name="SapLastUpdateDate" type="xsd:dateTime">
+						name="SapLastUpdateDate" type="xsd:string">
 					</xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
