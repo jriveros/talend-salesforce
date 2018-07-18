@@ -1,6 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2018-07-18T10:43:32.569+0200">
-  <deletedItems id="_i2dYUHVBEeiD2a_MpoejEg" path="I0001_SF_Account_to_SAP_BP/subaru-eu-SF-MDM-BpIn/SF_Account_Out_Talend_In/SF_Account_Out_Talend_in" type="METADATA_FILE_XML"/>
-  <deletedItems id="_i0d0QHVBEeiD2a_MpoejEg" path="I0001_SF_Account_to_SAP_BP/subaru-eu-SF-MDM-BpIn/SF_Account_Out_Talend_In/SF_Account_Out_Talend_in" type="METADATA_FILE_XML"/>
-  <deletedItems id="_i1txcHVBEeiD2a_MpoejEg" path="I0001_SF_Account_to_SAP_BP/subaru-eu-SF-MDM-BpIn/SF_Account_Out_Talend_In/SF_Account_Out_Talend_in" type="METADATA_FILE_XML"/>
-</recyclebin:RecycleBin>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2018-07-18T10:43:41.802+0200"/>
