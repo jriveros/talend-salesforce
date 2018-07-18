@@ -102,10 +102,10 @@
 					<xsd:element minOccurs="1" maxOccurs="1" name="ProfilingConsent" type="xsd:boolean">
 					</xsd:element>
 					<xsd:element name="ProfilingConsentX" type="xsd:boolean" />
-					<xsd:element minOccurs="1" maxOccurs="1" name="PrivacyDate" type="xsd:date">
+					<xsd:element minOccurs="1" maxOccurs="1" name="PrivacyDate" type="xsd:string">
 					</xsd:element>
 					<xsd:element name="PrivacyDateX" type="xsd:boolean" />
-					<xsd:element minOccurs="1" maxOccurs="1" name="PrivacyTime" type="xsd:time">
+					<xsd:element minOccurs="1" maxOccurs="1" name="PrivacyTime" type="xsd:string">
 					</xsd:element>
 					<xsd:element name="PrivacyTimeX" type="xsd:boolean" />
 					<xsd:element minOccurs="1" maxOccurs="1" name="Gender">
@@ -119,7 +119,7 @@
 						</xsd:simpleType>
 					</xsd:element>
 					<xsd:element name="GenderX" type="xsd:boolean" />
-					<xsd:element minOccurs="1" maxOccurs="1" name="BirthDate" type="xsd:date">
+					<xsd:element minOccurs="1" maxOccurs="1" name="BirthDate" type="xsd:string">
 					</xsd:element>
 					<xsd:element name="BirthDateX" type="xsd:boolean" />
 					<xsd:element minOccurs="1" maxOccurs="1" name="Street">
@@ -218,7 +218,7 @@
 						</xsd:simpleType>
 					</xsd:element>
 					<xsd:element name="StorageLocationX" type="xsd:boolean" />
-					<xsd:element minOccurs="1" maxOccurs="1" name="LastUpdateDate" type="xsd:dateTime">
+					<xsd:element minOccurs="1" maxOccurs="1" name="LastUpdateDate" type="xsd:string">
 					</xsd:element>
 					<xsd:element name="LastUpdateDateX" type="xsd:boolean" />
 				</xsd:sequence>
