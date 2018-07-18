@@ -104,13 +104,13 @@
        <xsd:element name="Consenso_dati_personali__pc" minOccurs="0" type="xsd:boolean" nillable="true"/>
        <xsd:element name="Consenso_invio_comunicazioni__pc" minOccurs="0" type="xsd:boolean" nillable="true"/>
        <xsd:element name="Consenso_profilazione__pc" minOccurs="0" type="xsd:boolean" nillable="true"/>
-       <xsd:element name="Data_di_nascita__c" minOccurs="0" type="xsd:date" nillable="true"/>
-       <xsd:element name="Data_ultima_privacy__pc" minOccurs="0" type="xsd:date" nillable="true"/>
+       <xsd:element name="Data_di_nascita__c" minOccurs="0" type="xsd:string" nillable="true"/>
+       <xsd:element name="Data_ultima_privacy__pc" minOccurs="0" type="xsd:string" nillable="true"/>
        <xsd:element name="FirstName" minOccurs="0" type="xsd:string" nillable="true"/>
        <xsd:element name="Fonte_info__c" minOccurs="0" type="xsd:string" nillable="true"/>
        <xsd:element name="LastName" minOccurs="0" type="xsd:string" nillable="true"/>
        <xsd:element name="Numero_civico__pc" minOccurs="0" type="xsd:string" nillable="true"/>
-       <xsd:element name="Ora_ultima_privacy__pc" minOccurs="0" type="xsd:time" nillable="true"/>
+       <xsd:element name="Ora_ultima_privacy__pc" minOccurs="0" type="xsd:string" nillable="true"/>
        <xsd:element name="PersonEmail" minOccurs="0" type="xsd:string" nillable="true"/>
        <xsd:element name="PersonMailingCity" minOccurs="0" type="xsd:string" nillable="true"/>
        <xsd:element name="PersonMailingCountry" minOccurs="0" type="xsd:string" nillable="true"/>
@@ -120,7 +120,7 @@
        <xsd:element name="PersonMobilePhone" minOccurs="0" type="xsd:string" nillable="true"/>
        <xsd:element name="Phone" minOccurs="0" type="xsd:string" nillable="true"/>
        <xsd:element name="RecordTypeId" minOccurs="0" type="tns:ID" nillable="true"/>
-       <xsd:element name="SAP_last_update_date__c" minOccurs="0" type="xsd:dateTime" nillable="true"/>
+       <xsd:element name="SAP_last_update_date__c" minOccurs="0" type="xsd:string" nillable="true"/>
        <xsd:element name="Sesso__pc" minOccurs="0" type="xsd:string" nillable="true"/>
        <xsd:element name="Source__c" minOccurs="0" type="xsd:string" nillable="true"/>
       </xsd:sequence>
