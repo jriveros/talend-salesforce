@@ -433,7 +433,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generate according to input schema and output schema&#10;javax.xml.transform.dom.DOMSource domSourceTMP = new javax.xml.transform.dom.DOMSource(input_row.payload.getDocument());&#10;java.io.StringWriter writerTMP = new java.io.StringWriter();&#10;javax.xml.transform.stream.StreamResult resultTMP = new javax.xml.transform.stream.StreamResult(writerTMP);&#10;javax.xml.transform.TransformerFactory tf = javax.xml.transform.TransformerFactory.newInstance();&#10;javax.xml.transform.Transformer transformer = tf.newTransformer();&#10;transformer.transform(domSourceTMP, resultTMP);&#10;String xmlTMP = writerTMP.toString();&#10;&#13;&#10;output_row.payload = input_row.payload;&#13;&#10;output_row.ts_str = input_row.ts_str;&#13;&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generate according to input schema and output schema&#10;javax.xml.transform.dom.DOMSource domSourceTMP = new javax.xml.transform.dom.DOMSource((org.w3c.dom.Document)(input_row.payload.getDocument()));&#10;java.io.StringWriter writerTMP = new java.io.StringWriter();&#10;javax.xml.transform.stream.StreamResult resultTMP = new javax.xml.transform.stream.StreamResult(writerTMP);&#10;javax.xml.transform.TransformerFactory tf = javax.xml.transform.TransformerFactory.newInstance();&#10;javax.xml.transform.Transformer transformer = tf.newTransformer();&#10;transformer.transform(domSourceTMP, resultTMP);&#10;String xmlTMP = writerTMP.toString();&#10;&#13;&#10;output_row.payload = input_row.payload;&#13;&#10;output_row.ts_str = input_row.ts_str;&#13;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tJavaRow_1">
@@ -1380,13 +1380,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3ed46e2d-0506-4349-b500-e56b0b905c29"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7e/HC3tDqyZVX3/lyhBhO3Kz0MkE3lY0sC5AlIUHV5bgda/AvB6wuPNaVzwP57LtJ0gc11mROb9P
-pjpn/na/LA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8f50de78-09d6-4de8-81ea-53d3abe4cc07"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nwhW6XtCK2vGtVepLkOVdC62kwIBx8iGS4WJEs55MDEdzJZ7aaHTp37Fy/yUMLyY03OKDNAdquZO
-UbwzBgCpXw==</DigestValue></Reference></SignedInfo><SignatureValue>IlW0Kphz8jrU6Ha93TGWnSkaQ44kXG0vY1oO1lsCGpiK2jSEapBBCSKOwibgF2ktOCTlOI0wml04
-o/kOZCqGrzvj4Gymg6qr8eUcTZyz4QGab1i71cvYCmkykFV4YxK5rXBeYVYOgzdTsJRL/KAVG6jA
-XqD72PRIbxgyeDmul/8EB6R165iIslG/JkpJd2nlBMPcfYlaZqS/t1yfqWzwkXom1pRES3Pzi9Kx
-WcPWAdb++gXra3VoNurB47QcmyQjeVqFgiC91XnL4BiQAuMp+Ol2KfE4abiznYJuCpPB2Y8pt40A
-+pRHPr60ryxrk4gIH0Hr7BrluiWCtE/AAc7Blw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e9ffe259-5988-489b-97a5-7c6215a4cd9d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CTT2pt/ugRj/EeqchkJ20x2Ggg6smZsP0ysAwjl+9lUma3hHDimehWKrltkZBJvDi+XN7or9g6ZK
+uHcGiy+XFQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_58ead6a1-bc24-44fe-9485-2e85385e2485"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>SBvW1IMy9H5o5MG3i2LphRS/2bM9pdGzNA8aOHT+Aq3GRH1DiM9NDamY9jYCSj2XiwRmGD2k6ZRp
+nj7HNnJ+1A==</DigestValue></Reference></SignedInfo><SignatureValue>iHcJPzBU0EEwRBY/5Wj4oGMtHUfrWMwIRXPZCVQc//AtiLUzNImMdK3A0ZkRAr5/ZQTgWcxMQ8Wp
+86RGR4OkVqWdQQTUvzZDLwnezGlDsNHiotf06NL9G5kwk3i6QmnAgObyaWbw/owtPxTwr9oCuf4a
+9jyc1LlQyAA6xHzrdcOK+o1Jdy70T8Y3+D3rcGw37vUga4e2ZHdeVawRgr1q0vL0DpPpWBh/nfQb
+OrAQzhVjAF5GjPHWAyUoZTTOOxVp7nMwiX7H8K9Q01xXKRcKKbejMzR7avQVOedYOhEbd11CMbCN
+j0M32KpDWUu3FToOFnfy0+cX8XMGviJAHmf4gQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1410,4 +1410,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8f50de78-09d6-4de8-81ea-53d3abe4cc07" Target="#_3ed46e2d-0506-4349-b500-e56b0b905c29"><Timestamp>2018-07-24 11:09:29</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_58ead6a1-bc24-44fe-9485-2e85385e2485" Target="#_e9ffe259-5988-489b-97a5-7c6215a4cd9d"><Timestamp>2018-07-24 11:10:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
