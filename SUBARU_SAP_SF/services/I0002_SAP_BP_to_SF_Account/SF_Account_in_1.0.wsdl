@@ -100,6 +100,7 @@
      <xsd:extension base="tns:sObject">
       <xsd:sequence>
        <xsd:element name="Codice_cliente_SAP__c" minOccurs="0" type="xsd:string" nillable="true"/>
+       <xsd:element name="Codice_concessionario_SAP__c" minOccurs="0" type="xsd:string" nillable="true"/>
        <xsd:element name="Codice_fiscale__c" minOccurs="0" type="xsd:string" nillable="true"/>
        <xsd:element name="Consenso_dati_personali__pc" minOccurs="0" type="xsd:boolean" nillable="true"/>
        <xsd:element name="Consenso_invio_comunicazioni__pc" minOccurs="0" type="xsd:boolean" nillable="true"/>
