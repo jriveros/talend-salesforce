@@ -124,6 +124,9 @@
 					<xsd:element minOccurs="1" maxOccurs="1"
 						name="SapLastUpdateDate" type="xsd:string">
 					</xsd:element>
+					<xsd:element minOccurs="1" maxOccurs="1"
+						name="DealerCode" type="xsd:string">
+					</xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 
