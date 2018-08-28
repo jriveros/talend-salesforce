@@ -694,6 +694,765 @@
       </inputTables>
     </nodeData>
   </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_GiHq4EbcEei1q46PFiTS6w-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="sfSELECT" name="sfSELECT">
+      <column comment="" key="false" length="18" name="Id" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IsDeleted" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="MasterRecordId" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Name" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="LastName" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="FirstName" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Salutation" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="MiddleName" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Suffix" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Type" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="RecordTypeId" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="ParentId" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="BillingStreet" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="BillingCity" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="BillingState" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="BillingPostalCode" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="BillingCountry" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="BillingLatitude" nullable="true" originalLength="-1" pattern="" precision="15" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="BillingLongitude" nullable="true" originalLength="-1" pattern="" precision="15" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="BillingGeocodeAccuracy" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BillingAddress" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ShippingStreet" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="ShippingCity" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="ShippingState" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ShippingPostalCode" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="ShippingCountry" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="ShippingLatitude" nullable="true" originalLength="-1" pattern="" precision="15" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="ShippingLongitude" nullable="true" originalLength="-1" pattern="" precision="15" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="ShippingGeocodeAccuracy" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ShippingAddress" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Phone" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Fax" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="AccountNumber" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Website" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="PhotoUrl" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Sic" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Industry" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="AnnualRevenue" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NumberOfEmployees" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Ownership" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="TickerSymbol" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32000" name="Description" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Rating" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Site" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="OwnerId" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedDate" nullable="false" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="18" name="CreatedById" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LastModifiedDate" nullable="false" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="18" name="LastModifiedById" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SystemModstamp" nullable="false" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="-1" name="LastActivityDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="-1" name="LastViewedDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="-1" name="LastReferencedDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="18" name="PersonContactId" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IsPersonAccount" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="PersonMailingStreet" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="PersonMailingCity" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="PersonMailingState" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="PersonMailingPostalCode" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="PersonMailingCountry" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="PersonMailingLatitude" nullable="true" originalLength="-1" pattern="" precision="15" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="PersonMailingLongitude" nullable="true" originalLength="-1" pattern="" precision="15" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="PersonMailingGeocodeAccuracy" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PersonMailingAddress" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="PersonOtherStreet" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="PersonOtherCity" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="PersonOtherState" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="PersonOtherPostalCode" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="PersonOtherCountry" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="PersonOtherLatitude" nullable="true" originalLength="-1" pattern="" precision="15" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="PersonOtherLongitude" nullable="true" originalLength="-1" pattern="" precision="15" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="PersonOtherGeocodeAccuracy" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PersonOtherAddress" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="PersonMobilePhone" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="PersonHomePhone" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="PersonOtherPhone" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="PersonAssistantPhone" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="PersonEmail" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="PersonTitle" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="PersonDepartment" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="PersonAssistantName" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="PersonLeadSource" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PersonBirthdate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="-1" name="PersonHasOptedOutOfEmail" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PersonHasOptedOutOfFax" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PersonDoNotCall" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PersonLastCURequestDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="-1" name="PersonLastCUUpdateDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="255" name="PersonEmailBouncedReason" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PersonEmailBouncedDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="20" name="Jigsaw" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="JigsawCompanyId" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="AccountSource" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="SicDesc" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="A_M__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Alimentazione__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Anno_immatricolazione__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Area_sito__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Auto_posseduta__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Cambio_auto__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Campagna_Attivit_di_origine__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Cod_Lead__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Codice_cliente_SAP__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Codice_concessionario_SAP__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="Codice_fiscale__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Concessionario_di_competenza__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Consenso_dati_personali__c" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Consenso_invio_comunicaz_posta_cartacea__c" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Consenso_invio_comunicazioni__c" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Consenso_profilazione__c" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_di_nascita__c" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="-1" name="Data_ultima_privacy__c" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="-1" name="Data_ultimo_passaggio_in_officina__c" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="1300" name="Email_DEM__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Email__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="F_M__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4099" name="Fonte_info__c" nullable="true" originalLength="-1" pattern="" precision="5" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4099" name="Modello_interessato__c" nullable="true" originalLength="-1" pattern="" precision="6" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Nome_commerciale__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Officina_di_competenza__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Partita_IVA__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Regione__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Stato_dealer__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Targa__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4099" name="Tipologia_dealer__c" nullable="true" originalLength="-1" pattern="" precision="4" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1300" name="URL_Landing_Page__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Web_to_Lead__c" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="OLD_SalesForce_ID__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Source__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ResponseAddressVal__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32768" name="OutputAddress__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Indirizzo_validato__c" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Indirizzo_mantenuto__c" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Next_Birthday__c" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="-1" name="SAP_last_update_date__c" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="18" name="Concessionario_community__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Officina_community__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Storage_Location__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SAP_integration_error__c" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="32768" name="SAP_integration_error_message__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Alimentazione__pc" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Anno_immatricolazione__pc" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Auto_posseduta__pc" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Cod_Lead__pc" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Consenso_dati_personali__pc" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Consenso_invio_comunicaz_posta_cartacea__pc" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Consenso_invio_comunicazioni__pc" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Consenso_profilazione__pc" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_fuori_lista_email__pc" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="-1" name="Data_ultima_privacy__pc" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="-1" name="Data_ultimo_passaggio_in_officina__pc" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="18" name="Eta__pc" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Sesso__pc" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Targa__pc" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Ora_ultima_privacy__pc" nullable="true" originalLength="-1" pattern="&quot;HH:mm:ss.SSS'Z'&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Numero_civico__pc" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Scadenza_patente__pc" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="255" name="Professione__pc" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables activateCondensedTool="true" id="_Z6utUEPGEeih8KkJgV_NKQ - Account" name="sfSELECT" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row3.Id" name="Id" type="id_String"/>
+        <mapperTableEntries expression="row3.IsDeleted" name="IsDeleted" type="id_Boolean"/>
+        <mapperTableEntries expression="row3.MasterRecordId" name="MasterRecordId" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Name" name="Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.LastName" name="LastName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.FirstName" name="FirstName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Salutation" name="Salutation" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.MiddleName" name="MiddleName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Suffix" name="Suffix" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Type" name="Type" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.RecordTypeId" name="RecordTypeId" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.ParentId" name="ParentId" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.BillingStreet" name="BillingStreet" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.BillingCity" name="BillingCity" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.BillingState" name="BillingState" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.BillingPostalCode" name="BillingPostalCode" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.BillingCountry" name="BillingCountry" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.BillingLatitude" name="BillingLatitude" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row3.BillingLongitude" name="BillingLongitude" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row3.BillingGeocodeAccuracy" name="BillingGeocodeAccuracy" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.BillingAddress" name="BillingAddress" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.ShippingStreet" name="ShippingStreet" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.ShippingCity" name="ShippingCity" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.ShippingState" name="ShippingState" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.ShippingPostalCode" name="ShippingPostalCode" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.ShippingCountry" name="ShippingCountry" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.ShippingLatitude" name="ShippingLatitude" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row3.ShippingLongitude" name="ShippingLongitude" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row3.ShippingGeocodeAccuracy" name="ShippingGeocodeAccuracy" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.ShippingAddress" name="ShippingAddress" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Phone" name="Phone" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Fax" name="Fax" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AccountNumber" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Website" name="Website" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.PhotoUrl" name="PhotoUrl" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Sic" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Industry" name="Industry" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AnnualRevenue" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.NumberOfEmployees" name="NumberOfEmployees" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Ownership" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TickerSymbol" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Description" name="Description" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Rating" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Site" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.OwnerId" name="OwnerId" type="id_String"/>
+        <mapperTableEntries expression="row3.CreatedDate" name="CreatedDate" type="id_Date"/>
+        <mapperTableEntries expression="row3.CreatedById" name="CreatedById" type="id_String"/>
+        <mapperTableEntries expression="row3.LastModifiedDate" name="LastModifiedDate" type="id_Date"/>
+        <mapperTableEntries expression="row3.LastModifiedById" name="LastModifiedById" type="id_String"/>
+        <mapperTableEntries expression="row3.SystemModstamp" name="SystemModstamp" type="id_Date"/>
+        <mapperTableEntries expression="row3.LastActivityDate" name="LastActivityDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.LastViewedDate" name="LastViewedDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.LastReferencedDate" name="LastReferencedDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.PersonContactId" name="PersonContactId" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.IsPersonAccount" name="IsPersonAccount" type="id_Boolean"/>
+        <mapperTableEntries expression="row3.PersonMailingStreet" name="PersonMailingStreet" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.PersonMailingCity" name="PersonMailingCity" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.PersonMailingState" name="PersonMailingState" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.PersonMailingPostalCode" name="PersonMailingPostalCode" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.PersonMailingCountry" name="PersonMailingCountry" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.PersonMailingLatitude" name="PersonMailingLatitude" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row3.PersonMailingLongitude" name="PersonMailingLongitude" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row3.PersonMailingGeocodeAccuracy" name="PersonMailingGeocodeAccuracy" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.PersonMailingAddress" name="PersonMailingAddress" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonOtherStreet" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonOtherCity" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonOtherState" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonOtherPostalCode" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonOtherCountry" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonOtherLatitude" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="PersonOtherLongitude" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="PersonOtherGeocodeAccuracy" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonOtherAddress" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.PersonMobilePhone" name="PersonMobilePhone" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonHomePhone" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonOtherPhone" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonAssistantPhone" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.PersonEmail" name="PersonEmail" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.PersonTitle" name="PersonTitle" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.PersonDepartment" name="PersonDepartment" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonAssistantName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonLeadSource" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonBirthdate" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.PersonHasOptedOutOfEmail" name="PersonHasOptedOutOfEmail" type="id_Boolean"/>
+        <mapperTableEntries name="PersonHasOptedOutOfFax" type="id_Boolean"/>
+        <mapperTableEntries name="PersonDoNotCall" type="id_Boolean"/>
+        <mapperTableEntries expression="row3.PersonLastCURequestDate" name="PersonLastCURequestDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.PersonLastCUUpdateDate" name="PersonLastCUUpdateDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.PersonEmailBouncedReason" name="PersonEmailBouncedReason" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.PersonEmailBouncedDate" name="PersonEmailBouncedDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.Jigsaw" name="Jigsaw" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.JigsawCompanyId" name="JigsawCompanyId" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.AccountSource" name="AccountSource" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.SicDesc" name="SicDesc" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.A_M__c" name="A_M__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Alimentazione__c" name="Alimentazione__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Anno_immatricolazione__c" name="Anno_immatricolazione__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Area_sito__c" name="Area_sito__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Auto_posseduta__c" name="Auto_posseduta__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Cambio_auto__c" name="Cambio_auto__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Campagna_Attivit_di_origine__c" name="Campagna_Attivit_di_origine__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Cod_Lead__c" name="Cod_Lead__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Codice_cliente_SAP__c" name="Codice_cliente_SAP__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Codice_concessionario_SAP__c" name="Codice_concessionario_SAP__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Codice_fiscale__c" name="Codice_fiscale__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Concessionario_di_competenza__c" name="Concessionario_di_competenza__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Consenso_dati_personali__c" name="Consenso_dati_personali__c" type="id_Boolean"/>
+        <mapperTableEntries expression="row3.Consenso_invio_comunicaz_posta_cartacea__c" name="Consenso_invio_comunicaz_posta_cartacea__c" type="id_Boolean"/>
+        <mapperTableEntries expression="row3.Consenso_invio_comunicazioni__c" name="Consenso_invio_comunicazioni__c" type="id_Boolean"/>
+        <mapperTableEntries expression="row3.Consenso_profilazione__c" name="Consenso_profilazione__c" type="id_Boolean"/>
+        <mapperTableEntries expression="row3.Data_di_nascita__c" name="Data_di_nascita__c" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.Data_ultima_privacy__c" name="Data_ultima_privacy__c" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.Data_ultimo_passaggio_in_officina__c" name="Data_ultimo_passaggio_in_officina__c" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.Email_DEM__c" name="Email_DEM__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Email__c" name="Email__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.F_M__c" name="F_M__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Fonte_info__c" name="Fonte_info__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Modello_interessato__c" name="Modello_interessato__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Nome_commerciale__c" name="Nome_commerciale__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Officina_di_competenza__c" name="Officina_di_competenza__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Partita_IVA__c" name="Partita_IVA__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Regione__c" name="Regione__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Stato_dealer__c" name="Stato_dealer__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Targa__c" name="Targa__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Tipologia_dealer__c" name="Tipologia_dealer__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.URL_Landing_Page__c" name="URL_Landing_Page__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Web_to_Lead__c" name="Web_to_Lead__c" type="id_Boolean"/>
+        <mapperTableEntries expression="row3.OLD_SalesForce_ID__c" name="OLD_SalesForce_ID__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Source__c" name="Source__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ResponseAddressVal__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="OutputAddress__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Indirizzo_validato__c" type="id_Boolean"/>
+        <mapperTableEntries name="Indirizzo_mantenuto__c" type="id_Boolean"/>
+        <mapperTableEntries expression="row3.Next_Birthday__c" name="Next_Birthday__c" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.SAP_last_update_date__c" name="SAP_last_update_date__c" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.Concessionario_community__c" name="Concessionario_community__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Officina_community__c" name="Officina_community__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Storage_Location__c" name="Storage_Location__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.SAP_integration_error__c" name="SAP_integration_error__c" type="id_Boolean"/>
+        <mapperTableEntries expression="row3.SAP_integration_error_message__c" name="SAP_integration_error_message__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Alimentazione__pc" name="Alimentazione__pc" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Anno_immatricolazione__pc" name="Anno_immatricolazione__pc" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Auto_posseduta__pc" name="Auto_posseduta__pc" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Cod_Lead__pc" name="Cod_Lead__pc" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Consenso_dati_personali__pc" name="Consenso_dati_personali__pc" type="id_Boolean"/>
+        <mapperTableEntries expression="row3.Consenso_invio_comunicaz_posta_cartacea__pc" name="Consenso_invio_comunicaz_posta_cartacea__pc" type="id_Boolean"/>
+        <mapperTableEntries expression="row3.Consenso_invio_comunicazioni__pc" name="Consenso_invio_comunicazioni__pc" type="id_Boolean"/>
+        <mapperTableEntries expression="row3.Consenso_profilazione__pc" name="Consenso_profilazione__pc" type="id_Boolean"/>
+        <mapperTableEntries expression="row3.Data_fuori_lista_email__pc" name="Data_fuori_lista_email__pc" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.Data_ultima_privacy__pc" name="Data_ultima_privacy__pc" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.Data_ultimo_passaggio_in_officina__pc" name="Data_ultimo_passaggio_in_officina__pc" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.Eta__pc" name="Eta__pc" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row3.Sesso__pc" name="Sesso__pc" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Targa__pc" name="Targa__pc" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Ora_ultima_privacy__pc" name="Ora_ultima_privacy__pc" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Numero_civico__pc" name="Numero_civico__pc" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Scadenza_patente__pc" name="Scadenza_patente__pc" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.Professione__pc" name="Professione__pc" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="Id" type="id_String"/>
+        <mapperTableEntries name="IsDeleted" type="id_Boolean"/>
+        <mapperTableEntries name="MasterRecordId" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LastName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FirstName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Salutation" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MiddleName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Suffix" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Type" nullable="true" type="id_String"/>
+        <mapperTableEntries name="RecordTypeId" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ParentId" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BillingStreet" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BillingCity" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BillingState" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BillingPostalCode" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BillingCountry" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BillingLatitude" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="BillingLongitude" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="BillingGeocodeAccuracy" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BillingAddress" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ShippingStreet" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ShippingCity" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ShippingState" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ShippingPostalCode" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ShippingCountry" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ShippingLatitude" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="ShippingLongitude" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="ShippingGeocodeAccuracy" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ShippingAddress" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Phone" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Fax" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AccountNumber" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Website" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PhotoUrl" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Sic" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Industry" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AnnualRevenue" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="NumberOfEmployees" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Ownership" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TickerSymbol" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Description" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Rating" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Site" nullable="true" type="id_String"/>
+        <mapperTableEntries name="OwnerId" type="id_String"/>
+        <mapperTableEntries name="CreatedDate" type="id_Date"/>
+        <mapperTableEntries name="CreatedById" type="id_String"/>
+        <mapperTableEntries name="LastModifiedDate" type="id_Date"/>
+        <mapperTableEntries name="LastModifiedById" type="id_String"/>
+        <mapperTableEntries name="SystemModstamp" type="id_Date"/>
+        <mapperTableEntries name="LastActivityDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="LastViewedDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="LastReferencedDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="PersonContactId" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IsPersonAccount" type="id_Boolean"/>
+        <mapperTableEntries name="PersonMailingStreet" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonMailingCity" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonMailingState" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonMailingPostalCode" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonMailingCountry" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonMailingLatitude" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="PersonMailingLongitude" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="PersonMailingGeocodeAccuracy" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonMailingAddress" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonOtherStreet" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonOtherCity" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonOtherState" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonOtherPostalCode" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonOtherCountry" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonOtherLatitude" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="PersonOtherLongitude" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="PersonOtherGeocodeAccuracy" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonOtherAddress" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonMobilePhone" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonHomePhone" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonOtherPhone" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonAssistantPhone" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonEmail" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonTitle" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonDepartment" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonAssistantName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonLeadSource" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonBirthdate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="PersonHasOptedOutOfEmail" type="id_Boolean"/>
+        <mapperTableEntries name="PersonHasOptedOutOfFax" type="id_Boolean"/>
+        <mapperTableEntries name="PersonDoNotCall" type="id_Boolean"/>
+        <mapperTableEntries name="PersonLastCURequestDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="PersonLastCUUpdateDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="PersonEmailBouncedReason" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PersonEmailBouncedDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Jigsaw" nullable="true" type="id_String"/>
+        <mapperTableEntries name="JigsawCompanyId" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AccountSource" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SicDesc" nullable="true" type="id_String"/>
+        <mapperTableEntries name="A_M__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Alimentazione__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Anno_immatricolazione__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Area_sito__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Auto_posseduta__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Cambio_auto__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Campagna_Attivit_di_origine__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Cod_Lead__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Codice_cliente_SAP__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Codice_concessionario_SAP__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Codice_fiscale__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Concessionario_di_competenza__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Consenso_dati_personali__c" type="id_Boolean"/>
+        <mapperTableEntries name="Consenso_invio_comunicaz_posta_cartacea__c" type="id_Boolean"/>
+        <mapperTableEntries name="Consenso_invio_comunicazioni__c" type="id_Boolean"/>
+        <mapperTableEntries name="Consenso_profilazione__c" type="id_Boolean"/>
+        <mapperTableEntries name="Data_di_nascita__c" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Data_ultima_privacy__c" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Data_ultimo_passaggio_in_officina__c" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Email_DEM__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Email__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="F_M__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Fonte_info__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Modello_interessato__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Nome_commerciale__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Officina_di_competenza__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Partita_IVA__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Regione__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Stato_dealer__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Targa__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Tipologia_dealer__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="URL_Landing_Page__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Web_to_Lead__c" type="id_Boolean"/>
+        <mapperTableEntries name="OLD_SalesForce_ID__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Source__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ResponseAddressVal__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="OutputAddress__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Indirizzo_validato__c" type="id_Boolean"/>
+        <mapperTableEntries name="Indirizzo_mantenuto__c" type="id_Boolean"/>
+        <mapperTableEntries name="Next_Birthday__c" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="SAP_last_update_date__c" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Concessionario_community__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Officina_community__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Storage_Location__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SAP_integration_error__c" type="id_Boolean"/>
+        <mapperTableEntries name="SAP_integration_error_message__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Alimentazione__pc" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Anno_immatricolazione__pc" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Auto_posseduta__pc" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Cod_Lead__pc" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Consenso_dati_personali__pc" type="id_Boolean"/>
+        <mapperTableEntries name="Consenso_invio_comunicaz_posta_cartacea__pc" type="id_Boolean"/>
+        <mapperTableEntries name="Consenso_invio_comunicazioni__pc" type="id_Boolean"/>
+        <mapperTableEntries name="Consenso_profilazione__pc" type="id_Boolean"/>
+        <mapperTableEntries name="Data_fuori_lista_email__pc" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Data_ultima_privacy__pc" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Data_ultimo_passaggio_in_officina__pc" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Eta__pc" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="Sesso__pc" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Targa__pc" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Ora_ultima_privacy__pc" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Numero_civico__pc" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Scadenza_patente__pc" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Professione__pc" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="832" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_3"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="response">
+      <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="result">
+        <nodes name="Id" nullable="false" outgoingConnections="//@node.4/@nodeData/@connections.0" type="id_String" xpath="result/Id"/>
+        <nodes name="IsDeleted" nullable="false" type="id_Boolean" xpath="result/IsDeleted"/>
+        <nodes name="MasterRecordId" type="id_String" xpath="result/MasterRecordId"/>
+        <nodes name="Name" type="id_String" xpath="result/Name"/>
+        <nodes name="LastName" outgoingConnections="//@node.4/@nodeData/@connections.1" type="id_String" xpath="result/LastName"/>
+        <nodes name="FirstName" outgoingConnections="//@node.4/@nodeData/@connections.6" type="id_String" xpath="result/FirstName"/>
+        <nodes name="Salutation" type="id_String" xpath="result/Salutation"/>
+        <nodes name="MiddleName" type="id_String" xpath="result/MiddleName"/>
+        <nodes name="Suffix" type="id_String" xpath="result/Suffix"/>
+        <nodes name="Type" type="id_String" xpath="result/Type"/>
+        <nodes name="RecordTypeId" type="id_String" xpath="result/RecordTypeId"/>
+        <nodes name="ParentId" type="id_String" xpath="result/ParentId"/>
+        <nodes name="BillingStreet" type="id_String" xpath="result/BillingStreet"/>
+        <nodes name="BillingCity" type="id_String" xpath="result/BillingCity"/>
+        <nodes name="BillingState" type="id_String" xpath="result/BillingState"/>
+        <nodes name="BillingPostalCode" type="id_String" xpath="result/BillingPostalCode"/>
+        <nodes name="BillingCountry" type="id_String" xpath="result/BillingCountry"/>
+        <nodes name="BillingLatitude" type="id_Double" xpath="result/BillingLatitude"/>
+        <nodes name="BillingLongitude" type="id_Double" xpath="result/BillingLongitude"/>
+        <nodes name="BillingGeocodeAccuracy" type="id_String" xpath="result/BillingGeocodeAccuracy"/>
+        <nodes name="BillingAddress" type="id_String" xpath="result/BillingAddress"/>
+        <nodes name="ShippingStreet" type="id_String" xpath="result/ShippingStreet"/>
+        <nodes name="ShippingCity" type="id_String" xpath="result/ShippingCity"/>
+        <nodes name="ShippingState" type="id_String" xpath="result/ShippingState"/>
+        <nodes name="ShippingPostalCode" type="id_String" xpath="result/ShippingPostalCode"/>
+        <nodes name="ShippingCountry" type="id_String" xpath="result/ShippingCountry"/>
+        <nodes name="ShippingLatitude" type="id_Double" xpath="result/ShippingLatitude"/>
+        <nodes name="ShippingLongitude" type="id_Double" xpath="result/ShippingLongitude"/>
+        <nodes name="ShippingGeocodeAccuracy" type="id_String" xpath="result/ShippingGeocodeAccuracy"/>
+        <nodes name="ShippingAddress" type="id_String" xpath="result/ShippingAddress"/>
+        <nodes name="Phone" type="id_String" xpath="result/Phone"/>
+        <nodes name="Fax" type="id_String" xpath="result/Fax"/>
+        <nodes name="AccountNumber" type="id_String" xpath="result/AccountNumber"/>
+        <nodes name="Website" type="id_String" xpath="result/Website"/>
+        <nodes name="PhotoUrl" type="id_String" xpath="result/PhotoUrl"/>
+        <nodes name="Sic" type="id_String" xpath="result/Sic"/>
+        <nodes name="Industry" type="id_String" xpath="result/Industry"/>
+        <nodes name="AnnualRevenue" type="id_BigDecimal" xpath="result/AnnualRevenue"/>
+        <nodes name="NumberOfEmployees" type="id_Integer" xpath="result/NumberOfEmployees"/>
+        <nodes name="Ownership" type="id_String" xpath="result/Ownership"/>
+        <nodes name="TickerSymbol" type="id_String" xpath="result/TickerSymbol"/>
+        <nodes name="Description" type="id_String" xpath="result/Description"/>
+        <nodes name="Rating" type="id_String" xpath="result/Rating"/>
+        <nodes name="Site" type="id_String" xpath="result/Site"/>
+        <nodes name="OwnerId" nullable="false" type="id_String" xpath="result/OwnerId"/>
+        <nodes name="CreatedDate" nullable="false" type="id_Date" xpath="result/CreatedDate"/>
+        <nodes name="CreatedById" nullable="false" type="id_String" xpath="result/CreatedById"/>
+        <nodes name="LastModifiedDate" nullable="false" type="id_Date" xpath="result/LastModifiedDate"/>
+        <nodes name="LastModifiedById" nullable="false" type="id_String" xpath="result/LastModifiedById"/>
+        <nodes name="SystemModstamp" nullable="false" type="id_Date" xpath="result/SystemModstamp"/>
+        <nodes name="LastActivityDate" type="id_Date" xpath="result/LastActivityDate"/>
+        <nodes name="LastViewedDate" type="id_Date" xpath="result/LastViewedDate"/>
+        <nodes name="LastReferencedDate" type="id_Date" xpath="result/LastReferencedDate"/>
+        <nodes name="PersonContactId" type="id_String" xpath="result/PersonContactId"/>
+        <nodes name="IsPersonAccount" nullable="false" type="id_Boolean" xpath="result/IsPersonAccount"/>
+        <nodes name="PersonMailingStreet" type="id_String" xpath="result/PersonMailingStreet"/>
+        <nodes name="PersonMailingCity" outgoingConnections="//@node.4/@nodeData/@connections.3" type="id_String" xpath="result/PersonMailingCity"/>
+        <nodes name="PersonMailingState" type="id_String" xpath="result/PersonMailingState"/>
+        <nodes name="PersonMailingPostalCode" outgoingConnections="//@node.4/@nodeData/@connections.4" type="id_String" xpath="result/PersonMailingPostalCode"/>
+        <nodes name="PersonMailingCountry" type="id_String" xpath="result/PersonMailingCountry"/>
+        <nodes name="PersonMailingLatitude" type="id_Double" xpath="result/PersonMailingLatitude"/>
+        <nodes name="PersonMailingLongitude" type="id_Double" xpath="result/PersonMailingLongitude"/>
+        <nodes name="PersonMailingGeocodeAccuracy" type="id_String" xpath="result/PersonMailingGeocodeAccuracy"/>
+        <nodes name="PersonMailingAddress" type="id_String" xpath="result/PersonMailingAddress"/>
+        <nodes name="PersonOtherStreet" type="id_String" xpath="result/PersonOtherStreet"/>
+        <nodes name="PersonOtherCity" type="id_String" xpath="result/PersonOtherCity"/>
+        <nodes name="PersonOtherState" type="id_String" xpath="result/PersonOtherState"/>
+        <nodes name="PersonOtherPostalCode" type="id_String" xpath="result/PersonOtherPostalCode"/>
+        <nodes name="PersonOtherCountry" type="id_String" xpath="result/PersonOtherCountry"/>
+        <nodes name="PersonOtherLatitude" type="id_Double" xpath="result/PersonOtherLatitude"/>
+        <nodes name="PersonOtherLongitude" type="id_Double" xpath="result/PersonOtherLongitude"/>
+        <nodes name="PersonOtherGeocodeAccuracy" type="id_String" xpath="result/PersonOtherGeocodeAccuracy"/>
+        <nodes name="PersonOtherAddress" type="id_String" xpath="result/PersonOtherAddress"/>
+        <nodes name="PersonMobilePhone" type="id_String" xpath="result/PersonMobilePhone"/>
+        <nodes name="PersonHomePhone" type="id_String" xpath="result/PersonHomePhone"/>
+        <nodes name="PersonOtherPhone" type="id_String" xpath="result/PersonOtherPhone"/>
+        <nodes name="PersonAssistantPhone" type="id_String" xpath="result/PersonAssistantPhone"/>
+        <nodes name="PersonEmail" outgoingConnections="//@node.4/@nodeData/@connections.5" type="id_String" xpath="result/PersonEmail"/>
+        <nodes name="PersonTitle" type="id_String" xpath="result/PersonTitle"/>
+        <nodes name="PersonDepartment" type="id_String" xpath="result/PersonDepartment"/>
+        <nodes name="PersonAssistantName" type="id_String" xpath="result/PersonAssistantName"/>
+        <nodes name="PersonLeadSource" type="id_String" xpath="result/PersonLeadSource"/>
+        <nodes name="PersonBirthdate" outgoingConnections="//@node.4/@nodeData/@connections.2" type="id_Date" xpath="result/PersonBirthdate"/>
+        <nodes name="PersonHasOptedOutOfEmail" nullable="false" type="id_Boolean" xpath="result/PersonHasOptedOutOfEmail"/>
+        <nodes name="PersonHasOptedOutOfFax" nullable="false" type="id_Boolean" xpath="result/PersonHasOptedOutOfFax"/>
+        <nodes name="PersonDoNotCall" nullable="false" type="id_Boolean" xpath="result/PersonDoNotCall"/>
+        <nodes name="PersonLastCURequestDate" type="id_Date" xpath="result/PersonLastCURequestDate"/>
+        <nodes name="PersonLastCUUpdateDate" type="id_Date" xpath="result/PersonLastCUUpdateDate"/>
+        <nodes name="PersonEmailBouncedReason" type="id_String" xpath="result/PersonEmailBouncedReason"/>
+        <nodes name="PersonEmailBouncedDate" type="id_Date" xpath="result/PersonEmailBouncedDate"/>
+        <nodes name="Jigsaw" type="id_String" xpath="result/Jigsaw"/>
+        <nodes name="JigsawCompanyId" type="id_String" xpath="result/JigsawCompanyId"/>
+        <nodes name="AccountSource" type="id_String" xpath="result/AccountSource"/>
+        <nodes name="SicDesc" type="id_String" xpath="result/SicDesc"/>
+        <nodes name="A_M__c" type="id_String" xpath="result/A_M__c"/>
+        <nodes name="Alimentazione__c" type="id_String" xpath="result/Alimentazione__c"/>
+        <nodes name="Anno_immatricolazione__c" type="id_String" xpath="result/Anno_immatricolazione__c"/>
+        <nodes name="Area_sito__c" type="id_String" xpath="result/Area_sito__c"/>
+        <nodes name="Auto_posseduta__c" type="id_String" xpath="result/Auto_posseduta__c"/>
+        <nodes name="Cambio_auto__c" type="id_String" xpath="result/Cambio_auto__c"/>
+        <nodes name="Campagna_Attivit_di_origine__c" type="id_String" xpath="result/Campagna_Attivit_di_origine__c"/>
+        <nodes name="Cod_Lead__c" type="id_String" xpath="result/Cod_Lead__c"/>
+        <nodes name="Codice_cliente_SAP__c" type="id_String" xpath="result/Codice_cliente_SAP__c"/>
+        <nodes name="Codice_concessionario_SAP__c" type="id_String" xpath="result/Codice_concessionario_SAP__c"/>
+        <nodes name="Codice_fiscale__c" type="id_String" xpath="result/Codice_fiscale__c"/>
+        <nodes name="Concessionario_di_competenza__c" type="id_String" xpath="result/Concessionario_di_competenza__c"/>
+        <nodes name="Consenso_dati_personali__c" nullable="false" type="id_Boolean" xpath="result/Consenso_dati_personali__c"/>
+        <nodes name="Consenso_invio_comunicaz_posta_cartacea__c" nullable="false" type="id_Boolean" xpath="result/Consenso_invio_comunicaz_posta_cartacea__c"/>
+        <nodes name="Consenso_invio_comunicazioni__c" nullable="false" type="id_Boolean" xpath="result/Consenso_invio_comunicazioni__c"/>
+        <nodes name="Consenso_profilazione__c" nullable="false" type="id_Boolean" xpath="result/Consenso_profilazione__c"/>
+        <nodes name="Data_di_nascita__c" type="id_Date" xpath="result/Data_di_nascita__c"/>
+        <nodes name="Data_ultima_privacy__c" type="id_Date" xpath="result/Data_ultima_privacy__c"/>
+        <nodes name="Data_ultimo_passaggio_in_officina__c" type="id_Date" xpath="result/Data_ultimo_passaggio_in_officina__c"/>
+        <nodes name="Email_DEM__c" type="id_String" xpath="result/Email_DEM__c"/>
+        <nodes name="Email__c" type="id_String" xpath="result/Email__c"/>
+        <nodes name="F_M__c" type="id_String" xpath="result/F_M__c"/>
+        <nodes name="Fonte_info__c" type="id_String" xpath="result/Fonte_info__c"/>
+        <nodes name="Modello_interessato__c" type="id_String" xpath="result/Modello_interessato__c"/>
+        <nodes name="Nome_commerciale__c" type="id_String" xpath="result/Nome_commerciale__c"/>
+        <nodes name="Officina_di_competenza__c" type="id_String" xpath="result/Officina_di_competenza__c"/>
+        <nodes name="Partita_IVA__c" type="id_String" xpath="result/Partita_IVA__c"/>
+        <nodes name="Regione__c" type="id_String" xpath="result/Regione__c"/>
+        <nodes name="Stato_dealer__c" type="id_String" xpath="result/Stato_dealer__c"/>
+        <nodes name="Targa__c" type="id_String" xpath="result/Targa__c"/>
+        <nodes name="Tipologia_dealer__c" type="id_String" xpath="result/Tipologia_dealer__c"/>
+        <nodes name="URL_Landing_Page__c" type="id_String" xpath="result/URL_Landing_Page__c"/>
+        <nodes name="Web_to_Lead__c" nullable="false" type="id_Boolean" xpath="result/Web_to_Lead__c"/>
+        <nodes name="OLD_SalesForce_ID__c" type="id_String" xpath="result/OLD_SalesForce_ID__c"/>
+        <nodes name="Source__c" type="id_String" xpath="result/Source__c"/>
+        <nodes name="ResponseAddressVal__c" type="id_String" xpath="result/ResponseAddressVal__c"/>
+        <nodes name="OutputAddress__c" type="id_String" xpath="result/OutputAddress__c"/>
+        <nodes name="Indirizzo_validato__c" nullable="false" type="id_Boolean" xpath="result/Indirizzo_validato__c"/>
+        <nodes name="Indirizzo_mantenuto__c" nullable="false" type="id_Boolean" xpath="result/Indirizzo_mantenuto__c"/>
+        <nodes name="Next_Birthday__c" type="id_Date" xpath="result/Next_Birthday__c"/>
+        <nodes name="SAP_last_update_date__c" outgoingConnections="//@node.4/@nodeData/@connections.7" type="id_Date" xpath="result/SAP_last_update_date__c"/>
+        <nodes name="Concessionario_community__c" type="id_String" xpath="result/Concessionario_community__c"/>
+        <nodes name="Officina_community__c" type="id_String" xpath="result/Officina_community__c"/>
+        <nodes name="Storage_Location__c" type="id_String" xpath="result/Storage_Location__c"/>
+        <nodes name="SAP_integration_error__c" nullable="false" type="id_Boolean" xpath="result/SAP_integration_error__c"/>
+        <nodes name="SAP_integration_error_message__c" type="id_String" xpath="result/SAP_integration_error_message__c"/>
+        <nodes name="Alimentazione__pc" type="id_String" xpath="result/Alimentazione__pc"/>
+        <nodes name="Anno_immatricolazione__pc" type="id_String" xpath="result/Anno_immatricolazione__pc"/>
+        <nodes name="Auto_posseduta__pc" type="id_String" xpath="result/Auto_posseduta__pc"/>
+        <nodes name="Cod_Lead__pc" type="id_String" xpath="result/Cod_Lead__pc"/>
+        <nodes name="Consenso_dati_personali__pc" nullable="false" type="id_Boolean" xpath="result/Consenso_dati_personali__pc"/>
+        <nodes name="Consenso_invio_comunicaz_posta_cartacea__pc" nullable="false" type="id_Boolean" xpath="result/Consenso_invio_comunicaz_posta_cartacea__pc"/>
+        <nodes name="Consenso_invio_comunicazioni__pc" nullable="false" type="id_Boolean" xpath="result/Consenso_invio_comunicazioni__pc"/>
+        <nodes name="Consenso_profilazione__pc" nullable="false" type="id_Boolean" xpath="result/Consenso_profilazione__pc"/>
+        <nodes name="Data_fuori_lista_email__pc" type="id_Date" xpath="result/Data_fuori_lista_email__pc"/>
+        <nodes name="Data_ultima_privacy__pc" type="id_Date" xpath="result/Data_ultima_privacy__pc"/>
+        <nodes name="Data_ultimo_passaggio_in_officina__pc" type="id_Date" xpath="result/Data_ultimo_passaggio_in_officina__pc"/>
+        <nodes name="Eta__pc" type="id_Double" xpath="result/Eta__pc"/>
+        <nodes name="Sesso__pc" type="id_String" xpath="result/Sesso__pc"/>
+        <nodes name="Targa__pc" type="id_String" xpath="result/Targa__pc"/>
+        <nodes name="Ora_ultima_privacy__pc" type="id_String" xpath="result/Ora_ultima_privacy__pc"/>
+        <nodes name="Numero_civico__pc" type="id_String" xpath="result/Numero_civico__pc"/>
+        <nodes name="Scadenza_patente__pc" type="id_Date" xpath="result/Scadenza_patente__pc"/>
+        <nodes name="Professione__pc" type="id_String" xpath="result/Professione__pc"/>
+      </inputTrees>
+      <outputTrees name="response">
+        <nodes expression="" name="payload" type="id_Document" xpath="response/payload">
+          <children expression="" loop="true" main="true" name="tns:SAP_fetch_BP_from_SF_Resp" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp" xsi:type="TalendXMLMap:OutputTreeNode">
+            <children defaultValue="urn:subaru.eu:ECC:MDM:BpFetch" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="result.PersonBirthdate" incomingConnections="//@node.4/@nodeData/@connections.2" name="Birthdate" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Birthdate" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="result.PersonMailingCity" incomingConnections="//@node.4/@nodeData/@connections.3" name="City" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/City" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="result.PersonMailingPostalCode" incomingConnections="//@node.4/@nodeData/@connections.4" name="Countrycode" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Countrycode" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="" name="Dealer" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Dealer" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="result.PersonEmail" incomingConnections="//@node.4/@nodeData/@connections.5" name="Emailaddress" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Emailaddress" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="result.FirstName" incomingConnections="//@node.4/@nodeData/@connections.6" name="Firstname" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Firstname" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="" name="Fiscalcode" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Fiscalcode" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="" name="Gender" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Gender" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children name="Housenumber" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Housenumber" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="" name="Languagecode" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Languagecode" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="result.LastName" incomingConnections="//@node.4/@nodeData/@connections.1" name="Lastname" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Lastname" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="result.SAP_last_update_date__c" incomingConnections="//@node.4/@nodeData/@connections.7" name="Lastupdatedate" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Lastupdatedate" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children name="Marketingcheckbox" type="id_Boolean" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Marketingcheckbox" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children name="Mobilephone" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Mobilephone" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children name="Partnertype" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Partnertype" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children name="Phone" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Phone" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children name="Postalcode" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Postalcode" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children name="PrivacyDate" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/PrivacyDate" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children name="PrivacyTime" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/PrivacyTime" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children name="PreSalescheckbox" type="id_Boolean" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/PreSalescheckbox" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children name="Profilingcheckbox" type="id_Boolean" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Profilingcheckbox" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="" name="Region" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Region" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="result.Id " incomingConnections="//@node.4/@nodeData/@connections.0" name="Salesforceid" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Salesforceid" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children name="Sapbpcode" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Sapbpcode" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children name="StoreLoc" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/StoreLoc" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children name="Street" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Street" xsi:type="TalendXMLMap:OutputTreeNode"/>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.0" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.23" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.4" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.11" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.82" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.56" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.58" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.77" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.5" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.6" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.134" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.12" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
+  </node>
+  <node componentName="tESBProviderResponse" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tESBProviderResponse_1"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tESBProviderResponse_1">
+      <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
   <node componentName="tSalesforceInput" componentVersion="0.23.1" offsetLabelX="0" offsetLabelY="0" posX="96" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSalesforceInput_1"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" show="false" value=""/>
@@ -1168,21 +1927,343 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
-    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_GiHq4EbcEei1q46PFiTS6w-tMap_2-PREVIEW.bmp"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
-    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
-    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
-    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="true"/>
-    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
-    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_Z6utUEPGEeih8KkJgV_NKQ - Account"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IsDeleted"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MasterRecordId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Salutation"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MiddleName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Suffix"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Type"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RecordTypeId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ParentId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingStreet"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingCity"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingState"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingPostalCode"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingCountry"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingLatitude"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingLongitude"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingGeocodeAccuracy"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingAddress"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingStreet"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingCity"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingState"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingPostalCode"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingCountry"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingLatitude"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingLongitude"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingGeocodeAccuracy"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingAddress"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Phone"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Fax"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AccountNumber"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Website"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PhotoUrl"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sic"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Industry"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AnnualRevenue"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NumberOfEmployees"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ownership"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TickerSymbol"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Description"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Rating"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Site"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OwnerId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedDate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedById"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastModifiedDate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastModifiedById"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SystemModstamp"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastActivityDate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastViewedDate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastReferencedDate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonContactId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IsPersonAccount"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonMailingStreet"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonMailingCity"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonMailingState"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonMailingPostalCode"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonMailingCountry"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonMailingLatitude"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonMailingLongitude"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonMailingGeocodeAccuracy"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonMailingAddress"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonOtherStreet"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonOtherCity"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonOtherState"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonOtherPostalCode"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonOtherCountry"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonOtherLatitude"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonOtherLongitude"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonOtherGeocodeAccuracy"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonOtherAddress"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonMobilePhone"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonHomePhone"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonOtherPhone"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonAssistantPhone"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonEmail"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonTitle"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonDepartment"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonAssistantName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonLeadSource"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonBirthdate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonHasOptedOutOfEmail"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonHasOptedOutOfFax"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonDoNotCall"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonLastCURequestDate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonLastCUUpdateDate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonEmailBouncedReason"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonEmailBouncedDate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Jigsaw"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="JigsawCompanyId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AccountSource"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SicDesc"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="A_M__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Alimentazione__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Anno_immatricolazione__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Area_sito__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Auto_posseduta__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Cambio_auto__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Campagna_Attivit_di_origine__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Cod_Lead__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Codice_cliente_SAP__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Codice_concessionario_SAP__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Codice_fiscale__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Concessionario_di_competenza__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Consenso_dati_personali__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Consenso_invio_comunicaz_posta_cartacea__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Consenso_invio_comunicazioni__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Consenso_profilazione__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Data_di_nascita__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Data_ultima_privacy__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Data_ultimo_passaggio_in_officina__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email_DEM__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="F_M__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Fonte_info__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Modello_interessato__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nome_commerciale__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Officina_di_competenza__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Partita_IVA__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Regione__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Stato_dealer__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Targa__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Tipologia_dealer__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="URL_Landing_Page__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Web_to_Lead__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OLD_SalesForce_ID__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Source__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ResponseAddressVal__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OutputAddress__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Indirizzo_validato__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Indirizzo_mantenuto__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Next_Birthday__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SAP_last_update_date__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Concessionario_community__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Officina_community__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Storage_Location__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SAP_integration_error__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SAP_integration_error_message__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Alimentazione__pc"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Anno_immatricolazione__pc"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Auto_posseduta__pc"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Cod_Lead__pc"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Consenso_dati_personali__pc"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Consenso_invio_comunicaz_posta_cartacea__pc"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Consenso_invio_comunicazioni__pc"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Consenso_profilazione__pc"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Data_fuori_lista_email__pc"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Data_ultima_privacy__pc"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Data_ultimo_passaggio_in_officina__pc"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Eta__pc"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sesso__pc"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Targa__pc"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ora_ultima_privacy__pc"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Numero_civico__pc"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Scadenza_patente__pc"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Professione__pc"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="sfSELECT" name="sfSELECT">
+    <metadata connector="FLOW" label="Account" name="tLogRow_1">
       <column comment="" key="false" length="18" name="Id" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="IsDeleted" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true"/>
       <column comment="" key="false" length="18" name="MasterRecordId" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
@@ -1380,542 +2461,6 @@
       </column>
       <column comment="" key="false" length="255" name="Professione__pc" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
     </metadata>
-    <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
-      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
-      <outputTables activateCondensedTool="true" id="_Z6utUEPGEeih8KkJgV_NKQ - Account" name="sfSELECT" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row2.Id" name="Id" type="id_String"/>
-        <mapperTableEntries expression="row2.IsDeleted" name="IsDeleted" type="id_Boolean"/>
-        <mapperTableEntries expression="row2.MasterRecordId" name="MasterRecordId" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Name" name="Name" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.LastName" name="LastName" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.FirstName" name="FirstName" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Salutation" name="Salutation" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.MiddleName" name="MiddleName" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Suffix" name="Suffix" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Type" name="Type" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.RecordTypeId" name="RecordTypeId" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.ParentId" name="ParentId" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.BillingStreet" name="BillingStreet" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.BillingCity" name="BillingCity" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.BillingState" name="BillingState" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.BillingPostalCode" name="BillingPostalCode" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.BillingCountry" name="BillingCountry" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.BillingLatitude" name="BillingLatitude" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression="row2.BillingLongitude" name="BillingLongitude" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression="row2.BillingGeocodeAccuracy" name="BillingGeocodeAccuracy" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.BillingAddress" name="BillingAddress" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.ShippingStreet" name="ShippingStreet" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.ShippingCity" name="ShippingCity" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.ShippingState" name="ShippingState" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.ShippingPostalCode" name="ShippingPostalCode" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.ShippingCountry" name="ShippingCountry" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.ShippingLatitude" name="ShippingLatitude" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression="row2.ShippingLongitude" name="ShippingLongitude" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression="row2.ShippingGeocodeAccuracy" name="ShippingGeocodeAccuracy" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.ShippingAddress" name="ShippingAddress" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Phone" name="Phone" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Fax" name="Fax" nullable="true" type="id_String"/>
-        <mapperTableEntries name="AccountNumber" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Website" name="Website" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.PhotoUrl" name="PhotoUrl" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Sic" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Industry" name="Industry" nullable="true" type="id_String"/>
-        <mapperTableEntries name="AnnualRevenue" nullable="true" type="id_BigDecimal"/>
-        <mapperTableEntries expression="row2.NumberOfEmployees" name="NumberOfEmployees" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Ownership" nullable="true" type="id_String"/>
-        <mapperTableEntries name="TickerSymbol" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Description" name="Description" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Rating" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Site" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.OwnerId" name="OwnerId" type="id_String"/>
-        <mapperTableEntries expression="row2.CreatedDate" name="CreatedDate" type="id_Date"/>
-        <mapperTableEntries expression="row2.CreatedById" name="CreatedById" type="id_String"/>
-        <mapperTableEntries expression="row2.LastModifiedDate" name="LastModifiedDate" type="id_Date"/>
-        <mapperTableEntries expression="row2.LastModifiedById" name="LastModifiedById" type="id_String"/>
-        <mapperTableEntries expression="row2.SystemModstamp" name="SystemModstamp" type="id_Date"/>
-        <mapperTableEntries expression="row2.LastActivityDate" name="LastActivityDate" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row2.LastViewedDate" name="LastViewedDate" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row2.LastReferencedDate" name="LastReferencedDate" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row2.PersonContactId" name="PersonContactId" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.IsPersonAccount" name="IsPersonAccount" type="id_Boolean"/>
-        <mapperTableEntries expression="row2.PersonMailingStreet" name="PersonMailingStreet" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.PersonMailingCity" name="PersonMailingCity" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.PersonMailingState" name="PersonMailingState" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.PersonMailingPostalCode" name="PersonMailingPostalCode" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.PersonMailingCountry" name="PersonMailingCountry" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.PersonMailingLatitude" name="PersonMailingLatitude" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression="row2.PersonMailingLongitude" name="PersonMailingLongitude" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression="row2.PersonMailingGeocodeAccuracy" name="PersonMailingGeocodeAccuracy" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.PersonMailingAddress" name="PersonMailingAddress" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PersonOtherStreet" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PersonOtherCity" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PersonOtherState" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PersonOtherPostalCode" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PersonOtherCountry" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PersonOtherLatitude" nullable="true" type="id_Double"/>
-        <mapperTableEntries name="PersonOtherLongitude" nullable="true" type="id_Double"/>
-        <mapperTableEntries name="PersonOtherGeocodeAccuracy" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PersonOtherAddress" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.PersonMobilePhone" name="PersonMobilePhone" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PersonHomePhone" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PersonOtherPhone" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PersonAssistantPhone" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.PersonEmail" name="PersonEmail" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.PersonTitle" name="PersonTitle" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.PersonDepartment" name="PersonDepartment" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PersonAssistantName" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PersonLeadSource" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PersonBirthdate" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row2.PersonHasOptedOutOfEmail" name="PersonHasOptedOutOfEmail" type="id_Boolean"/>
-        <mapperTableEntries name="PersonHasOptedOutOfFax" type="id_Boolean"/>
-        <mapperTableEntries name="PersonDoNotCall" type="id_Boolean"/>
-        <mapperTableEntries expression="row2.PersonLastCURequestDate" name="PersonLastCURequestDate" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row2.PersonLastCUUpdateDate" name="PersonLastCUUpdateDate" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row2.PersonEmailBouncedReason" name="PersonEmailBouncedReason" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.PersonEmailBouncedDate" name="PersonEmailBouncedDate" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row2.Jigsaw" name="Jigsaw" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.JigsawCompanyId" name="JigsawCompanyId" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.AccountSource" name="AccountSource" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.SicDesc" name="SicDesc" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.A_M__c" name="A_M__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Alimentazione__c" name="Alimentazione__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Anno_immatricolazione__c" name="Anno_immatricolazione__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Area_sito__c" name="Area_sito__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Auto_posseduta__c" name="Auto_posseduta__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Cambio_auto__c" name="Cambio_auto__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Campagna_Attivit_di_origine__c" name="Campagna_Attivit_di_origine__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Cod_Lead__c" name="Cod_Lead__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Codice_cliente_SAP__c" name="Codice_cliente_SAP__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Codice_concessionario_SAP__c" name="Codice_concessionario_SAP__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Codice_fiscale__c" name="Codice_fiscale__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Concessionario_di_competenza__c" name="Concessionario_di_competenza__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Consenso_dati_personali__c" name="Consenso_dati_personali__c" type="id_Boolean"/>
-        <mapperTableEntries expression="row2.Consenso_invio_comunicaz_posta_cartacea__c" name="Consenso_invio_comunicaz_posta_cartacea__c" type="id_Boolean"/>
-        <mapperTableEntries expression="row2.Consenso_invio_comunicazioni__c" name="Consenso_invio_comunicazioni__c" type="id_Boolean"/>
-        <mapperTableEntries expression="row2.Consenso_profilazione__c" name="Consenso_profilazione__c" type="id_Boolean"/>
-        <mapperTableEntries expression="row2.Data_di_nascita__c" name="Data_di_nascita__c" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row2.Data_ultima_privacy__c" name="Data_ultima_privacy__c" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row2.Data_ultimo_passaggio_in_officina__c" name="Data_ultimo_passaggio_in_officina__c" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row2.Email_DEM__c" name="Email_DEM__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Email__c" name="Email__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.F_M__c" name="F_M__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Fonte_info__c" name="Fonte_info__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Modello_interessato__c" name="Modello_interessato__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Nome_commerciale__c" name="Nome_commerciale__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Officina_di_competenza__c" name="Officina_di_competenza__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Partita_IVA__c" name="Partita_IVA__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Regione__c" name="Regione__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Stato_dealer__c" name="Stato_dealer__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Targa__c" name="Targa__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Tipologia_dealer__c" name="Tipologia_dealer__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.URL_Landing_Page__c" name="URL_Landing_Page__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Web_to_Lead__c" name="Web_to_Lead__c" type="id_Boolean"/>
-        <mapperTableEntries expression="row2.OLD_SalesForce_ID__c" name="OLD_SalesForce_ID__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Source__c" name="Source__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="ResponseAddressVal__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="OutputAddress__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Indirizzo_validato__c" type="id_Boolean"/>
-        <mapperTableEntries name="Indirizzo_mantenuto__c" type="id_Boolean"/>
-        <mapperTableEntries expression="row2.Next_Birthday__c" name="Next_Birthday__c" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row2.SAP_last_update_date__c" name="SAP_last_update_date__c" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row2.Concessionario_community__c" name="Concessionario_community__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Officina_community__c" name="Officina_community__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Storage_Location__c" name="Storage_Location__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.SAP_integration_error__c" name="SAP_integration_error__c" type="id_Boolean"/>
-        <mapperTableEntries expression="row2.SAP_integration_error_message__c" name="SAP_integration_error_message__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Alimentazione__pc" name="Alimentazione__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Anno_immatricolazione__pc" name="Anno_immatricolazione__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Auto_posseduta__pc" name="Auto_posseduta__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Cod_Lead__pc" name="Cod_Lead__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Consenso_dati_personali__pc" name="Consenso_dati_personali__pc" type="id_Boolean"/>
-        <mapperTableEntries expression="row2.Consenso_invio_comunicaz_posta_cartacea__pc" name="Consenso_invio_comunicaz_posta_cartacea__pc" type="id_Boolean"/>
-        <mapperTableEntries expression="row2.Consenso_invio_comunicazioni__pc" name="Consenso_invio_comunicazioni__pc" type="id_Boolean"/>
-        <mapperTableEntries expression="row2.Consenso_profilazione__pc" name="Consenso_profilazione__pc" type="id_Boolean"/>
-        <mapperTableEntries expression="row2.Data_fuori_lista_email__pc" name="Data_fuori_lista_email__pc" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row2.Data_ultima_privacy__pc" name="Data_ultima_privacy__pc" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row2.Data_ultimo_passaggio_in_officina__pc" name="Data_ultimo_passaggio_in_officina__pc" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row2.Eta__pc" name="Eta__pc" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression="row2.Sesso__pc" name="Sesso__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Targa__pc" name="Targa__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Ora_ultima_privacy__pc" name="Ora_ultima_privacy__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Numero_civico__pc" name="Numero_civico__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Scadenza_patente__pc" name="Scadenza_patente__pc" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row2.Professione__pc" name="Professione__pc" nullable="true" type="id_String"/>
-      </outputTables>
-      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="Id" type="id_String"/>
-        <mapperTableEntries name="IsDeleted" type="id_Boolean"/>
-        <mapperTableEntries name="MasterRecordId" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Name" nullable="true" type="id_String"/>
-        <mapperTableEntries name="LastName" nullable="true" type="id_String"/>
-        <mapperTableEntries name="FirstName" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Salutation" nullable="true" type="id_String"/>
-        <mapperTableEntries name="MiddleName" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Suffix" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Type" nullable="true" type="id_String"/>
-        <mapperTableEntries name="RecordTypeId" nullable="true" type="id_String"/>
-        <mapperTableEntries name="ParentId" nullable="true" type="id_String"/>
-        <mapperTableEntries name="BillingStreet" nullable="true" type="id_String"/>
-        <mapperTableEntries name="BillingCity" nullable="true" type="id_String"/>
-        <mapperTableEntries name="BillingState" nullable="true" type="id_String"/>
-        <mapperTableEntries name="BillingPostalCode" nullable="true" type="id_String"/>
-        <mapperTableEntries name="BillingCountry" nullable="true" type="id_String"/>
-        <mapperTableEntries name="BillingLatitude" nullable="true" type="id_Double"/>
-        <mapperTableEntries name="BillingLongitude" nullable="true" type="id_Double"/>
-        <mapperTableEntries name="BillingGeocodeAccuracy" nullable="true" type="id_String"/>
-        <mapperTableEntries name="BillingAddress" nullable="true" type="id_String"/>
-        <mapperTableEntries name="ShippingStreet" nullable="true" type="id_String"/>
-        <mapperTableEntries name="ShippingCity" nullable="true" type="id_String"/>
-        <mapperTableEntries name="ShippingState" nullable="true" type="id_String"/>
-        <mapperTableEntries name="ShippingPostalCode" nullable="true" type="id_String"/>
-        <mapperTableEntries name="ShippingCountry" nullable="true" type="id_String"/>
-        <mapperTableEntries name="ShippingLatitude" nullable="true" type="id_Double"/>
-        <mapperTableEntries name="ShippingLongitude" nullable="true" type="id_Double"/>
-        <mapperTableEntries name="ShippingGeocodeAccuracy" nullable="true" type="id_String"/>
-        <mapperTableEntries name="ShippingAddress" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Phone" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Fax" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Website" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PhotoUrl" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Industry" nullable="true" type="id_String"/>
-        <mapperTableEntries name="NumberOfEmployees" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Description" nullable="true" type="id_String"/>
-        <mapperTableEntries name="OwnerId" type="id_String"/>
-        <mapperTableEntries name="CreatedDate" type="id_Date"/>
-        <mapperTableEntries name="CreatedById" type="id_String"/>
-        <mapperTableEntries name="LastModifiedDate" type="id_Date"/>
-        <mapperTableEntries name="LastModifiedById" type="id_String"/>
-        <mapperTableEntries name="SystemModstamp" type="id_Date"/>
-        <mapperTableEntries name="LastActivityDate" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="LastViewedDate" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="LastReferencedDate" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="IsCustomerPortal" type="id_Boolean"/>
-        <mapperTableEntries name="PersonContactId" nullable="true" type="id_String"/>
-        <mapperTableEntries name="IsPersonAccount" type="id_Boolean"/>
-        <mapperTableEntries name="PersonMailingStreet" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PersonMailingCity" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PersonMailingState" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PersonMailingPostalCode" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PersonMailingCountry" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PersonMailingLatitude" nullable="true" type="id_Double"/>
-        <mapperTableEntries name="PersonMailingLongitude" nullable="true" type="id_Double"/>
-        <mapperTableEntries name="PersonMailingGeocodeAccuracy" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PersonMailingAddress" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PersonMobilePhone" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PersonEmail" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PersonTitle" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PersonDepartment" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PersonHasOptedOutOfEmail" type="id_Boolean"/>
-        <mapperTableEntries name="PersonLastCURequestDate" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="PersonLastCUUpdateDate" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="PersonEmailBouncedReason" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PersonEmailBouncedDate" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="Jigsaw" nullable="true" type="id_String"/>
-        <mapperTableEntries name="JigsawCompanyId" nullable="true" type="id_String"/>
-        <mapperTableEntries name="AccountSource" nullable="true" type="id_String"/>
-        <mapperTableEntries name="SicDesc" nullable="true" type="id_String"/>
-        <mapperTableEntries name="A_M__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Alimentazione__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Anno_immatricolazione__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Area_sito__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Auto_posseduta__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Cambio_auto__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Campagna_Attivit_di_origine__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Cod_Lead__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Codice_cliente_SAP__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Codice_concessionario_SAP__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Codice_fiscale__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Concessionario_di_competenza__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Consenso_dati_personali__c" type="id_Boolean"/>
-        <mapperTableEntries name="Consenso_invio_comunicaz_posta_cartacea__c" type="id_Boolean"/>
-        <mapperTableEntries name="Consenso_invio_comunicazioni__c" type="id_Boolean"/>
-        <mapperTableEntries name="Consenso_profilazione__c" type="id_Boolean"/>
-        <mapperTableEntries name="Data_di_nascita__c" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="Data_ultima_privacy__c" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="Data_ultimo_passaggio_in_officina__c" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="Email_DEM__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Email__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="F_M__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Fonte_info__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Modello_interessato__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Nome_commerciale__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Officina_di_competenza__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Partita_IVA__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Regione__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Stato_dealer__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Targa__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Tipologia_dealer__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="URL_Landing_Page__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Web_to_Lead__c" type="id_Boolean"/>
-        <mapperTableEntries name="OLD_SalesForce_ID__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Source__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Next_Birthday__c" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="Concessionario_community__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Officina_community__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="isOfficina__c" type="id_Boolean"/>
-        <mapperTableEntries name="isShowroom__c" type="id_Boolean"/>
-        <mapperTableEntries name="SAP_integration_error__c" type="id_Boolean"/>
-        <mapperTableEntries name="SAP_integration_error_message__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Storage_Location__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="tipologiaPin__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Next_Birthday_done__c" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="Invio_coordinate_cliente__c" type="id_Boolean"/>
-        <mapperTableEntries name="Invio_coordinate_cliente_email__c" nullable="true" type="id_String"/>
-        <mapperTableEntries name="SAP_last_update_date__c" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="Alimentazione__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Anno_immatricolazione__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Auto_posseduta__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Cod_Lead__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Consenso_dati_personali__pc" type="id_Boolean"/>
-        <mapperTableEntries name="Consenso_invio_comunicaz_posta_cartacea__pc" type="id_Boolean"/>
-        <mapperTableEntries name="Consenso_invio_comunicazioni__pc" type="id_Boolean"/>
-        <mapperTableEntries name="Consenso_profilazione__pc" type="id_Boolean"/>
-        <mapperTableEntries name="Data_fuori_lista_email__pc" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="Data_ultima_privacy__pc" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="Data_ultimo_passaggio_in_officina__pc" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="Eta__pc" nullable="true" type="id_Double"/>
-        <mapperTableEntries name="Sesso__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Targa__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries name="OLD_SalesForce_ID__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Numero_civico__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Ora_ultima_privacy__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Scadenza_patente__pc" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="Professione__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Anni_Scadenza_Patente__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Indirizzo_mantenuto__pc" type="id_Boolean"/>
-        <mapperTableEntries name="Indirizzo_validato__pc" type="id_Boolean"/>
-        <mapperTableEntries name="Termini_e_condizioni__pc" type="id_Boolean"/>
-        <mapperTableEntries name="Mesi_Scadenza_Patente__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries name="et4ae5__HasOptedOutOfMobile__pc" type="id_Boolean"/>
-        <mapperTableEntries name="Nascondi_banner_completa_profilo__pc" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="Concessionario_selezionato_sulla_mappa__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Invia_coordinate_concessionario__pc" type="id_Boolean"/>
-        <mapperTableEntries name="et4ae5__Mobile_Country_Code__pc" nullable="true" type="id_String"/>
-      </inputTables>
-    </nodeData>
-  </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="832" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_3"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
-    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="response">
-      <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="result">
-        <nodes name="Id" nullable="false" outgoingConnections="//@node.5/@nodeData/@connections.0" type="id_String" xpath="result/Id"/>
-        <nodes name="IsDeleted" nullable="false" type="id_Boolean" xpath="result/IsDeleted"/>
-        <nodes name="MasterRecordId" type="id_String" xpath="result/MasterRecordId"/>
-        <nodes name="Name" type="id_String" xpath="result/Name"/>
-        <nodes name="LastName" outgoingConnections="//@node.5/@nodeData/@connections.1" type="id_String" xpath="result/LastName"/>
-        <nodes name="FirstName" outgoingConnections="//@node.5/@nodeData/@connections.6" type="id_String" xpath="result/FirstName"/>
-        <nodes name="Salutation" type="id_String" xpath="result/Salutation"/>
-        <nodes name="MiddleName" type="id_String" xpath="result/MiddleName"/>
-        <nodes name="Suffix" type="id_String" xpath="result/Suffix"/>
-        <nodes name="Type" type="id_String" xpath="result/Type"/>
-        <nodes name="RecordTypeId" type="id_String" xpath="result/RecordTypeId"/>
-        <nodes name="ParentId" type="id_String" xpath="result/ParentId"/>
-        <nodes name="BillingStreet" type="id_String" xpath="result/BillingStreet"/>
-        <nodes name="BillingCity" type="id_String" xpath="result/BillingCity"/>
-        <nodes name="BillingState" type="id_String" xpath="result/BillingState"/>
-        <nodes name="BillingPostalCode" type="id_String" xpath="result/BillingPostalCode"/>
-        <nodes name="BillingCountry" type="id_String" xpath="result/BillingCountry"/>
-        <nodes name="BillingLatitude" type="id_Double" xpath="result/BillingLatitude"/>
-        <nodes name="BillingLongitude" type="id_Double" xpath="result/BillingLongitude"/>
-        <nodes name="BillingGeocodeAccuracy" type="id_String" xpath="result/BillingGeocodeAccuracy"/>
-        <nodes name="BillingAddress" type="id_String" xpath="result/BillingAddress"/>
-        <nodes name="ShippingStreet" type="id_String" xpath="result/ShippingStreet"/>
-        <nodes name="ShippingCity" type="id_String" xpath="result/ShippingCity"/>
-        <nodes name="ShippingState" type="id_String" xpath="result/ShippingState"/>
-        <nodes name="ShippingPostalCode" type="id_String" xpath="result/ShippingPostalCode"/>
-        <nodes name="ShippingCountry" type="id_String" xpath="result/ShippingCountry"/>
-        <nodes name="ShippingLatitude" type="id_Double" xpath="result/ShippingLatitude"/>
-        <nodes name="ShippingLongitude" type="id_Double" xpath="result/ShippingLongitude"/>
-        <nodes name="ShippingGeocodeAccuracy" type="id_String" xpath="result/ShippingGeocodeAccuracy"/>
-        <nodes name="ShippingAddress" type="id_String" xpath="result/ShippingAddress"/>
-        <nodes name="Phone" type="id_String" xpath="result/Phone"/>
-        <nodes name="Fax" type="id_String" xpath="result/Fax"/>
-        <nodes name="AccountNumber" type="id_String" xpath="result/AccountNumber"/>
-        <nodes name="Website" type="id_String" xpath="result/Website"/>
-        <nodes name="PhotoUrl" type="id_String" xpath="result/PhotoUrl"/>
-        <nodes name="Sic" type="id_String" xpath="result/Sic"/>
-        <nodes name="Industry" type="id_String" xpath="result/Industry"/>
-        <nodes name="AnnualRevenue" type="id_BigDecimal" xpath="result/AnnualRevenue"/>
-        <nodes name="NumberOfEmployees" type="id_Integer" xpath="result/NumberOfEmployees"/>
-        <nodes name="Ownership" type="id_String" xpath="result/Ownership"/>
-        <nodes name="TickerSymbol" type="id_String" xpath="result/TickerSymbol"/>
-        <nodes name="Description" type="id_String" xpath="result/Description"/>
-        <nodes name="Rating" type="id_String" xpath="result/Rating"/>
-        <nodes name="Site" type="id_String" xpath="result/Site"/>
-        <nodes name="OwnerId" nullable="false" type="id_String" xpath="result/OwnerId"/>
-        <nodes name="CreatedDate" nullable="false" type="id_Date" xpath="result/CreatedDate"/>
-        <nodes name="CreatedById" nullable="false" type="id_String" xpath="result/CreatedById"/>
-        <nodes name="LastModifiedDate" nullable="false" type="id_Date" xpath="result/LastModifiedDate"/>
-        <nodes name="LastModifiedById" nullable="false" type="id_String" xpath="result/LastModifiedById"/>
-        <nodes name="SystemModstamp" nullable="false" type="id_Date" xpath="result/SystemModstamp"/>
-        <nodes name="LastActivityDate" type="id_Date" xpath="result/LastActivityDate"/>
-        <nodes name="LastViewedDate" type="id_Date" xpath="result/LastViewedDate"/>
-        <nodes name="LastReferencedDate" type="id_Date" xpath="result/LastReferencedDate"/>
-        <nodes name="PersonContactId" type="id_String" xpath="result/PersonContactId"/>
-        <nodes name="IsPersonAccount" nullable="false" type="id_Boolean" xpath="result/IsPersonAccount"/>
-        <nodes name="PersonMailingStreet" type="id_String" xpath="result/PersonMailingStreet"/>
-        <nodes name="PersonMailingCity" outgoingConnections="//@node.5/@nodeData/@connections.3" type="id_String" xpath="result/PersonMailingCity"/>
-        <nodes name="PersonMailingState" type="id_String" xpath="result/PersonMailingState"/>
-        <nodes name="PersonMailingPostalCode" outgoingConnections="//@node.5/@nodeData/@connections.4" type="id_String" xpath="result/PersonMailingPostalCode"/>
-        <nodes name="PersonMailingCountry" type="id_String" xpath="result/PersonMailingCountry"/>
-        <nodes name="PersonMailingLatitude" type="id_Double" xpath="result/PersonMailingLatitude"/>
-        <nodes name="PersonMailingLongitude" type="id_Double" xpath="result/PersonMailingLongitude"/>
-        <nodes name="PersonMailingGeocodeAccuracy" type="id_String" xpath="result/PersonMailingGeocodeAccuracy"/>
-        <nodes name="PersonMailingAddress" type="id_String" xpath="result/PersonMailingAddress"/>
-        <nodes name="PersonOtherStreet" type="id_String" xpath="result/PersonOtherStreet"/>
-        <nodes name="PersonOtherCity" type="id_String" xpath="result/PersonOtherCity"/>
-        <nodes name="PersonOtherState" type="id_String" xpath="result/PersonOtherState"/>
-        <nodes name="PersonOtherPostalCode" type="id_String" xpath="result/PersonOtherPostalCode"/>
-        <nodes name="PersonOtherCountry" type="id_String" xpath="result/PersonOtherCountry"/>
-        <nodes name="PersonOtherLatitude" type="id_Double" xpath="result/PersonOtherLatitude"/>
-        <nodes name="PersonOtherLongitude" type="id_Double" xpath="result/PersonOtherLongitude"/>
-        <nodes name="PersonOtherGeocodeAccuracy" type="id_String" xpath="result/PersonOtherGeocodeAccuracy"/>
-        <nodes name="PersonOtherAddress" type="id_String" xpath="result/PersonOtherAddress"/>
-        <nodes name="PersonMobilePhone" type="id_String" xpath="result/PersonMobilePhone"/>
-        <nodes name="PersonHomePhone" type="id_String" xpath="result/PersonHomePhone"/>
-        <nodes name="PersonOtherPhone" type="id_String" xpath="result/PersonOtherPhone"/>
-        <nodes name="PersonAssistantPhone" type="id_String" xpath="result/PersonAssistantPhone"/>
-        <nodes name="PersonEmail" outgoingConnections="//@node.5/@nodeData/@connections.5" type="id_String" xpath="result/PersonEmail"/>
-        <nodes name="PersonTitle" type="id_String" xpath="result/PersonTitle"/>
-        <nodes name="PersonDepartment" type="id_String" xpath="result/PersonDepartment"/>
-        <nodes name="PersonAssistantName" type="id_String" xpath="result/PersonAssistantName"/>
-        <nodes name="PersonLeadSource" type="id_String" xpath="result/PersonLeadSource"/>
-        <nodes name="PersonBirthdate" outgoingConnections="//@node.5/@nodeData/@connections.2" type="id_Date" xpath="result/PersonBirthdate"/>
-        <nodes name="PersonHasOptedOutOfEmail" nullable="false" type="id_Boolean" xpath="result/PersonHasOptedOutOfEmail"/>
-        <nodes name="PersonHasOptedOutOfFax" nullable="false" type="id_Boolean" xpath="result/PersonHasOptedOutOfFax"/>
-        <nodes name="PersonDoNotCall" nullable="false" type="id_Boolean" xpath="result/PersonDoNotCall"/>
-        <nodes name="PersonLastCURequestDate" type="id_Date" xpath="result/PersonLastCURequestDate"/>
-        <nodes name="PersonLastCUUpdateDate" type="id_Date" xpath="result/PersonLastCUUpdateDate"/>
-        <nodes name="PersonEmailBouncedReason" type="id_String" xpath="result/PersonEmailBouncedReason"/>
-        <nodes name="PersonEmailBouncedDate" type="id_Date" xpath="result/PersonEmailBouncedDate"/>
-        <nodes name="Jigsaw" type="id_String" xpath="result/Jigsaw"/>
-        <nodes name="JigsawCompanyId" type="id_String" xpath="result/JigsawCompanyId"/>
-        <nodes name="AccountSource" type="id_String" xpath="result/AccountSource"/>
-        <nodes name="SicDesc" type="id_String" xpath="result/SicDesc"/>
-        <nodes name="A_M__c" type="id_String" xpath="result/A_M__c"/>
-        <nodes name="Alimentazione__c" type="id_String" xpath="result/Alimentazione__c"/>
-        <nodes name="Anno_immatricolazione__c" type="id_String" xpath="result/Anno_immatricolazione__c"/>
-        <nodes name="Area_sito__c" type="id_String" xpath="result/Area_sito__c"/>
-        <nodes name="Auto_posseduta__c" type="id_String" xpath="result/Auto_posseduta__c"/>
-        <nodes name="Cambio_auto__c" type="id_String" xpath="result/Cambio_auto__c"/>
-        <nodes name="Campagna_Attivit_di_origine__c" type="id_String" xpath="result/Campagna_Attivit_di_origine__c"/>
-        <nodes name="Cod_Lead__c" type="id_String" xpath="result/Cod_Lead__c"/>
-        <nodes name="Codice_cliente_SAP__c" type="id_String" xpath="result/Codice_cliente_SAP__c"/>
-        <nodes name="Codice_concessionario_SAP__c" type="id_String" xpath="result/Codice_concessionario_SAP__c"/>
-        <nodes name="Codice_fiscale__c" type="id_String" xpath="result/Codice_fiscale__c"/>
-        <nodes name="Concessionario_di_competenza__c" type="id_String" xpath="result/Concessionario_di_competenza__c"/>
-        <nodes name="Consenso_dati_personali__c" nullable="false" type="id_Boolean" xpath="result/Consenso_dati_personali__c"/>
-        <nodes name="Consenso_invio_comunicaz_posta_cartacea__c" nullable="false" type="id_Boolean" xpath="result/Consenso_invio_comunicaz_posta_cartacea__c"/>
-        <nodes name="Consenso_invio_comunicazioni__c" nullable="false" type="id_Boolean" xpath="result/Consenso_invio_comunicazioni__c"/>
-        <nodes name="Consenso_profilazione__c" nullable="false" type="id_Boolean" xpath="result/Consenso_profilazione__c"/>
-        <nodes name="Data_di_nascita__c" type="id_Date" xpath="result/Data_di_nascita__c"/>
-        <nodes name="Data_ultima_privacy__c" type="id_Date" xpath="result/Data_ultima_privacy__c"/>
-        <nodes name="Data_ultimo_passaggio_in_officina__c" type="id_Date" xpath="result/Data_ultimo_passaggio_in_officina__c"/>
-        <nodes name="Email_DEM__c" type="id_String" xpath="result/Email_DEM__c"/>
-        <nodes name="Email__c" type="id_String" xpath="result/Email__c"/>
-        <nodes name="F_M__c" type="id_String" xpath="result/F_M__c"/>
-        <nodes name="Fonte_info__c" type="id_String" xpath="result/Fonte_info__c"/>
-        <nodes name="Modello_interessato__c" type="id_String" xpath="result/Modello_interessato__c"/>
-        <nodes name="Nome_commerciale__c" type="id_String" xpath="result/Nome_commerciale__c"/>
-        <nodes name="Officina_di_competenza__c" type="id_String" xpath="result/Officina_di_competenza__c"/>
-        <nodes name="Partita_IVA__c" type="id_String" xpath="result/Partita_IVA__c"/>
-        <nodes name="Regione__c" type="id_String" xpath="result/Regione__c"/>
-        <nodes name="Stato_dealer__c" type="id_String" xpath="result/Stato_dealer__c"/>
-        <nodes name="Targa__c" type="id_String" xpath="result/Targa__c"/>
-        <nodes name="Tipologia_dealer__c" type="id_String" xpath="result/Tipologia_dealer__c"/>
-        <nodes name="URL_Landing_Page__c" type="id_String" xpath="result/URL_Landing_Page__c"/>
-        <nodes name="Web_to_Lead__c" nullable="false" type="id_Boolean" xpath="result/Web_to_Lead__c"/>
-        <nodes name="OLD_SalesForce_ID__c" type="id_String" xpath="result/OLD_SalesForce_ID__c"/>
-        <nodes name="Source__c" type="id_String" xpath="result/Source__c"/>
-        <nodes name="ResponseAddressVal__c" type="id_String" xpath="result/ResponseAddressVal__c"/>
-        <nodes name="OutputAddress__c" type="id_String" xpath="result/OutputAddress__c"/>
-        <nodes name="Indirizzo_validato__c" nullable="false" type="id_Boolean" xpath="result/Indirizzo_validato__c"/>
-        <nodes name="Indirizzo_mantenuto__c" nullable="false" type="id_Boolean" xpath="result/Indirizzo_mantenuto__c"/>
-        <nodes name="Next_Birthday__c" type="id_Date" xpath="result/Next_Birthday__c"/>
-        <nodes name="SAP_last_update_date__c" outgoingConnections="//@node.5/@nodeData/@connections.7" type="id_Date" xpath="result/SAP_last_update_date__c"/>
-        <nodes name="Concessionario_community__c" type="id_String" xpath="result/Concessionario_community__c"/>
-        <nodes name="Officina_community__c" type="id_String" xpath="result/Officina_community__c"/>
-        <nodes name="Storage_Location__c" type="id_String" xpath="result/Storage_Location__c"/>
-        <nodes name="SAP_integration_error__c" nullable="false" type="id_Boolean" xpath="result/SAP_integration_error__c"/>
-        <nodes name="SAP_integration_error_message__c" type="id_String" xpath="result/SAP_integration_error_message__c"/>
-        <nodes name="Alimentazione__pc" type="id_String" xpath="result/Alimentazione__pc"/>
-        <nodes name="Anno_immatricolazione__pc" type="id_String" xpath="result/Anno_immatricolazione__pc"/>
-        <nodes name="Auto_posseduta__pc" type="id_String" xpath="result/Auto_posseduta__pc"/>
-        <nodes name="Cod_Lead__pc" type="id_String" xpath="result/Cod_Lead__pc"/>
-        <nodes name="Consenso_dati_personali__pc" nullable="false" type="id_Boolean" xpath="result/Consenso_dati_personali__pc"/>
-        <nodes name="Consenso_invio_comunicaz_posta_cartacea__pc" nullable="false" type="id_Boolean" xpath="result/Consenso_invio_comunicaz_posta_cartacea__pc"/>
-        <nodes name="Consenso_invio_comunicazioni__pc" nullable="false" type="id_Boolean" xpath="result/Consenso_invio_comunicazioni__pc"/>
-        <nodes name="Consenso_profilazione__pc" nullable="false" type="id_Boolean" xpath="result/Consenso_profilazione__pc"/>
-        <nodes name="Data_fuori_lista_email__pc" type="id_Date" xpath="result/Data_fuori_lista_email__pc"/>
-        <nodes name="Data_ultima_privacy__pc" type="id_Date" xpath="result/Data_ultima_privacy__pc"/>
-        <nodes name="Data_ultimo_passaggio_in_officina__pc" type="id_Date" xpath="result/Data_ultimo_passaggio_in_officina__pc"/>
-        <nodes name="Eta__pc" type="id_Double" xpath="result/Eta__pc"/>
-        <nodes name="Sesso__pc" type="id_String" xpath="result/Sesso__pc"/>
-        <nodes name="Targa__pc" type="id_String" xpath="result/Targa__pc"/>
-        <nodes name="Ora_ultima_privacy__pc" type="id_String" xpath="result/Ora_ultima_privacy__pc"/>
-        <nodes name="Numero_civico__pc" type="id_String" xpath="result/Numero_civico__pc"/>
-        <nodes name="Scadenza_patente__pc" type="id_Date" xpath="result/Scadenza_patente__pc"/>
-        <nodes name="Professione__pc" type="id_String" xpath="result/Professione__pc"/>
-      </inputTrees>
-      <outputTrees name="response">
-        <nodes expression="" name="payload" type="id_Document" xpath="response/payload">
-          <children expression="" loop="true" main="true" name="tns:SAP_fetch_BP_from_SF_Resp" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp" xsi:type="TalendXMLMap:OutputTreeNode">
-            <children defaultValue="urn:subaru.eu:ECC:MDM:BpFetch" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="result.PersonBirthdate" incomingConnections="//@node.5/@nodeData/@connections.2" name="Birthdate" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Birthdate" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="result.PersonMailingCity" incomingConnections="//@node.5/@nodeData/@connections.3" name="City" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/City" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="result.PersonMailingPostalCode" incomingConnections="//@node.5/@nodeData/@connections.4" name="Countrycode" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Countrycode" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="" name="Dealer" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Dealer" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="result.PersonEmail" incomingConnections="//@node.5/@nodeData/@connections.5" name="Emailaddress" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Emailaddress" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="result.FirstName" incomingConnections="//@node.5/@nodeData/@connections.6" name="Firstname" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Firstname" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="" name="Fiscalcode" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Fiscalcode" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="" name="Gender" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Gender" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children name="Housenumber" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Housenumber" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="" name="Languagecode" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Languagecode" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="result.LastName" incomingConnections="//@node.5/@nodeData/@connections.1" name="Lastname" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Lastname" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="result.SAP_last_update_date__c" incomingConnections="//@node.5/@nodeData/@connections.7" name="Lastupdatedate" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Lastupdatedate" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children name="Marketingcheckbox" type="id_Boolean" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Marketingcheckbox" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children name="Mobilephone" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Mobilephone" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children name="Partnertype" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Partnertype" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children name="Phone" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Phone" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children name="Postalcode" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Postalcode" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children name="PrivacyDate" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/PrivacyDate" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children name="PrivacyTime" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/PrivacyTime" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children name="PreSalescheckbox" type="id_Boolean" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/PreSalescheckbox" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children name="Profilingcheckbox" type="id_Boolean" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Profilingcheckbox" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="" name="Region" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Region" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="result.Id " incomingConnections="//@node.5/@nodeData/@connections.0" name="Salesforceid" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Salesforceid" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children name="Sapbpcode" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Sapbpcode" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children name="StoreLoc" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/StoreLoc" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children name="Street" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Street" xsi:type="TalendXMLMap:OutputTreeNode"/>
-          </children>
-        </nodes>
-      </outputTrees>
-      <varTables minimized="true" name="Var"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.23" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.4" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.11" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.82" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.56" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.58" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.77" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.5" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.6" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.134" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.12" xsi:type="TalendXMLMap:Connection"/>
-    </nodeData>
-  </node>
-  <node componentName="tESBProviderResponse" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tESBProviderResponse_1"/>
-    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_CUSTOM_PROPERTIES" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tESBProviderResponse_1">
-      <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
-    </metadata>
   </node>
   <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogCatcher_1"/>
@@ -1951,7 +2496,7 @@
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row4">
         <nodes name="moment" type="id_Date" xpath="row4/moment"/>
-        <nodes name="pid" outgoingConnections="//@node.8/@nodeData/@connections.1" type="id_String" xpath="row4/pid"/>
+        <nodes name="pid" outgoingConnections="//@node.9/@nodeData/@connections.1" type="id_String" xpath="row4/pid"/>
         <nodes name="root_pid" type="id_String" xpath="row4/root_pid"/>
         <nodes name="father_pid" type="id_String" xpath="row4/father_pid"/>
         <nodes name="project" type="id_String" xpath="row4/project"/>
@@ -1959,8 +2504,8 @@
         <nodes name="context" type="id_String" xpath="row4/context"/>
         <nodes name="priority" type="id_Integer" xpath="row4/priority"/>
         <nodes name="type" type="id_String" xpath="row4/type"/>
-        <nodes name="origin" outgoingConnections="//@node.8/@nodeData/@connections.3" type="id_String" xpath="row4/origin"/>
-        <nodes name="message" outgoingConnections="//@node.8/@nodeData/@connections.0 //@node.8/@nodeData/@connections.2" type="id_String" xpath="row4/message"/>
+        <nodes name="origin" outgoingConnections="//@node.9/@nodeData/@connections.3" type="id_String" xpath="row4/origin"/>
+        <nodes name="message" outgoingConnections="//@node.9/@nodeData/@connections.0 //@node.9/@nodeData/@connections.2" type="id_String" xpath="row4/message"/>
         <nodes name="code" type="id_Integer" xpath="row4/code"/>
       </inputTrees>
       <outputTrees name="generalFault">
@@ -1968,23 +2513,23 @@
           <children main="true" name="tns:SAP_fetch_BP_from_SF_Fault" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault" xsi:type="TalendXMLMap:OutputTreeNode">
             <children defaultValue="urn:subaru.eu:ECC:MDM:BpFetch" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
             <children loop="true" main="true" name="standard" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard" xsi:type="TalendXMLMap:OutputTreeNode">
-              <children expression="row4.message" incomingConnections="//@node.8/@nodeData/@connections.2" name="faultText" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultText" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row4.origin" incomingConnections="//@node.8/@nodeData/@connections.3" name="faultUrl" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultUrl" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row4.message" incomingConnections="//@node.9/@nodeData/@connections.2" name="faultText" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultText" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row4.origin" incomingConnections="//@node.9/@nodeData/@connections.3" name="faultUrl" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultUrl" xsi:type="TalendXMLMap:OutputTreeNode"/>
               <children main="true" name="faultDetail" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultDetail" xsi:type="TalendXMLMap:OutputTreeNode">
                 <children name="severity" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultDetail/severity" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                <children expression="row4.message" incomingConnections="//@node.8/@nodeData/@connections.0" name="text" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultDetail/text" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="row4.message" incomingConnections="//@node.9/@nodeData/@connections.0" name="text" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultDetail/text" xsi:type="TalendXMLMap:OutputTreeNode"/>
                 <children name="url" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultDetail/url" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                <children expression="row4.pid" incomingConnections="//@node.8/@nodeData/@connections.1" name="id" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultDetail/id" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="row4.pid" incomingConnections="//@node.9/@nodeData/@connections.1" name="id" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultDetail/id" xsi:type="TalendXMLMap:OutputTreeNode"/>
               </children>
             </children>
           </children>
         </nodes>
       </outputTrees>
       <varTables minimized="true" name="Var"/>
-      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.10" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.1" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.3" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.10" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.0" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.9" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.9/@nodeData/@inputTrees.0/@nodes.10" target="//@node.9/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.9/@nodeData/@inputTrees.0/@nodes.1" target="//@node.9/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.9/@nodeData/@inputTrees.0/@nodes.10" target="//@node.9/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.9/@nodeData/@inputTrees.0/@nodes.9" target="//@node.9/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.1" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
   <node componentName="tESBProviderFault" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="288">
@@ -2484,10 +3029,6 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="result"/>
   </connection>
-  <connection connectorName="MAIN" label="row2" lineStyle="0" metaname="MAIN" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_1" target="tMap_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
-  </connection>
   <connection connectorName="FLOW" label="sfSELECT" lineStyle="8" metaname="sfSELECT" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tMap_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="Alimentazione__c"/>
@@ -2972,6 +3513,14 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="response"/>
   </connection>
+  <connection connectorName="MAIN" label="row2" lineStyle="0" metaname="MAIN" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tXMLMap_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
@@ -2990,13 +3539,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_21bf4762-53d8-4d7c-a6bf-36ea0d965453"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NVSsT8zPjaa9/2TW44u5bPeA5vxstiYMoYPB489Ht9CUiukhMyMXwg6fwfiwmL7c09Qqerjdnu8i
-hC51ytcR2A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d9d71b94-0eea-4c46-a647-28736a9577d0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hfPAcz9a9u12aaELVgcgKxzkJOJuKzcLJm9TBJMI5YQ0kvA/4AWrPx75cNDMexi3wkEnrw7XCgj6
-9Wdrqc+d3A==</DigestValue></Reference></SignedInfo><SignatureValue>iPk4ZWSlkE0C/rj1T9qgwNZgl7rVp9D/mBY1QgcpoyEYMYeKurvuTJ57xlRlcTy25C0J6wBrCPD7
-syMk2bcMf9cxH88SrDVOiZZFF010/hrB15KM6F7j8hL6QIihmhqTE24AHcl3dH+nImv+QAiWg+c3
-CA5ChMbxEgviFVVlHLK85wRsumlHSYM9Nsh4tuihtOlLPjhM8oibAWqYhpUeTWwum/B6JBXe+xmp
-Yfwd5xLH8cXCuFk3nAalb/b725ABOjsoYeoz0FLJvPFW3ac9JDHTEtTOhEWLX80g5lr0BL6yP28c
-3CMWDb7ugHqiuZt3edM1B6mZ4GqaSV1gwvhq3A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d6556d90-8e47-4e9c-b75d-4f3a5eb17121"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>MwU56EguzGSpzok4c2RuHKf2wzvxojIEuS/ihN7QL76lau2tUBCwZxntRaFmeEX3iYq+Yrz7RVSE
+3gcIXng6Hg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_19930180-cb02-4644-a6eb-e22c89878625"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>PkujVp8mgxtRTjzUpOpf4TEE+TsLflxPB+dp0Ax/JtUrVownHcqRRtmx+YGVu491AYMORP8qmogV
+h6g0Uszjxg==</DigestValue></Reference></SignedInfo><SignatureValue>X2jVhep/lADlstQXdPyBKWcP//bfVXt5kpCC491WQSkKv+qTPEhao8EyqJVRVrKFo8Jpr8rMgDq6
+VYuIpluT0lqaCM7/ygNKE8kldKpmRRUlMeCq9ssg84FstYbmHImulRdF2i/12Xqb6S/E1CZarudB
+DL8VwnCnnxWezHyVPlAZ2Bm6TjZQssX6ZAHoh2nR1spHjeRCQjMtReCkQpz91McHJiUj9Y+2HXEx
+kDqLUn71OXZ4LJBDpSF37N6vZiczohpWgePIm5KNMtGk+kbyJDumSKrnH1ySYv/D6hbg6KnP9TA5
+mshFNwJDcvJ4zQwkHrMlPIJ4PLF4VqhmaX/hzw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -3020,4 +3569,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d9d71b94-0eea-4c46-a647-28736a9577d0" Target="#_21bf4762-53d8-4d7c-a6bf-36ea0d965453"><Timestamp>2018-08-28 11:24:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_19930180-cb02-4644-a6eb-e22c89878625" Target="#_d6556d90-8e47-4e9c-b75d-4f3a5eb17121"><Timestamp>2018-08-28 11:27:46</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
