@@ -708,7 +708,7 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="sfSELECT" name="sfSELECT">
+    <metadata comment="" label="Account" name="sfSELECT">
       <column comment="" key="false" length="18" name="Id" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="IsDeleted" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true"/>
       <column comment="" key="false" length="18" name="MasterRecordId" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
@@ -907,73 +907,73 @@
       <column comment="" key="false" length="255" name="Professione__pc" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables activateCondensedTool="true" id="_Z6utUEPGEeih8KkJgV_NKQ - Account" name="sfSELECT" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row3.Id" name="Id" type="id_String"/>
-        <mapperTableEntries expression="row3.IsDeleted" name="IsDeleted" type="id_Boolean"/>
-        <mapperTableEntries expression="row3.MasterRecordId" name="MasterRecordId" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Name" name="Name" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.LastName" name="LastName" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.FirstName" name="FirstName" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Salutation" name="Salutation" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.MiddleName" name="MiddleName" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Suffix" name="Suffix" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Type" name="Type" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.RecordTypeId" name="RecordTypeId" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.ParentId" name="ParentId" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.BillingStreet" name="BillingStreet" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.BillingCity" name="BillingCity" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.BillingState" name="BillingState" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.BillingPostalCode" name="BillingPostalCode" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.BillingCountry" name="BillingCountry" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.BillingLatitude" name="BillingLatitude" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression="row3.BillingLongitude" name="BillingLongitude" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression="row3.BillingGeocodeAccuracy" name="BillingGeocodeAccuracy" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.BillingAddress" name="BillingAddress" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.ShippingStreet" name="ShippingStreet" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.ShippingCity" name="ShippingCity" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.ShippingState" name="ShippingState" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.ShippingPostalCode" name="ShippingPostalCode" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.ShippingCountry" name="ShippingCountry" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.ShippingLatitude" name="ShippingLatitude" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression="row3.ShippingLongitude" name="ShippingLongitude" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression="row3.ShippingGeocodeAccuracy" name="ShippingGeocodeAccuracy" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.ShippingAddress" name="ShippingAddress" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Phone" name="Phone" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Fax" name="Fax" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Id" name="Id" type="id_String"/>
+        <mapperTableEntries expression="row2.IsDeleted" name="IsDeleted" type="id_Boolean"/>
+        <mapperTableEntries expression="row2.MasterRecordId" name="MasterRecordId" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Name" name="Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.LastName" name="LastName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.FirstName" name="FirstName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Salutation" name="Salutation" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.MiddleName" name="MiddleName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Suffix" name="Suffix" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Type" name="Type" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.RecordTypeId" name="RecordTypeId" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.ParentId" name="ParentId" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.BillingStreet" name="BillingStreet" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.BillingCity" name="BillingCity" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.BillingState" name="BillingState" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.BillingPostalCode" name="BillingPostalCode" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.BillingCountry" name="BillingCountry" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.BillingLatitude" name="BillingLatitude" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row2.BillingLongitude" name="BillingLongitude" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row2.BillingGeocodeAccuracy" name="BillingGeocodeAccuracy" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.BillingAddress" name="BillingAddress" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.ShippingStreet" name="ShippingStreet" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.ShippingCity" name="ShippingCity" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.ShippingState" name="ShippingState" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.ShippingPostalCode" name="ShippingPostalCode" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.ShippingCountry" name="ShippingCountry" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.ShippingLatitude" name="ShippingLatitude" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row2.ShippingLongitude" name="ShippingLongitude" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row2.ShippingGeocodeAccuracy" name="ShippingGeocodeAccuracy" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.ShippingAddress" name="ShippingAddress" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Phone" name="Phone" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Fax" name="Fax" nullable="true" type="id_String"/>
         <mapperTableEntries name="AccountNumber" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Website" name="Website" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.PhotoUrl" name="PhotoUrl" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Website" name="Website" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.PhotoUrl" name="PhotoUrl" nullable="true" type="id_String"/>
         <mapperTableEntries name="Sic" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Industry" name="Industry" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Industry" name="Industry" nullable="true" type="id_String"/>
         <mapperTableEntries name="AnnualRevenue" nullable="true" type="id_BigDecimal"/>
-        <mapperTableEntries expression="row3.NumberOfEmployees" name="NumberOfEmployees" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.NumberOfEmployees" name="NumberOfEmployees" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="Ownership" nullable="true" type="id_String"/>
         <mapperTableEntries name="TickerSymbol" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Description" name="Description" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Description" name="Description" nullable="true" type="id_String"/>
         <mapperTableEntries name="Rating" nullable="true" type="id_String"/>
         <mapperTableEntries name="Site" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.OwnerId" name="OwnerId" type="id_String"/>
-        <mapperTableEntries expression="row3.CreatedDate" name="CreatedDate" type="id_Date"/>
-        <mapperTableEntries expression="row3.CreatedById" name="CreatedById" type="id_String"/>
-        <mapperTableEntries expression="row3.LastModifiedDate" name="LastModifiedDate" type="id_Date"/>
-        <mapperTableEntries expression="row3.LastModifiedById" name="LastModifiedById" type="id_String"/>
-        <mapperTableEntries expression="row3.SystemModstamp" name="SystemModstamp" type="id_Date"/>
-        <mapperTableEntries expression="row3.LastActivityDate" name="LastActivityDate" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row3.LastViewedDate" name="LastViewedDate" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row3.LastReferencedDate" name="LastReferencedDate" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row3.PersonContactId" name="PersonContactId" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.IsPersonAccount" name="IsPersonAccount" type="id_Boolean"/>
-        <mapperTableEntries expression="row3.PersonMailingStreet" name="PersonMailingStreet" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.PersonMailingCity" name="PersonMailingCity" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.PersonMailingState" name="PersonMailingState" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.PersonMailingPostalCode" name="PersonMailingPostalCode" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.PersonMailingCountry" name="PersonMailingCountry" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.PersonMailingLatitude" name="PersonMailingLatitude" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression="row3.PersonMailingLongitude" name="PersonMailingLongitude" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression="row3.PersonMailingGeocodeAccuracy" name="PersonMailingGeocodeAccuracy" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.PersonMailingAddress" name="PersonMailingAddress" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.OwnerId" name="OwnerId" type="id_String"/>
+        <mapperTableEntries expression="row2.CreatedDate" name="CreatedDate" type="id_Date"/>
+        <mapperTableEntries expression="row2.CreatedById" name="CreatedById" type="id_String"/>
+        <mapperTableEntries expression="row2.LastModifiedDate" name="LastModifiedDate" type="id_Date"/>
+        <mapperTableEntries expression="row2.LastModifiedById" name="LastModifiedById" type="id_String"/>
+        <mapperTableEntries expression="row2.SystemModstamp" name="SystemModstamp" type="id_Date"/>
+        <mapperTableEntries expression="row2.LastActivityDate" name="LastActivityDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.LastViewedDate" name="LastViewedDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.LastReferencedDate" name="LastReferencedDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.PersonContactId" name="PersonContactId" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.IsPersonAccount" name="IsPersonAccount" type="id_Boolean"/>
+        <mapperTableEntries expression="row2.PersonMailingStreet" name="PersonMailingStreet" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.PersonMailingCity" name="PersonMailingCity" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.PersonMailingState" name="PersonMailingState" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.PersonMailingPostalCode" name="PersonMailingPostalCode" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.PersonMailingCountry" name="PersonMailingCountry" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.PersonMailingLatitude" name="PersonMailingLatitude" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row2.PersonMailingLongitude" name="PersonMailingLongitude" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row2.PersonMailingGeocodeAccuracy" name="PersonMailingGeocodeAccuracy" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.PersonMailingAddress" name="PersonMailingAddress" nullable="true" type="id_String"/>
         <mapperTableEntries name="PersonOtherStreet" nullable="true" type="id_String"/>
         <mapperTableEntries name="PersonOtherCity" nullable="true" type="id_String"/>
         <mapperTableEntries name="PersonOtherState" nullable="true" type="id_String"/>
@@ -983,91 +983,91 @@
         <mapperTableEntries name="PersonOtherLongitude" nullable="true" type="id_Double"/>
         <mapperTableEntries name="PersonOtherGeocodeAccuracy" nullable="true" type="id_String"/>
         <mapperTableEntries name="PersonOtherAddress" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.PersonMobilePhone" name="PersonMobilePhone" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.PersonMobilePhone" name="PersonMobilePhone" nullable="true" type="id_String"/>
         <mapperTableEntries name="PersonHomePhone" nullable="true" type="id_String"/>
         <mapperTableEntries name="PersonOtherPhone" nullable="true" type="id_String"/>
         <mapperTableEntries name="PersonAssistantPhone" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.PersonEmail" name="PersonEmail" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.PersonTitle" name="PersonTitle" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.PersonDepartment" name="PersonDepartment" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.PersonEmail" name="PersonEmail" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.PersonTitle" name="PersonTitle" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.PersonDepartment" name="PersonDepartment" nullable="true" type="id_String"/>
         <mapperTableEntries name="PersonAssistantName" nullable="true" type="id_String"/>
         <mapperTableEntries name="PersonLeadSource" nullable="true" type="id_String"/>
         <mapperTableEntries name="PersonBirthdate" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row3.PersonHasOptedOutOfEmail" name="PersonHasOptedOutOfEmail" type="id_Boolean"/>
+        <mapperTableEntries expression="row2.PersonHasOptedOutOfEmail" name="PersonHasOptedOutOfEmail" type="id_Boolean"/>
         <mapperTableEntries name="PersonHasOptedOutOfFax" type="id_Boolean"/>
         <mapperTableEntries name="PersonDoNotCall" type="id_Boolean"/>
-        <mapperTableEntries expression="row3.PersonLastCURequestDate" name="PersonLastCURequestDate" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row3.PersonLastCUUpdateDate" name="PersonLastCUUpdateDate" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row3.PersonEmailBouncedReason" name="PersonEmailBouncedReason" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.PersonEmailBouncedDate" name="PersonEmailBouncedDate" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row3.Jigsaw" name="Jigsaw" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.JigsawCompanyId" name="JigsawCompanyId" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.AccountSource" name="AccountSource" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.SicDesc" name="SicDesc" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.A_M__c" name="A_M__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Alimentazione__c" name="Alimentazione__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Anno_immatricolazione__c" name="Anno_immatricolazione__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Area_sito__c" name="Area_sito__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Auto_posseduta__c" name="Auto_posseduta__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Cambio_auto__c" name="Cambio_auto__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Campagna_Attivit_di_origine__c" name="Campagna_Attivit_di_origine__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Cod_Lead__c" name="Cod_Lead__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Codice_cliente_SAP__c" name="Codice_cliente_SAP__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Codice_concessionario_SAP__c" name="Codice_concessionario_SAP__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Codice_fiscale__c" name="Codice_fiscale__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Concessionario_di_competenza__c" name="Concessionario_di_competenza__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Consenso_dati_personali__c" name="Consenso_dati_personali__c" type="id_Boolean"/>
-        <mapperTableEntries expression="row3.Consenso_invio_comunicaz_posta_cartacea__c" name="Consenso_invio_comunicaz_posta_cartacea__c" type="id_Boolean"/>
-        <mapperTableEntries expression="row3.Consenso_invio_comunicazioni__c" name="Consenso_invio_comunicazioni__c" type="id_Boolean"/>
-        <mapperTableEntries expression="row3.Consenso_profilazione__c" name="Consenso_profilazione__c" type="id_Boolean"/>
-        <mapperTableEntries expression="row3.Data_di_nascita__c" name="Data_di_nascita__c" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row3.Data_ultima_privacy__c" name="Data_ultima_privacy__c" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row3.Data_ultimo_passaggio_in_officina__c" name="Data_ultimo_passaggio_in_officina__c" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row3.Email_DEM__c" name="Email_DEM__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Email__c" name="Email__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.F_M__c" name="F_M__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Fonte_info__c" name="Fonte_info__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Modello_interessato__c" name="Modello_interessato__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Nome_commerciale__c" name="Nome_commerciale__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Officina_di_competenza__c" name="Officina_di_competenza__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Partita_IVA__c" name="Partita_IVA__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Regione__c" name="Regione__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Stato_dealer__c" name="Stato_dealer__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Targa__c" name="Targa__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Tipologia_dealer__c" name="Tipologia_dealer__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.URL_Landing_Page__c" name="URL_Landing_Page__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Web_to_Lead__c" name="Web_to_Lead__c" type="id_Boolean"/>
-        <mapperTableEntries expression="row3.OLD_SalesForce_ID__c" name="OLD_SalesForce_ID__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Source__c" name="Source__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.PersonLastCURequestDate" name="PersonLastCURequestDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.PersonLastCUUpdateDate" name="PersonLastCUUpdateDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.PersonEmailBouncedReason" name="PersonEmailBouncedReason" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.PersonEmailBouncedDate" name="PersonEmailBouncedDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.Jigsaw" name="Jigsaw" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.JigsawCompanyId" name="JigsawCompanyId" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.AccountSource" name="AccountSource" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.SicDesc" name="SicDesc" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.A_M__c" name="A_M__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Alimentazione__c" name="Alimentazione__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Anno_immatricolazione__c" name="Anno_immatricolazione__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Area_sito__c" name="Area_sito__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Auto_posseduta__c" name="Auto_posseduta__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Cambio_auto__c" name="Cambio_auto__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Campagna_Attivit_di_origine__c" name="Campagna_Attivit_di_origine__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Cod_Lead__c" name="Cod_Lead__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Codice_cliente_SAP__c" name="Codice_cliente_SAP__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Codice_concessionario_SAP__c" name="Codice_concessionario_SAP__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Codice_fiscale__c" name="Codice_fiscale__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Concessionario_di_competenza__c" name="Concessionario_di_competenza__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Consenso_dati_personali__c" name="Consenso_dati_personali__c" type="id_Boolean"/>
+        <mapperTableEntries expression="row2.Consenso_invio_comunicaz_posta_cartacea__c" name="Consenso_invio_comunicaz_posta_cartacea__c" type="id_Boolean"/>
+        <mapperTableEntries expression="row2.Consenso_invio_comunicazioni__c" name="Consenso_invio_comunicazioni__c" type="id_Boolean"/>
+        <mapperTableEntries expression="row2.Consenso_profilazione__c" name="Consenso_profilazione__c" type="id_Boolean"/>
+        <mapperTableEntries expression="row2.Data_di_nascita__c" name="Data_di_nascita__c" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.Data_ultima_privacy__c" name="Data_ultima_privacy__c" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.Data_ultimo_passaggio_in_officina__c" name="Data_ultimo_passaggio_in_officina__c" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.Email_DEM__c" name="Email_DEM__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Email__c" name="Email__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.F_M__c" name="F_M__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Fonte_info__c" name="Fonte_info__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Modello_interessato__c" name="Modello_interessato__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Nome_commerciale__c" name="Nome_commerciale__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Officina_di_competenza__c" name="Officina_di_competenza__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Partita_IVA__c" name="Partita_IVA__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Regione__c" name="Regione__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Stato_dealer__c" name="Stato_dealer__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Targa__c" name="Targa__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Tipologia_dealer__c" name="Tipologia_dealer__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.URL_Landing_Page__c" name="URL_Landing_Page__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Web_to_Lead__c" name="Web_to_Lead__c" type="id_Boolean"/>
+        <mapperTableEntries expression="row2.OLD_SalesForce_ID__c" name="OLD_SalesForce_ID__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Source__c" name="Source__c" nullable="true" type="id_String"/>
         <mapperTableEntries name="ResponseAddressVal__c" nullable="true" type="id_String"/>
         <mapperTableEntries name="OutputAddress__c" nullable="true" type="id_String"/>
         <mapperTableEntries name="Indirizzo_validato__c" type="id_Boolean"/>
         <mapperTableEntries name="Indirizzo_mantenuto__c" type="id_Boolean"/>
-        <mapperTableEntries expression="row3.Next_Birthday__c" name="Next_Birthday__c" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row3.SAP_last_update_date__c" name="SAP_last_update_date__c" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row3.Concessionario_community__c" name="Concessionario_community__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Officina_community__c" name="Officina_community__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Storage_Location__c" name="Storage_Location__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.SAP_integration_error__c" name="SAP_integration_error__c" type="id_Boolean"/>
-        <mapperTableEntries expression="row3.SAP_integration_error_message__c" name="SAP_integration_error_message__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Alimentazione__pc" name="Alimentazione__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Anno_immatricolazione__pc" name="Anno_immatricolazione__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Auto_posseduta__pc" name="Auto_posseduta__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Cod_Lead__pc" name="Cod_Lead__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Consenso_dati_personali__pc" name="Consenso_dati_personali__pc" type="id_Boolean"/>
-        <mapperTableEntries expression="row3.Consenso_invio_comunicaz_posta_cartacea__pc" name="Consenso_invio_comunicaz_posta_cartacea__pc" type="id_Boolean"/>
-        <mapperTableEntries expression="row3.Consenso_invio_comunicazioni__pc" name="Consenso_invio_comunicazioni__pc" type="id_Boolean"/>
-        <mapperTableEntries expression="row3.Consenso_profilazione__pc" name="Consenso_profilazione__pc" type="id_Boolean"/>
-        <mapperTableEntries expression="row3.Data_fuori_lista_email__pc" name="Data_fuori_lista_email__pc" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row3.Data_ultima_privacy__pc" name="Data_ultima_privacy__pc" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row3.Data_ultimo_passaggio_in_officina__pc" name="Data_ultimo_passaggio_in_officina__pc" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row3.Eta__pc" name="Eta__pc" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression="row3.Sesso__pc" name="Sesso__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Targa__pc" name="Targa__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Ora_ultima_privacy__pc" name="Ora_ultima_privacy__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Numero_civico__pc" name="Numero_civico__pc" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.Scadenza_patente__pc" name="Scadenza_patente__pc" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row3.Professione__pc" name="Professione__pc" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Next_Birthday__c" name="Next_Birthday__c" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.SAP_last_update_date__c" name="SAP_last_update_date__c" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.Concessionario_community__c" name="Concessionario_community__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Officina_community__c" name="Officina_community__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Storage_Location__c" name="Storage_Location__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.SAP_integration_error__c" name="SAP_integration_error__c" type="id_Boolean"/>
+        <mapperTableEntries expression="row2.SAP_integration_error_message__c" name="SAP_integration_error_message__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Alimentazione__pc" name="Alimentazione__pc" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Anno_immatricolazione__pc" name="Anno_immatricolazione__pc" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Auto_posseduta__pc" name="Auto_posseduta__pc" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Cod_Lead__pc" name="Cod_Lead__pc" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Consenso_dati_personali__pc" name="Consenso_dati_personali__pc" type="id_Boolean"/>
+        <mapperTableEntries expression="row2.Consenso_invio_comunicaz_posta_cartacea__pc" name="Consenso_invio_comunicaz_posta_cartacea__pc" type="id_Boolean"/>
+        <mapperTableEntries expression="row2.Consenso_invio_comunicazioni__pc" name="Consenso_invio_comunicazioni__pc" type="id_Boolean"/>
+        <mapperTableEntries expression="row2.Consenso_profilazione__pc" name="Consenso_profilazione__pc" type="id_Boolean"/>
+        <mapperTableEntries expression="row2.Data_fuori_lista_email__pc" name="Data_fuori_lista_email__pc" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.Data_ultima_privacy__pc" name="Data_ultima_privacy__pc" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.Data_ultimo_passaggio_in_officina__pc" name="Data_ultimo_passaggio_in_officina__pc" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.Eta__pc" name="Eta__pc" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row2.Sesso__pc" name="Sesso__pc" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Targa__pc" name="Targa__pc" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Ora_ultima_privacy__pc" name="Ora_ultima_privacy__pc" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Numero_civico__pc" name="Numero_civico__pc" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Scadenza_patente__pc" name="Scadenza_patente__pc" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.Professione__pc" name="Professione__pc" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
         <mapperTableEntries name="Id" type="id_String"/>
@@ -2990,13 +2990,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_221c256a-9136-45f6-ba15-6db9d392a7ee"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jYi3xaJvH3IXmwQpz4XgbCNYxIKZD22Fc5T1a6KIVD3iNjO3q3I2o26gEYGs/G+WYPqXbk2Yfur+
-8Y9ayujOmg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_96a9a25e-721d-4a38-a8a6-5eb777a6a4bb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>k3yq8f6MBNmfg1nbEd77UxQIh+NTH7j6ZinMysdfkKm+jiUQtnrvdq1p1ZVPAwOnh5y7eIoCJEgg
-1rXL5AHngg==</DigestValue></Reference></SignedInfo><SignatureValue>CIde99RnpqLpaJ0uz3aWZ4pvUZRzoRy85sg6yJWnv8A6HODm2uv4guw01ekn0vwH+90D5XAaiBUj
-fv3ymvDBTPbQS+tseQwkl0CcMbGeZmbrD/26ioI4hfAfWHMBqdgG7X9K5LJ6F+KUTPTTXeZEJnd7
-esxhOjQCtIXc/DEOJ7SbZrgDEZGT7jrGQmsCqu8XnZZwn4pubdEpxwmw7zz5X4IivHtAPMSunm42
-OlN+jFviaB8fhlN4j69mPfLBrDktxb38kdPQfPtJpwQWvar7fvw2Xps9NmQP5pbg53kCbDWRQ6fo
-NzkAVTT40LeKLGBPPvx+fe3/l3pbb0WQWp3ASg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_494af550-7a07-408d-a702-fa37d909e7d8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LNi1v2ajSDRKU/FI4khgzuX8RO4rZvyXUTUyLp+WamriMo6AHtF6xuEbreykE4PEZa2OlQvikNGu
+AXfLPmFZZw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a3ba20e7-03b3-4c74-a0f9-b3e3893ecac5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>h/t6iaf2LbpOVVJCRMMjAe7qwLaKGmHHgT3V/UMCd6n7ZTs9suXbRR3D9c2m/Nh4bCoSOhsnSQxt
+z4tGznzYCQ==</DigestValue></Reference></SignedInfo><SignatureValue>nLyChnDdfR8hQFfv9KuhX8GcGtqASXuqwnmMjLaMjYjMGcwb2Elbw0TWT6oIxLejRat3WvYnvn+R
+IKs6mSK0L2PSzQv0GtGMyWXSWpTPmqs2f1qf+gr78LvvNvpyZgH367LLLTl4/0m8G+idtKpLVQnN
+iKGO3RufScWDxjWdW13WCoEi3fB1QgNYr85CpU3prlNBV36KH2LH65HiA7HzEsVWvrP2aBovxHE6
+D8GTX1q9ahj7v5Sd4x2jTVRhsbycS6F2PZOsCoCmyQCH6VMlVb/cxYxplQjXP/2dJ5cMoN8MKqPh
+6+n8RC8Z1JYxEZUmpVp8huPgEBsZwi6kQuSy8g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -3020,4 +3020,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_96a9a25e-721d-4a38-a8a6-5eb777a6a4bb" Target="#_221c256a-9136-45f6-ba15-6db9d392a7ee"><Timestamp>2018-08-28 11:28:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a3ba20e7-03b3-4c74-a0f9-b3e3893ecac5" Target="#_494af550-7a07-408d-a702-fa37d909e7d8"><Timestamp>2018-08-28 11:31:32</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
