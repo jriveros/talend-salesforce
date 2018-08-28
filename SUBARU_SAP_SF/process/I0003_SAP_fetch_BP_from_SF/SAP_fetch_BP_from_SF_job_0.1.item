@@ -1714,8 +1714,8 @@
         <nodes name="IsDeleted" nullable="false" type="id_Boolean" xpath="result/IsDeleted"/>
         <nodes name="MasterRecordId" type="id_String" xpath="result/MasterRecordId"/>
         <nodes name="Name" type="id_String" xpath="result/Name"/>
-        <nodes name="LastName" type="id_String" xpath="result/LastName"/>
-        <nodes name="FirstName" type="id_String" xpath="result/FirstName"/>
+        <nodes name="LastName" outgoingConnections="//@node.5/@nodeData/@connections.1" type="id_String" xpath="result/LastName"/>
+        <nodes name="FirstName" outgoingConnections="//@node.5/@nodeData/@connections.6" type="id_String" xpath="result/FirstName"/>
         <nodes name="Salutation" type="id_String" xpath="result/Salutation"/>
         <nodes name="MiddleName" type="id_String" xpath="result/MiddleName"/>
         <nodes name="Suffix" type="id_String" xpath="result/Suffix"/>
@@ -1766,9 +1766,9 @@
         <nodes name="PersonContactId" type="id_String" xpath="result/PersonContactId"/>
         <nodes name="IsPersonAccount" nullable="false" type="id_Boolean" xpath="result/IsPersonAccount"/>
         <nodes name="PersonMailingStreet" type="id_String" xpath="result/PersonMailingStreet"/>
-        <nodes name="PersonMailingCity" type="id_String" xpath="result/PersonMailingCity"/>
+        <nodes name="PersonMailingCity" outgoingConnections="//@node.5/@nodeData/@connections.3" type="id_String" xpath="result/PersonMailingCity"/>
         <nodes name="PersonMailingState" type="id_String" xpath="result/PersonMailingState"/>
-        <nodes name="PersonMailingPostalCode" type="id_String" xpath="result/PersonMailingPostalCode"/>
+        <nodes name="PersonMailingPostalCode" outgoingConnections="//@node.5/@nodeData/@connections.4" type="id_String" xpath="result/PersonMailingPostalCode"/>
         <nodes name="PersonMailingCountry" type="id_String" xpath="result/PersonMailingCountry"/>
         <nodes name="PersonMailingLatitude" type="id_Double" xpath="result/PersonMailingLatitude"/>
         <nodes name="PersonMailingLongitude" type="id_Double" xpath="result/PersonMailingLongitude"/>
@@ -1787,12 +1787,12 @@
         <nodes name="PersonHomePhone" type="id_String" xpath="result/PersonHomePhone"/>
         <nodes name="PersonOtherPhone" type="id_String" xpath="result/PersonOtherPhone"/>
         <nodes name="PersonAssistantPhone" type="id_String" xpath="result/PersonAssistantPhone"/>
-        <nodes name="PersonEmail" type="id_String" xpath="result/PersonEmail"/>
+        <nodes name="PersonEmail" outgoingConnections="//@node.5/@nodeData/@connections.5" type="id_String" xpath="result/PersonEmail"/>
         <nodes name="PersonTitle" type="id_String" xpath="result/PersonTitle"/>
         <nodes name="PersonDepartment" type="id_String" xpath="result/PersonDepartment"/>
         <nodes name="PersonAssistantName" type="id_String" xpath="result/PersonAssistantName"/>
         <nodes name="PersonLeadSource" type="id_String" xpath="result/PersonLeadSource"/>
-        <nodes name="PersonBirthdate" type="id_Date" xpath="result/PersonBirthdate"/>
+        <nodes name="PersonBirthdate" outgoingConnections="//@node.5/@nodeData/@connections.2" type="id_Date" xpath="result/PersonBirthdate"/>
         <nodes name="PersonHasOptedOutOfEmail" nullable="false" type="id_Boolean" xpath="result/PersonHasOptedOutOfEmail"/>
         <nodes name="PersonHasOptedOutOfFax" nullable="false" type="id_Boolean" xpath="result/PersonHasOptedOutOfFax"/>
         <nodes name="PersonDoNotCall" nullable="false" type="id_Boolean" xpath="result/PersonDoNotCall"/>
@@ -1844,7 +1844,7 @@
         <nodes name="Indirizzo_validato__c" nullable="false" type="id_Boolean" xpath="result/Indirizzo_validato__c"/>
         <nodes name="Indirizzo_mantenuto__c" nullable="false" type="id_Boolean" xpath="result/Indirizzo_mantenuto__c"/>
         <nodes name="Next_Birthday__c" type="id_Date" xpath="result/Next_Birthday__c"/>
-        <nodes name="SAP_last_update_date__c" type="id_Date" xpath="result/SAP_last_update_date__c"/>
+        <nodes name="SAP_last_update_date__c" outgoingConnections="//@node.5/@nodeData/@connections.7" type="id_Date" xpath="result/SAP_last_update_date__c"/>
         <nodes name="Concessionario_community__c" type="id_String" xpath="result/Concessionario_community__c"/>
         <nodes name="Officina_community__c" type="id_String" xpath="result/Officina_community__c"/>
         <nodes name="Storage_Location__c" type="id_String" xpath="result/Storage_Location__c"/>
@@ -1873,18 +1873,18 @@
         <nodes expression="" name="payload" type="id_Document" xpath="response/payload">
           <children expression="" loop="true" main="true" name="tns:SAP_fetch_BP_from_SF_Resp" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp" xsi:type="TalendXMLMap:OutputTreeNode">
             <children defaultValue="urn:subaru.eu:ECC:MDM:BpFetch" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children name="Birthdate" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Birthdate" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="" name="City" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/City" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children name="Countrycode" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Countrycode" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children name="Dealer" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Dealer" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children name="Emailaddress" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Emailaddress" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children name="Firstname" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Firstname" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children name="Fiscalcode" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Fiscalcode" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children name="Gender" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Gender" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="result.PersonBirthdate" incomingConnections="//@node.5/@nodeData/@connections.2" name="Birthdate" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Birthdate" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="result.PersonMailingCity" incomingConnections="//@node.5/@nodeData/@connections.3" name="City" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/City" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="result.PersonMailingPostalCode" incomingConnections="//@node.5/@nodeData/@connections.4" name="Countrycode" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Countrycode" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="" name="Dealer" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Dealer" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="result.PersonEmail" incomingConnections="//@node.5/@nodeData/@connections.5" name="Emailaddress" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Emailaddress" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="result.FirstName" incomingConnections="//@node.5/@nodeData/@connections.6" name="Firstname" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Firstname" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="" name="Fiscalcode" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Fiscalcode" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="" name="Gender" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Gender" xsi:type="TalendXMLMap:OutputTreeNode"/>
             <children name="Housenumber" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Housenumber" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children name="Languagecode" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Languagecode" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children name="Lastname" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Lastname" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children name="Lastupdatedate" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Lastupdatedate" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="" name="Languagecode" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Languagecode" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="result.LastName" incomingConnections="//@node.5/@nodeData/@connections.1" name="Lastname" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Lastname" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="result.SAP_last_update_date__c" incomingConnections="//@node.5/@nodeData/@connections.7" name="Lastupdatedate" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Lastupdatedate" xsi:type="TalendXMLMap:OutputTreeNode"/>
             <children name="Marketingcheckbox" type="id_Boolean" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Marketingcheckbox" xsi:type="TalendXMLMap:OutputTreeNode"/>
             <children name="Mobilephone" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Mobilephone" xsi:type="TalendXMLMap:OutputTreeNode"/>
             <children name="Partnertype" type="id_String" xpath="response.payload:/tns:SAP_fetch_BP_from_SF_Resp/Partnertype" xsi:type="TalendXMLMap:OutputTreeNode"/>
@@ -1904,6 +1904,13 @@
       </outputTrees>
       <varTables minimized="true" name="Var"/>
       <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.23" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.4" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.11" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.82" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.56" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.58" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.77" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.5" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.6" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.134" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.12" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
   <node componentName="tESBProviderResponse" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="64">
@@ -2987,13 +2994,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_23c4cf63-aa7e-4d35-aef0-f807445de65a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FwXNb+JnwkXGAoiZUsD1RI9+4ksn7uhsfzE97BUbElR7z2/UoU342PntSEMeTUSMp3pM7B19qLUn
-Wx9eckbLFA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5d6a15e5-f60e-4208-b7d6-589a570301c4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>guO1pk8oPka4uLdWlPka9mtFBhBxvT4dC6NPpWfJeymDY+vTsz0JTmm2WKle7kRf4oJpEFmjaUqb
-hbUzJ2HeoQ==</DigestValue></Reference></SignedInfo><SignatureValue>4ZFD3pwJ/IYWJHneAp+j2GvxRiB2gXr/Mvq/tZPjbsrLUrBOZTcROKl6veuEHvcdlMQP1Gzn7a+e
-/Eyk2ioJcOsan4zbzkKuJfEcqnW9K4M2PvyPpDooEtTYf4mdqkxCn5jrGjk3SCmnPtIm8brwZzT/
-BRsWLyGFDCgqyO+XmLQ+ZS2EJ6AmOSviYI9tlg+kqD85pOkV+TqzYgEbZM6NoJZ6tdvD1RaIWMFo
-jS6Q4wnPs+gEICxvSH55QgsBUUa0stcA3uiM9m51W3MJryZKg3GDTlIWr/O3HoXql5QU2zjrxN3y
-z6zhWUNofaErFyvQytib7kQELg830TVYw3c2sQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_dea0abac-62c6-431e-b83c-2dcabf49e909"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>atu0NAa+dWakZXgnHeo1Pn9/e/Xgcv+X1Du3CI22RzthdvQ6v4CnTP/sAFcxwW0dYd0CBNv963Y9
+vf7yi9dtFA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2a200513-b82a-4e49-bb32-5284587a936d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ps81K6NLmG8nknr5f9goYGBfGlz/BWGIVdOvHfjfXOuvuTay9qvhwDvvzn40JtHG8D+BQHZBm+mY
+E1pwnckBdQ==</DigestValue></Reference></SignedInfo><SignatureValue>stOVvnrBgnmP4GypzKf5aFo6KzmyRkp8FD6uOu318Af/3yolVzLRgCbxAJ9fr6WIyylg9hslwaW2
+SlmYbwPgBG5adyl4+wWLjeuYQulhBLnCRvXfNwVVuauYqYqknfExpq3zfpAuoDTe4F+MSlAxmbWq
+zipK+sUCpjyZ0NqETfEMWwl0QzhGscAkfd+kbz3176f7gakzEnl9+V0krwsAHVYrYA99+BMSDCUy
+vL1xvuqUO88vAeLUOl7OA/J5u1PM3K3CWmCx6CVIcNPYPMwTomIpS1/HpZl8O3Mnui+kpEFwmReE
+RKfmZKbDzKSbNvvWF15ZORpGjSlPWd2HJsp4/w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -3017,4 +3024,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5d6a15e5-f60e-4208-b7d6-589a570301c4" Target="#_23c4cf63-aa7e-4d35-aef0-f807445de65a"><Timestamp>2018-08-28 10:33:14</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2a200513-b82a-4e49-bb32-5284587a936d" Target="#_dea0abac-62c6-431e-b83c-2dcabf49e909"><Timestamp>2018-08-28 10:37:55</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
