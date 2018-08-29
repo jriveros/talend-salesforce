@@ -11,7 +11,20 @@
 			<xsd:element name="SF_Opportunity_out_Talend_inOperationRequest">
 				<xsd:complexType>
 					<xsd:sequence>
-						<xsd:element name="in" type="xsd:string"></xsd:element>
+						<xsd:element name="in" type="xsd:string">
+							<xsd:element name="Campaign" type="xsd:string"/>
+							<xsd:element name="Dealer" type="xsd:string"/>
+							<xsd:element name="Followtype" type="xsd:string"/>
+							<xsd:element name="Followupdate" type="xsd:string"/>
+							<xsd:element name="Followuptime" type="xsd:string"/>
+							<xsd:element name="Leaddate" type="xsd:string"/>
+							<xsd:element name="Leadtime" type="xsd:string"/>
+							<xsd:element name="Modelofinterest" type="xsd:string"/>
+							<xsd:element name="Remark" type="xsd:string"/>
+							<xsd:element name="Sapbpcode" type="xsd:string"/>
+							<xsd:element name="Source" type="xsd:string"/>
+							<xsd:element name="Subsource" type="xsd:string"/>
+						</xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
