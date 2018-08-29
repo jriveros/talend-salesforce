@@ -9,9 +9,6 @@
   <name>SUBARU_SAP_SF Codes Master</name>
   <url>http://www.talend.org/</url>
   <modules>
-    <module>jobs/process/I0005_SAP_Lead_to_SF_Opportunity/sap_lead_out_talend_in_0.1</module>
-    <module>jobs/process/I0005_SAP_Lead_to_SF_Opportunity/sap_lead_out_talend_in_0.2</module>
-    <module>jobs/process/I0005_SAP_Lead_to_SF_Opportunity/sap_lead_out_talend_in_0.3</module>
     <module>jobs/process/I0003_SAP_fetch_BP_from_SF/sap_fetch_bp_from_sf_job_0.1</module>
     <module>jobs/process/I0002_SAP_BP_to_SF_Account/sap_bp_to_sf_account_job_0.1</module>
     <module>jobs/process/I0002_SAP_BP_to_SF_Account/sap_bp_to_sf_account_job_1.0</module>
