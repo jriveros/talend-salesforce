@@ -5,7 +5,6 @@
 		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 		xmlns:tns="http://www.talend.org/service/"
 		targetNamespace="http://www.talend.org/service/">
-
 	<wsdl:types>
 		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 			targetNamespace="http://www.talend.org/service/">
