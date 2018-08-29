@@ -95,13 +95,7 @@
   <wsdl:part name="parameters" element="tns:ZFg81LeadReceiveResponse"/>
  </wsdl:message>
  <wsdl:portType name="ZII_G81_SAP_LEAD_IN">
-  <wsp:Policy>
-   <wsp:PolicyReference URI="#IF_IF_ZII_G81_SAP_LEAD_IN"/>
-  </wsp:Policy>
   <wsdl:operation name="ZFg81LeadReceive">
-   <wsp:Policy>
-    <wsp:PolicyReference URI="#OP_IF_OP_ZFg81LeadReceive"/>
-   </wsp:Policy>
    <wsdl:input message="tns:ZFg81LeadReceive"/>
    <wsdl:output message="tns:ZFg81LeadReceiveResponse"/>
   </wsdl:operation>
