@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="SAP_fetch_BP_from_SF"
+		targetNamespace="urn:subaru.eu:ECC:MDM:BpFetch" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="urn:subaru.eu:ECC:MDM:BpFetch">
+
+	<wsdl:types>
+		<xsd:schema targetNamespace="urn:subaru.eu:ECC:MDM:BpFetch" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="urn:subaru.eu:ECC:MDM:BpFetch">
+			<xsd:simpleType name="SF_ID">
+				<xsd:restriction base="xsd:string">
+					<xsd:length value="18" />
+					<xsd:pattern value="[a-zA-Z0-9]{18}" />
+				</xsd:restriction>
+			</xsd:simpleType>
+            <xsd:element name="SAP_fetch_BP_from_SF_Req">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="SalesForceID" type="tns:SF_ID"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="SAP_fetch_BP_from_SF_Resp">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element minOccurs="1" name="Birthdate" type="xsd:string" />
+						<xsd:element minOccurs="1" name="City">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="40"></xsd:maxLength>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element minOccurs="1" name="Countrycode">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="3"></xsd:maxLength>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element minOccurs="1" name="Dealer">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="10"></xsd:maxLength>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element minOccurs="1" name="Emailaddress">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="241"></xsd:maxLength>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element minOccurs="1" name="Firstname">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="40"></xsd:maxLength>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element minOccurs="1" name="Fiscalcode">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="16"></xsd:maxLength>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element minOccurs="1" name="Gender">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="1"></xsd:maxLength>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element minOccurs="1" name="Housenumber">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="10"></xsd:maxLength>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element minOccurs="1" name="Languagecode">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="2"></xsd:maxLength>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element minOccurs="1" name="Lastname">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="40"></xsd:maxLength>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element minOccurs="1" name="Lastupdatedate" type="xsd:string" />
+						<xsd:element minOccurs="1" name="Marketingcheckbox" type="xsd:boolean" />
+						<xsd:element minOccurs="1" name="Mobilephone">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="30"></xsd:maxLength>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element minOccurs="1" name="Partnertype">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="4"></xsd:maxLength>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element minOccurs="1" name="Phone">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="30"></xsd:maxLength>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element minOccurs="1" name="Postalcode">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="10"></xsd:maxLength>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element name="PrivacyDate" type="xsd:string" maxOccurs="1" minOccurs="1">
+						</xsd:element>
+						<xsd:element name="PrivacyTime" type="xsd:string" maxOccurs="1" minOccurs="1">
+						</xsd:element>
+						<xsd:element minOccurs="1" name="PreSalescheckbox" type="xsd:boolean" />
+						<xsd:element minOccurs="1" name="Profilingcheckbox" type="xsd:boolean" />
+						<xsd:element minOccurs="1" name="Region">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="3"></xsd:maxLength>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element minOccurs="1" name="Salesforceid" type="tns:SF_ID" />
+						<xsd:element minOccurs="1" name="Sapbpcode">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="10"></xsd:maxLength>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element minOccurs="1" name="StoreLoc">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="10"></xsd:maxLength>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element minOccurs="1" name="Street">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="60"></xsd:maxLength>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="SAP_fetch_BP_from_SF_Fault">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="standard" type="tns:ExchangeFaultData">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		
+			<xsd:complexType name="ExchangeLogData">
+				<xsd:sequence>
+					<xsd:element name="severity" type="xsd:string" minOccurs="0" />
+					<xsd:element name="text" type="xsd:string" />
+					<xsd:element name="url" type="xsd:string" minOccurs="0" />
+					<xsd:element name="id" type="xsd:string" minOccurs="0" />
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="ExchangeFaultData">
+				<xsd:sequence>
+					<xsd:element name="faultText" type="xsd:string" />
+					<xsd:element name="faultUrl" type="xsd:string" minOccurs="0" />
+					<xsd:element name="faultDetail" type="tns:ExchangeLogData" minOccurs="0" maxOccurs="unbounded" />
+				</xsd:sequence>
+			</xsd:complexType>
+        </xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="SAP_fetch_BP_from_SFOperationRequest">
+		<wsdl:part name="parameters" element="tns:SAP_fetch_BP_from_SF_Req"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="SAP_fetch_BP_from_SFOperationResponse">
+		<wsdl:part name="parameters" element="tns:SAP_fetch_BP_from_SF_Resp"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:message name="SAP_fetch_BP_from_SFOperationFault">
+		<wsdl:part name="parameters" element="tns:SAP_fetch_BP_from_SF_Fault"></wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="SAP_fetch_BP_from_SFPortType">
+		<wsdl:operation name="SAP_fetch_BP_from_SFOperation">
+			<wsdl:input message="tns:SAP_fetch_BP_from_SFOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:SAP_fetch_BP_from_SFOperationResponse"></wsdl:output>
+            <wsdl:fault name="fault" message="tns:SAP_fetch_BP_from_SFOperationFault"></wsdl:fault>
+        </wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="SAP_fetch_BP_from_SFBinding"
+		type="tns:SAP_fetch_BP_from_SFPortType">
+
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="SAP_fetch_BP_from_SFOperation">
+
+			<soap:operation
+				soapAction="urn:subaru.eu:ECC:MDM:BpFetch/SAP_fetch_BP_from_SFOperation" />
+			<wsdl:input>
+
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="fault">
+
+				<soap:fault use="literal" name="fault" />
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="SAP_fetch_BP_from_SF">
+		<wsdl:port name="SAP_fetch_BP_from_SFPort" binding="tns:SAP_fetch_BP_from_SFBinding">
+			<soap:address location="http://0.0.0.0:8090/services/SAP_fetch_BP_from_SF" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
