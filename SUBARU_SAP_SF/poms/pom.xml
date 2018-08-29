@@ -89,6 +89,7 @@
     <module>jobs/services/I0003_SAP_fetch_BP_from_SF/sap_fetch_bp_from_sf_0.5</module>
     <module>jobs/services/I0003_SAP_fetch_BP_from_SF/sap_fetch_bp_from_sf_0.6</module>
     <module>jobs/services/I0003_SAP_fetch_BP_from_SF/sap_fetch_bp_from_sf_0.7</module>
+    <module>jobs/process/I0004_SF_Opportunity_to_SAP_Lead/sf_opportunity_to_sap_lead_job_0.1</module>
   </modules>
   <properties>
     <talend.project.name>SUBARU_SAP_SF</talend.project.name>
