@@ -152,8 +152,8 @@
       <relatedItems xmi:id="_3I084KR2EeiRdILmH_336w" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="_doT_cKqqEeijz-gwVFxRDQ" id="_Z6utUEPGEeih8KkJgV_NKQ - Account" version="Latest" type="schema"/>
       <relatedItems xmi:id="_FvfBsKtxEeiiNdGQQnIE1w" id="_3Bcy4KtjEeiYgdZmHuji_A - metadata" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_jdJ5kKtzEeiiNdGQQnIE1w" id="_xG7nkEbOEeih8KkJgV_NKQ" version="0.9" type="services"/>
       <relatedItems xmi:id="_2m14gKt5EeiiNdGQQnIE1w" id="_JvmscDfnEeiIvauO6eCPcA" version="Latest" type="context"/>
+      <relatedItems xmi:id="_E0IZcKuBEei5kpbTewL9AQ" id="_xG7nkEbOEeih8KkJgV_NKQ" version="0.10" type="services"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_Au2j7GieEeiAqtZF3XOJww">
       <baseItem xmi:id="_Au2j7WieEeiAqtZF3XOJww" id="_j66JcDfsEeiIvauO6eCPcA" version="2.2" type="job"/>
