@@ -370,7 +370,12 @@
       <column comment="" key="false" length="255" name="Professione__pc" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="notFound">
-      <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="faultText" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="faultUrl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="severity" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="text" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="url" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="id" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -3022,17 +3027,100 @@
       <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tESBProviderFault" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="160">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tESBProviderFault_2"/>
-    <elementParameter field="TEXT" name="ESB_FAULT_TITLE" value="&quot;&quot;"/>
-    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_CUSTOM_PROPERTIES" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="notFoundResponse"/>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_3"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="faultText"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="faultUrl"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="severity"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="text"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="url"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="logNotFound"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tESBProviderFault_2">
-      <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    <metadata connector="FLOW" name="tLogRow_3">
+      <column comment="" key="false" length="0" name="faultText" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="faultUrl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="severity" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="text" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="url" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="id" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="288">
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="832" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="convertToSOAPNotFound"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="notFoundFaultSOAP">
+      <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="notFoundBeforeMapping">
+        <nodes name="faultText" outgoingConnections="//@node.10/@nodeData/@connections.0" type="id_String" xpath="notFoundBeforeMapping/faultText"/>
+        <nodes name="faultUrl" outgoingConnections="//@node.10/@nodeData/@connections.1" type="id_String" xpath="notFoundBeforeMapping/faultUrl"/>
+        <nodes name="severity" outgoingConnections="//@node.10/@nodeData/@connections.2" type="id_String" xpath="notFoundBeforeMapping/severity"/>
+        <nodes name="text" outgoingConnections="//@node.10/@nodeData/@connections.3" type="id_String" xpath="notFoundBeforeMapping/text"/>
+        <nodes name="url" outgoingConnections="//@node.10/@nodeData/@connections.4" type="id_String" xpath="notFoundBeforeMapping/url"/>
+        <nodes name="id" outgoingConnections="//@node.10/@nodeData/@connections.5" type="id_String" xpath="notFoundBeforeMapping/id"/>
+      </inputTrees>
+      <outputTrees name="notFoundFaultSOAP">
+        <nodes expression="" name="payload" type="id_Document" xpath="notFoundFaultSOAP/payload">
+          <children main="true" name="tns:SAP_fetch_BP_from_SF_Fault" type="id_String" xpath="notFoundFaultSOAP.payload:/tns:SAP_fetch_BP_from_SF_Fault" xsi:type="TalendXMLMap:OutputTreeNode">
+            <children defaultValue="urn:subaru.eu:ECC:MDM:BpFetch" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="notFoundFaultSOAP.payload:/tns:SAP_fetch_BP_from_SF_Fault/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children loop="true" main="true" name="standard" type="id_String" xpath="notFoundFaultSOAP.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard" xsi:type="TalendXMLMap:OutputTreeNode">
+              <children expression="notFoundBeforeMapping.faultText" incomingConnections="//@node.10/@nodeData/@connections.0" name="faultText" type="id_String" xpath="notFoundFaultSOAP.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultText" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="notFoundBeforeMapping.faultUrl" incomingConnections="//@node.10/@nodeData/@connections.1" name="faultUrl" type="id_String" xpath="notFoundFaultSOAP.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultUrl" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children main="true" name="faultDetail" type="id_String" xpath="notFoundFaultSOAP.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultDetail" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children expression="notFoundBeforeMapping.severity" incomingConnections="//@node.10/@nodeData/@connections.2" name="severity" type="id_String" xpath="notFoundFaultSOAP.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultDetail/severity" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="notFoundBeforeMapping.text" incomingConnections="//@node.10/@nodeData/@connections.3" name="text" type="id_String" xpath="notFoundFaultSOAP.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultDetail/text" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="notFoundBeforeMapping.url" incomingConnections="//@node.10/@nodeData/@connections.4" name="url" type="id_String" xpath="notFoundFaultSOAP.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultDetail/url" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="notFoundBeforeMapping.id" incomingConnections="//@node.10/@nodeData/@connections.5" name="id" type="id_String" xpath="notFoundFaultSOAP.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultDetail/id" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              </children>
+            </children>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+      <connections source="//@node.10/@nodeData/@inputTrees.0/@nodes.0" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.10/@nodeData/@inputTrees.0/@nodes.1" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.10/@nodeData/@inputTrees.0/@nodes.2" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.10/@nodeData/@inputTrees.0/@nodes.3" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.10/@nodeData/@inputTrees.0/@nodes.4" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.10/@nodeData/@inputTrees.0/@nodes.5" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.3" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
+  </node>
+  <node componentName="tESBProviderFault" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tESBProviderFault_3"/>
+    <elementParameter field="TEXT" name="ESB_FAULT_TITLE" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="SAP_WS_notFound"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tESBProviderFault_3"/>
+  </node>
+  <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogCatcher_1"/>
     <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
     <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
@@ -3055,7 +3143,7 @@
       <column defaultValue="" key="false" length="3" name="code" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="288">
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="832" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_4"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
@@ -3068,7 +3156,7 @@
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row4">
         <nodes name="moment" type="id_Date" xpath="row4/moment"/>
-        <nodes name="pid" outgoingConnections="//@node.11/@nodeData/@connections.1" type="id_String" xpath="row4/pid"/>
+        <nodes name="pid" outgoingConnections="//@node.13/@nodeData/@connections.1" type="id_String" xpath="row4/pid"/>
         <nodes name="root_pid" type="id_String" xpath="row4/root_pid"/>
         <nodes name="father_pid" type="id_String" xpath="row4/father_pid"/>
         <nodes name="project" type="id_String" xpath="row4/project"/>
@@ -3076,8 +3164,8 @@
         <nodes name="context" type="id_String" xpath="row4/context"/>
         <nodes name="priority" type="id_Integer" xpath="row4/priority"/>
         <nodes name="type" type="id_String" xpath="row4/type"/>
-        <nodes name="origin" outgoingConnections="//@node.11/@nodeData/@connections.3" type="id_String" xpath="row4/origin"/>
-        <nodes name="message" outgoingConnections="//@node.11/@nodeData/@connections.0 //@node.11/@nodeData/@connections.2" type="id_String" xpath="row4/message"/>
+        <nodes name="origin" outgoingConnections="//@node.13/@nodeData/@connections.3" type="id_String" xpath="row4/origin"/>
+        <nodes name="message" outgoingConnections="//@node.13/@nodeData/@connections.0 //@node.13/@nodeData/@connections.2" type="id_String" xpath="row4/message"/>
         <nodes name="code" type="id_Integer" xpath="row4/code"/>
       </inputTrees>
       <outputTrees name="generalFault">
@@ -3085,26 +3173,26 @@
           <children main="true" name="tns:SAP_fetch_BP_from_SF_Fault" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault" xsi:type="TalendXMLMap:OutputTreeNode">
             <children defaultValue="urn:subaru.eu:ECC:MDM:BpFetch" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
             <children loop="true" main="true" name="standard" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard" xsi:type="TalendXMLMap:OutputTreeNode">
-              <children expression="row4.message" incomingConnections="//@node.11/@nodeData/@connections.2" name="faultText" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultText" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row4.origin" incomingConnections="//@node.11/@nodeData/@connections.3" name="faultUrl" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultUrl" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row4.message" incomingConnections="//@node.13/@nodeData/@connections.2" name="faultText" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultText" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row4.origin" incomingConnections="//@node.13/@nodeData/@connections.3" name="faultUrl" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultUrl" xsi:type="TalendXMLMap:OutputTreeNode"/>
               <children main="true" name="faultDetail" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultDetail" xsi:type="TalendXMLMap:OutputTreeNode">
                 <children name="severity" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultDetail/severity" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                <children expression="row4.message" incomingConnections="//@node.11/@nodeData/@connections.0" name="text" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultDetail/text" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="row4.message" incomingConnections="//@node.13/@nodeData/@connections.0" name="text" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultDetail/text" xsi:type="TalendXMLMap:OutputTreeNode"/>
                 <children name="url" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultDetail/url" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                <children expression="row4.pid" incomingConnections="//@node.11/@nodeData/@connections.1" name="id" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultDetail/id" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="row4.pid" incomingConnections="//@node.13/@nodeData/@connections.1" name="id" type="id_String" xpath="generalFault.payload:/tns:SAP_fetch_BP_from_SF_Fault/standard/faultDetail/id" xsi:type="TalendXMLMap:OutputTreeNode"/>
               </children>
             </children>
           </children>
         </nodes>
       </outputTrees>
       <varTables minimized="true" name="Var"/>
-      <connections source="//@node.11/@nodeData/@inputTrees.0/@nodes.10" target="//@node.11/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.11/@nodeData/@inputTrees.0/@nodes.1" target="//@node.11/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.3" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.11/@nodeData/@inputTrees.0/@nodes.10" target="//@node.11/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.0" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.11/@nodeData/@inputTrees.0/@nodes.9" target="//@node.11/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.13/@nodeData/@inputTrees.0/@nodes.10" target="//@node.13/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.13/@nodeData/@inputTrees.0/@nodes.1" target="//@node.13/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.13/@nodeData/@inputTrees.0/@nodes.10" target="//@node.13/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.13/@nodeData/@inputTrees.0/@nodes.9" target="//@node.13/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.1" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
-  <node componentName="tESBProviderFault" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="992" posY="288">
+  <node componentName="tESBProviderFault" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tESBProviderFault_1"/>
     <elementParameter field="TEXT" name="ESB_FAULT_TITLE" value="&quot;&quot;"/>
     <elementParameter field="TABLE" name="SERVICE_ACTIVITY_CUSTOM_PROPERTIES" show="false"/>
@@ -3122,7 +3210,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="justId"/>
   </connection>
-  <connection connectorName="FLOW" label="notFound" lineStyle="0" metaname="notFound" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tESBProviderFault_2">
+  <connection connectorName="FLOW" label="notFound" lineStyle="0" metaname="notFound" offsetLabelX="40" offsetLabelY="-3" outputId="1" source="tMap_1" target="tLogRow_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="notFound"/>
   </connection>
@@ -4102,6 +4190,14 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="response"/>
   </connection>
+  <connection connectorName="FLOW" label="notFoundBeforeMapping" lineStyle="0" metaname="tLogRow_3" offsetLabelX="2" offsetLabelY="-36" source="tLogRow_3" target="tXMLMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="notFoundBeforeMapping"/>
+  </connection>
+  <connection connectorName="FLOW" label="notFoundFaultSOAP" lineStyle="0" metaname="notFoundFaultSOAP" offsetLabelX="12" offsetLabelY="-33" source="tXMLMap_2" target="tESBProviderFault_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="notFoundFaultSOAP"/>
+  </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tXMLMap_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
@@ -4120,13 +4216,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fd78223b-caf8-486a-bf2d-2c3109f120f8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vSXH5k0nIV3E57IqU7WZ60uS2QDox2vOFI1Kwur/jisk2jZ+b8+PYF7wDxIVnHchnDqAenJj3CS2
-wqLaM/4Fiw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_69cd816e-31fb-437b-881f-de488db75230"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6BEmApXKFxcjHhR4gAfIx+PsIh2Ti2qB5SokZvIHEfMVCe3gKsA8P9mWIsBzgUd3eW0SnZdUZDR7
-oqzzf9B6zQ==</DigestValue></Reference></SignedInfo><SignatureValue>2fq51AIbCCUPwt3mBkYYcIC2gCFsfy1g9yJHWRl8oy2JUCq5zYqb+lqBt200U8zgt3kUzTMY326E
-NUp+iSO74ntDm0LksLpIA/ozbFA+BDPGqqhFy9yos8jmxx9OfHm2FEGeVr43O5U93wX0vosRTJ7e
-ojjdnu7n1mUUq7wV+EOD8efg79Vt3zoW1kZ8gq2cvfTxDhcjOabEicv6G4UEdXknUklbnAq2nWl4
-LGu/EZAR7k/4qwtDzMtK8kV6ibibEeZv2aJzINdeiI+hGFhueqM5GbStsyTWj7Oon+sb4U2bJUR8
-cWaRJUPt/tqv7OqjQDIX3hnJDoFo2eQ1Uo4QBA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c7c64630-0c33-496a-80b4-fefbf238e757"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GJ0+uL9sugE0cZaBp/cNfV1rIdo+w6Oy+ncov98CC3HhcEKh+9xpsxscOCCrPc0xGmJEugfUxwhE
+N8/D2jhnsw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_cc1e1660-f56e-4c66-aeb5-5e712cc6c231"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>e0FwqxtA8A2WaiAhyp4UiAZyzEWAf/uZ+Z+A1YWZp82qTgabLBpBiej+waavJ9r1Z1JOkBJU4QC5
+f/iX63l6rg==</DigestValue></Reference></SignedInfo><SignatureValue>MxHgrwt68EabgWANCmzvO0sAOl+CcNEXzDxp8Sj9EwCDqO63kDC5XMncNxn3hyxNaRyCm1IFdrwG
+G98uMLl/nKe6P33aOIgOtOnnK9gUXN9U1PTdHogLr9b+dDun6pC99nM0rMQn/SbiSI4394AhWQxy
+U6Zc0+FYBFdboMixc6+5jGSWjhlDtOyd9e4fSX26xPMTwsg2VH1pDn2RAibfPIB24je8T5TanB85
+HLDBFFBdGbyVLYd2nyWq0UbSQPa+Ag7TPre/wEuN+z4gKeps8ihfNEogzpGnaRRG/8dZXXXR268c
+iMifBnXhVwYwrPDQGe8dzWPQja4xLPKQdbU5+g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -4150,4 +4246,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_69cd816e-31fb-437b-881f-de488db75230" Target="#_fd78223b-caf8-486a-bf2d-2c3109f120f8"><Timestamp>2018-08-29 09:52:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_cc1e1660-f56e-4c66-aeb5-5e712cc6c231" Target="#_c7c64630-0c33-496a-80b4-fefbf238e757"><Timestamp>2018-08-29 09:57:26</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
