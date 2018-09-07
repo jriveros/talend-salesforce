@@ -129,6 +129,7 @@
        <xsd:element name="SAP_last_update_date__c" minOccurs="0" type="xsd:string" nillable="true"/>
        <xsd:element name="Sesso__pc" minOccurs="0" type="xsd:string" nillable="true"/>
        <xsd:element name="Source__c" minOccurs="0" type="xsd:string" nillable="true"/>
+       <xsd:element name="Campagna_Attivit_di_origine__c" minOccurs="0" type="xsd:string" nillable="true"/>
       </xsd:sequence>
      </xsd:extension>
     </xsd:complexContent>
