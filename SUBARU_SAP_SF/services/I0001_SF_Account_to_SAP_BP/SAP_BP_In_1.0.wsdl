@@ -110,6 +110,8 @@
 					<xsd:sequence>
 						<xsd:element name="Birthdate" type="n0:date" minOccurs="0"/>
 						<xsd:element name="BirthdateX" type="n0:char1"/>
+						<xsd:element name="Campaign_ActivityOfOrigin" type="n0:char40" minOccurs="0"/>
+						<xsd:element name="Campaign_ActivityOfOriginX" type="n0:char1"/>
 						<xsd:element name="City" type="n0:char40" minOccurs="0"/>
 						<xsd:element name="CityX" type="n0:char1"/>
 						<xsd:element name="Countrycode" type="n0:char3" minOccurs="0"/>
@@ -149,6 +151,10 @@
 						<xsd:element name="Salesforceid" type="n0:char18" minOccurs="0"/>
 						<xsd:element name="Sapbpcode" type="n0:char10" minOccurs="0"/>
 						<xsd:element name="SapbpcodeX" type="n0:char1"/>
+						<xsd:element name="Source" type="n0:char40" minOccurs="0"/>
+						<xsd:element name="SourceX" type="n0:char1"/>
+						<xsd:element name="SourceInfo" type="n0:char40" minOccurs="0"/>
+						<xsd:element name="SourceInfoX" type="n0:char1"/>
 						<xsd:element name="StoreLoc" type="n0:char10" minOccurs="0"/>
 						<xsd:element name="StoreLocX" type="n0:char1"/>
 						<xsd:element name="Street" type="n0:char60" minOccurs="0"/>
