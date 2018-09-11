@@ -1,8 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2018-09-11T09:07:27.901+0200">
-  <deletedItems id="_Jq9AAFjjEei8c8UMrAWq6w" path="I0001_SF_Account_to_SAP_BP/sap-com-document-sap-soap-functions-mc-style/ZII_G81_SAP_BP_INB/ZFg81EndcustReceive" type="METADATA_FILE_XML"/>
-  <deletedItems id="_JqoP4FjjEei8c8UMrAWq6w" path="I0001_SF_Account_to_SAP_BP/sap-com-document-sap-soap-functions-mc-style/ZII_G81_SAP_BP_INB/ZFg81EndcustReceive" type="METADATA_FILE_XML"/>
-  <deletedItems id="_lKLhwYpmEeigR-l3r_8O7A" path="I0001_SF_Account_to_SAP_BP/subaru-eu-SF-MDM-BpIn/SF_Account_Out_Talend_In/SF_Account_Out_Talend_in" type="METADATA_FILE_XML"/>
-  <deletedItems id="_lIHFMIpmEeigR-l3r_8O7A" path="I0001_SF_Account_to_SAP_BP/subaru-eu-SF-MDM-BpIn/SF_Account_Out_Talend_In/SF_Account_Out_Talend_in" type="METADATA_FILE_XML"/>
-  <deletedItems id="_lJlr4YpmEeigR-l3r_8O7A" path="I0001_SF_Account_to_SAP_BP/subaru-eu-SF-MDM-BpIn/SF_Account_Out_Talend_In/SF_Account_Out_Talend_in" type="METADATA_FILE_XML"/>
-</recyclebin:RecycleBin>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2018-09-11T09:07:36.843+0200"/>
