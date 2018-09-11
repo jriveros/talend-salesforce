@@ -122,6 +122,15 @@
 					<xsd:element minOccurs="1" maxOccurs="1" name="BirthDate" type="xsd:string">
 					</xsd:element>
 					<xsd:element name="BirthDateX" type="xsd:boolean" />
+					<xsd:element minOccurs="0" maxOccurs="1" name="Source" type="xsd:string">
+					</xsd:element>
+					<xsd:element name="SourceX" type="xsd:boolean" />
+					<xsd:element minOccurs="0" maxOccurs="1" name="SourceInfo" type="xsd:string">
+					</xsd:element>
+					<xsd:element name="SourceInfoX" type="xsd:boolean" />
+					<xsd:element minOccurs="0" maxOccurs="1" name="Campaign_ActivityOfOrigin" type="xsd:string">
+					</xsd:element>
+					<xsd:element name="Campaign_ActivityOfOriginX" type="xsd:boolean" />
 					<xsd:element minOccurs="1" maxOccurs="1" name="Street">
 						<xsd:simpleType>
 							<xsd:restriction base="xsd:string">
