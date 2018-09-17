@@ -465,7 +465,7 @@
       <relatedItems xmi:id="_O87DDLpWEeive-7Z4Oab4w" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_O87DDbpWEeive-7Z4Oab4w" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_O87DDrpWEeive-7Z4Oab4w" id="_Z6utUEPGEeih8KkJgV_NKQ - Account" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_Vh2voLpWEeive-7Z4Oab4w" id="_xG7nkEbOEeih8KkJgV_NKQ" version="1.0" type="services"/>
+      <relatedItems xmi:id="_XFhP4LpYEeive-7Z4Oab4w" id="_xG7nkEbOEeih8KkJgV_NKQ" version="1.1" type="services"/>
     </ItemsRelations>
     <migrationTask xmi:id="_OD7-gDfeEei4GOOz00i4JQ" id="org.talend.designer.core.ui.preferences.migration.ChangeMysqlVersionForProjectSetting" breaks="5.2.0" version="5.1.3" status="ok"/>
     <migrationTask xmi:id="_OD7-gTfeEei4GOOz00i4JQ" id="org.talend.designer.core.ui.preferences.migration.ChangeOracleVersionForProjectSetting" breaks="5.2.0" version="5.2.1" status="ok"/>
