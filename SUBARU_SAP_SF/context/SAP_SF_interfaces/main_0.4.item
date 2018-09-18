@@ -13,7 +13,7 @@
     <contextParameter comment="" name="SalesForce_oauth_clientSecret" prompt="SalesForce_oauth_clientSecret?" promptNeeded="false" type="id_Password" value="" xmi:id="_pWb7e0PIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_proxy_host" prompt="SalesForce_proxy_host?" promptNeeded="false" type="id_String" value="" xmi:id="_pWb7fEPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_oauth_callbackHost" prompt="SalesForce_oauth_callbackHost?" promptNeeded="false" type="id_String" value="" xmi:id="_pWb7fUPIEeih8KkJgV_NKQ"/>
-    <contextParameter comment="" name="SalesForce_endpoint" prompt="SalesForce_endpoint?" promptNeeded="false" type="id_String" value="https://cs87.salesforce.com/services/Soap/u/39.0" xmi:id="_pWb7fkPIEeih8KkJgV_NKQ"/>
+    <contextParameter comment="" name="SalesForce_endpoint" prompt="SalesForce_endpoint?" promptNeeded="false" type="id_String" value="https://test.salesforce.com/services/Soap/u/42.0" xmi:id="_pWb7fkPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_userPassword_securityKey" prompt="SalesForce_userPassword_securityKey?" promptNeeded="false" type="id_Password" value="abvSD/5xxQiwfs9G1DfK9IvC03SoBiPEYlXw8rt0OD8=" xmi:id="_pWb7f0PIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_oauth_callbackPort" prompt="SalesForce_oauth_callbackPort?" promptNeeded="false" type="id_Integer" value="" xmi:id="_pWb7gEPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_oauth_clientId" prompt="SalesForce_oauth_clientId?" promptNeeded="false" type="id_String" value="" xmi:id="_pWb7gUPIEeih8KkJgV_NKQ"/>
@@ -65,13 +65,13 @@
     <contextParameter comment="" name="SAP_userId" prompt="SAP_userId?" promptNeeded="false" type="id_String" value="BATCH_SF" xmi:id="_pWb7rUPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SAP_userPasswd" prompt="SAP_userPasswd?" promptNeeded="false" type="id_Password" value="7fAoWUEUeyYm2X6Uoatz8sjNKTg6922/" xmi:id="_pWb7rkPIEeih8KkJgV_NKQ"/>
   </talendfile:ContextType>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bd1b1ec7-3120-47e0-a9c9-6ebcc2ddfd59"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LLgTFCBBiFaaZcUkrvmjXIRslsxGoptfl6Sv/a5GadaFnP+RxmgGCPty0v5+yIb4I5BrN5kX+mXJ
-BqgACfSR4g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ef6460ed-51ed-4391-9839-ae36870e6189"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ELx0tzkPCkwzAEZta0xXcGPUwz2WIs0ZS82SF6Yp+OglsOgJt67AIinuvxUCF7tnwhpi7Ii9tPy3
-OKMbEKfZyw==</DigestValue></Reference></SignedInfo><SignatureValue>046UZGb1aq/ll9Dm9qqTD6SbMAi9CEYSGHorGZ4bnQYkgxqJ3Vn/tgnAs0a98Eo+yXeuTizxrmBO
-c+fWrrliPKD52gGCxeqPnyWZmOHaIgV8LflQDZ5iO/xVTOp0fFpcfV5jmIizWADBcfsPB34e23pS
-UmLSaQy4ae4DXcOi4mnvMBlCAOPDuynOX5xbqGRli6JcldLPiYV5EXS3rl9i3wxClH2lxF9cDzII
-M1N+FSUhb0lmu4XEJtgcCq5tYcQVWmiiAgL2At1D3w3KyCJ4NnisIMwhnvprg8mVcZ8Uqc4DW24Z
-XmF++qAZZM6gQBdtzNDMaKpdf4/89CJ2EVwjxQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6adf8b08-a266-424f-b10e-85a05238c25a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>553jdzcnoBt+3v9paTBoMxQ2YCA1WAsKKjYnJh4aZwImM9fAaw/rgclVysnIEvZ/4TSjeRPy5064
+2e65i1yCNQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8a6d4fd3-c843-4342-8f77-9fe27f043c91"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>XtUjNaCBtbMf4ywcsnoUnHALK4NomLPPC+EXLXW5tnT/IS8VP889glUso8a17MBKg/0eR03YPVZC
+p1YiE1liZw==</DigestValue></Reference></SignedInfo><SignatureValue>e7Wttox3N2EgsQCYODa/ivURa9H9wxJjp8TcMlQKH/Rj0bR5N5PxLV1+ksDLul6YRWc51cfyZ0N3
+VC5bo6LYdwJm3y3nF7U+Ne3tzxuahD1kejy6TRLhxm0x2tSTIS7GLWTcRxJ9hWoWVKnGy0p9on1i
+DGQUXcOrifP9wUfqh+iXI5oHoveogz4YF+dZaGts7mcrVY5YtP9cEkp0BUlRiwC42jA4henrmQ0K
+15jnjBVCWD43KXpDBCBQUCprbens773kKoo5L4nkuaji2jvcUnsFE9x3b2Fezz6rJD/T8mkMZ4O/
+Q8aHFGv2rpMtUjlAwuEAcwTeqaZh0ixSw9p1ow==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -95,4 +95,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ef6460ed-51ed-4391-9839-ae36870e6189" Target="#_bd1b1ec7-3120-47e0-a9c9-6ebcc2ddfd59"><Timestamp>2018-09-17 09:11:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8a6d4fd3-c843-4342-8f77-9fe27f043c91" Target="#_6adf8b08-a266-424f-b10e-85a05238c25a"><Timestamp>2018-09-18 07:01:40</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
