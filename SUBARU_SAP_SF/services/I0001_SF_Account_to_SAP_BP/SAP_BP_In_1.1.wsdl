@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions targetNamespace="urn:sap-com:document:sap:soap:functions:mc-style"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+	xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="urn:sap-com:document:sap:soap:functions:mc-style"
+	xmlns:n1="urn:sap-com:document:sap:rfc:functions">
+	<wsdl:documentation>
+		<sidl:sidl xmlns:sidl="http://www.sap.com/2007/03/sidl" />
+	</wsdl:documentation>
+	<wsdl:types>
+		<xsd:schema attributeFormDefault="qualified"
+			targetNamespace="urn:sap-com:document:sap:rfc:functions">
+			<xsd:simpleType name="char1">
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="1" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType name="char10">
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="10" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType name="char16">
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="16" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType name="char18">
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="18" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType name="char2">
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="2" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType name="char241">
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="241" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType name="char3">
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="3" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType name="char30">
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="30" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType name="char33">
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="33" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType name="char4">
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="4" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType name="char40">
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="40" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType name="char60">
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="60" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType name="date">
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="10" />
+					<xsd:pattern value="\d\d\d\d-\d\d-\d\d" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:schema>
+		<xsd:schema attributeFormDefault="qualified"
+			targetNamespace="urn:sap-com:document:sap:soap:functions:mc-style"
+			xmlns:n0="urn:sap-com:document:sap:rfc:functions">
+			<xsd:import namespace="urn:sap-com:document:sap:rfc:functions" />
+			<xsd:complexType name="Zg81ConflictFieldsIn">
+				<xsd:sequence>
+					<xsd:element name="Name" type="xsd:string" />
+					<xsd:element name="Value" type="xsd:string" />
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="Zg70ExchangeFaultData">
+				<xsd:sequence>
+					<xsd:element name="FaultText" type="xsd:string" />
+					<xsd:element name="FaultUrl" type="xsd:string" />
+					<xsd:element name="FaultDetail" type="tns:Zg70ExchangeLogDataTab" />
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="Zg70ExchangeLogData">
+				<xsd:sequence>
+					<xsd:element name="Severity" type="xsd:string" />
+					<xsd:element name="Text" type="xsd:string" />
+					<xsd:element name="Url" type="xsd:string" />
+					<xsd:element name="Id" type="xsd:string" />
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="Zg81ConflictFieldsTabIn">
+				<xsd:sequence>
+					<xsd:element name="item" type="tns:Zg81ConflictFieldsIn"
+						minOccurs="0" maxOccurs="unbounded" />
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="Zg70ExchangeLogDataTab">
+				<xsd:sequence>
+					<xsd:element name="item" type="tns:Zg70ExchangeLogData"
+						minOccurs="0" maxOccurs="unbounded" />
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:element name="ZFg81EndcustReceive">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="Birthdate" type="n0:date"
+							minOccurs="0" />
+						<xsd:element name="BirthdateX" type="n0:char1" />
+						<xsd:element name="CampaignActivityOfOrigin" type="n0:char20"
+							minOccurs="0" />
+						<xsd:element name="CampaignActivityOfOriginX" type="n0:char1" />
+						<xsd:element name="City" type="n0:char40" minOccurs="0" />
+						<xsd:element name="CityX" type="n0:char1" />
+						<xsd:element name="Countrycode" type="n0:char3"
+							minOccurs="0" />
+						<xsd:element name="CountrycodeX" type="n0:char1" />
+						<xsd:element name="Dealer" type="n0:char10" minOccurs="0" />
+						<xsd:element name="DealerX" type="n0:char1" />
+						<xsd:element name="Emailaddress" type="n0:char241"
+							minOccurs="0" />
+						<xsd:element name="EmailaddressX" type="n0:char1" />
+						<xsd:element name="Firstname" type="n0:char40"
+							minOccurs="0" />
+						<xsd:element name="FirstnameX" type="n0:char1" />
+						<xsd:element name="Fiscalcode" type="n0:char16"
+							minOccurs="0" />
+						<xsd:element name="FiscalcodeX" type="n0:char1" />
+						<xsd:element name="Gender" type="n0:char1" minOccurs="0" />
+						<xsd:element name="GenderX" type="n0:char1" />
+						<xsd:element name="Housenumber" type="n0:char10"
+							minOccurs="0" />
+						<xsd:element name="HousenumberX" type="n0:char1" />
+						<xsd:element name="Languagecode" type="n0:char2"
+							minOccurs="0" />
+						<xsd:element name="LanguagecodeX" type="n0:char1" />
+						<xsd:element name="Lastname" type="n0:char40"
+							minOccurs="0" />
+						<xsd:element name="LastnameX" type="n0:char1" />
+						<xsd:element name="Lastupdatedate" type="n0:char33"
+							minOccurs="0" />
+						<xsd:element name="Marketingcheckbox" type="n0:char1"
+							minOccurs="0" />
+						<xsd:element name="MarketingcheckboxX" type="n0:char1" />
+						<xsd:element name="Mobilephone" type="n0:char30"
+							minOccurs="0" />
+						<xsd:element name="MobilephoneX" type="n0:char1" />
+						<xsd:element name="Partnertype" type="n0:char4"
+							minOccurs="0" />
+						<xsd:element name="Phone" type="n0:char30" minOccurs="0" />
+						<xsd:element name="PhoneX" type="n0:char1" />
+						<xsd:element name="Postalcode" type="n0:char10"
+							minOccurs="0" />
+						<xsd:element name="PostalcodeX" type="n0:char1" />
+						<xsd:element name="PreSalescheckbox" type="n0:char1"
+							minOccurs="0" />
+						<xsd:element name="PreSalescheckboxX" type="n0:char1" />
+						<xsd:element name="Profilingcheckbox" type="n0:char1"
+							minOccurs="0" />
+						<xsd:element name="ProfilingcheckboxX" type="n0:char1" />
+						<xsd:element name="Region" type="n0:char3" minOccurs="0" />
+						<xsd:element name="RegionX" type="n0:char1" />
+						<xsd:element name="Salesforceid" type="n0:char18"
+							minOccurs="0" />
+						<xsd:element name="Sapbpcode" type="n0:char10"
+							minOccurs="0" />
+						<xsd:element name="SapbpcodeX" type="n0:char1" />
+						<xsd:element name="Source" type="n0:char20" minOccurs="0" />
+						<xsd:element name="SourceInfo" type="n0:char20"
+							minOccurs="0" />
+						<xsd:element name="SourceInfoX" type="n0:char1" />
+						<xsd:element name="SourceX" type="n0:char1" />
+						<xsd:element name="StoreLoc" type="n0:char10"
+							minOccurs="0" />
+						<xsd:element name="StoreLocX" type="n0:char1" />
+						<xsd:element name="Street" type="n0:char60" minOccurs="0" />
+						<xsd:element name="StreetX" type="n0:char1" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ZFg81EndcustReceiveResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="Businesspartner" type="n0:char10" />
+						<xsd:element name="ConflictingFields" type="tns:Zg81ConflictFieldsTabIn" />
+						<xsd:element name="Fault" type="tns:Zg70ExchangeFaultData" />
+						<xsd:element name="Message" type="xsd:string" />
+						<xsd:element name="SfRecordId" type="n0:char18" />
+						<xsd:element name="Status" type="xsd:string" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="ZFg81EndcustReceive">
+		<wsdl:part name="parameters" element="tns:ZFg81EndcustReceive" />
+	</wsdl:message>
+	<wsdl:message name="ZFg81EndcustReceiveResponse">
+		<wsdl:part name="parameters" element="tns:ZFg81EndcustReceiveResponse" />
+	</wsdl:message>
+	<wsdl:portType name="ZII_G81_SAP_BP_INB">
+		<wsdl:operation name="ZFg81EndcustReceive">
+			<wsdl:input message="tns:ZFg81EndcustReceive" />
+			<wsdl:output message="tns:ZFg81EndcustReceiveResponse" />
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="SAP_BP_In_bind" type="tns:ZII_G81_SAP_BP_INB">
+		<soap:binding transport="http://schemas.xmlsoap.org/soap/http"
+			style="document" />
+		<wsdl:operation name="ZFg81EndcustReceive">
+			<soap:operation soapAction="" style="document" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="SAP_BP_In">
+		<wsdl:port name="SAP_BP_In_bind" binding="tns:SAP_BP_In_bind">
+			<soap:address
+				location="https://sapdev.Subaru-Europe.be:44300/sap/bc/srt/rfc/sap/zii_g81_sap_bp_inb/500/sap_bp_in/sap_bp_in_bind" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
