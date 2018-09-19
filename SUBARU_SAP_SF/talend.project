@@ -448,7 +448,8 @@
       <relatedItems xmi:id="_56XdHIpvEeigR-l3r_8O7A" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_56XdHYpvEeigR-l3r_8O7A" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_exwxwrWVEeieP8W0pH2uMg" id="_bsr4kD4zEeih8KkJgV_NKQ" version="1.11" type="services"/>
-      <relatedItems xmi:id="_sOyXkLWVEeieP8W0pH2uMg" id="_bsr4kD4zEeih8KkJgV_NKQ - _yxf4AD4zEeih8KkJgV_NKQ - _x34JkD5NEeih8KkJgV_NKQ" version="Latest" type="property"/>
+      <relatedItems xmi:id="_uaWRELv0EeiCj4IUQgxkWw" id="_JaY0cFjjEei8c8UMrAWq6w - _JazrMFjjEei8c8UMrAWq6w - _Ja0SQFjjEei8c8UMrAWq6w" version="Latest" type="property"/>
+      <relatedItems xmi:id="_uaWREbv0EeiCj4IUQgxkWw" id="_JaY0cFjjEei8c8UMrAWq6w" version="1.0" type="services"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_O87DALpWEeive-7Z4Oab4w">
       <baseItem xmi:id="_O87DAbpWEeive-7Z4Oab4w" id="_GiHq4EbcEei1q46PFiTS6w" version="1.0" type="job"/>
