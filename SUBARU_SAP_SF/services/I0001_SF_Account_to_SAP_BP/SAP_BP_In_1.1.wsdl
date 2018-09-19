@@ -233,7 +233,7 @@
 	<wsdl:service name="SAP_BP_In">
 		<wsdl:port name="SAP_BP_In_bind" binding="tns:SAP_BP_In_bind">
 			<soap:address
-				location="https://sapdev.Subaru-Europe.be:44300/sap/bc/srt/rfc/sap/zii_g81_sap_bp_inb/500/sap_bp_in/sap_bp_in_bind" />
+				location="https://sapdev.subaru-europe.be:44300/sap/bc/srt/rfc/sap/zii_g81_sap_bp_in/500/sap_bp_in/sap_bp_in_bind" />
 		</wsdl:port>
 	</wsdl:service>
 </wsdl:definitions>
