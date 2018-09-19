@@ -101,6 +101,7 @@
     <module>jobs/services/I0003_SAP_fetch_BP_from_SF/sap_fetch_bp_from_sf_1.1</module>
     <module>jobs/services/I0003_SAP_fetch_BP_from_SF/sap_fetch_bp_from_sf_1.2</module>
     <module>jobs/services/I0003_SAP_fetch_BP_from_SF/sap_fetch_bp_from_sf_1.3</module>
+    <module>jobs/services/I0001_SF_Account_to_SAP_BP/sf_account_out_talend_in_1.12</module>
   </modules>
   <properties>
     <talend.project.name>SUBARU_SAP_SF</talend.project.name>
