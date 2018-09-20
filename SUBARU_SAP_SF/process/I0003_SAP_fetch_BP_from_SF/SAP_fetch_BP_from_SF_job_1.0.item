@@ -3088,7 +3088,7 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="256">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_3"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -3128,7 +3128,7 @@
       <column comment="" key="false" length="0" name="id" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="768" posY="256">
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="832" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_2"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
@@ -3173,7 +3173,7 @@
       <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.5" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.3" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
-  <node componentName="tESBProviderFault" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="256">
+  <node componentName="tESBProviderFault" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tESBProviderFault_3"/>
     <elementParameter field="TEXT" name="ESB_FAULT_TITLE" value="&quot;&quot;"/>
     <elementParameter field="TABLE" name="SERVICE_ACTIVITY_CUSTOM_PROPERTIES" show="false"/>
@@ -3181,7 +3181,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tESBProviderFault_3"/>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="576" posY="64">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_4"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -4998,7 +4998,7 @@
       <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSalesforceInput" componentVersion="0.23.1" offsetLabelX="0" offsetLabelY="0" posX="32" posY="352">
+  <node componentName="tSalesforceInput" componentVersion="0.23.1" offsetLabelX="0" offsetLabelY="0" posX="192" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSalesforceInput_2"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -5476,7 +5476,7 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="192" posY="352">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_3"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -5653,7 +5653,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="352">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_4"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -6740,11 +6740,11 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
-  <connection connectorName="FLOW" label="notFoundBeforeMapping" lineStyle="0" metaname="tLogRow_3" offsetLabelX="0" offsetLabelY="-22" source="tLogRow_3" target="tXMLMap_2">
+  <connection connectorName="FLOW" label="notFoundBeforeMapping" lineStyle="0" metaname="tLogRow_3" offsetLabelX="-41" offsetLabelY="41" source="tLogRow_3" target="tXMLMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="notFoundBeforeMapping"/>
   </connection>
-  <connection connectorName="FLOW" label="notFoundFaultSOAP" lineStyle="0" metaname="notFoundFaultSOAP" offsetLabelX="-5" offsetLabelY="-19" source="tXMLMap_2" target="tESBProviderFault_3">
+  <connection connectorName="FLOW" label="notFoundFaultSOAP" lineStyle="0" metaname="notFoundFaultSOAP" offsetLabelX="0" offsetLabelY="36" source="tXMLMap_2" target="tESBProviderFault_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="notFoundFaultSOAP"/>
   </connection>
@@ -6790,13 +6790,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e2385bd9-5c01-4924-8509-0fa056251e5f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kLWP1l6eEDmgIBA2jMJtNCQ8wWBn4j6BhLZmx4JqzGNXBirKCmLrUv00bm8QDuoFOne7wwVnGYd6
-CpCyUSZ5Tw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5720b135-bf6c-4a81-8966-5927e03f53b2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hGxQiED16DgZR6j8aDWOokTZLhIZR4r/GIT+w6e2hiUmDVbTrVpKtryriggax1Bps+K9cxGUig8J
-NSdc3E3THQ==</DigestValue></Reference></SignedInfo><SignatureValue>LxzJ+DJXFGSNPK3kR/cMtrRJow0OwqQzaPnaV5+whJ27+VOj6kIHgiv60IbqX+QiXTwCvc+7TDqN
-deKzmE4+ERs9ps5o8XAheLcJjK4ggq+MlZvYkXDqiebXBbeffbK5qr6mpDNGDIjQk8g7v2BB4RK7
-vbTVz9c33tRyCWlVT/11Bqr7DT1yrD0Po6X6O2DWIBB6RX6xGWs5MF3SCMSb1idETfW/FFSSTbQQ
-RRDy0xeVWgKOJt/ZtGOam6cE+WROTbXkyQAEx4LwQzWeKuR63TFUm6ja2cyaGZMYsjMqj+tO9omT
-VJaRcM+c1zMbyawBsiJPJjo8Rd2KDnNyOu6Kiw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f5aaf8e2-e231-4576-9f26-c4adc039a322"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nGB9dJBrjvHh11To0Y0LZa1B8lCn+lQMBMqSUNPndze5D2iXuAlp49yVDNi/9oOmHZDoxTqOBuFg
++qr3pnQV+Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8879598f-d220-4264-a222-a311dc32c232"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wBMmvFih+NEefn75zD1VMJ/LN4r9mVmN4IxT5O0D1Kjxs6lAtLNHzTACNn8KRubTaOTYykCz/xrK
+1BK6a6i/bw==</DigestValue></Reference></SignedInfo><SignatureValue>kWHMw42bOX63UVJZpRtMQYgXoSKYeMRFEAxvTPsR8d2lJjMxtXYSQu8QlWZ2qiu6ALCNACYi3OD5
+u/L/m6g0dwLQW9a3ryTpGw1iuPW82J+7O6uVgBpFGENquOaE0XMARV5PMgHxs+6M/8rhAyRDjKq+
+SWLOEm7+EUZk5+e+Fb8/sKOmQTI0jGJM0ZKlnw8hMwi5Vta1dj7AA8VAeiOVwI3g5E9e5rmVafT0
+A75Fwl+4k7M29M9ds/XA4s1Ot55zfWhc74dpODmfzVV9WNoNB7gQ+UTBfJFfY6YBZ3UEwIYL61C3
+7QQCqPW8v0whmj54ZPcAJvpiQ/4NnnHcRSdYXw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -6820,4 +6820,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5720b135-bf6c-4a81-8966-5927e03f53b2" Target="#_e2385bd9-5c01-4924-8509-0fa056251e5f"><Timestamp>2018-09-20 08:50:01</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8879598f-d220-4264-a222-a311dc32c232" Target="#_f5aaf8e2-e231-4576-9f26-c4adc039a322"><Timestamp>2018-09-20 08:51:46</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
