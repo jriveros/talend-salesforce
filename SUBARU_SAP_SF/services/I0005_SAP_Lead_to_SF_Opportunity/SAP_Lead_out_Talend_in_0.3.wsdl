@@ -42,6 +42,12 @@
 					</xsd:element>
 					<xsd:element minOccurs="0" maxOccurs="1" name="DealerCode" nillable="true" type="tns:SF_ID">
 					</xsd:element>
+					<xsd:element minOccurs="0" maxOccurs="1" name="Source" nillable="true" type="xsd:string">
+					</xsd:element>
+					<xsd:element minOccurs="0" maxOccurs="1" name="SourceInfo" nillable="true" type="xsd:string">
+					</xsd:element>
+					<xsd:element minOccurs="0" maxOccurs="1" name="CampaignActivityOfOrigin" nillable="true" type="xsd:string">
+					</xsd:element>
 					<xsd:element minOccurs="0" maxOccurs="1" name="LostReason" nillable="true" type="xsd:string">
 					</xsd:element>
 					<xsd:element minOccurs="0" maxOccurs="1" name="LostSubReason" nillable="true" type="xsd:string">
