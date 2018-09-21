@@ -393,27 +393,27 @@
         <nodes expression="" name="payload" type="id_Document" xpath="row5/payload">
           <children loop="true" main="true" name="tns:SAP_Lead_out_Talend_in_Req" type="id_String" xpath="row5.payload:/tns:SAP_Lead_out_Talend_in_Req">
             <children defaultValue="urn:subaru.eu:ECC:VehSales:LeadOut" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="row5.payload:/tns:SAP_Lead_out_Talend_in_Req/xmlns:tns"/>
-            <children name="SapLeadId" outgoingConnections="//@node.2/@nodeData/@connections.0" type="id_String" xpath="row5.payload:/tns:SAP_Lead_out_Talend_in_Req/SapLeadId"/>
-            <children name="SalesforceAccountID" outgoingConnections="//@node.2/@nodeData/@connections.1" type="id_String" xpath="row5.payload:/tns:SAP_Lead_out_Talend_in_Req/SalesforceAccountID"/>
-            <children name="StageName" outgoingConnections="//@node.2/@nodeData/@connections.2" type="id_String" xpath="row5.payload:/tns:SAP_Lead_out_Talend_in_Req/StageName"/>
-            <children name="ModelOfInterest" outgoingConnections="//@node.2/@nodeData/@connections.3" type="id_String" xpath="row5.payload:/tns:SAP_Lead_out_Talend_in_Req/ModelOfInterest"/>
-            <children name="DealerCode" outgoingConnections="//@node.2/@nodeData/@connections.4" type="id_String" xpath="row5.payload:/tns:SAP_Lead_out_Talend_in_Req/DealerCode"/>
-            <children name="Source" outgoingConnections="//@node.2/@nodeData/@connections.5" type="id_String" xpath="row5.payload:/tns:SAP_Lead_out_Talend_in_Req/Source"/>
-            <children name="SourceInfo" outgoingConnections="//@node.2/@nodeData/@connections.6" type="id_String" xpath="row5.payload:/tns:SAP_Lead_out_Talend_in_Req/SourceInfo"/>
-            <children name="CampaignActivityOfOrigin" outgoingConnections="//@node.2/@nodeData/@connections.7" type="id_String" xpath="row5.payload:/tns:SAP_Lead_out_Talend_in_Req/CampaignActivityOfOrigin"/>
-            <children name="LostReason" outgoingConnections="//@node.2/@nodeData/@connections.8" type="id_String" xpath="row5.payload:/tns:SAP_Lead_out_Talend_in_Req/LostReason"/>
-            <children name="LostSubReason" outgoingConnections="//@node.2/@nodeData/@connections.9" type="id_String" xpath="row5.payload:/tns:SAP_Lead_out_Talend_in_Req/LostSubReason"/>
-            <children name="LostRemarks" outgoingConnections="//@node.2/@nodeData/@connections.10" type="id_String" xpath="row5.payload:/tns:SAP_Lead_out_Talend_in_Req/LostRemarks"/>
+            <children name="SapLeadId" outgoingConnections="//@node.2/@nodeData/@connections.10" type="id_String" xpath="row5.payload:/tns:SAP_Lead_out_Talend_in_Req/SapLeadId"/>
+            <children name="SalesforceAccountID" outgoingConnections="//@node.2/@nodeData/@connections.0" type="id_String" xpath="row5.payload:/tns:SAP_Lead_out_Talend_in_Req/SalesforceAccountID"/>
+            <children name="StageName" outgoingConnections="//@node.2/@nodeData/@connections.1" type="id_String" xpath="row5.payload:/tns:SAP_Lead_out_Talend_in_Req/StageName"/>
+            <children name="ModelOfInterest" outgoingConnections="//@node.2/@nodeData/@connections.2" type="id_String" xpath="row5.payload:/tns:SAP_Lead_out_Talend_in_Req/ModelOfInterest"/>
+            <children name="DealerCode" outgoingConnections="//@node.2/@nodeData/@connections.3" type="id_String" xpath="row5.payload:/tns:SAP_Lead_out_Talend_in_Req/DealerCode"/>
+            <children name="Source" outgoingConnections="//@node.2/@nodeData/@connections.4" type="id_String" xpath="row5.payload:/tns:SAP_Lead_out_Talend_in_Req/Source"/>
+            <children name="SourceInfo" outgoingConnections="//@node.2/@nodeData/@connections.5" type="id_String" xpath="row5.payload:/tns:SAP_Lead_out_Talend_in_Req/SourceInfo"/>
+            <children name="CampaignActivityOfOrigin" outgoingConnections="//@node.2/@nodeData/@connections.6" type="id_String" xpath="row5.payload:/tns:SAP_Lead_out_Talend_in_Req/CampaignActivityOfOrigin"/>
+            <children name="LostReason" outgoingConnections="//@node.2/@nodeData/@connections.7" type="id_String" xpath="row5.payload:/tns:SAP_Lead_out_Talend_in_Req/LostReason"/>
+            <children name="LostSubReason" outgoingConnections="//@node.2/@nodeData/@connections.8" type="id_String" xpath="row5.payload:/tns:SAP_Lead_out_Talend_in_Req/LostSubReason"/>
+            <children name="LostRemarks" outgoingConnections="//@node.2/@nodeData/@connections.9" type="id_String" xpath="row5.payload:/tns:SAP_Lead_out_Talend_in_Req/LostRemarks"/>
           </children>
         </nodes>
       </inputTrees>
       <outputTrees name="opportunityOut">
-        <nodes expression="[row5.payload:/tns:SAP_Lead_out_Talend_in_Req/SapLeadId]" incomingConnections="//@node.2/@nodeData/@connections.0" name="Id" nullable="false" type="id_String" xpath="opportunityOut/Id"/>
+        <nodes expression="" name="Id" nullable="false" type="id_String" xpath="opportunityOut/Id"/>
         <nodes name="IsDeleted" nullable="false" type="id_Boolean" xpath="opportunityOut/IsDeleted"/>
-        <nodes expression="[row5.payload:/tns:SAP_Lead_out_Talend_in_Req/SalesforceAccountID]" incomingConnections="//@node.2/@nodeData/@connections.1" name="AccountId" type="id_String" xpath="opportunityOut/AccountId"/>
+        <nodes expression="[row5.payload:/tns:SAP_Lead_out_Talend_in_Req/SalesforceAccountID]" incomingConnections="//@node.2/@nodeData/@connections.0" name="AccountId" type="id_String" xpath="opportunityOut/AccountId"/>
         <nodes name="Name" nullable="false" type="id_String" xpath="opportunityOut/Name"/>
         <nodes name="Description" type="id_String" xpath="opportunityOut/Description"/>
-        <nodes expression="[row5.payload:/tns:SAP_Lead_out_Talend_in_Req/StageName]" incomingConnections="//@node.2/@nodeData/@connections.2" name="StageName" nullable="false" type="id_String" xpath="opportunityOut/StageName"/>
+        <nodes expression="[row5.payload:/tns:SAP_Lead_out_Talend_in_Req/StageName]" incomingConnections="//@node.2/@nodeData/@connections.1" name="StageName" nullable="false" type="id_String" xpath="opportunityOut/StageName"/>
         <nodes name="Amount" type="id_BigDecimal" xpath="opportunityOut/Amount"/>
         <nodes name="Probability" type="id_Double" xpath="opportunityOut/Probability"/>
         <nodes name="CloseDate" nullable="false" type="id_Date" xpath="opportunityOut/CloseDate"/>
@@ -447,21 +447,20 @@
         <nodes name="Discovery_Completed__c" nullable="false" type="id_Boolean" xpath="opportunityOut/Discovery_Completed__c"/>
         <nodes name="ROI_Analysis_Completed__c" nullable="false" type="id_Boolean" xpath="opportunityOut/ROI_Analysis_Completed__c"/>
         <nodes name="Loss_Reason__c" type="id_String" xpath="opportunityOut/Loss_Reason__c"/>
-        <nodes name="ID_Univoco__c" type="id_String" xpath="opportunityOut/ID_Univoco__c"/>
+        <nodes expression=" [row5.payload:/tns:SAP_Lead_out_Talend_in_Req/SapLeadId]" incomingConnections="//@node.2/@nodeData/@connections.10" name="ID_Univoco__c" type="id_String" xpath="opportunityOut/ID_Univoco__c"/>
         <nodes name="Conteggio_Preventivi__c" type="id_Double" xpath="opportunityOut/Conteggio_Preventivi__c"/>
-        <nodes expression="[row5.payload:/tns:SAP_Lead_out_Talend_in_Req/ModelOfInterest]" incomingConnections="//@node.2/@nodeData/@connections.3" name="Modello_Interesse__c" type="id_String" xpath="opportunityOut/Modello_Interesse__c"/>
-        <nodes expression="[row5.payload:/tns:SAP_Lead_out_Talend_in_Req/LostReason]" incomingConnections="//@node.2/@nodeData/@connections.8" name="Lost_Reason__c" type="id_String" xpath="opportunityOut/Lost_Reason__c"/>
-        <nodes expression="[row5.payload:/tns:SAP_Lead_out_Talend_in_Req/LostSubReason]" incomingConnections="//@node.2/@nodeData/@connections.9" name="Lost_Sub_reason__c" type="id_String" xpath="opportunityOut/Lost_Sub_reason__c"/>
-        <nodes expression="[row5.payload:/tns:SAP_Lead_out_Talend_in_Req/LostRemarks]" incomingConnections="//@node.2/@nodeData/@connections.10" name="Lost_remarks__c" type="id_String" xpath="opportunityOut/Lost_remarks__c"/>
-        <nodes expression=" [row5.payload:/tns:SAP_Lead_out_Talend_in_Req/DealerCode]" incomingConnections="//@node.2/@nodeData/@connections.4" name="Concessionario__c" type="id_String" xpath="opportunityOut/Concessionario__c"/>
-        <nodes expression="[row5.payload:/tns:SAP_Lead_out_Talend_in_Req/Source]" incomingConnections="//@node.2/@nodeData/@connections.5" name="Source__c" type="id_String" xpath="opportunityOut/Source__c"/>
-        <nodes expression="[row5.payload:/tns:SAP_Lead_out_Talend_in_Req/CampaignActivityOfOrigin]" incomingConnections="//@node.2/@nodeData/@connections.7" name="Campagna_Attivit_di_origine__c" type="id_String" xpath="opportunityOut/Campagna_Attivit_di_origine__c"/>
-        <nodes expression="[row5.payload:/tns:SAP_Lead_out_Talend_in_Req/SourceInfo]" incomingConnections="//@node.2/@nodeData/@connections.6" name="Fonte_info__c" type="id_String" xpath="opportunityOut/Fonte_info__c"/>
+        <nodes expression="[row5.payload:/tns:SAP_Lead_out_Talend_in_Req/ModelOfInterest]" incomingConnections="//@node.2/@nodeData/@connections.2" name="Modello_Interesse__c" type="id_String" xpath="opportunityOut/Modello_Interesse__c"/>
+        <nodes expression="[row5.payload:/tns:SAP_Lead_out_Talend_in_Req/LostReason]" incomingConnections="//@node.2/@nodeData/@connections.7" name="Lost_Reason__c" type="id_String" xpath="opportunityOut/Lost_Reason__c"/>
+        <nodes expression="[row5.payload:/tns:SAP_Lead_out_Talend_in_Req/LostSubReason]" incomingConnections="//@node.2/@nodeData/@connections.8" name="Lost_Sub_reason__c" type="id_String" xpath="opportunityOut/Lost_Sub_reason__c"/>
+        <nodes expression="[row5.payload:/tns:SAP_Lead_out_Talend_in_Req/LostRemarks]" incomingConnections="//@node.2/@nodeData/@connections.9" name="Lost_remarks__c" type="id_String" xpath="opportunityOut/Lost_remarks__c"/>
+        <nodes expression=" [row5.payload:/tns:SAP_Lead_out_Talend_in_Req/DealerCode]" incomingConnections="//@node.2/@nodeData/@connections.3" name="Concessionario__c" type="id_String" xpath="opportunityOut/Concessionario__c"/>
+        <nodes expression="[row5.payload:/tns:SAP_Lead_out_Talend_in_Req/Source]" incomingConnections="//@node.2/@nodeData/@connections.4" name="Source__c" type="id_String" xpath="opportunityOut/Source__c"/>
+        <nodes expression="[row5.payload:/tns:SAP_Lead_out_Talend_in_Req/CampaignActivityOfOrigin]" incomingConnections="//@node.2/@nodeData/@connections.6" name="Campagna_Attivit_di_origine__c" type="id_String" xpath="opportunityOut/Campagna_Attivit_di_origine__c"/>
+        <nodes expression="[row5.payload:/tns:SAP_Lead_out_Talend_in_Req/SourceInfo]" incomingConnections="//@node.2/@nodeData/@connections.5" name="Fonte_info__c" type="id_String" xpath="opportunityOut/Fonte_info__c"/>
         <nodes name="SAP_integration_error_message__c" type="id_String" xpath="opportunityOut/SAP_integration_error_message__c"/>
         <nodes name="SAP_integration_error__c" nullable="false" type="id_Boolean" xpath="opportunityOut/SAP_integration_error__c"/>
       </outputTrees>
       <varTables minimized="true" name="Var"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0" xsi:type="TalendXMLMap:Connection"/>
       <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2" target="//@node.2/@nodeData/@outputTrees.0/@nodes.2" xsi:type="TalendXMLMap:Connection"/>
       <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3" target="//@node.2/@nodeData/@outputTrees.0/@nodes.5" xsi:type="TalendXMLMap:Connection"/>
       <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.4" target="//@node.2/@nodeData/@outputTrees.0/@nodes.41" xsi:type="TalendXMLMap:Connection"/>
@@ -472,6 +471,7 @@
       <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.9" target="//@node.2/@nodeData/@outputTrees.0/@nodes.42" xsi:type="TalendXMLMap:Connection"/>
       <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.10" target="//@node.2/@nodeData/@outputTrees.0/@nodes.43" xsi:type="TalendXMLMap:Connection"/>
       <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.11" target="//@node.2/@nodeData/@outputTrees.0/@nodes.44" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.39" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="128">
@@ -1787,13 +1787,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_be7418de-9a5a-4665-bd85-424d73773812"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pBpgc77GxJvDEGdnvzNl3j8GN2FOigR4bcTrdGrRSfg9QlLEb9dUz7ixs8VDD381Tq5tB2QIt3xd
-ajbG+RZmOg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_16eaa490-bfcb-4f78-9c5a-ce66f27796a5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ZP+XdILYd/d4fgBP39qNz+s8hrZe4uBsrta+pe7N7o0SMjFTEwJEEgKqJRJSnGEFE4hIRm+mXfuH
-D7pbb5oWGw==</DigestValue></Reference></SignedInfo><SignatureValue>O4K19b0Tk+1fgExkrLpbrFDX5G+wDHkwbwQlsTJE4cu7tKcjLg4HNG6AVcWcWrlagfZLZGaHwDV3
-wcN3CGxoFu9vHyBJqIDSYBQv1e/ohHt+sR+g3r7rlzfMsL5++swKdjLdy3vT2YDDQrrxkK+EYXmu
-o1eaAZKly+SH4r/NF+oALbbVVqlHy8GV34LlMW320Y09WRLfYeBGe5+BMll7tPISeygadhAZjQ0V
-M+0xTlhEHKcIvU0iC5TRLKMA5bs6eHFmuFHKua7JKw5vPXdEjkbp9De+CcIn+VllxhLvB6+rBtbR
-56TeDk1Cl4LAbBbkLoWi4CMtMrcUUr6c1u92Qg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_88ba1fef-64d0-4a71-b540-cf1440a840aa"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GUMncUtWfsNyrsxs6GX+a9Jax6kMrfVCyzlWk4Ssi9vFZOTugn3q+eMmwbq6woplaOwR3SyPUf1F
+1OKkOoggDQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e1625ef7-d502-42f2-8832-678c235b46ee"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>eK3i7ufsVH/iObW5Fcl/v0Ye0ggiAUZjPW0QVEKFKu6xFE2994YVeh4IOqd80RDuh4bE22RmQM8h
+3Hh6mBNdZQ==</DigestValue></Reference></SignedInfo><SignatureValue>PI8VOJ1ulkAJAD1M0dklYWXEoE4of9DDOMlis66s/qQcE1aphSAh7zHl+1zvugTq73z8kt+xb1MN
+jppFVnZcJIwuYvf6ViaZm0RNGX4cFlg7A6OSrgG5u+0bA6UvPYyTifgzUjYhtj0F9OTJA+qIXyJ5
+zfwrr0oyZxIIx3uAokphDngjZ4HuZjvRbAYIzDcevJyfZNPXT2MF7NYlCTr6KQfrktcAJxlI/HWu
+tk12xmzW3IVtMVyj45eSDesg/jgT6o9wxtm0GCJT4RcIdAhjL5+OCi+K/6kHNy/uOFZAgmmNxoYQ
+0fx6L2ps+SSZJo5F3cKUgW4Dswb68PTWzQtN6Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1817,4 +1817,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_16eaa490-bfcb-4f78-9c5a-ce66f27796a5" Target="#_be7418de-9a5a-4665-bd85-424d73773812"><Timestamp>2018-09-21 09:27:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e1625ef7-d502-42f2-8832-678c235b46ee" Target="#_88ba1fef-64d0-4a71-b540-cf1440a840aa"><Timestamp>2018-09-21 09:36:05</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
