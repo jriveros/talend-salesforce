@@ -1,8 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2018-09-21T11:11:49.685+0200">
-  <deletedItems id="_Go1F8LwDEeiaX7jSRazZ1w" path="sap-com-document-sap-soap-functions-mc-style/ZII_G81_SAP_BP_IN/ZFg81EndcustReceive" type="METADATA_FILE_XML"/>
-  <deletedItems id="_H94NULwDEeiaX7jSRazZ1w" path="sap-com-document-sap-soap-functions-mc-style/ZII_G81_SAP_BP_IN/ZFg81EndcustReceive" type="METADATA_FILE_XML"/>
-  <deletedItems id="_JnHl0UPPEeih8KkJgV_NKQ" path="I0005_SAP_Lead_to_SF_Opportunity/subaru-eu-ECC-VehSales-LeadOut/SAP_Lead_out_Talend_in/SAP_Lead_out_Talend_in" type="METADATA_FILE_XML"/>
-  <deletedItems id="_Jm7_oUPPEeih8KkJgV_NKQ" path="I0005_SAP_Lead_to_SF_Opportunity/subaru-eu-ECC-VehSales-LeadOut/SAP_Lead_out_Talend_in/SAP_Lead_out_Talend_in" type="METADATA_FILE_XML"/>
-  <deletedItems id="_JnFJkEPPEeih8KkJgV_NKQ" path="I0005_SAP_Lead_to_SF_Opportunity/subaru-eu-ECC-VehSales-LeadOut/SAP_Lead_out_Talend_in/SAP_Lead_out_Talend_in" type="METADATA_FILE_XML"/>
-</recyclebin:RecycleBin>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2018-09-21T11:15:36.575+0200"/>
