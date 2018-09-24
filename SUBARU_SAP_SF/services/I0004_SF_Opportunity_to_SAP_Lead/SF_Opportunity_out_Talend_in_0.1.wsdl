@@ -55,16 +55,88 @@
 			</xsd:element>
 			<xsd:complexType name="SF_Opportunity_out_Talend_in_RequestType">
 				<xsd:sequence>
-					<xsd:element minOccurs="1" maxOccurs="1" name="SalesforceID" type="tns:SF_ID">
-					</xsd:element>
-					<xsd:element minOccurs="0" maxOccurs="1" name="SapBpCode">
+					<xsd:element minOccurs="0" maxOccurs="1" name="SapLeadId">
 						<xsd:simpleType>
 							<xsd:restriction base="xsd:string">
 								<xsd:maxLength value="30" />
 							</xsd:restriction>
 						</xsd:simpleType>
 					</xsd:element>
-					<xsd:element name="SapBpCodeX" type="xsd:boolean" />
+					<xsd:element name="SapLeadIdX" type="xsd:boolean" />
+					<xsd:element minOccurs="0" maxOccurs="1" name="SalesforceAccountID" type="tns:SF_ID">
+					</xsd:element>
+					<xsd:element minOccurs="0" maxOccurs="1" name="StageName">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:maxLength value="30" />
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element name="StageNameX" type="xsd:boolean" />
+					<xsd:element minOccurs="0" maxOccurs="1" name="ModelOfInterest">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:maxLength value="30" />
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element name="ModelOfInterestX" type="xsd:boolean" />
+					<xsd:element minOccurs="0" maxOccurs="1" name="DealerCode">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:maxLength value="30" />
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element name="DealerCodeX" type="xsd:boolean" />
+					<xsd:element minOccurs="0" maxOccurs="1" name="Source">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:maxLength value="30" />
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element name="SourceX" type="xsd:boolean" />
+					<xsd:element minOccurs="0" maxOccurs="1" name="SourceInfo">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:maxLength value="30" />
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element name="SourceInfoX" type="xsd:boolean" />
+					<xsd:element minOccurs="0" maxOccurs="1" name="CampaignActivityOfOrigin">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:maxLength value="30" />
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element name="CampaignActivityOfOriginX" type="xsd:boolean" />
+					<xsd:element minOccurs="0" maxOccurs="1" name="LostReason">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:maxLength value="255" />
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element name="LostReasonX" type="xsd:boolean" />
+					<xsd:element minOccurs="0" maxOccurs="1" name="LostSubReason">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:maxLength value="30" />
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element name="LostSubReasonX" type="xsd:boolean" />
+					<xsd:element minOccurs="0" maxOccurs="1" name="LostRemarks">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:maxLength value="32768" />
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element name="LostRemarksX" type="xsd:boolean" />
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:element name="SF_Opportunity_out_Talend_in_Fault">
