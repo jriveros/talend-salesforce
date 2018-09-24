@@ -3,52 +3,110 @@
 		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
 		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
 		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-		xmlns:tns="http://www.talend.org/service/"
-		targetNamespace="http://www.talend.org/service/">
+		xmlns:tns="urn:subaru.eu:SF:MDM:LeadIn"
+		targetNamespace="urn:subaru.eu:SF:MDM:LeadIn">
 	<wsdl:types>
 		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-			targetNamespace="http://www.talend.org/service/">
-			<xsd:element name="SF_Opportunity_out_Talend_inOperationRequest">
+			targetNamespace="urn:subaru.eu:SF:MDM:LeadIn">
+			<xsd:simpleType name="SF_ID">
+				<xsd:restriction base="xsd:string">
+					<xsd:length value="18" />
+					<xsd:pattern value="[a-zA-Z0-9]{18}" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:complexType name="CustomAnswer">
+				<xsd:sequence>
+					<xsd:element name="conflicting_fields" minOccurs="0" maxOccurs="unbounded" type="tns:conflict_fields" nillable="true" />
+					<xsd:element name="message" minOccurs="0" type="xsd:string" nillable="true" />
+					<xsd:element name="SF_record_ID" minOccurs="0" type="tns:SF_ID" nillable="true" />
+					<xsd:element name="status" minOccurs="0"
+						nillable="true">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:enumeration value="updated"></xsd:enumeration>
+								<xsd:enumeration value="inserted"></xsd:enumeration>
+								<xsd:enumeration value="conflict"></xsd:enumeration>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="conflict_fields">
+				<xsd:sequence>
+					<xsd:element name="name" minOccurs="0" type="xsd:string" nillable="true" />
+					<xsd:element name="value" minOccurs="0" type="xsd:string" nillable="true" />
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:element name="SF_Opportunity_out_Talend_in_Req"
+				type="tns:SF_Opportunity_out_Talend_in_RequestType">
+			</xsd:element>
+			<xsd:element name="SF_Account_out_Talend_in_Resp">
+				<xsd:complexType>
+					<xsd:complexContent>
+						<xsd:extension base="tns:CustomAnswer">
+							<xsd:sequence>
+								<xsd:element name="Businesspartner"
+									type="xsd:string">
+								</xsd:element>
+							</xsd:sequence>
+						</xsd:extension>
+					</xsd:complexContent>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:complexType name="SF_Account_out_Talend_in_RequestType">
+				<xsd:sequence>
+					<xsd:element minOccurs="1" maxOccurs="1" name="SalesforceID" type="tns:SF_ID">
+					</xsd:element>
+					<xsd:element minOccurs="0" maxOccurs="1" name="SapBpCode">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:maxLength value="30" />
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element name="SapBpCodeX" type="xsd:boolean" />
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:element name="SF_Opportunity_out_Talend_in_Fault">
 				<xsd:complexType>
 					<xsd:sequence>
-						<xsd:element name="in" type="xsd:string">
-							<xsd:element name="Campaign" type="xsd:string"/>
-							<xsd:element name="Dealer" type="xsd:string"/>
-							<xsd:element name="Followtype" type="xsd:string"/>
-							<xsd:element name="Followupdate" type="xsd:string"/>
-							<xsd:element name="Followuptime" type="xsd:string"/>
-							<xsd:element name="Leaddate" type="xsd:string"/>
-							<xsd:element name="Leadtime" type="xsd:string"/>
-							<xsd:element name="Modelofinterest" type="xsd:string"/>
-							<xsd:element name="Remark" type="xsd:string"/>
-							<xsd:element name="Sapbpcode" type="xsd:string"/>
-							<xsd:element name="Source" type="xsd:string"/>
-							<xsd:element name="Subsource" type="xsd:string"/>
-						</xsd:element>
+						<xsd:element name="standard" type="tns:ExchangeFaultData" />
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
-			<xsd:element name="SF_Opportunity_out_Talend_inOperationResponse">
-				<xsd:complexType>
-					<xsd:sequence>
-						<xsd:element name="out" type="xsd:string"></xsd:element>
-					</xsd:sequence>
-				</xsd:complexType>
-			</xsd:element>
+			<xsd:complexType name="ExchangeLogData">
+				<xsd:sequence>
+					<xsd:element name="severity" type="xsd:string" minOccurs="0" />
+					<xsd:element name="text" type="xsd:string" />
+					<xsd:element name="url" type="xsd:string" minOccurs="0" />
+					<xsd:element name="id" type="xsd:string" minOccurs="0" />
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="ExchangeFaultData">
+				<xsd:sequence>
+					<xsd:element name="faultText" type="xsd:string" />
+					<xsd:element name="faultUrl" type="xsd:string" minOccurs="0" />
+					<xsd:element name="faultDetail" type="tns:ExchangeLogData" minOccurs="0" maxOccurs="unbounded" />
+				</xsd:sequence>
+			</xsd:complexType>
 		</xsd:schema>
 	</wsdl:types>
 
 	<wsdl:message name="SF_Opportunity_out_Talend_inOperationRequest">
-		<wsdl:part name="parameters" element="tns:SF_Opportunity_out_Talend_inOperationRequest"></wsdl:part>
+		<wsdl:part name="parameters" element="tns:SF_Opportunity_out_Talend_in_Req"></wsdl:part>
 	</wsdl:message>
 	<wsdl:message name="SF_Opportunity_out_Talend_inOperationResponse">
-		<wsdl:part name="parameters" element="tns:SF_Opportunity_out_Talend_inOperationResponse"></wsdl:part>
+		<wsdl:part name="parameters" element="tns:SF_Opportunity_out_Talend_in_Resp"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="SF_Opportunity_out_Talend_inFault">
+		<wsdl:part name="parameters" element="tns:SF_Opportunity_out_Talend_in_Fault"></wsdl:part>
 	</wsdl:message>
 
 	<wsdl:portType name="SF_Opportunity_out_Talend_inPortType">
 		<wsdl:operation name="SF_Opportunity_out_Talend_inOperation">
 			<wsdl:input message="tns:SF_Opportunity_out_Talend_inOperationRequest"></wsdl:input>
 			<wsdl:output message="tns:SF_Opportunity_out_Talend_inOperationResponse"></wsdl:output>
+			<wsdl:fault name="fault" message="tns:SF_Opportunity_out_Talend_inFault"></wsdl:fault>
 		</wsdl:operation>
 	</wsdl:portType>
 
@@ -62,6 +120,9 @@
 			<wsdl:output>
 				<soap:body use="literal" />
 			</wsdl:output>
+			<wsdl:fault name="fault">
+				<soap:fault use="literal" name="fault" />
+			</wsdl:fault>
 		</wsdl:operation>
 	</wsdl:binding>
 
