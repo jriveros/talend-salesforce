@@ -32,21 +32,23 @@
 			<xsd:element name="SAP_TestDrive_out_Talend_inOperationRequest">
 				<xsd:complexType>
 				<xsd:sequence>
-                    <xsd:element minOccurs="1" maxOccurs="1" name="SapTestDriveId" type="xsd:string">
+                    <xsd:element minOccurs="0" maxOccurs="1" name="SapTaskId" type="xsd:string">
 					</xsd:element>
-                    <xsd:element minOccurs="1" maxOccurs="1" name="Subject" type="xsd:string">
+                    <xsd:element minOccurs="1" maxOccurs="1" name="BPId" nillable="true" type="tns:SF_ID">
 					</xsd:element>
 					<xsd:element minOccurs="1" maxOccurs="1" name="LeadID" nillable="true" type="tns:SF_ID">
 					</xsd:element>
-					<xsd:element minOccurs="1" maxOccurs="1" name="BPId" nillable="true" type="tns:SF_ID">
+                    <xsd:element minOccurs="0" maxOccurs="1" name="DealerCode" type="xsd:string">
 					</xsd:element>
-					<xsd:element minOccurs="1" maxOccurs="1" name="Status" nillable="true" type="xsd:string">
+					<xsd:element minOccurs="0" maxOccurs="1" name="ReservationDate" nillable="true" type="xsd:string">
 					</xsd:element>
-					<xsd:element minOccurs="0" maxOccurs="1" name="ExecutionDate" nillable="true" type="xsd:string">
+					<xsd:element minOccurs="0" maxOccurs="1" name="ModelDescription" nillable="true" type="xsd:string">
 					</xsd:element>
-					<xsd:element minOccurs="0" maxOccurs="1" name="ExecutionTime" nillable="true" type="xsd:string">
+					<xsd:element minOccurs="0" maxOccurs="1" name="Status" nillable="true" type="xsd:string">
 					</xsd:element>
-					<xsd:element minOccurs="0" maxOccurs="1" name="Description" nillable="true" type="xsd:string">
+					<xsd:element minOccurs="0" maxOccurs="1" name="LicensePlate" nillable="true" type="xsd:string">
+					</xsd:element>
+					<xsd:element minOccurs="0" maxOccurs="1" name="RecordTypeId" nillable="true" type="xsd:string">
 					</xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
