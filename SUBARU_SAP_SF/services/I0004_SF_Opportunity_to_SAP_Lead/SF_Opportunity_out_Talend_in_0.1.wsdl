@@ -40,7 +40,7 @@
 			<xsd:element name="SF_Opportunity_out_Talend_in_Req"
 				type="tns:SF_Opportunity_out_Talend_in_RequestType">
 			</xsd:element>
-			<xsd:element name="SF_Account_out_Talend_in_Resp">
+			<xsd:element name="SF_Opportunity_out_Talend_in_Resp">
 				<xsd:complexType>
 					<xsd:complexContent>
 						<xsd:extension base="tns:CustomAnswer">
@@ -53,7 +53,7 @@
 					</xsd:complexContent>
 				</xsd:complexType>
 			</xsd:element>
-			<xsd:complexType name="SF_Account_out_Talend_in_RequestType">
+			<xsd:complexType name="SF_Opportunity_out_Talend_in_RequestType">
 				<xsd:sequence>
 					<xsd:element minOccurs="1" maxOccurs="1" name="SalesforceID" type="tns:SF_ID">
 					</xsd:element>
