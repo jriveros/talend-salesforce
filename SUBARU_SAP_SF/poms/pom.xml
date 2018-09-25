@@ -107,6 +107,7 @@
     <module>jobs/process/I0005_SAP_Lead_to_SF_Opportunity/sap_lead_to_sf_opportunity_job_1.0</module>
     <module>jobs/services/I0005_SAP_Lead_to_SF_Opportunity/sap_lead_out_talend_in_1.0</module>
     <module>jobs/services/I0005_SAP_Lead_to_SF_Opportunity/sap_lead_out_talend_in_1.1</module>
+    <module>jobs/services/I0005_SAP_Lead_to_SF_Opportunity/sap_lead_out_talend_in_1.2</module>
   </modules>
   <properties>
     <talend.project.name>SUBARU_SAP_SF</talend.project.name>
