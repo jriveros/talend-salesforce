@@ -40,7 +40,7 @@
 					</xsd:element>
 					<xsd:element minOccurs="1" maxOccurs="1" name="ModelOfInterest" nillable="true" type="xsd:string">
 					</xsd:element>
-					<xsd:element minOccurs="0" maxOccurs="1" name="DealerCode" nillable="true" type="tns:SF_ID">
+					<xsd:element minOccurs="0" maxOccurs="1" name="DealerCode" nillable="true" type="xsd:string">
 					</xsd:element>
 					<xsd:element minOccurs="0" maxOccurs="1" name="Source" nillable="true" type="xsd:string">
 					</xsd:element>
