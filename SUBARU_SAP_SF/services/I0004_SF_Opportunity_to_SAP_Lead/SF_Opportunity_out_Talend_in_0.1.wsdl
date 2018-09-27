@@ -55,24 +55,6 @@
 			</xsd:element>
 			<xsd:complexType name="SF_Opportunity_out_Talend_in_RequestType">
 				<xsd:sequence>
-					<xsd:element minOccurs="0" maxOccurs="1" name="SapLeadId">
-						<xsd:simpleType>
-							<xsd:restriction base="xsd:string">
-								<xsd:maxLength value="30" />
-							</xsd:restriction>
-						</xsd:simpleType>
-					</xsd:element>
-					<xsd:element name="SapLeadIdX" type="xsd:boolean" />
-					<xsd:element minOccurs="0" maxOccurs="1" name="SalesforceAccountID" type="tns:SF_ID">
-					</xsd:element>
-					<xsd:element minOccurs="0" maxOccurs="1" name="StageName">
-						<xsd:simpleType>
-							<xsd:restriction base="xsd:string">
-								<xsd:maxLength value="30" />
-							</xsd:restriction>
-						</xsd:simpleType>
-					</xsd:element>
-					<xsd:element name="StageNameX" type="xsd:boolean" />
 					<xsd:element minOccurs="0" maxOccurs="1" name="ModelOfInterest">
 						<xsd:simpleType>
 							<xsd:restriction base="xsd:string">
@@ -137,6 +119,54 @@
 						</xsd:simpleType>
 					</xsd:element>
 					<xsd:element name="LostRemarksX" type="xsd:boolean" />
+					<xsd:element minOccurs="0" maxOccurs="1" name="Followtype">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:maxLength value="4" />
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element name="FollowtypeX" type="xsd:boolean" />
+					<xsd:element minOccurs="0" maxOccurs="1" name="Followupdate">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:maxLength value="16" />
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element name="FollowupdateX" type="xsd:boolean" />
+					<xsd:element minOccurs="0" maxOccurs="1" name="Followuptime">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:maxLength value="22" />
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element name="FollowuptimeX" type="xsd:boolean" />
+					<xsd:element minOccurs="0" maxOccurs="1" name="Leaddate">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:maxLength value="16" />
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element name="LeaddateX" type="xsd:boolean" />
+					<xsd:element minOccurs="0" maxOccurs="1" name="Leadtime">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:maxLength value="22" />
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element name="LeadtimeX" type="xsd:boolean" />
+					<xsd:element minOccurs="0" maxOccurs="1" name="Sapbpcode">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:maxLength value="10" />
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element name="SapbpcodeX" type="xsd:boolean" />
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:element name="SF_Opportunity_out_Talend_in_Fault">
