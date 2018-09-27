@@ -606,46 +606,6 @@
       <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="960" posY="256">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_4"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
-    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="responseFaultRow">
-      <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <outputTrees activateCondensedTool="true" enableEmptyElement="false" name="responseFaultRow" reject="true" rejectInnerJoin="true">
-        <nodes expression="" name="payload" type="id_Document" xpath="responseFaultRow/payload">
-          <children loop="true" main="true" name="tns:SF_Opportunity_out_Talend_in_Fault" type="id_String" xpath="responseFaultRow.payload:/tns:SF_Opportunity_out_Talend_in_Fault" xsi:type="TalendXMLMap:OutputTreeNode">
-            <children defaultValue="urn:subaru.eu:SF:MDM:LeadIn" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="responseFaultRow.payload:/tns:SF_Opportunity_out_Talend_in_Fault/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children name="standard" type="id_String" xpath="responseFaultRow.payload:/tns:SF_Opportunity_out_Talend_in_Fault/standard" xsi:type="TalendXMLMap:OutputTreeNode">
-              <children expression="[row4.payload:/tns:ZFg81LeadReceiveResponse/Message]" name="faultText" type="id_String" xpath="responseFaultRow.payload:/tns:SF_Opportunity_out_Talend_in_Fault/standard/faultText" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="[row4.payload:/tns:ZFg81LeadReceiveResponse/Status]" name="faultUrl" type="id_String" xpath="responseFaultRow.payload:/tns:SF_Opportunity_out_Talend_in_Fault/standard/faultUrl" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children name="faultDetail" type="id_String" xpath="responseFaultRow.payload:/tns:SF_Opportunity_out_Talend_in_Fault/standard/faultDetail" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children expression="[row4.payload:/tns:ZFg81LeadReceiveResponse/Fault/FaultDetail/item/Severity]" name="severity" type="id_String" xpath="responseFaultRow.payload:/tns:SF_Opportunity_out_Talend_in_Fault/standard/faultDetail/severity" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                <children expression=" [row4.payload:/tns:ZFg81LeadReceiveResponse/Fault/FaultDetail/item/Text]" name="text" type="id_String" xpath="responseFaultRow.payload:/tns:SF_Opportunity_out_Talend_in_Fault/standard/faultDetail/text" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                <children expression="[row4.payload:/tns:ZFg81LeadReceiveResponse/Fault/FaultDetail/item/Url]" name="url" type="id_String" xpath="responseFaultRow.payload:/tns:SF_Opportunity_out_Talend_in_Fault/standard/faultDetail/url" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                <children expression="[row4.payload:/tns:ZFg81LeadReceiveResponse/Fault/FaultDetail/item/Id]" name="id" type="id_String" xpath="responseFaultRow.payload:/tns:SF_Opportunity_out_Talend_in_Fault/standard/faultDetail/id" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              </children>
-            </children>
-          </children>
-        </nodes>
-      </outputTrees>
-      <varTables minimized="true" name="Var"/>
-    </nodeData>
-  </node>
-  <node componentName="tESBProviderFault" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="256">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tESBProviderFault_2"/>
-    <elementParameter field="TEXT" name="ESB_FAULT_TITLE" value="&quot;&quot;"/>
-    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_CUSTOM_PROPERTIES" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="SF_Account_to_SAP_BP_Fault"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tESBProviderFault_2">
-      <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
-    </metadata>
-  </node>
   <connection connectorName="FLOW" label="row10" lineStyle="0" metaname="tESBProviderRequest_1" offsetLabelX="6" offsetLabelY="-24" source="tESBProviderRequest_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row10"/>
@@ -689,10 +649,6 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="teret"/>
   </connection>
-  <connection connectorName="FLOW" label="responseFaultRow" lineStyle="0" metaname="responseFaultRow" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_4" target="tESBProviderFault_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="responseFaultRow"/>
-  </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tESBProviderRequest_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
@@ -708,18 +664,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_4"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bf832abf-6149-4c0b-8710-47cfb9350d0c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>e9vm/ibfZ6rBdpRmTOnJRSC2uuU6R2uZR+ACUgoqAJ9QxpDRTx/EfjBtU5VCc9Th6SoEOlwEX6I9
-czGbkDODnQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a2d8ae61-e4b2-4deb-ad0f-0dc868b8d035"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mnrKtjkgZjCLL7R943ELoM+0PkrEAHgFQW2FaPQ+sJ7kPQbbM+tTfAvUqFJNsbf+nFnTTY2Tyh2+
-66yRICri1g==</DigestValue></Reference></SignedInfo><SignatureValue>1QkPhJbrhT3Tsmt3qAC14qNqXKcTiWrV/Z3kk886ahge/aicZ/SrmGc3mHv88bbTGrGtyOF5sIj/
-fXrhHzjP2KtaPi2vQot18dyNRab89Ei9nVS7i4JtJWuh+z8oBuBKtD0/jD2LYfX7jos/mC7vbmjX
-UFWvdb5LcmIFKCnQUAbC4IEbG9l4J+pBAUGTU5eLzf+AjmU93KSpm0gkUd8jB49NwpHP8TH7DldB
-OaQrL8BFKTpA4xKJlr/eE2KciLfaIfjUCHP/cWS1SV7/43YGZNFbUqljmIfBHjKaRHo/2salEsp1
-GPA4hw1HGx0u/Q3UUMCqwGIqsscjAc5pB5TZew==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6d32f6f2-5444-4560-b561-a74c8b4c02cf"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>SlNciExeE3tU+woI6Z6EyvRahYkwSspdHkgXzEeZp40QgGCj80sERdNZcgD8TGvJ/X67hehHfM6K
+H67v5d3GCw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_37ace208-2577-4925-aa76-10e48615bbbd"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>a6RAR589YjX50P7fwocQYoX6zWxZKIaAY0nYEGrvwcExvZX94p5zcYbJ4PNzvRB6NgcqAHTb77mX
+p5In5GDQ/A==</DigestValue></Reference></SignedInfo><SignatureValue>1PQce4d/xF9c0Rx/+4ZadgCx5wYSK0GHlAoZsHQuZYlIWOTmEbX9SV+zYNsK+WhOw6QSIoXnKR+n
+bcLlJEy0N6GXDHsVdmEqgT6CYFXALvEWCXP7i9yJboy8iSfmf7mcE2zBpKz4zoS9Gik4oC4bXymv
+uisem0hfJctPETLIguQAEK+mbpvaqcXYKa6YAR5AP8g6rwYwnLHYa50GBO9MaUHqWZk9KZYb0ALy
+iHWltmqx8UKrNYsq0pr84INvuZkLGi0VU2NDwQtKej81KgnqKUALxU2txd0z+fF7HstSeASyjnJL
+1yw8k87P33mn2cP66/OPPnz/n0v3L89n48yxuA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -743,4 +694,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a2d8ae61-e4b2-4deb-ad0f-0dc868b8d035" Target="#_bf832abf-6149-4c0b-8710-47cfb9350d0c"><Timestamp>2018-09-27 13:48:20</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_37ace208-2577-4925-aa76-10e48615bbbd" Target="#_6d32f6f2-5444-4560-b561-a74c8b4c02cf"><Timestamp>2018-09-27 13:48:37</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
