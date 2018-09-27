@@ -45,7 +45,7 @@
 					<xsd:complexContent>
 						<xsd:extension base="tns:CustomAnswer">
 							<xsd:sequence>
-								<xsd:element name="Businesspartner"
+								<xsd:element name="LeadId"
 									type="xsd:string">
 								</xsd:element>
 							</xsd:sequence>

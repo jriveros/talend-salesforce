@@ -166,98 +166,71 @@
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="requestRow2">
         <nodes expression="" name="payload" type="id_Document" xpath="requestRow2/payload">
-          <children main="true" name="tns:SF_Opportunity_out_Talend_in_Req" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req">
+          <children loop="true" main="true" name="tns:SF_Opportunity_out_Talend_in_Req" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req">
             <children defaultValue="urn:subaru.eu:SF:MDM:LeadIn" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/xmlns:tns"/>
-            <children loop="true" name="ModelOfInterest" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/ModelOfInterest"/>
+            <children name="ModelOfInterest" outgoingConnections="//@node.2/@nodeData/@connections.0" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/ModelOfInterest"/>
             <children name="ModelOfInterestX" type="id_Boolean" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/ModelOfInterestX"/>
-            <children name="DealerCode" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/DealerCode"/>
+            <children name="DealerCode" outgoingConnections="//@node.2/@nodeData/@connections.1" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/DealerCode"/>
             <children name="DealerCodeX" type="id_Boolean" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/DealerCodeX"/>
-            <children name="Source" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Source"/>
+            <children name="Source" outgoingConnections="//@node.2/@nodeData/@connections.2" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Source"/>
             <children name="SourceX" type="id_Boolean" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/SourceX"/>
-            <children name="SourceInfo" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/SourceInfo"/>
+            <children name="SourceInfo" outgoingConnections="//@node.2/@nodeData/@connections.3" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/SourceInfo"/>
             <children name="SourceInfoX" type="id_Boolean" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/SourceInfoX"/>
-            <children name="CampaignActivityOfOrigin" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/CampaignActivityOfOrigin"/>
+            <children name="CampaignActivityOfOrigin" outgoingConnections="//@node.2/@nodeData/@connections.4" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/CampaignActivityOfOrigin"/>
             <children name="CampaignActivityOfOriginX" type="id_Boolean" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/CampaignActivityOfOriginX"/>
             <children name="LostReason" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/LostReason"/>
             <children name="LostReasonX" type="id_Boolean" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/LostReasonX"/>
             <children name="LostSubReason" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/LostSubReason"/>
             <children name="LostSubReasonX" type="id_Boolean" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/LostSubReasonX"/>
-            <children name="LostRemarks" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/LostRemarks"/>
+            <children name="LostRemarks" outgoingConnections="//@node.2/@nodeData/@connections.5" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/LostRemarks"/>
             <children name="LostRemarksX" type="id_Boolean" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/LostRemarksX"/>
-            <children name="Followtype" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Followtype"/>
+            <children name="Followtype" outgoingConnections="//@node.2/@nodeData/@connections.6" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Followtype"/>
             <children name="FollowtypeX" type="id_Boolean" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/FollowtypeX"/>
-            <children name="Followupdate" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Followupdate"/>
+            <children name="Followupdate" outgoingConnections="//@node.2/@nodeData/@connections.7" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Followupdate"/>
             <children name="FollowupdateX" type="id_Boolean" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/FollowupdateX"/>
-            <children name="Followuptime" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Followuptime"/>
+            <children name="Followuptime" outgoingConnections="//@node.2/@nodeData/@connections.8" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Followuptime"/>
             <children name="FollowuptimeX" type="id_Boolean" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/FollowuptimeX"/>
-            <children name="Leaddate" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Leaddate"/>
+            <children name="Leaddate" outgoingConnections="//@node.2/@nodeData/@connections.9" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Leaddate"/>
             <children name="LeaddateX" type="id_Boolean" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/LeaddateX"/>
-            <children name="Leadtime" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Leadtime"/>
+            <children name="Leadtime" outgoingConnections="//@node.2/@nodeData/@connections.10" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Leadtime"/>
             <children name="LeadtimeX" type="id_Boolean" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/LeadtimeX"/>
-            <children name="Sapbpcode" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Sapbpcode"/>
+            <children name="Sapbpcode" outgoingConnections="//@node.2/@nodeData/@connections.11" type="id_String" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Sapbpcode"/>
             <children name="SapbpcodeX" type="id_Boolean" xpath="requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/SapbpcodeX"/>
           </children>
         </nodes>
       </inputTrees>
       <outputTrees activateCondensedTool="true" name="upsertRequestRow1">
         <nodes expression="" name="payload" nullable="false" type="id_Document" xpath="upsertRequestRow1/payload">
-          <children loop="true" main="true" name="tns:ZFg81EndcustReceive" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive" xsi:type="TalendXMLMap:OutputTreeNode">
-            <children defaultValue="urn:sap-com:document:sap:soap:functions:mc-style" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="([requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/BirthDate] != null &amp;&amp; ![requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/BirthDate].toString().isEmpty()) ? TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, TalendDate.parseDate(&quot;yyyy-MM-dd&quot;, [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/BirthDate])) : &quot;&quot; " name="Birthdate" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/Birthdate" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/BirthDateX] != null &amp;&amp; [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/BirthDateX] ? &quot;X&quot; : &quot;&quot;" name="BirthdateX" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/BirthdateX" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/Campaign_ActivityOfOrigin]" name="CampaignActivityOfOrigin" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/CampaignActivityOfOrigin" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/Campaign_ActivityOfOriginX] != null &amp;&amp; [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/Campaign_ActivityOfOriginX] ? &quot;X&quot; : &quot;&quot; " name="CampaignActivityOfOriginX" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/CampaignActivityOfOriginX" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/City]" name="City" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/City" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/CityX] != null &amp;&amp; [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/CityX] ? &quot;X&quot; : &quot;&quot;" name="CityX" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/CityX" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/CountryCode]" name="Countrycode" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/Countrycode" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/CountryCodeX] != null &amp;&amp; [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/CountryCodeX] ? &quot;X&quot; : &quot;&quot;" name="CountrycodeX" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/CountrycodeX" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/DealerCode]" name="Dealer" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/Dealer" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/DealerCodeX] != null &amp;&amp; [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/DealerCodeX] ? &quot;X&quot; : &quot;&quot;" name="DealerX" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/DealerX" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/EmailAddress]" name="Emailaddress" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/Emailaddress" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/EmailAddressX] != null &amp;&amp; [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/EmailAddressX] ? &quot;X&quot; : &quot;&quot;" name="EmailaddressX" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/EmailaddressX" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/FirstName]" name="Firstname" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/Firstname" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/FirstNameX] != null &amp;&amp; [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/FirstNameX] ? &quot;X&quot; : &quot;&quot;" name="FirstnameX" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/FirstnameX" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/FiscalCode]" name="Fiscalcode" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/Fiscalcode" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/FiscalCodeX] != null &amp;&amp; [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/FiscalCodeX] ? &quot;X&quot; : &quot;&quot;" name="FiscalcodeX" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/FiscalcodeX" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/Gender]" name="Gender" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/Gender" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/GenderX] != null &amp;&amp; [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/GenderX] ? &quot;X&quot; : &quot;&quot;" name="GenderX" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/GenderX" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/HouseNumber]" name="Housenumber" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/Housenumber" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/HouseNumberX] != null &amp;&amp; [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/HouseNumberX] ? &quot;X&quot; : &quot;&quot;" name="HousenumberX" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/HousenumberX" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/LanguageCode]" name="Languagecode" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/Languagecode" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/LanguageCodeX] != null &amp;&amp; [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/LanguageCodeX] ? &quot;X&quot; : &quot;&quot;" name="LanguagecodeX" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/LanguagecodeX" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/LastName]" name="Lastname" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/Lastname" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/LastNameX] != null &amp;&amp; [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/LastNameX] ? &quot;X&quot; : &quot;&quot;" name="LastnameX" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/LastnameX" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="([requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/LastUpdateDate] != null &amp;&amp; ![requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/LastUpdateDate].toString().isEmpty()) ? TalendDate.formatDate(&quot;yyyy-MM-dd'T'HH:mm:ss&quot;,TalendDate.parseDate(&quot;yyyy-MM-dd'T'HH:mm:ss&quot;, [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/LastUpdateDate])) : &quot;&quot; " name="Lastupdatedate" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/Lastupdatedate" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="Var.marketingConsent " name="Marketingcheckbox" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/Marketingcheckbox" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/MarketingConsentX] != null &amp;&amp; [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/MarketingConsentX] ? &quot;X&quot; : &quot;&quot;" name="MarketingcheckboxX" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/MarketingcheckboxX" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/MobilePhone]" name="Mobilephone" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/Mobilephone" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/MobilePhoneX] != null &amp;&amp; [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/MobilePhoneX] ? &quot;X&quot; : &quot;&quot;" name="MobilephoneX" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/MobilephoneX" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/BpPartnerType]" name="Partnertype" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/Partnertype" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/Phone]" name="Phone" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/Phone" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/PhoneX] != null &amp;&amp; [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/PhoneX] ? &quot;X&quot; : &quot;&quot;" name="PhoneX" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/PhoneX" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/PostalCode]" name="Postalcode" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/Postalcode" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/PostalCodeX] != null &amp;&amp; [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/PostalCodeX] ? &quot;X&quot; : &quot;&quot;" name="PostalcodeX" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/PostalcodeX" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="Var.preSalesConsent" name="PreSalescheckbox" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/PreSalescheckbox" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/PreSalesConsentX] != null &amp;&amp; [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/PreSalesConsentX] ? &quot;X&quot; : &quot;&quot;" name="PreSalescheckboxX" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/PreSalescheckboxX" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="Var.profilingConsent " name="Profilingcheckbox" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/Profilingcheckbox" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/ProfilingConsentX] != null &amp;&amp; [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/ProfilingConsentX] ? &quot;X&quot; : &quot;&quot;" name="ProfilingcheckboxX" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/ProfilingcheckboxX" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/Region]" name="Region" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/Region" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/RegionX] != null &amp;&amp; [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/RegionX] ? &quot;X&quot; : &quot;&quot;" name="RegionX" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/RegionX" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/SalesforceID]" name="Salesforceid" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/Salesforceid" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/SapBpCode]" name="Sapbpcode" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/Sapbpcode" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/SapBpCodeX] != null &amp;&amp; [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/SapBpCodeX] ? &quot;X&quot; : &quot;&quot;" name="SapbpcodeX" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/SapbpcodeX" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/Source]" name="Source" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/Source" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/SourceInfo]" name="SourceInfo" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/SourceInfo" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/SourceInfoX] != null &amp;&amp; [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/SourceInfoX] ? &quot;X&quot; : &quot;&quot; " name="SourceInfoX" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/SourceInfoX" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/SourceX] != null &amp;&amp; [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/SourceX] ? &quot;X&quot; : &quot;&quot; " name="SourceX" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/SourceX" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/StorageLocation]" name="StoreLoc" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/StoreLoc" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/StorageLocationX] != null &amp;&amp; [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/StorageLocationX] ? &quot;X&quot; : &quot;&quot;" name="StoreLocX" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/StoreLocX" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/Street]" name="Street" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/Street" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/StreetX] != null &amp;&amp; [requestRow2.payload:/tns:SF_Account_Out_Talend_In_Req/StreetX] ? &quot;X&quot; : &quot;&quot;" name="StreetX" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81EndcustReceive/StreetX" xsi:type="TalendXMLMap:OutputTreeNode"/>
+          <children loop="true" main="true" name="tns:ZFg81LeadReceive" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive" xsi:type="TalendXMLMap:OutputTreeNode">
+            <children defaultValue="urn:sap-com:document:sap:soap:functions:mc-style" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="[requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/CampaignActivityOfOrigin]" incomingConnections="//@node.2/@nodeData/@connections.4" name="Campaign" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/Campaign" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression=" [requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/DealerCode]" incomingConnections="//@node.2/@nodeData/@connections.1" name="Dealer" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/Dealer" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="[requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Followtype]" incomingConnections="//@node.2/@nodeData/@connections.6" name="Followtype" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/Followtype" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression=" [requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Followupdate]" incomingConnections="//@node.2/@nodeData/@connections.7" name="Followupdate" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/Followupdate" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="[requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Followuptime]" incomingConnections="//@node.2/@nodeData/@connections.8" name="Followuptime" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/Followuptime" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="[requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Leaddate]" incomingConnections="//@node.2/@nodeData/@connections.9" name="Leaddate" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/Leaddate" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="[requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Leadtime]" incomingConnections="//@node.2/@nodeData/@connections.10" name="Leadtime" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/Leadtime" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="[requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/ModelOfInterest]" incomingConnections="//@node.2/@nodeData/@connections.0" name="Modelofinterest" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/Modelofinterest" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="[requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/LostRemarks]" incomingConnections="//@node.2/@nodeData/@connections.5" name="Remark" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/Remark" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="[requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Sapbpcode]" incomingConnections="//@node.2/@nodeData/@connections.11" name="Sapbpcode" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/Sapbpcode" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="[requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Source]" incomingConnections="//@node.2/@nodeData/@connections.2" name="Source" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/Source" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="[requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/SourceInfo]" incomingConnections="//@node.2/@nodeData/@connections.3" name="Subsource" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/Subsource" xsi:type="TalendXMLMap:OutputTreeNode"/>
           </children>
         </nodes>
       </outputTrees>
       <varTables name="Var"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.8" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.11" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.7" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.12" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.9" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.15" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.9" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.17" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.19" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.21" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.23" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.6" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.25" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.7" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.27" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.10" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="64">
@@ -311,13 +284,13 @@
     <elementParameter field="CHECK" name="ENABLE_CXF_MESSAGE_GZIP" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="TEXT" name="ESB_ENDPOINT" value="&quot;https://sapdev.Subaru-Europe.be:44300/sap/bc/srt/rfc/sap/zii_g81_sap_lead_in/500/sap_lead_in/sap_lead_in_bind&quot;"/>
-    <elementParameter field="TEXT" name="ENDPOINT" show="false" value="&quot;C:/Users/jezie/workspace/.repositories/485151994/master/SUBARU_SAP_SF/services/I0001_SF_Account_to_SAP_BP/SAP_BP_In_1.1.wsdl&quot;"/>
+    <elementParameter field="TEXT" name="ENDPOINT" show="false" value="&quot;C:/Users/jezie/workspace/.repositories/485151994/master/SUBARU_SAP_SF/services/I0004_SF_Opportunity_to_SAP_Lead/SAP_Lead_In_0.1.wsdl&quot;"/>
     <elementParameter field="TEXT" name="SERVICE_NS" show="false" value="urn:sap-com:document:sap:soap:functions:mc-style"/>
-    <elementParameter field="TEXT" name="SERVICE_NAME" show="false" value="SAP_BP_IN"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" show="false" value="SAP_LEAD_IN"/>
     <elementParameter field="TEXT" name="PORT_NS" show="false" value="urn:sap-com:document:sap:soap:functions:mc-style"/>
-    <elementParameter field="TEXT" name="PORT_NAME" show="false" value="SAP_BP_IN_bind"/>
+    <elementParameter field="TEXT" name="PORT_NAME" show="false" value="SAP_LEAD_In_bind"/>
     <elementParameter field="TEXT" name="METHOD_NS" show="false" value="urn:sap-com:document:sap:soap:functions:mc-style"/>
-    <elementParameter field="TEXT" name="METHOD" show="false" value="ZFg81EndcustReceive(ZFg81EndcustReceive):ZFg81EndcustReceiveResponse"/>
+    <elementParameter field="TEXT" name="METHOD" show="false" value="ZFg81LeadReceive(ZFg81LeadReceive):ZFg81LeadReceiveResponse"/>
     <elementParameter field="TEXT" name="SOAP_ACTION" show="false" value=""/>
     <elementParameter field="TEXT" name="COMMUNICATION_STYLE" show="false" value="request-response"/>
     <elementParameter field="CHECK" name="LOG_MESSAGES" value="true"/>
@@ -338,12 +311,8 @@
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8080"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="0RMsyjmybrE="/>
-    <elementParameter field="TEXT" name="WSDL_CONTENT" show="false" value="eJwBcwaM+VBLAwQUAAgICAAabzNNAAAAAAAAAAAAAAAACQAAAG1haW4ud3NkbL1a227bOBB9X2D/&#13;&#10;wdB7LN82DYx4i7RJugaSJkjSRVEsYFDS2CEqkSpJOU6/focSZcvyTVaotIBjU3OGZy4khxTPPy6i&#13;&#10;sDUHISlnI6fb7jgtYD4PKJuNnG9P1ydnzse///zj/EUG4TCAKWVUoahsKSJmoL6SCGRMfBg5iWBD&#13;&#10;SeITn0fDgPtJBEzphqHk+DFNmJ8Ch5F/ItVrCE4Lu8bfrLsHK6b+CpojNJeR86xUPHRd6T9DRGQb&#13;&#10;H+mO2lzMXC3g5tIRjeCwtJZaQhST9e1ZyGDZ3cvLS/uln/bS63S67vfbm8eUQS6s5Q6T08+X5PSj&#13;&#10;bu8wKJNbg1UDuc4q4MZuok3F1hb+O5cUn+iPXDMthENbjE5qo9e0yR/cTt/VAo6bws/dHXqz/tRr&#13;&#10;DDLvBx05zIi2iFKCeomCay6iS5iSJFQj51dCQjqlEDhHZON6Rpm+8t5oFIfwhCRajOis8Z+J6K6E&#13;&#10;jJgAiXRSDS2PSJRLwdjGZkVhIx6RxQ2wmXpuzUmYoHTXOMPIuCWdK07uOqkqZDv22XYapHtqn+5p&#13;&#10;g3TP7NM9a45uzzrbXoNk7Wdur8HM7Q3szwtaZ2OE+9bp9hskaz8Z+g0mQ78B5zbo3YF1toMGydpP&#13;&#10;hUGDqXBqn+5pQ3QDoqDpasGIxVjAgWC50H9B9v9k+fE2C01zWis2Wz0e2st0alaeaBEXKg3McQWs&#13;&#10;u64HpdE1i0KUf8zOup85m4boymsKYSDHbCPqEn4luO2DzchBCLpno0y7CN2F2tfyYkvE13H/6rgf&#13;&#10;AJoglplkzQW7Dhv8oXO1wLHIZnCtQ31JFKltcarhCRaqjtkp+JsIa2MvQRG6hOO2dFi07obPtG1P&#13;&#10;xGvckaar2m58hDkIql7reKKu92s6fhy8W6KWRyZGstbgxFn4zvcToU8tmMcTFuhZLaIsb+04pk+q&#13;&#10;IFpPpy2zwzslk87b97V1M5/fbup68vy4RodescBPpHoAH+h8c4ndpmq/A8ou2GLsJyrUc7qiG4tZ&#13;&#10;Z5j+dPdpKmG/F8DZ0cde9DYen0kUEzpjF7g+zXHA303vBJ1RVtLcK5cJW4ntUmaDZ2EyMloG1Tgh&#13;&#10;0Eb/mLlKvPo8gJKyfiUWK7gFMpdAQhBlPZXckUEtcLiKcKUjQYBlnywny+CAvk0NFghdUyEVKxQ8&#13;&#10;R6XJEm2FifRJuCVVSmddO6nkcAtcvgBOuBupUoVGhrRA4R+eSGBJ5NVM2QLeApsbXE4SMoMt4elV&#13;&#10;YVPEW6HzhqTNwZZ4JLFeVEqLkjkvOVrhLRE/QWEthns6/6fHF3VycEOJBUtvuUdDiJ852zCzktML&#13;&#10;eAts7olQDIRWU06BGspqG3Vvyxwu1faprxqNJdwGFwGPuNjJtyRgWYcVWnxKwzcOjA0lFog9wIzy&#13;&#10;cuFXqbrJkBYopL6ecoGFeFDWdlZHXezFtZNxibZhGE/QqCOL6t2KxmzKa1XoK/iRRhXhNvyhuMBN&#13;&#10;nV8vMAZshYcAUCU9pxVZaOghDjs2qXu3qW6hsyM3rw8gY85kA5tYs/VMJGVYr8fZslUrfPn5Bc5e&#13;&#10;2RHG/gOO7JClSt2sT+B2HSCsTharLPFoIZZ4B0+jtufFFGPBRTA+dgbL04qoRB7s2lJebZzEmwsf&#13;&#10;q4sd2UWPKPNI9cTLYDpNDAa/4l8FAm0zHEyUKihzl9qKJA2pY2haoXc0Lf2uoHi2Nh5Pvpx1J48X&#13;&#10;95NP95Px13VWPAaRXrSpckaVQSiLE5zgso6r8k5BJUU8UVU07QhQhi615dYUXZQ7pOAjjzJ9iS0f&#13;&#10;BblrJrp9bVDvdF76ridXk77mGTn5mxjUIAiTut+9l6rS+1T6+XK41YlJymQF0T8v0vc/I8fZYOZu&#13;&#10;i2VxQGd28eC1lej3eyHFLCVhEXconnW0VY6l8XghlBLEnPpQDmVp7PHl2CsH22jM4l16WHKyOT5q&#13;&#10;hdwnmYN18KSOLokDmLcfE4+I5OQqEUi+7cFwMOh3Ovqp6/muFMoVUz/9+ZvSCQZ1gt8nXjyhzP0r&#13;&#10;EzS/lt8yIm5pEuDrk4DxATblV+hWdzGx8X9QSwcIeJbvuO8FAADIKQAAUEsBAhQAFAAICAgAGm8z&#13;&#10;TXiW77jvBQAAyCkAAAkAAAAAAAAAAAAAAAAAAAAAAG1haW4ud3NkbFBLBQYAAAAAAQABADcAAAAm&#13;&#10;BgAAAACgvf2+&#13;&#10;"/>
-    <elementParameter field="TABLE" name="HEADERS">
-      <elementValue elementRef="NAME" value="&quot;Authorization&quot;"/>
-      <elementValue elementRef="VALUE" value="&quot;Basic QkFUQ0hfU0Y6OWdTSzJKWDRCRGFhRjRaUQ==&quot;"/>
-      <elementValue elementRef="PROPAGATE" value="false"/>
-    </elementParameter>
+    <elementParameter field="TEXT" name="WSDL_CONTENT" show="false" value="eJwBzwQw+1BLAwQUAAgICADUZTtNAAAAAAAAAAAAAAAACQAAAG1haW4ud3NkbL1Y227jNhB9L9B/&#13;&#10;EPQe07fuBkLcRVDHRQBnW8RZoNgXg5bGClGJ1JKU7fTrO9TF1sW2ZNVuHhyJnDOXMySHo4cvuzCw&#13;&#10;NiAVE3xiD3p92wLuCo9xf2J/e5vd3dtffv35p4et8gLHgzXjTKOosjSVPuivNAQVURcmdiy5o2h0&#13;&#10;54rQ8YQbh8C1GXCUwJ91zN0E6ITundIfAdgWmsZ3PjiDlWv3AM0RxpeJ/a515BCi3HcIqerhlDHU&#13;&#10;E9InRoDk0iELoVnaSO0hmqvu8eyUtze33W5721FiZdjvD8hfL/NF4kEubOSanTPze+fM1GDYDErl&#13;&#10;SrB2IGIfEp7FTU2oOGrh34NiOGN+cs2skA4TMZLUQ9ZMyJ9Jf0SMgE0S+AM5oTe1pz8iULkdJNJJ&#13;&#10;HbWo1pKtYg0zIcMprGkc6In9I6YBWzPw7AtWY3lFZbZyayyMAnhDJyxOzapx36kc9A9SmZwEhf4k&#13;&#10;KqwVVSiYoHGM+0XhTDykuzlwX79bGxrEKI0qSVEnqSg9eEXKbrVx99P13f10O3eH12d3eEN2h8Pr&#13;&#10;uzu8nbujq3s7up2z46s7O/5vzmbDyRF020OpqUT2Ox5oGJGQOuH4snORlPWgNFKzKyTsu/+5/7TD&#13;&#10;tHEfZibyKdW0lkAFP2K8TkA9VxCAMZ1pSzS8wU4jaWijlGfSCvxNBp2xU9CU7eFY/J1idHPhm9je&#13;&#10;6OrIaqoFmA4X+LqEyMxUZxoXgDc5pj+6MNGV/Y7EP3sNqBvya1J5OcV4uvzhurE0V0O+EjH3zB4P&#13;&#10;Gc9H8eqcmmQawobVdIVQy3x+n/n3gzlQ7xVcYBuoBXhMz/noj9r5jYYRZT5vzPlR9BRoADLH8r6T&#13;&#10;XbBaQGciCMTWACvwcXt0HHlUV/GV202DAo19QkVBpYCfUGBy09m6AXe2/CI8CAR2bhpM8avqaMX+&#13;&#10;KxY8+Xe3pC9otIqwpayF3sryQsTSrUJHrZDxSpXAp8+n4xvw7BYkBYOXbMxXrMRYYW+2QZOKdur0&#13;&#10;OVTqlouOeZ2S9gJKUb+Z+ON5w7YwVv9X0mqXvKxFPbSiaWsapiE1HLepbERlHgw+4n/ceRhQZjhL&#13;&#10;yykNZK+i6E5mvrVD1WXW3bGaprYOmqtnsRA/Py9/vx8sF49/LudPj9Pl89eycyICmXwQaCxpqTzj&#13;&#10;UYxlObXbitQEUdEiYt2o5gQFKbQylgdR5CZnokDOinHzjS1f8ntO+NLMlPbvGd6SviFXlbQMEzu/&#13;&#10;1aMOSbkyts9+90k++Zj5/f66OB2JGwd58/qYNBIT2665RY6lsbh906CE92HFpuUL8DolaVDENWWz&#13;&#10;i7bWyczoLuRSgdwwF2q5rKzvfSt2LN+Z1jTltekK1XiTwEqurEC4NKXZ5E+ZBNPIg00PSx+V8d1T&#13;&#10;LDGE3gqc8XjU75tZsnKJkppgu5e8/sPYEvO6xOdlgMldMk5+SUX374Xn1B1SOQpE+SjI+DBfEUn1&#13;&#10;uzEO/gtQSwcIO7BMBUsEAAB0FgAAUEsBAhQAFAAICAgA1GU7TTuwTAVLBAAAdBYAAAkAAAAAAAAA&#13;&#10;AAAAAAAAAAAAAG1haW4ud3NkbFBLBQYAAAAAAQABADcAAACCBAAAAAAuIkSJ&#13;&#10;"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tESBConsumer_1">
       <column comment="" key="false" length="-1" name="payload" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
@@ -433,90 +402,49 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="responseRow">
       <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="fault" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" multiLoops="true" name="row2">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row2">
         <nodes expression="" name="payload" type="id_Document" xpath="row2/payload">
-          <children main="true" name="tns:ZFg81EndcustReceiveResponse" type="id_String" xpath="row2.payload:/tns:ZFg81EndcustReceiveResponse">
-            <children defaultValue="urn:sap-com:document:sap:soap:functions:mc-style" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="row2.payload:/tns:ZFg81EndcustReceiveResponse/xmlns:tns"/>
-            <children loop="true" name="Businesspartner" optional="true" outgoingConnections="//@node.7/@nodeData/@connections.0" type="id_String" xpath="row2.payload:/tns:ZFg81EndcustReceiveResponse/Businesspartner"/>
-            <children main="true" name="ConflictingFields" type="id_String" xpath="row2.payload:/tns:ZFg81EndcustReceiveResponse/ConflictingFields">
-              <children loop="true" main="true" name="item" optional="true" type="id_String" xpath="row2.payload:/tns:ZFg81EndcustReceiveResponse/ConflictingFields/item">
-                <children name="Name" outgoingConnections="//@node.7/@nodeData/@connections.4" type="id_String" xpath="row2.payload:/tns:ZFg81EndcustReceiveResponse/ConflictingFields/item/Name"/>
-                <children name="Value" outgoingConnections="//@node.7/@nodeData/@connections.5" type="id_String" xpath="row2.payload:/tns:ZFg81EndcustReceiveResponse/ConflictingFields/item/Value"/>
-              </children>
-            </children>
-            <children main="true" name="Fault" type="id_String" xpath="row2.payload:/tns:ZFg81EndcustReceiveResponse/Fault">
-              <children name="FaultText" outgoingConnections="//@node.7/@nodeData/@connections.6 //@node.7/@nodeData/@connections.13" type="id_String" xpath="row2.payload:/tns:ZFg81EndcustReceiveResponse/Fault/FaultText"/>
-              <children name="FaultUrl" outgoingConnections="//@node.7/@nodeData/@connections.7" type="id_String" xpath="row2.payload:/tns:ZFg81EndcustReceiveResponse/Fault/FaultUrl"/>
-              <children main="true" name="FaultDetail" type="id_String" xpath="row2.payload:/tns:ZFg81EndcustReceiveResponse/Fault/FaultDetail">
-                <children loop="true" main="true" name="item" optional="true" type="id_String" xpath="row2.payload:/tns:ZFg81EndcustReceiveResponse/Fault/FaultDetail/item">
-                  <children name="Severity" outgoingConnections="//@node.7/@nodeData/@connections.8" type="id_String" xpath="row2.payload:/tns:ZFg81EndcustReceiveResponse/Fault/FaultDetail/item/Severity"/>
-                  <children name="Text" outgoingConnections="//@node.7/@nodeData/@connections.9" type="id_String" xpath="row2.payload:/tns:ZFg81EndcustReceiveResponse/Fault/FaultDetail/item/Text"/>
-                  <children name="Url" outgoingConnections="//@node.7/@nodeData/@connections.10" type="id_String" xpath="row2.payload:/tns:ZFg81EndcustReceiveResponse/Fault/FaultDetail/item/Url"/>
-                  <children name="Id" outgoingConnections="//@node.7/@nodeData/@connections.11" type="id_String" xpath="row2.payload:/tns:ZFg81EndcustReceiveResponse/Fault/FaultDetail/item/Id"/>
+          <children loop="true" main="true" name="tns:ZFg81LeadReceiveResponse" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse">
+            <children defaultValue="urn:sap-com:document:sap:soap:functions:mc-style" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/xmlns:tns"/>
+            <children name="Fault" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/Fault">
+              <children name="FaultText" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/Fault/FaultText"/>
+              <children name="FaultUrl" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/Fault/FaultUrl"/>
+              <children name="FaultDetail" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/Fault/FaultDetail">
+                <children name="item" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/Fault/FaultDetail/item">
+                  <children name="Severity" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/Fault/FaultDetail/item/Severity"/>
+                  <children name="Text" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/Fault/FaultDetail/item/Text"/>
+                  <children name="Url" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/Fault/FaultDetail/item/Url"/>
+                  <children name="Id" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/Fault/FaultDetail/item/Id"/>
                 </children>
               </children>
             </children>
-            <children name="Message" outgoingConnections="//@node.7/@nodeData/@connections.1" type="id_String" xpath="row2.payload:/tns:ZFg81EndcustReceiveResponse/Message"/>
-            <children name="SfRecordId" outgoingConnections="//@node.7/@nodeData/@connections.2" type="id_String" xpath="row2.payload:/tns:ZFg81EndcustReceiveResponse/SfRecordId"/>
-            <children name="Status" outgoingConnections="//@node.7/@nodeData/@connections.3" type="id_String" xpath="row2.payload:/tns:ZFg81EndcustReceiveResponse/Status"/>
+            <children name="Leadid" outgoingConnections="//@node.7/@nodeData/@connections.2" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/Leadid"/>
+            <children name="Message" outgoingConnections="//@node.7/@nodeData/@connections.0" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/Message"/>
+            <children name="Status" outgoingConnections="//@node.7/@nodeData/@connections.1" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/Status"/>
           </children>
         </nodes>
       </inputTrees>
-      <outputTrees activateCondensedTool="true" allInOne="true" enableEmptyElement="false" multiLoops="true" name="responseRow">
+      <outputTrees activateCondensedTool="true" allInOne="true" enableEmptyElement="false" name="responseRow">
         <nodes expression="" name="payload" type="id_Document" xpath="responseRow/payload">
-          <children main="true" name="tns:ZFg81EndcustReceiveResponse" type="id_String" xpath="responseRow.payload:/tns:ZFg81EndcustReceiveResponse" xsi:type="TalendXMLMap:OutputTreeNode">
-            <children defaultValue="urn:sap-com:document:sap:soap:functions:mc-style" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="responseRow.payload:/tns:ZFg81EndcustReceiveResponse/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[row2.payload:/tns:ZFg81EndcustReceiveResponse/Businesspartner]" incomingConnections="//@node.7/@nodeData/@connections.0" inputLoopNodesTable="//@node.7/@nodeData/@outputTrees.0/@inputLoopNodesTables.3" loop="true" name="Businesspartner" optional="true" type="id_String" xpath="responseRow.payload:/tns:ZFg81EndcustReceiveResponse/Businesspartner" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children main="true" name="ConflictingFields" type="id_String" xpath="responseRow.payload:/tns:ZFg81EndcustReceiveResponse/ConflictingFields" xsi:type="TalendXMLMap:OutputTreeNode">
-              <children inputLoopNodesTable="//@node.7/@nodeData/@outputTrees.0/@inputLoopNodesTables.2" loop="true" main="true" name="item" optional="true" type="id_String" xpath="responseRow.payload:/tns:ZFg81EndcustReceiveResponse/ConflictingFields/item" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children expression="[row2.payload:/tns:ZFg81EndcustReceiveResponse/ConflictingFields/item/Name]" incomingConnections="//@node.7/@nodeData/@connections.4" name="Name" type="id_String" xpath="responseRow.payload:/tns:ZFg81EndcustReceiveResponse/ConflictingFields/item/Name" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                <children expression="[row2.payload:/tns:ZFg81EndcustReceiveResponse/ConflictingFields/item/Value]" incomingConnections="//@node.7/@nodeData/@connections.5" name="Value" type="id_String" xpath="responseRow.payload:/tns:ZFg81EndcustReceiveResponse/ConflictingFields/item/Value" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              </children>
+          <children loop="true" main="true" name="tns:SF_Opportunity_out_Talend_in_Resp" type="id_String" xpath="responseRow.payload:/tns:SF_Opportunity_out_Talend_in_Resp" xsi:type="TalendXMLMap:OutputTreeNode">
+            <children defaultValue="urn:subaru.eu:SF:MDM:LeadIn" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="responseRow.payload:/tns:SF_Opportunity_out_Talend_in_Resp/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children name="conflicting_fields" type="id_String" xpath="responseRow.payload:/tns:SF_Opportunity_out_Talend_in_Resp/conflicting_fields" xsi:type="TalendXMLMap:OutputTreeNode">
+              <children name="name" type="id_String" xpath="responseRow.payload:/tns:SF_Opportunity_out_Talend_in_Resp/conflicting_fields/name" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="value" type="id_String" xpath="responseRow.payload:/tns:SF_Opportunity_out_Talend_in_Resp/conflicting_fields/value" xsi:type="TalendXMLMap:OutputTreeNode"/>
             </children>
-            <children main="true" name="Fault" type="id_String" xpath="responseRow.payload:/tns:ZFg81EndcustReceiveResponse/Fault" xsi:type="TalendXMLMap:OutputTreeNode">
-              <children expression="[row2.payload:/tns:ZFg81EndcustReceiveResponse/Fault/FaultText]" incomingConnections="//@node.7/@nodeData/@connections.6" name="FaultText" type="id_String" xpath="responseRow.payload:/tns:ZFg81EndcustReceiveResponse/Fault/FaultText" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="[row2.payload:/tns:ZFg81EndcustReceiveResponse/Fault/FaultUrl]" incomingConnections="//@node.7/@nodeData/@connections.7" name="FaultUrl" type="id_String" xpath="responseRow.payload:/tns:ZFg81EndcustReceiveResponse/Fault/FaultUrl" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children main="true" name="FaultDetail" type="id_String" xpath="responseRow.payload:/tns:ZFg81EndcustReceiveResponse/Fault/FaultDetail" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children inputLoopNodesTable="//@node.7/@nodeData/@outputTrees.0/@inputLoopNodesTables.4" loop="true" main="true" name="item" optional="true" type="id_String" xpath="responseRow.payload:/tns:ZFg81EndcustReceiveResponse/Fault/FaultDetail/item" xsi:type="TalendXMLMap:OutputTreeNode">
-                  <children expression="[row2.payload:/tns:ZFg81EndcustReceiveResponse/Fault/FaultDetail/item/Severity]" incomingConnections="//@node.7/@nodeData/@connections.8" name="Severity" type="id_String" xpath="responseRow.payload:/tns:ZFg81EndcustReceiveResponse/Fault/FaultDetail/item/Severity" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                  <children expression="[row2.payload:/tns:ZFg81EndcustReceiveResponse/Fault/FaultDetail/item/Text]" incomingConnections="//@node.7/@nodeData/@connections.9" name="Text" type="id_String" xpath="responseRow.payload:/tns:ZFg81EndcustReceiveResponse/Fault/FaultDetail/item/Text" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                  <children expression="[row2.payload:/tns:ZFg81EndcustReceiveResponse/Fault/FaultDetail/item/Url]" incomingConnections="//@node.7/@nodeData/@connections.10" name="Url" type="id_String" xpath="responseRow.payload:/tns:ZFg81EndcustReceiveResponse/Fault/FaultDetail/item/Url" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                  <children expression="[row2.payload:/tns:ZFg81EndcustReceiveResponse/Fault/FaultDetail/item/Id]" incomingConnections="//@node.7/@nodeData/@connections.11" name="Id" type="id_String" xpath="responseRow.payload:/tns:ZFg81EndcustReceiveResponse/Fault/FaultDetail/item/Id" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                </children>
-              </children>
-            </children>
-            <children expression="[row2.payload:/tns:ZFg81EndcustReceiveResponse/Message]" incomingConnections="//@node.7/@nodeData/@connections.1" name="Message" type="id_String" xpath="responseRow.payload:/tns:ZFg81EndcustReceiveResponse/Message" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[row2.payload:/tns:ZFg81EndcustReceiveResponse/SfRecordId]" incomingConnections="//@node.7/@nodeData/@connections.2" name="SfRecordId" type="id_String" xpath="responseRow.payload:/tns:ZFg81EndcustReceiveResponse/SfRecordId" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="[row2.payload:/tns:ZFg81EndcustReceiveResponse/Status]" incomingConnections="//@node.7/@nodeData/@connections.3" name="Status" type="id_String" xpath="responseRow.payload:/tns:ZFg81EndcustReceiveResponse/Status" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="[row2.payload:/tns:ZFg81LeadReceiveResponse/Message]" incomingConnections="//@node.7/@nodeData/@connections.0" name="message" type="id_String" xpath="responseRow.payload:/tns:SF_Opportunity_out_Talend_in_Resp/message" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children name="SF_record_ID" type="id_String" xpath="responseRow.payload:/tns:SF_Opportunity_out_Talend_in_Resp/SF_record_ID" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="[row2.payload:/tns:ZFg81LeadReceiveResponse/Status]" incomingConnections="//@node.7/@nodeData/@connections.1" name="status" type="id_String" xpath="responseRow.payload:/tns:SF_Opportunity_out_Talend_in_Resp/status" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="[row2.payload:/tns:ZFg81LeadReceiveResponse/Leadid]" incomingConnections="//@node.7/@nodeData/@connections.2" name="Businesspartner" type="id_String" xpath="responseRow.payload:/tns:SF_Opportunity_out_Talend_in_Resp/Businesspartner" xsi:type="TalendXMLMap:OutputTreeNode"/>
           </children>
         </nodes>
-        <nodes expression="Var.Var1" incomingConnections="//@node.7/@nodeData/@connections.12" name="fault" pattern="" type="id_String" xpath="responseRow/fault"/>
-        <inputLoopNodesTables/>
-        <inputLoopNodesTables inputloopnodes="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.0"/>
-        <inputLoopNodesTables inputloopnodes="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1 //@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.0"/>
-        <inputLoopNodesTables inputloopnodes="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1"/>
-        <inputLoopNodesTables inputloopnodes="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1 //@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.0 //@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3/@children.2/@children.0"/>
       </outputTrees>
-      <varTables name="Var">
-        <nodes expression=" [row2.payload:/tns:ZFg81EndcustReceiveResponse/Fault/FaultText]" incomingConnections="//@node.7/@nodeData/@connections.13" name="Var1" outgoingConnections="//@node.7/@nodeData/@connections.12" type="id_String"/>
-      </varTables>
-      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <varTables name="Var"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
       <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.4" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.6" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.0/@children.0" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.0/@children.0" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.0/@children.1" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3/@children.0" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3/@children.0" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3/@children.1" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3/@children.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3/@children.2/@children.0/@children.0" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3/@children.2/@children.0/@children.0" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3/@children.2/@children.0/@children.1" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3/@children.2/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3/@children.2/@children.0/@children.2" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3/@children.2/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3/@children.2/@children.0/@children.3" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3/@children.2/@children.0/@children.3" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.7/@nodeData/@varTables.0/@nodes.0" target="//@node.7/@nodeData/@outputTrees.0/@nodes.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3/@children.0" target="//@node.7/@nodeData/@varTables.0/@nodes.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="64">
@@ -985,13 +913,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_50e2422a-9e83-47d8-ba1d-1a3768d14c54"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CjF/MaTRd3vC7QBzo9rCJl7VcJxudCJBf8nHT3DnCP9ZdEpO7/vOyy3H26mRYiTVCln3D6ZGhwgs
-iy/t9DodQQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3a77da6b-bbce-4e45-949d-f411c354b21a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VnqsHJFmJaCFWiRk2kOcprcZrpcC9XmF9Qy0dQLr6pEt/9IrY0RTqKFDVCCP9foCOB0V+BzPylAG
-eQ6C3QkwzQ==</DigestValue></Reference></SignedInfo><SignatureValue>1egeMWdnarZLkAsiDJqp+qjNuP1LI0o40KpjCmzA+/C2M8KadBV7GnEgTsVuzJWx4PWyREfzp9yC
-8EOWOVFaQGUm186atSthATYK6KJVTcgSb0TZxCxxAVodR/coFRzgYYiJSK0xkKlaiRt/EYp4caV8
-OncSM2aj6uti1mMj1dlr4/nDd0yWo3+Kp37LlXimUwt8qZ91jdmPolFeEdVj/CpOQvxpCd90YW+I
-Qlc+A8FoQT4afPpSBoNg3/4+Z7jbJPxl+vEQl6Ii1YPY0s4yv22OMPTFcK85vEu1MFbCLoLJ8TzB
-9KDT62XCMCNJF80sh/bOHv6Byw4TM+M0RMRM4g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_95982eb5-7973-40b8-a36c-2a73488dd6d0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>U8LcikENqASTRFaqcB4P9EA8ieoocE+Xc8l7lpINXplDvKRMChS5PrQydduX6Ly/qGu2XT2YEz70
+aZNkeNCpbA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c1130d35-0310-4c6c-abc5-a90f83af4113"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TGbNWU7CfbNXcKP5dGIRLmA62fwQV0HFtWXbO4hTffmJzWUL2eGaKtmCR8nSejwmcAtav6cRAvXy
+7ubJgwZ0Sw==</DigestValue></Reference></SignedInfo><SignatureValue>uRDM4KdOWSaXUyfktbYRO9BkION6cu90gHbPdL9BP0NAIV/QTKXEl4dXEM8f66Ah9GwO4Br2dLp0
+TT0/Y1TIaqEis4WJ3hckc5cYqM2ibKFU1ZCfbWSTULH/DROWL24YTlXDzykmiVIQLs6hR0EKBUTS
+BKmQWnBOyjbqgxMlueRzJiDMr8hJxZBzUNWk0debOtoLpyHpQyYBDK0vgOt/weARAPgtJ9k32Zaa
+2cd4q3xwLLFDvdcetMwZORolnFqHpmcHXblgzSpxxpDzawTnuVcAvN07Xvg0xrWwPBq2kciIBZM5
+AvI9M4PBTYOZh60Ob/LcW3/LMevJAkzsv2bL9Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1015,4 +943,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3a77da6b-bbce-4e45-949d-f411c354b21a" Target="#_50e2422a-9e83-47d8-ba1d-1a3768d14c54"><Timestamp>2018-09-27 10:29:49</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c1130d35-0310-4c6c-abc5-a90f83af4113" Target="#_95982eb5-7973-40b8-a36c-2a73488dd6d0"><Timestamp>2018-09-27 10:50:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
