@@ -313,8 +313,8 @@
             <children name="BPId" outgoingConnections="//@node.2/@nodeData/@connections.3" type="id_String" xpath="row2.payload:/tns:SAP_Followup_out_Talend_inOperationRequest/BPId"/>
             <children name="Status" outgoingConnections="//@node.2/@nodeData/@connections.4" type="id_String" xpath="row2.payload:/tns:SAP_Followup_out_Talend_inOperationRequest/Status"/>
             <children name="ExecutionDate" outgoingConnections="//@node.2/@nodeData/@connections.5" type="id_String" xpath="row2.payload:/tns:SAP_Followup_out_Talend_inOperationRequest/ExecutionDate"/>
-            <children name="ExecutionTime" outgoingConnections="//@node.2/@nodeData/@connections.6" type="id_String" xpath="row2.payload:/tns:SAP_Followup_out_Talend_inOperationRequest/ExecutionTime"/>
-            <children name="Description" outgoingConnections="//@node.2/@nodeData/@connections.7" type="id_String" xpath="row2.payload:/tns:SAP_Followup_out_Talend_inOperationRequest/Description"/>
+            <children name="ExecutionTime" outgoingConnections="//@node.2/@nodeData/@connections.7" type="id_String" xpath="row2.payload:/tns:SAP_Followup_out_Talend_inOperationRequest/ExecutionTime"/>
+            <children name="Description" outgoingConnections="//@node.2/@nodeData/@connections.6" type="id_String" xpath="row2.payload:/tns:SAP_Followup_out_Talend_inOperationRequest/Description"/>
           </children>
         </nodes>
       </inputTrees>
@@ -330,7 +330,7 @@
         <nodes name="Priority" nullable="false" type="id_String" xpath="followUp/Priority"/>
         <nodes name="IsHighPriority" nullable="false" type="id_Boolean" xpath="followUp/IsHighPriority"/>
         <nodes name="OwnerId" nullable="false" type="id_String" xpath="followUp/OwnerId"/>
-        <nodes expression=" [row2.payload:/tns:SAP_Followup_out_Talend_inOperationRequest/Description]" incomingConnections="//@node.2/@nodeData/@connections.7" name="Description" type="id_String" xpath="followUp/Description"/>
+        <nodes expression=" [row2.payload:/tns:SAP_Followup_out_Talend_inOperationRequest/Description]" incomingConnections="//@node.2/@nodeData/@connections.6" name="Description" type="id_String" xpath="followUp/Description"/>
         <nodes name="Type" type="id_String" xpath="followUp/Type"/>
         <nodes name="IsDeleted" nullable="false" type="id_Boolean" xpath="followUp/IsDeleted"/>
         <nodes name="AccountId" type="id_String" xpath="followUp/AccountId"/>
@@ -362,7 +362,7 @@
         <nodes name="TaskSubtype" type="id_String" xpath="followUp/TaskSubtype"/>
         <nodes expression="([row2.payload:/tns:SAP_Followup_out_Talend_inOperationRequest/ExecutionDate] != null &amp;&amp; ![row2.payload:/tns:SAP_Followup_out_Talend_inOperationRequest/ExecutionDate].toString().isEmpty()) ? TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,[row2.payload:/tns:SAP_Followup_out_Talend_inOperationRequest/ExecutionDate]) : null " incomingConnections="//@node.2/@nodeData/@connections.5" name="Data_Svolgimento__c" type="id_Date" xpath="followUp/Data_Svolgimento__c"/>
         <nodes expression="[row2.payload:/tns:SAP_Followup_out_Talend_inOperationRequest/SapFollowupId]" incomingConnections="//@node.2/@nodeData/@connections.0" name="ID_Univoco__c" type="id_String" xpath="followUp/ID_Univoco__c"/>
-        <nodes expression="([row2.payload:/tns:SAP_Followup_out_Talend_inOperationRequest/ExecutionTime] != null &amp;&amp; ![row2.payload:/tns:SAP_Followup_out_Talend_inOperationRequest/ExecutionTime].toString().isEmpty()) ? TalendDate.parseDate(&quot;HH:mm:ss&quot;,[row2.payload:/tns:SAP_Followup_out_Talend_inOperationRequest/ExecutionTime]) : null " incomingConnections="//@node.2/@nodeData/@connections.6" name="Ora_svolgimento__c" type="id_String" xpath="followUp/Ora_svolgimento__c"/>
+        <nodes expression=" [row2.payload:/tns:SAP_Followup_out_Talend_inOperationRequest/ExecutionTime]" incomingConnections="//@node.2/@nodeData/@connections.7" name="Ora_svolgimento__c" type="id_String" xpath="followUp/Ora_svolgimento__c"/>
       </outputTrees>
       <varTables minimized="true" name="Var"/>
       <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.42" xsi:type="TalendXMLMap:Connection"/>
@@ -371,8 +371,8 @@
       <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.4" target="//@node.2/@nodeData/@outputTrees.0/@nodes.1" xsi:type="TalendXMLMap:Connection"/>
       <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5" target="//@node.2/@nodeData/@outputTrees.0/@nodes.7" xsi:type="TalendXMLMap:Connection"/>
       <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6" target="//@node.2/@nodeData/@outputTrees.0/@nodes.41" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.7" target="//@node.2/@nodeData/@outputTrees.0/@nodes.43" xsi:type="TalendXMLMap:Connection"/>
       <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.8" target="//@node.2/@nodeData/@outputTrees.0/@nodes.11" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.7" target="//@node.2/@nodeData/@outputTrees.0/@nodes.43" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="128">
@@ -1272,13 +1272,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f59a64ea-2d5a-44fd-b7d1-a521a4926741"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QVM5EttcOEFASy/6QuscKxtIYeQQBmk4/7HvCw7BqOibw3ulIm5B0JhXx0rgsWpOhCXig/8OUwPi
-Ga9hLFhx1Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3e80b943-f9b7-44f2-b3c2-b4bc34d6d887"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>56Jkyn/xNJPjDJS8DKxrUjwtYJU5pLeDYfqMsnR8uvLDy1krGQ0Z4po0O9QHgiPwiFJZmXfj92ZK
-Hg6VGD1d2Q==</DigestValue></Reference></SignedInfo><SignatureValue>z5INyZLrPZdCovMM5tTuj5m7bQh2iGvKMiGn18CU6mO4urmY6DgdKiJFD6Ia+16cx5Cw0vhuyGDn
-hJpdz4Jd/ea5nn5FvQsBmHmrJ5i04x/k6btYDn6jPSW1ndNZQANKvbMyBZyoxJH54qtzrXV8rFh0
-oGSkGrOq8mW0yU5vKCM08/MdeA1buRHOTjngZg56g9R7I93BDqOcZwRLAu/SxxcfcJoLowV62jtc
-E53oXRZOkS25BHJ2gX6s0WMkTxGoB5TqjxDMfEoKVQvpBZQE55n2elWbH60SkpBqBz151T/fkA8w
-c3UZ0UF5C0fC6JL3ybJJc6j7yf5070KygUiGtQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6ba119de-b755-4141-ab51-966e4cd463fd"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>M2kROnvMrAoxcd6FXs0F2TzYkVgOPLRFtMwTwl7C37iemU07lk1H6h2jhpAchPVVPy4kGEo00Tli
+pmvKi3Yo2g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_de7839bd-e1d9-4bd0-a9a4-69fee52bc6d4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>PUp2n3UInUmAe8SPNapumN9obYzhefmccoZSYZtYISqBxKlnvh8/xnVrJqCGnvCAf2fRskKsU5I7
+Ad+k5qE6iQ==</DigestValue></Reference></SignedInfo><SignatureValue>hjyufvvsRci+c180A4IuQqcORsrqCB96DuJSd/OUGn8Qy5dainygHvV7FOR1z+TBmvMhB6NjIo7U
+utj7tYuoY+lHTW7hqE+Ge3p9n9S9vtjwJBEvWj5P3g+GDFZ//ry4wCdnHk2L+UHWE36Qq3EUGdpm
+NLlKqMM8LUjTDWgPeE+fUIfMpaxK5n2biiOitksE390q+ThRLcBHq3r3MOfalWfsaR1Fd4kYnubh
+wskiQD4FrzQ5appcpzt/n0Z2yN4OH0nDdJU7CuheXopLtSx0SM+T4wPJVxZyy/MoJtEBE8QRiF7q
+L3Byw0DxLyF7Vy5/6kOCbEVkq39gaJ7hQUdJUA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1302,4 +1302,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3e80b943-f9b7-44f2-b3c2-b4bc34d6d887" Target="#_f59a64ea-2d5a-44fd-b7d1-a521a4926741"><Timestamp>2018-10-04 08:09:38</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_de7839bd-e1d9-4bd0-a9a4-69fee52bc6d4" Target="#_6ba119de-b755-4141-ab51-966e4cd463fd"><Timestamp>2018-10-04 08:10:38</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
