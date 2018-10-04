@@ -530,7 +530,6 @@
     </ItemsRelations>
     <ItemsRelations xmi:id="_NMeRAMenEeiH8_69BherFg">
       <baseItem xmi:id="_NMeRAcenEeiH8_69BherFg" id="_s27_AMekEei_Xv6I3ykkew" version="0.1" type="job"/>
-      <relatedItems xmi:id="_NMeRAsenEeiH8_69BherFg" id="_ZOfT0ENBEeih8KkJgV_NKQ - _zwFjMENBEeih8KkJgV_NKQ - _zwFjMUNBEeih8KkJgV_NKQ" version="Latest" type="property"/>
       <relatedItems xmi:id="_NMeRA8enEeiH8_69BherFg" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="_NMeRBMenEeiH8_69BherFg" id="Numeric" version="Latest" type="routine"/>
       <relatedItems xmi:id="_NMeRBcenEeiH8_69BherFg" id="Relational" version="Latest" type="routine"/>
@@ -541,7 +540,8 @@
       <relatedItems xmi:id="_NMe4E8enEeiH8_69BherFg" id="TalendDataGenerator" version="Latest" type="routine"/>
       <relatedItems xmi:id="_NMe4FMenEeiH8_69BherFg" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_NMe4FcenEeiH8_69BherFg" id="Mathematical" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_NMe4FsenEeiH8_69BherFg" id="_ZOfT0ENBEeih8KkJgV_NKQ" version="1.6" type="services"/>
+      <relatedItems xmi:id="_IwGE8MeqEeiH8_69BherFg" id="_aUvOwL2WEeiWPeFvt8qNhA - _aYHS4L2WEeiWPeFvt8qNhA - _aYHS4b2WEeiWPeFvt8qNhA" version="Latest" type="property"/>
+      <relatedItems xmi:id="_IwGE8ceqEeiH8_69BherFg" id="_aUvOwL2WEeiWPeFvt8qNhA" version="0.1" type="services"/>
     </ItemsRelations>
     <migrationTask xmi:id="_OD7-gDfeEei4GOOz00i4JQ" id="org.talend.designer.core.ui.preferences.migration.ChangeMysqlVersionForProjectSetting" breaks="5.2.0" version="5.1.3" status="ok"/>
     <migrationTask xmi:id="_OD7-gTfeEei4GOOz00i4JQ" id="org.talend.designer.core.ui.preferences.migration.ChangeOracleVersionForProjectSetting" breaks="5.2.0" version="5.2.1" status="ok"/>
