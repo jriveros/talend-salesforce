@@ -70,7 +70,7 @@
 					</xsd:element>
 					<xsd:element minOccurs="0" maxOccurs="1" name="Finance" nillable="true" type="xsd:boolean">
 					</xsd:element>
-					<xsd:element minOccurs="0" maxOccurs="1" name="Value" nillable="true" type="xsd:decimal">
+					<xsd:element minOccurs="0" maxOccurs="1" name="Value" nillable="true" type="xsd:string">
 					</xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
