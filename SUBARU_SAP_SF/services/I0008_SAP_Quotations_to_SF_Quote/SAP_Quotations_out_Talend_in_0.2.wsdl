@@ -140,7 +140,7 @@
 
 	<wsdl:service name="SAP_Quotations_out_Talend_in">
 		<wsdl:port name="SAP_Quotations_out_Talend_inPort" binding="tns:SAP_Quotations_out_Talend_inBinding">
-			<soap:address location="http://localhost:8090/services/SAP_Quotations_out_Talend_in" />
+			<soap:address location="http://localhost:8040/services/SAP_Quotations_out_Talend_in" />
 		</wsdl:port>
 	</wsdl:service>
 </wsdl:definitions>
