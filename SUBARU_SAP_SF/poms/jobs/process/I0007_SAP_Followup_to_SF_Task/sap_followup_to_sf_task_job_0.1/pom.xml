@@ -9,7 +9,7 @@
     <relativePath>../../../../</relativePath>
   </parent>
   <groupId>org.subaru.subaru_sap_sf.job</groupId>
-  <artifactId>I0007_SAP_Followup_to_SF_Task_job-bundle</artifactId>
+  <artifactId>SAP_Followup_to_SF_Task_job-bundle</artifactId>
   <version>0.1.0</version>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
@@ -22,11 +22,11 @@
     <bundle.config.import.package>@BundleConfigImportPackage@</bundle.config.import.package>
     <talend.project.name.lowercase>subaru_sap_sf</talend.project.name.lowercase>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <talend.job.path>subaru_sap_sf/i0007_sap_followup_to_sf_task_job_0_1</talend.job.path>
+    <talend.job.path>subaru_sap_sf/sap_followup_to_sf_task_job_0_1</talend.job.path>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>SUBARU_SAP_SF</talend.project.name>
     <talend.product.version>7.0.1.20180411_1414</talend.product.version>
-    <talend.job.finalName>i0007_sap_followup_to_sf_task_job_0_1</talend.job.finalName>
+    <talend.job.finalName>sap_followup_to_sf_task_job_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.subaru.subaru_sap_sf.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.subaru.subaru_sap_sf.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
@@ -39,7 +39,7 @@
     <lib.path>${resources.path}/lib</lib.path>
     <item.name>@ItemName@</item.name>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>I0007_SAP_Followup_to_SF_Task_job</talend.job.name>
+    <talend.job.name>SAP_Followup_to_SF_Task_job</talend.job.name>
     <bundle.config.export.package>@BundleConfigExportPackage@</bundle.config.export.package>
     <talend.job.id>_s27_AMekEei_Xv6I3ykkew</talend.job.id>
     <resources.path>${basedir}/src/main/resources</resources.path>
