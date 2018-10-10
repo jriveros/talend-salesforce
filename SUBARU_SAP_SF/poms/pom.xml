@@ -119,6 +119,7 @@
     <module>jobs/services/I0008_SAP_Quotations_to_SF_Quote/sap_quotations_out_talend_in_0.2</module>
     <module>jobs/services/I0008_SAP_Quotations_to_SF_Quote/sap_quotations_out_talend_in_0.3</module>
     <module>jobs/services/I0007_SAP_Followup_to_SF_Task/sap_followup_out_talend_in_0.1</module>
+    <module>jobs/process/I0009_SAP_Order_to_SF_Order/sap_order_to_sf_order_job_0.1</module>
   </modules>
   <properties>
     <talend.project.name>SUBARU_SAP_SF</talend.project.name>
