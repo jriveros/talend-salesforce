@@ -3,26 +3,96 @@
 		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
 		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
 		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-		xmlns:tns="http://www.talend.org/service/"
-		targetNamespace="http://www.talend.org/service/">
+		xmlns:tns="urn:subaru.eu:ECC:VehSales:OrderOut"
+		targetNamespace="urn:subaru.eu:ECC:VehSales:OrderOut">
 
 	<wsdl:types>
 		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-			targetNamespace="http://www.talend.org/service/">
+			xmlns:tns="urn:subaru.eu:ECC:VehSales:OrderOut" 
+			targetNamespace="urn:subaru.eu:ECC:VehSales:OrderOut">
+			<xsd:simpleType name="SF_ID">
+				<xsd:restriction base="xsd:string">
+					<xsd:length value="18"/>
+					<xsd:pattern value="[a-zA-Z0-9]{18}"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:complexType name="CustomAnswer">
+				<xsd:sequence>
+					<xsd:element name="message" minOccurs="0" type="xsd:string" nillable="true"/>
+					<xsd:element name="SF_record_ID" minOccurs="0" type="tns:SF_ID" nillable="true"/>
+					<xsd:element name="status" minOccurs="0" type="xsd:string" nillable="true"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="conflict_fields">
+				<xsd:sequence>
+					<xsd:element name="name" minOccurs="0" type="xsd:string" nillable="true"/>
+					<xsd:element name="value" minOccurs="0" type="xsd:string" nillable="true"/>
+				</xsd:sequence>
+			</xsd:complexType>
 			<xsd:element name="SAP_Order_out_Talend_inOperationRequest">
-				<xsd:complexType>
-					<xsd:sequence>
-						<xsd:element name="in" type="xsd:string"></xsd:element>
-					</xsd:sequence>
-				</xsd:complexType>
+			<xsd:complexType>
+				<xsd:sequence>
+                    <xsd:element minOccurs="1" maxOccurs="1" name="SapOrderId" type="xsd:string">
+					</xsd:element>
+                    <xsd:element minOccurs="1" maxOccurs="1" name="Name" type="xsd:string">
+					</xsd:element>
+					<xsd:element minOccurs="1" maxOccurs="1" name="BPId" nillable="true" type="tns:SF_ID">
+					</xsd:element>
+					<xsd:element minOccurs="0" maxOccurs="1" name="DealerId" nillable="true" type="xsd:string">
+					</xsd:element>
+					<xsd:element minOccurs="0" maxOccurs="1" name="LicensePlate" nillable="true" type="xsd:string">
+					</xsd:element>
+					<xsd:element minOccurs="0" maxOccurs="1" name="PurchaseDate" nillable="true" type="xsd:string">
+					</xsd:element>
+					<xsd:element minOccurs="0" maxOccurs="1" name="Model" nillable="true" type="xsd:string">
+					</xsd:element>
+					<xsd:element minOccurs="0" maxOccurs="1" name="Engine" nillable="true" type="xsd:string">
+					</xsd:element>
+					<xsd:element minOccurs="0" maxOccurs="1" name="Transmission" nillable="true" type="xsd:string">
+					</xsd:element>
+					<xsd:element minOccurs="0" maxOccurs="1" name="LocalOptions" nillable="true" type="xsd:string">
+					</xsd:element>
+					<xsd:element minOccurs="0" maxOccurs="1" name="FactoryOptions" nillable="true" type="xsd:string">
+					</xsd:element>
+					<xsd:element minOccurs="0" maxOccurs="1" name="ExteriorPaint" nillable="true" type="xsd:string">
+					</xsd:element>
+					<xsd:element minOccurs="0" maxOccurs="1" name="Upholstery" nillable="true" type="xsd:string">
+					</xsd:element>
+					<xsd:element minOccurs="0" maxOccurs="1" name="ModelYear" nillable="true" type="xsd:string">
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
 			</xsd:element>
 			<xsd:element name="SAP_Order_out_Talend_inOperationResponse">
 				<xsd:complexType>
 					<xsd:sequence>
-						<xsd:element name="out" type="xsd:string"></xsd:element>
+						<xsd:element name="result" type="tns:CustomAnswer" nillable="true"/>
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
+			
+			<xsd:element name="SAP_Order_out_Talend_inFault">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="standard" type="tns:ExchangeFaultData"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:complexType name="ExchangeLogData">
+				<xsd:sequence>
+					<xsd:element name="severity" type="xsd:string" minOccurs="0"/>
+					<xsd:element name="text" type="xsd:string"/>
+					<xsd:element name="url" type="xsd:string" minOccurs="0"/>
+					<xsd:element name="id" type="xsd:string" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="ExchangeFaultData">
+				<xsd:sequence>
+					<xsd:element name="faultText" type="xsd:string"/>
+					<xsd:element name="faultUrl" type="xsd:string" minOccurs="0"/>
+					<xsd:element name="faultDetail" type="tns:ExchangeLogData" minOccurs="0" maxOccurs="unbounded"/>
+				</xsd:sequence>
+			</xsd:complexType>
 		</xsd:schema>
 	</wsdl:types>
 
@@ -32,11 +102,14 @@
 	<wsdl:message name="SAP_Order_out_Talend_inOperationResponse">
 		<wsdl:part name="parameters" element="tns:SAP_Order_out_Talend_inOperationResponse"></wsdl:part>
 	</wsdl:message>
-
+	<wsdl:message name="SAP_Order_out_Talend_inFault">
+		<wsdl:part name="parameters" element="tns:SAP_Order_out_Talend_inFault"/>
+	</wsdl:message>
 	<wsdl:portType name="SAP_Order_out_Talend_inPortType">
 		<wsdl:operation name="SAP_Order_out_Talend_inOperation">
 			<wsdl:input message="tns:SAP_Order_out_Talend_inOperationRequest"></wsdl:input>
 			<wsdl:output message="tns:SAP_Order_out_Talend_inOperationResponse"></wsdl:output>
+			<wsdl:fault name="fault" message="tns:SAP_Order_out_Talend_inFault"/>
 		</wsdl:operation>
 	</wsdl:portType>
 
@@ -55,7 +128,7 @@
 
 	<wsdl:service name="SAP_Order_out_Talend_in">
 		<wsdl:port name="SAP_Order_out_Talend_inPort" binding="tns:SAP_Order_out_Talend_inBinding">
-			<soap:address location="http://localhost:8090/services/SAP_Order_out_Talend_in" />
+			<soap:address location="http://localhost:8040/services/SAP_Order_out_Talend_in" />
 		</wsdl:port>
 	</wsdl:service>
 </wsdl:definitions>
