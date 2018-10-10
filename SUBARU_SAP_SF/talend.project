@@ -594,6 +594,22 @@
       <relatedItems xmi:id="_ZJLMDcxnEei6nL4xyspVyA" id="_Tu0OkMelEei_Xv6I3ykkew - metadata" version="Latest" type="schema"/>
       <relatedItems xmi:id="_ZJLMDsxnEei6nL4xyspVyA" id="_haxrEL2bEeipv4FHwYSAEA" version="0.3" type="services"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_cyifYMxnEei6nL4xyspVyA">
+      <baseItem xmi:id="_cyifYcxnEei6nL4xyspVyA" id="_J6LSQMxnEei6nL4xyspVyA" version="0.1" type="job"/>
+      <relatedItems xmi:id="_cyifYsxnEei6nL4xyspVyA" id="_haxrEL2bEeipv4FHwYSAEA - _heOAoL2bEeipv4FHwYSAEA - _heOAob2bEeipv4FHwYSAEA" version="Latest" type="property"/>
+      <relatedItems xmi:id="_cyifY8xnEei6nL4xyspVyA" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_cyifZMxnEei6nL4xyspVyA" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_cyifZcxnEei6nL4xyspVyA" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_cyifZsxnEei6nL4xyspVyA" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_cyifZ8xnEei6nL4xyspVyA" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_cyifaMxnEei6nL4xyspVyA" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_cyifacxnEei6nL4xyspVyA" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_cyifasxnEei6nL4xyspVyA" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_cyifa8xnEei6nL4xyspVyA" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_cyifbMxnEei6nL4xyspVyA" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_cyifbcxnEei6nL4xyspVyA" id="_Tu0OkMelEei_Xv6I3ykkew - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_cyifbsxnEei6nL4xyspVyA" id="_haxrEL2bEeipv4FHwYSAEA" version="0.3" type="services"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_OD7-gDfeEei4GOOz00i4JQ" id="org.talend.designer.core.ui.preferences.migration.ChangeMysqlVersionForProjectSetting" breaks="5.2.0" version="5.1.3" status="ok"/>
     <migrationTask xmi:id="_OD7-gTfeEei4GOOz00i4JQ" id="org.talend.designer.core.ui.preferences.migration.ChangeOracleVersionForProjectSetting" breaks="5.2.0" version="5.2.1" status="ok"/>
     <migrationTask xmi:id="_OD7-gjfeEei4GOOz00i4JQ" id="org.talend.designer.maven.ui.ConfigMavenRepositoryRemove" breaks="6.0.1" version="6.0.2" status="ok"/>
