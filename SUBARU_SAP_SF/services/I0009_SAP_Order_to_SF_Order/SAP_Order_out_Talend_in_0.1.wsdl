@@ -38,11 +38,13 @@
 					</xsd:element>
 					<xsd:element minOccurs="1" maxOccurs="1" name="BPId" nillable="true" type="tns:SF_ID">
 					</xsd:element>
-					<xsd:element minOccurs="0" maxOccurs="1" name="DealerId" nillable="true" type="xsd:string">
+					<xsd:element minOccurs="1" maxOccurs="1" name="LeadId" nillable="true" type="tns:SF_ID">
 					</xsd:element>
-					<xsd:element minOccurs="0" maxOccurs="1" name="LicensePlate" nillable="true" type="xsd:string">
+					<xsd:element minOccurs="1" maxOccurs="1" name="QuoteId" nillable="true" type="tns:SF_ID">
 					</xsd:element>
-					<xsd:element minOccurs="0" maxOccurs="1" name="PurchaseDate" nillable="true" type="xsd:string">
+					<xsd:element minOccurs="1" maxOccurs="1" name="DealerId" nillable="true" type="xsd:string">
+					</xsd:element>
+					<xsd:element minOccurs="1" maxOccurs="1" name="Status" nillable="true" type="xsd:string">
 					</xsd:element>
 					<xsd:element minOccurs="0" maxOccurs="1" name="Model" nillable="true" type="xsd:string">
 					</xsd:element>
@@ -57,8 +59,6 @@
 					<xsd:element minOccurs="0" maxOccurs="1" name="ExteriorPaint" nillable="true" type="xsd:string">
 					</xsd:element>
 					<xsd:element minOccurs="0" maxOccurs="1" name="Upholstery" nillable="true" type="xsd:string">
-					</xsd:element>
-					<xsd:element minOccurs="0" maxOccurs="1" name="ModelYear" nillable="true" type="xsd:string">
 					</xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
