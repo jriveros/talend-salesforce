@@ -104,6 +104,14 @@
 						</xsd:simpleType>
 					</xsd:element>
 					<xsd:element name="LostRemarksX" type="xsd:boolean" />
+					<xsd:element minOccurs="0" maxOccurs="1" name="Description">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:maxLength value="32768" />
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element name="DescriptionX" type="xsd:boolean" />
 					<xsd:element minOccurs="0" maxOccurs="1" name="Followtype">
 						<xsd:simpleType>
 							<xsd:restriction base="xsd:string">
