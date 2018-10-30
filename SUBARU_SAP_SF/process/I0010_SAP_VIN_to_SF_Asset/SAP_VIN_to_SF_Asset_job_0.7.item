@@ -514,15 +514,8 @@
         <nodes name="ContactId" type="id_String" xpath="VINOut/ContactId"/>
         <nodes expression="[row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/BPId]" incomingConnections="//@node.5/@nodeData/@connections.2" name="AccountId" type="id_String" xpath="VINOut/AccountId"/>
         <nodes name="ParentId" type="id_String" xpath="VINOut/ParentId"/>
-        <nodes name="RootAssetId" type="id_String" xpath="VINOut/RootAssetId"/>
         <nodes name="Product2Id" type="id_String" xpath="VINOut/Product2Id"/>
         <nodes name="IsCompetitorProduct" nullable="false" type="id_Boolean" xpath="VINOut/IsCompetitorProduct"/>
-        <nodes name="CreatedDate" nullable="false" type="id_Date" xpath="VINOut/CreatedDate"/>
-        <nodes name="CreatedById" nullable="false" type="id_String" xpath="VINOut/CreatedById"/>
-        <nodes name="LastModifiedDate" nullable="false" type="id_Date" xpath="VINOut/LastModifiedDate"/>
-        <nodes name="LastModifiedById" nullable="false" type="id_String" xpath="VINOut/LastModifiedById"/>
-        <nodes name="SystemModstamp" nullable="false" type="id_Date" xpath="VINOut/SystemModstamp"/>
-        <nodes name="IsDeleted" nullable="false" type="id_Boolean" xpath="VINOut/IsDeleted"/>
         <nodes expression=" [row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/Name]" incomingConnections="//@node.5/@nodeData/@connections.1" name="Name" nullable="false" type="id_String" xpath="VINOut/Name"/>
         <nodes name="SerialNumber" type="id_String" xpath="VINOut/SerialNumber"/>
         <nodes name="InstallDate" type="id_Date" xpath="VINOut/InstallDate"/>
@@ -536,10 +529,6 @@
         <nodes name="AssetProvidedById" type="id_String" xpath="VINOut/AssetProvidedById"/>
         <nodes name="AssetServicedById" type="id_String" xpath="VINOut/AssetServicedById"/>
         <nodes name="IsInternal" nullable="false" type="id_Boolean" xpath="VINOut/IsInternal"/>
-        <nodes name="AssetLevel" type="id_Integer" xpath="VINOut/AssetLevel"/>
-        <nodes name="StockKeepingUnit" type="id_String" xpath="VINOut/StockKeepingUnit"/>
-        <nodes name="LastViewedDate" type="id_Date" xpath="VINOut/LastViewedDate"/>
-        <nodes name="LastReferencedDate" type="id_Date" xpath="VINOut/LastReferencedDate"/>
         <nodes expression=" [row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/DealerId]" incomingConnections="//@node.5/@nodeData/@connections.3" name="Concessionario__c" type="id_String" xpath="VINOut/Concessionario__c"/>
         <nodes expression="[row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/LicensePlate]" incomingConnections="//@node.5/@nodeData/@connections.4" name="Targa__c" type="id_String" xpath="VINOut/Targa__c"/>
         <nodes expression=" [row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/SapVINId]" incomingConnections="//@node.5/@nodeData/@connections.0" name="Telaio__c" type="id_String" xpath="VINOut/Telaio__c"/>
@@ -556,31 +545,27 @@
         <nodes name="Ultima_revisione__c" type="id_Date" xpath="VINOut/Ultima_revisione__c"/>
         <nodes expression=" [row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/ModelYear]" incomingConnections="//@node.5/@nodeData/@connections.13" name="Model_Year__c" type="id_String" xpath="VINOut/Model_Year__c"/>
         <nodes expression="" name="Chilometraggio__c" type="id_Double" xpath="VINOut/Chilometraggio__c"/>
-        <nodes name="Mesi_Scadenza_Bollo__c" type="id_String" xpath="VINOut/Mesi_Scadenza_Bollo__c"/>
-        <nodes name="Mesi_Scadenza_Assicurazione__c" type="id_String" xpath="VINOut/Mesi_Scadenza_Assicurazione__c"/>
-        <nodes name="Data_Scadenza_Bollo_formula__c" type="id_Date" xpath="VINOut/Data_Scadenza_Bollo_formula__c"/>
         <nodes name="Chilometraggio_Medio_Annuo__c" type="id_Double" xpath="VINOut/Chilometraggio_Medio_Annuo__c"/>
         <nodes name="Ultimo_Tagliando__c" type="id_Date" xpath="VINOut/Ultimo_Tagliando__c"/>
         <nodes name="Km_ultimo_tagliando__c" type="id_Double" xpath="VINOut/Km_ultimo_tagliando__c"/>
-        <nodes name="isGPL__c" nullable="false" type="id_Boolean" xpath="VINOut/isGPL__c"/>
         <nodes name="Prossimo_Tagliando__c" type="id_Date" xpath="VINOut/Prossimo_Tagliando__c"/>
         <nodes expression="[row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/FactoryOptions]" incomingConnections="//@node.5/@nodeData/@connections.10" name="Allestimento__c" type="id_String" xpath="VINOut/Allestimento__c"/>
       </outputTrees>
       <varTables minimized="true" name="Var"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1" target="//@node.5/@nodeData/@outputTrees.0/@nodes.32" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2" target="//@node.5/@nodeData/@outputTrees.0/@nodes.13" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1" target="//@node.5/@nodeData/@outputTrees.0/@nodes.21" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2" target="//@node.5/@nodeData/@outputTrees.0/@nodes.6" xsi:type="TalendXMLMap:Connection"/>
       <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3" target="//@node.5/@nodeData/@outputTrees.0/@nodes.2" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.4" target="//@node.5/@nodeData/@outputTrees.0/@nodes.30" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5" target="//@node.5/@nodeData/@outputTrees.0/@nodes.31" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6" target="//@node.5/@nodeData/@outputTrees.0/@nodes.16" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.7" target="//@node.5/@nodeData/@outputTrees.0/@nodes.37" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.8" target="//@node.5/@nodeData/@outputTrees.0/@nodes.38" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.9" target="//@node.5/@nodeData/@outputTrees.0/@nodes.42" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.10" target="//@node.5/@nodeData/@outputTrees.0/@nodes.35" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.11" target="//@node.5/@nodeData/@outputTrees.0/@nodes.54" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.12" target="//@node.5/@nodeData/@outputTrees.0/@nodes.34" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.13" target="//@node.5/@nodeData/@outputTrees.0/@nodes.36" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.14" target="//@node.5/@nodeData/@outputTrees.0/@nodes.44" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.4" target="//@node.5/@nodeData/@outputTrees.0/@nodes.19" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5" target="//@node.5/@nodeData/@outputTrees.0/@nodes.20" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6" target="//@node.5/@nodeData/@outputTrees.0/@nodes.9" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.7" target="//@node.5/@nodeData/@outputTrees.0/@nodes.26" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.8" target="//@node.5/@nodeData/@outputTrees.0/@nodes.27" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.9" target="//@node.5/@nodeData/@outputTrees.0/@nodes.31" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.10" target="//@node.5/@nodeData/@outputTrees.0/@nodes.24" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.11" target="//@node.5/@nodeData/@outputTrees.0/@nodes.39" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.12" target="//@node.5/@nodeData/@outputTrees.0/@nodes.23" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.13" target="//@node.5/@nodeData/@outputTrees.0/@nodes.25" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.14" target="//@node.5/@nodeData/@outputTrees.0/@nodes.33" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="128">
@@ -1907,13 +1892,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6c6863bc-7af8-400f-878e-45e7610b3197"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Xqh0DudX3qVFUDyr6OVV52RcSUKrAk9XXvdfhiyY3RgEy5MAQQmo8tYi64v2vv80P9Iw3pg/Ub2p
-o/LQtk7sCA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5af75049-6d61-4896-a96e-bc2fb234056a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ogMI+qtLCrpXJ0jgBG+YCkTZnJatijUzxIq6JxPS7SyFQA+2w65kFpjhb8G9WrW/m8YsxkdyCgY0
-51WIm2dFag==</DigestValue></Reference></SignedInfo><SignatureValue>nElqDszS61Wu+LK7nroPQqLX4jHg4BYGOKx9uqkq4K03wQbH70Pu8THLrYsUqa+sbbdj/rnVJRh5
-HRwtpMw01LjkXLe43l7sDb5d3uxHomqs5oCRlHNAo3aU117jByO5f6MtguDxmDODKdZ58tYC2A4T
-JIgkIMAkStrwfqozw3Sj3NTRFYXfmsF/i1FenfuK9ycBx+xsS6ZXoXGLSmm3axyRVPI3Znj9kd/g
-yAjpCUUEvxgpRdK9bj/iu+Rkpgux7JHKCsBHvAOHN972jtGV69gbEnV/a41Eqo0dewE4LL2mZl/l
-U8L6KxcJyqvQ3LecY43xZxogr4QzVAHyi5IjMg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e0ac6dde-52f3-4fb5-b5dc-730bb36dc873"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kBklwsB64U8IPDAr4NkqxnlRaaooYftcKb0733TbYKdq+JOAORz9+1kq9jk6ft1Xj1g8eEpB7qde
+MoGRQyErwA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_818054f7-e260-4596-b729-e48823bedee7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>imQfhRPY45hUb2ZOP3CCvr42nc3wswQuCl4azBJA7lZBMNZG5ySfzbSIDEgHguekhwIQIeBI2Ikz
+54c5PF0y5Q==</DigestValue></Reference></SignedInfo><SignatureValue>zlSuP8u5/dMwl8mhExSPQr8uo7PnZ+b8uQJV/FVBJ6Ypz3F7ce741Vs3W5tn7BdafXXYvB6MswyQ
+PnFTPGTZs5DJAGOHr+4XT+EzVfLzfgUT80i20mgNTNZOMKNfk9ejWbRWEvtwHQKh1DfF/oclySVQ
+j8YohWABCFG0S8Hs42zlH9iSyMaYSf+T9Rem3MbvadULIyvE9CCBXuS1ldjEr8ZJvYYXzkQjoOLF
+UoOUFXRh3WVU+X9+MQb3M71s529m7BHpLNtVDkM+/KPhYdXYRMZ4FukoPOR5O11k38bvPljTQW7m
+bXss1scTHyPzpv27/7hG7q9+a6WwH9oL2hIYnQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1937,4 +1922,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5af75049-6d61-4896-a96e-bc2fb234056a" Target="#_6c6863bc-7af8-400f-878e-45e7610b3197"><Timestamp>2018-10-30 10:49:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_818054f7-e260-4596-b729-e48823bedee7" Target="#_e0ac6dde-52f3-4fb5-b5dc-730bb36dc873"><Timestamp>2018-10-30 10:53:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
