@@ -3,40 +3,105 @@
 		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
 		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
 		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-		xmlns:tns="http://www.talend.org/service/"
-		targetNamespace="http://www.talend.org/service/">
-
+		xmlns:tns="urn:subaru.eu:SF:MDM:VINUpdateIn"
+		targetNamespace="urn:subaru.eu:SF:MDM:VINUpdateIn">
 	<wsdl:types>
 		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-			targetNamespace="http://www.talend.org/service/">
-			<xsd:element name="SF_VIN_update_out_Talend_inOperationRequest">
+			targetNamespace="urn:subaru.eu:SF:MDM:VINUpdateIn">
+			<xsd:simpleType name="SF_ID">
+				<xsd:restriction base="xsd:string">
+					<xsd:length value="18" />
+					<xsd:pattern value="[a-zA-Z0-9]{18}" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:complexType name="CustomAnswer">
+				<xsd:sequence>
+					<xsd:element name="conflicting_fields" minOccurs="0" maxOccurs="unbounded" type="tns:conflict_fields" nillable="true" />
+					<xsd:element name="message" minOccurs="0" type="xsd:string" nillable="true" />
+					<xsd:element name="SF_record_ID" minOccurs="0" type="tns:SF_ID" nillable="true" />
+					<xsd:element name="status" minOccurs="0"
+						nillable="true">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:enumeration value="updated"></xsd:enumeration>
+								<xsd:enumeration value="inserted"></xsd:enumeration>
+								<xsd:enumeration value="conflict"></xsd:enumeration>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="conflict_fields">
+				<xsd:sequence>
+					<xsd:element name="name" minOccurs="0" type="xsd:string" nillable="true" />
+					<xsd:element name="value" minOccurs="0" type="xsd:string" nillable="true" />
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:element name="SF_VIN_update_out_Talend_in_Req"
+				type="tns:SF_VIN_update_out_Talend_in_RequestType">
+			</xsd:element>
+			<xsd:element name="SF_VIN_update_out_Talend_in_Resp">
+				<xsd:complexType>
+					<xsd:complexContent>
+						<xsd:extension base="tns:CustomAnswer">
+							<xsd:sequence>
+								<xsd:element name="VINUpdateId" type="xsd:string">
+								</xsd:element>
+							</xsd:sequence>
+						</xsd:extension>
+					</xsd:complexContent>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:complexType name="SF_VIN_update_out_Talend_in_RequestType">
+				<xsd:sequence>
+					<xsd:element minOccurs="1" maxOccurs="1" name="VIN" type="xsd:string">
+					</xsd:element>
+					<xsd:element name="VINX" type="xsd:boolean" />
+					<xsd:element minOccurs="1" maxOccurs="1" name="EndCustomer" type="xsd:string">
+					</xsd:element>
+					<xsd:element name="EndCustomerX" type="xsd:boolean" />
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:element name="SF_VIN_update_out_Talend_in_Fault">
 				<xsd:complexType>
 					<xsd:sequence>
-						<xsd:element name="in" type="xsd:string"></xsd:element>
+						<xsd:element name="standard" type="tns:ExchangeFaultData" />
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
-			<xsd:element name="SF_VIN_update_out_Talend_inOperationResponse">
-				<xsd:complexType>
-					<xsd:sequence>
-						<xsd:element name="out" type="xsd:string"></xsd:element>
-					</xsd:sequence>
-				</xsd:complexType>
-			</xsd:element>
+			<xsd:complexType name="ExchangeLogData">
+				<xsd:sequence>
+					<xsd:element name="severity" type="xsd:string" minOccurs="0" />
+					<xsd:element name="text" type="xsd:string" />
+					<xsd:element name="url" type="xsd:string" minOccurs="0" />
+					<xsd:element name="id" type="xsd:string" minOccurs="0" />
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="ExchangeFaultData">
+				<xsd:sequence>
+					<xsd:element name="faultText" type="xsd:string" />
+					<xsd:element name="faultUrl" type="xsd:string" minOccurs="0" />
+					<xsd:element name="faultDetail" type="tns:ExchangeLogData" minOccurs="0" maxOccurs="unbounded" />
+				</xsd:sequence>
+			</xsd:complexType>
 		</xsd:schema>
 	</wsdl:types>
 
 	<wsdl:message name="SF_VIN_update_out_Talend_inOperationRequest">
-		<wsdl:part name="parameters" element="tns:SF_VIN_update_out_Talend_inOperationRequest"></wsdl:part>
+		<wsdl:part name="parameters" element="tns:SF_VIN_update_out_Talend_in_Req"></wsdl:part>
 	</wsdl:message>
 	<wsdl:message name="SF_VIN_update_out_Talend_inOperationResponse">
-		<wsdl:part name="parameters" element="tns:SF_VIN_update_out_Talend_inOperationResponse"></wsdl:part>
+		<wsdl:part name="parameters" element="tns:SF_VIN_update_out_Talend_in_Resp"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="SF_VIN_update_out_Talend_inFault">
+		<wsdl:part name="parameters" element="tns:SF_VIN_update_out_Talend_in_Fault"></wsdl:part>
 	</wsdl:message>
 
 	<wsdl:portType name="SF_VIN_update_out_Talend_inPortType">
 		<wsdl:operation name="SF_VIN_update_out_Talend_inOperation">
 			<wsdl:input message="tns:SF_VIN_update_out_Talend_inOperationRequest"></wsdl:input>
 			<wsdl:output message="tns:SF_VIN_update_out_Talend_inOperationResponse"></wsdl:output>
+			<wsdl:fault name="fault" message="tns:SF_VIN_update_out_Talend_inFault"></wsdl:fault>
 		</wsdl:operation>
 	</wsdl:portType>
 
@@ -50,12 +115,15 @@
 			<wsdl:output>
 				<soap:body use="literal" />
 			</wsdl:output>
+			<wsdl:fault name="fault">
+				<soap:fault use="literal" name="fault" />
+			</wsdl:fault>
 		</wsdl:operation>
 	</wsdl:binding>
 
 	<wsdl:service name="SF_VIN_update_out_Talend_in">
 		<wsdl:port name="SF_VIN_update_out_Talend_inPort" binding="tns:SF_VIN_update_out_Talend_inBinding">
-			<soap:address location="http://localhost:8090/services/SF_VIN_update_out_Talend_in" />
+			<soap:address location="http://localhost:8040/services/SF_VIN_update_out_Talend_in" />
 		</wsdl:port>
 	</wsdl:service>
 </wsdl:definitions>
