@@ -1,6 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -104,13 +106,463 @@
     <routinesParameter id="_uNdHIF-HEeisLbpb7Kl_hg" name="TalendStringUtil"/>
     <routinesParameter id="_uNTWIF-HEeisLbpb7Kl_hg" name="TalendString"/>
   </parameters>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0a7230f6-4364-40e7-9060-dca7350f7daf"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pvM0K6UReB4lGQtv0J/U/AtmaWkaDMB5iLFuv9OXGpT7EDEsDHKNMsEf37FW2IxX5im7/gzcnkpT
-Acy9OhXnKQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_cd8ab03d-244d-4b17-bb5b-5461731fc6ca"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qBK//Hw7vtmyJlAak6Q8eZkG7/v7PAJmqW5RVYD+EhChJ1ZRaQ/knhTHRSZsLfjoY5qPWBfEQygS
-DZH8b4Ns4g==</DigestValue></Reference></SignedInfo><SignatureValue>BovWL5O2MKkLsJUsO3GUJhdWTScuVhMETpI2Fvw4snnePS1s8z5b+jJmDibChKNKrZfOAdNiVIdz
-lRSXcMuJXJbIJhb1wepm12fUlpALRxnxZlZr70RcICEmDJHlSbwphXAgGEcvtFj1MmjulV8CdvYt
-ElHDZGit+wZzaFdM1rEBe2zqGv/2dSRjIgFr3vAfturxI77YbgOhJrnDLl5y792kQRt0xCZytjIz
-yMLC1Yqbd/WsvFkUlwWT0GYwRinQIH+b8jpXqasxewZypIsQ3q852TST3MUJefo+pVihOxt36al8
-yopzpb21tL4PSFIVJGU96zLLg8MZ/X0fjcmM6w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+  <node componentName="tESBProviderRequest" componentVersion="0.100" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tESBProviderRequest_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_m7eBANzrEei9AbsqDN_HeQ - _m9h2gNzrEei9AbsqDN_HeQ - _m9idkNzrEei9AbsqDN_HeQ"/>
+    <elementParameter field="CHECK" name="KEEPLISTENING" value="true"/>
+    <elementParameter field="TEXT" name="WSDL_LOCATION" show="false" value="C:/Users/jezie/workspace/.repositories/485151994/master/SUBARU_SAP_SF/services/I0012_SF_to_SAP_VIN_EndCustomer_update/SF_VIN_update_out_Talend_in_0.1.wsdl"/>
+    <elementParameter field="TEXT" name="ENDPOINT_URI" show="false" value="http://localhost:8040/services/SF_VIN_update_out_Talend_in"/>
+    <elementParameter field="TEXT" name="SERVICE_NS" show="false" value="urn:subaru.eu:SF:MDM:VINUpdateIn"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" show="false" value="SF_VIN_update_out_Talend_in"/>
+    <elementParameter field="TEXT" name="PORT_NS" show="false" value="urn:subaru.eu:SF:MDM:VINUpdateIn"/>
+    <elementParameter field="TEXT" name="PORT_NAME" show="false" value="SF_VIN_update_out_Talend_inPort"/>
+    <elementParameter field="TEXT" name="OPERATION_NS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OPERATION_NAME" show="false" value="SF_VIN_update_out_Talend_inOperation"/>
+    <elementParameter field="TEXT" name="COMMUNICATION_STYLE" show="false" value="request-response"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="TEXT" name="EXCHANGE_TIMEOUT" value="50"/>
+    <elementParameter field="TEXT" name="MAX_PARALLEL_REQUESTS" value="1000"/>
+    <elementParameter field="TEXT" name="REQUEST_PROCESSING_TIMEOUT" value="120"/>
+    <elementParameter field="TEXT" name="LABEL" value="SF_VIN_update_Req"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tESBProviderRequest_1">
+      <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="true"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="true"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="true"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="payload"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="LogRequest"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="upsertRequestRow1">
+      <column comment="" key="false" length="-1" name="payload" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="requestRow2">
+        <nodes expression="" name="payload" type="id_Document" xpath="requestRow2/payload">
+          <children loop="true" main="true" name="tns:SF_VIN_update_out_Talend_in_Req" type="id_String" xpath="requestRow2.payload:/tns:SF_VIN_update_out_Talend_in_Req">
+            <children defaultValue="urn:subaru.eu:SF:MDM:VINUpdateIn" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="requestRow2.payload:/tns:SF_VIN_update_out_Talend_in_Req/xmlns:tns"/>
+            <children name="VIN" type="id_String" xpath="requestRow2.payload:/tns:SF_VIN_update_out_Talend_in_Req/VIN"/>
+            <children name="EndCustomer" type="id_String" xpath="requestRow2.payload:/tns:SF_VIN_update_out_Talend_in_Req/EndCustomer"/>
+          </children>
+        </nodes>
+      </inputTrees>
+      <outputTrees activateCondensedTool="true" name="upsertRequestRow1">
+        <nodes expression="" name="payload" nullable="false" type="id_Document" xpath="upsertRequestRow1/payload">
+          <children loop="true" main="true" name="tns:ZFg81LeadReceive" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive" xsi:type="TalendXMLMap:OutputTreeNode">
+            <children defaultValue="urn:sap-com:document:sap:soap:functions:mc-style" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="[requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/CampaignActivityOfOrigin]" name="Campaign" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/Campaign" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression=" [requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/DealerCode]" name="Dealer" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/Dealer" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="[requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Followtype]" name="Followtype" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/Followtype" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression=" [requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Followupdate]" name="Followupdate" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/Followupdate" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="[requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Followuptime]" name="Followuptime" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/Followuptime" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="[requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Leaddate]" name="Leaddate" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/Leaddate" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="[requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Leadtime]" name="Leadtime" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/Leadtime" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="[requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/ModelOfInterest]" name="Modelofinterest" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/Modelofinterest" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="[requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Description] " name="Remark" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/Remark" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="[requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Sapbpcode]" name="Sapbpcode" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/Sapbpcode" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="[requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/Source]" name="Source" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/Source" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="[requestRow2.payload:/tns:SF_Opportunity_out_Talend_in_Req/SourceInfo]" name="Subsource" type="id_String" xpath="upsertRequestRow1.payload:/tns:ZFg81LeadReceive/Subsource" xsi:type="TalendXMLMap:OutputTreeNode"/>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables name="Var"/>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="true"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="payload"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="LogSAPRequest"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tLogRow_2">
+      <column comment="" key="false" length="-1" name="payload" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tESBConsumer" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tESBConsumer_1"/>
+    <elementParameter field="EXTERNAL" name="SERVICE_CONFIGURATION" value=""/>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="SERVICE_LOCATOR_STRATEGY" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="USE_SR" value="false"/>
+    <elementParameter field="LABEL" name="AUTHENTICATION_LABEL" show="false" value=""/>
+    <elementParameter field="CHECK" name="AUTH_PROPAGATE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" show="false" value="SAML"/>
+    <elementParameter field="CLOSED_LIST" name="PROPAGATE_TYPE" show="false" value="NONE"/>
+    <elementParameter field="LABEL" name="PROPAGATE_U_P_LABEL" show="false" value=""/>
+    <elementParameter field="LABEL" name="PROPAGATE_CERT_LABEL" show="false" value=""/>
+    <elementParameter field="TEXT" name="AUTH_ALIAS" show="false" value="&quot;alias&quot;"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;username&quot;"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="PoLvNyVG2XWndNDdLn696A=="/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
+    <elementParameter field="LABEL" name="AUTHORIZATION_LABEL" show="false" value=""/>
+    <elementParameter field="TEXT" name="ROLE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="NEED_ENCRYPTION" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="TEXT" name="CORRELATION_VALUE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="ENABLE_CXF_MESSAGE_GZIP" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="TEXT" name="ESB_ENDPOINT" value="&quot;https://sapdev.subaru-europe.be:44300/sap/bc/srt/rfc/sap/zii_g81_sap_lead_in/500/sap_lead_in/sap_lead_in_bind&quot;"/>
+    <elementParameter field="TEXT" name="ENDPOINT" show="false" value="&quot;C:/Users/jezie/workspace/.repositories/485151994/master/SUBARU_SAP_SF/services/I0004_SF_Opportunity_to_SAP_Lead/SAP_Lead_In_1.0.wsdl&quot;"/>
+    <elementParameter field="TEXT" name="SERVICE_NS" show="false" value="urn:sap-com:document:sap:soap:functions:mc-style"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" show="false" value="SAP_LEAD_IN"/>
+    <elementParameter field="TEXT" name="PORT_NS" show="false" value="urn:sap-com:document:sap:soap:functions:mc-style"/>
+    <elementParameter field="TEXT" name="PORT_NAME" show="false" value="SAP_LEAD_In_bind"/>
+    <elementParameter field="TEXT" name="METHOD_NS" show="false" value="urn:sap-com:document:sap:soap:functions:mc-style"/>
+    <elementParameter field="TEXT" name="METHOD" show="false" value="ZFg81LeadReceive(ZFg81LeadReceive):ZFg81LeadReceiveResponse"/>
+    <elementParameter field="TEXT" name="SOAP_ACTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="COMMUNICATION_STYLE" show="false" value="request-response"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="FOLLOW_REDIRECTS" value="false"/>
+    <elementParameter field="CHECK" name="REDIRECT_NON_SAME_HOST" show="false" value="false"/>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="30"/>
+    <elementParameter field="LABEL" name="CONNECTION_TIMEOUT_DESC" value="(Studio Only, See Doc for Runtime)"/>
+    <elementParameter field="TEXT" name="RECEIVE_TIMEOUT" value="60"/>
+    <elementParameter field="LABEL" name="RECEIVE_TIMEOUT_DESC" value="(Studio Only, See Doc for Runtime)"/>
+    <elementParameter field="CHECK" name="DISABLE_CHUNKING" value="false"/>
+    <elementParameter field="CHECK" name="NEED_SSL_TO_TRUSTSERVER" value="false"/>
+    <elementParameter field="TEXT" name="SSL_TRUSTSERVER_TRUSTSTORE" show="false" value="&quot;C:/clientTrustStore.trustStore&quot;"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" show="false" value="PoLvNyVG2XWndNDdLn696A=="/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8080"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="TEXT" name="WSDL_CONTENT" show="false" value="eJwBzwQw+1BLAwQUAAgICADCVE9NAAAAAAAAAAAAAAAACQAAAG1haW4ud3NkbL1Y227jNhB9L9B/&#13;&#10;EPQe07fuBkLcRVDHRQBnW8RZoNgXg5bGClGJ1JKU7fTrO9TF1sW2ZNVuHhyJnDOXMySHo4cvuzCw&#13;&#10;NiAVE3xiD3p92wLuCo9xf2J/e5vd3dtffv35p4et8gLHgzXjTKOosjSVPuivNAQVURcmdiy5o2h0&#13;&#10;54rQ8YQbh8C1GXCUwJ91zN0E6ITundIfAdgWmsZ3PjiDlWv3AM0RxpeJ/a515BCi3HcIqerhlDHU&#13;&#10;E9InRoDk0iELoVnaSO0hmqvu8eyUtze33W5721FiZdjvD8hfL/NF4kEubOSanTPze+fM1GDYDErl&#13;&#10;SrB2IGIfEp7FTU2oOGrh34NiOGN+cs2skA4TMZLUQ9ZMyJ9Jf0SMgE0S+AM5oTe1pz8iULkdJNJJ&#13;&#10;HbWo1pKtYg0zIcMprGkc6In9I6YBWzPw7AtWY3lFZbZyayyMAnhDJyxOzapx36kc9A9SmZwEhf4k&#13;&#10;KqwVVSiYoHGM+0XhTDykuzlwX79bGxrEKI0qSVEnqSg9eEXKbrVx99P13f10O3eH12d3eEN2h8Pr&#13;&#10;uzu8nbujq3s7up2z46s7O/5vzmbDyRF020OpqUT2Ox5oGJGQOuH4snORlPWgNFKzKyTsu/+5/7TD&#13;&#10;tHEfZibyKdW0lkAFP2K8TkA9VxCAMZ1pSzS8wU4jaWijlGfSCvxNBp2xU9CU7eFY/J1idHPhm9je&#13;&#10;6OrIaqoFmA4X+LqEyMxUZxoXgDc5pj+6MNGV/Y7EP3sNqBvya1J5OcV4uvzhurE0V0O+EjH3zB4P&#13;&#10;Gc9H8eqcmmQawobVdIVQy3x+n/n3gzlQ7xVcYBuoBXhMz/noj9r5jYYRZT5vzPlR9BRoADLH8r6T&#13;&#10;XbBaQGciCMTWACvwcXt0HHlUV/GV202DAo19QkVBpYCfUGBy09m6AXe2/CI8CAR2bhpM8avqaMX+&#13;&#10;KxY8+Xe3pC9otIqwpayF3sryQsTSrUJHrZDxSpXAp8+n4xvw7BYkBYOXbMxXrMRYYW+2QZOKdur0&#13;&#10;OVTqlouOeZ2S9gJKUb+Z+ON5w7YwVv9X0mqXvKxFPbSiaWsapiE1HLepbERlHgw+4n/ceRhQZjhL&#13;&#10;yykNZK+i6E5mvrVD1WXW3bGaprYOmqtnsRA/Py9/vx8sF49/LudPj9Pl89eycyICmXwQaCxpqTzj&#13;&#10;UYxlObXbitQEUdEiYt2o5gQFKbQylgdR5CZnokDOinHzjS1f8ntO+NLMlPbvGd6SviFXlbQMEzu/&#13;&#10;1aMOSbkyts9+90k++Zj5/f66OB2JGwd58/qYNBIT2665RY6lsbh906CE92HFpuUL8DolaVDENWWz&#13;&#10;i7bWyczoLuRSgdwwF2q5rKzvfSt2LN+Z1jTltekK1XiTwEqurEC4NKXZ5E+ZBNPIg00PSx+V8d1T&#13;&#10;LDGE3gqc8XjU75tZsnKJkppgu5e8/sPYEvO6xOdlgMldMk5+SUX374Xn1B1SOQpE+SjI+DBfEUn1&#13;&#10;uzEO/gtQSwcIO7BMBUsEAAB0FgAAUEsBAhQAFAAICAgAwlRPTTuwTAVLBAAAdBYAAAkAAAAAAAAA&#13;&#10;AAAAAAAAAAAAAG1haW4ud3NkbFBLBQYAAAAAAQABADcAAACCBAAAAADii0Rr&#13;&#10;"/>
+    <elementParameter field="TABLE" name="HEADERS">
+      <elementValue elementRef="NAME" value="&quot;Authorization&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;Basic QkFUQ0hfU0Y6OWdTSzJKWDRCRGFhRjRaUQ==&quot;"/>
+      <elementValue elementRef="PROPAGATE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tESBConsumer_1">
+      <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="RESPONSE" name="RESPONSE">
+      <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FAULT" name="FAULT">
+      <column defaultValue="" key="false" length="1024" name="faultCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="faultString" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="faultActor" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="faultNode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="faultRole" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="faultDetail" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_3"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="payload"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="LogSAPResponse"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_3">
+      <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="responseRow">
+      <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row2">
+        <nodes expression="" name="payload" type="id_Document" xpath="row2/payload">
+          <children loop="true" main="true" name="tns:ZFg81LeadReceiveResponse" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse">
+            <children defaultValue="urn:sap-com:document:sap:soap:functions:mc-style" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/xmlns:tns"/>
+            <children name="Fault" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/Fault">
+              <children name="FaultText" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/Fault/FaultText"/>
+              <children name="FaultUrl" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/Fault/FaultUrl"/>
+              <children name="FaultDetail" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/Fault/FaultDetail">
+                <children name="item" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/Fault/FaultDetail/item">
+                  <children name="Severity" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/Fault/FaultDetail/item/Severity"/>
+                  <children name="Text" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/Fault/FaultDetail/item/Text"/>
+                  <children name="Url" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/Fault/FaultDetail/item/Url"/>
+                  <children name="Id" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/Fault/FaultDetail/item/Id"/>
+                </children>
+              </children>
+            </children>
+            <children name="Leadid" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/Leadid"/>
+            <children name="Message" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/Message"/>
+            <children name="Status" type="id_String" xpath="row2.payload:/tns:ZFg81LeadReceiveResponse/Status"/>
+          </children>
+        </nodes>
+      </inputTrees>
+      <outputTrees activateCondensedTool="true" allInOne="true" enableEmptyElement="false" name="responseRow">
+        <nodes expression="" name="payload" type="id_Document" xpath="responseRow/payload">
+          <children loop="true" main="true" name="tns:SF_VIN_update_out_Talend_in_Resp" type="id_String" xpath="responseRow.payload:/tns:SF_VIN_update_out_Talend_in_Resp" xsi:type="TalendXMLMap:OutputTreeNode">
+            <children defaultValue="urn:subaru.eu:SF:MDM:VINUpdateIn" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="responseRow.payload:/tns:SF_VIN_update_out_Talend_in_Resp/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children name="conflicting_fields" type="id_String" xpath="responseRow.payload:/tns:SF_VIN_update_out_Talend_in_Resp/conflicting_fields" xsi:type="TalendXMLMap:OutputTreeNode">
+              <children name="name" type="id_String" xpath="responseRow.payload:/tns:SF_VIN_update_out_Talend_in_Resp/conflicting_fields/name" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="value" type="id_String" xpath="responseRow.payload:/tns:SF_VIN_update_out_Talend_in_Resp/conflicting_fields/value" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            </children>
+            <children name="message" type="id_String" xpath="responseRow.payload:/tns:SF_VIN_update_out_Talend_in_Resp/message" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children name="SF_record_ID" type="id_String" xpath="responseRow.payload:/tns:SF_VIN_update_out_Talend_in_Resp/SF_record_ID" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children name="status" type="id_String" xpath="responseRow.payload:/tns:SF_VIN_update_out_Talend_in_Resp/status" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children name="VINUpdateId" type="id_String" xpath="responseRow.payload:/tns:SF_VIN_update_out_Talend_in_Resp/VINUpdateId" xsi:type="TalendXMLMap:OutputTreeNode"/>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables name="Var"/>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_4"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="payload"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_4">
+      <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tESBProviderResponse" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tESBProviderResponse_1"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="SF_VIN_update_Resp"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tESBProviderResponse_1">
+      <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogCatcher_1"/>
+    <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TWARN" value="false"/>
+    <elementParameter field="CHECK" name="CATCH_TACTIONFAILURE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogCatcher_1">
+      <column key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="20" name="pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="20" name="root_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="20" name="father_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="project" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="context" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column key="false" length="255" name="type" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="origin" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="15" offsetLabelY="0" posX="832" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_3"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="teret">
+      <column comment="" key="false" length="-1" name="payload" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row9">
+        <nodes name="moment" outgoingConnections="//@node.10/@nodeData/@connections.1" type="id_Date" xpath="row9/moment"/>
+        <nodes name="pid" type="id_String" xpath="row9/pid"/>
+        <nodes name="root_pid" type="id_String" xpath="row9/root_pid"/>
+        <nodes name="father_pid" type="id_String" xpath="row9/father_pid"/>
+        <nodes name="project" type="id_String" xpath="row9/project"/>
+        <nodes name="job" outgoingConnections="//@node.10/@nodeData/@connections.5" type="id_String" xpath="row9/job"/>
+        <nodes name="context" outgoingConnections="//@node.10/@nodeData/@connections.3" type="id_String" xpath="row9/context"/>
+        <nodes name="priority" type="id_Integer" xpath="row9/priority"/>
+        <nodes name="type" outgoingConnections="//@node.10/@nodeData/@connections.2" type="id_String" xpath="row9/type"/>
+        <nodes name="origin" outgoingConnections="//@node.10/@nodeData/@connections.4" type="id_String" xpath="row9/origin"/>
+        <nodes name="message" outgoingConnections="//@node.10/@nodeData/@connections.0" type="id_String" xpath="row9/message"/>
+        <nodes name="code" type="id_Integer" xpath="row9/code"/>
+      </inputTrees>
+      <outputTrees name="teret">
+        <nodes expression="" name="payload" pattern="" type="id_Document" xpath="teret/payload">
+          <children loop="true" main="true" name="tns:SF_VIN_update_out_Talend_in_Fault" type="id_String" xpath="teret.payload:/tns:SF_VIN_update_out_Talend_in_Fault" xsi:type="TalendXMLMap:OutputTreeNode">
+            <children defaultValue="urn:subaru.eu:SF:MDM:VINUpdateIn" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="teret.payload:/tns:SF_VIN_update_out_Talend_in_Fault/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children name="standard" type="id_String" xpath="teret.payload:/tns:SF_VIN_update_out_Talend_in_Fault/standard" xsi:type="TalendXMLMap:OutputTreeNode">
+              <children expression="row9.message" incomingConnections="//@node.10/@nodeData/@connections.0" name="faultText" type="id_String" xpath="teret.payload:/tns:SF_VIN_update_out_Talend_in_Fault/standard/faultText" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row9.moment" incomingConnections="//@node.10/@nodeData/@connections.1" name="faultUrl" type="id_String" xpath="teret.payload:/tns:SF_VIN_update_out_Talend_in_Fault/standard/faultUrl" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="faultDetail" type="id_String" xpath="teret.payload:/tns:SF_VIN_update_out_Talend_in_Fault/standard/faultDetail" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children expression="row9.type" incomingConnections="//@node.10/@nodeData/@connections.2" name="severity" type="id_String" xpath="teret.payload:/tns:SF_VIN_update_out_Talend_in_Fault/standard/faultDetail/severity" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="row9.context" incomingConnections="//@node.10/@nodeData/@connections.3" name="text" type="id_String" xpath="teret.payload:/tns:SF_VIN_update_out_Talend_in_Fault/standard/faultDetail/text" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="row9.origin" incomingConnections="//@node.10/@nodeData/@connections.4" name="url" type="id_String" xpath="teret.payload:/tns:SF_VIN_update_out_Talend_in_Fault/standard/faultDetail/url" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="row9.job" incomingConnections="//@node.10/@nodeData/@connections.5" name="id" type="id_String" xpath="teret.payload:/tns:SF_VIN_update_out_Talend_in_Fault/standard/faultDetail/id" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              </children>
+            </children>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+      <connections source="//@node.10/@nodeData/@inputTrees.0/@nodes.10" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.10/@nodeData/@inputTrees.0/@nodes.0" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.10/@nodeData/@inputTrees.0/@nodes.8" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.10/@nodeData/@inputTrees.0/@nodes.6" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.10/@nodeData/@inputTrees.0/@nodes.9" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.10/@nodeData/@inputTrees.0/@nodes.5" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.3" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
+  </node>
+  <node componentName="tESBProviderFault" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tESBProviderFault_1"/>
+    <elementParameter field="TEXT" name="ESB_FAULT_TITLE" value="&quot;Error Catcher&quot;"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="SF_VIN_update_Fault"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tESBProviderFault_1">
+      <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSetKeystore" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetKeystore_1"/>
+    <elementParameter field="CLOSED_LIST" name="TRUSTSTORE_TYPE" value="JKS"/>
+    <elementParameter field="FILE" name="SSL_TRUSTSERVER_TRUSTSTORE" value="&quot;C:/SAP/DATA/SUBARU/TALEND/keystore&quot;"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" value="1/NgNJNhBj4uZhOGYf2pqw=="/>
+    <elementParameter field="CHECK" name="NEED_CLIENT_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="KEYSTORE_TYPE" show="false" value="JKS"/>
+    <elementParameter field="FILE" name="SSL_KEYSTORE" show="false" value="&quot;C:/client.keystore&quot;"/>
+    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" show="false" value="PoLvNyVG2XWndNDdLn696A=="/>
+    <elementParameter field="CHECK" name="VERIFY_NAME" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection connectorName="FLOW" label="row10" lineStyle="0" metaname="tESBProviderRequest_1" offsetLabelX="6" offsetLabelY="-24" source="tESBProviderRequest_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row10"/>
+  </connection>
+  <connection connectorName="FLOW" label="requestRow2" lineStyle="0" metaname="tLogRow_1" offsetLabelX="1" offsetLabelY="-27" source="tLogRow_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="requestRow2"/>
+  </connection>
+  <connection connectorName="FLOW" label="upsertRequestRow1" lineStyle="0" metaname="upsertRequestRow1" offsetLabelX="2" offsetLabelY="-46" source="tXMLMap_1" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="upsertRequestRow1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tESBConsumer_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="RESPONSE" label="row3" lineStyle="0" metaname="tESBConsumer_1" offsetLabelX="0" offsetLabelY="0" source="tESBConsumer_1" target="tLogRow_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogRow_3" offsetLabelX="1" offsetLabelY="-23" source="tLogRow_3" target="tXMLMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="responseRow" lineStyle="0" metaname="responseRow" offsetLabelX="0" offsetLabelY="-31" source="tXMLMap_2" target="tLogRow_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="responseRow"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tLogRow_4" offsetLabelX="0" offsetLabelY="0" source="tLogRow_4" target="tESBProviderResponse_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
+  </connection>
+  <connection connectorName="FLOW" label="row9" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tXMLMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row9"/>
+  </connection>
+  <connection connectorName="FLOW" label="teret" lineStyle="0" metaname="teret" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_3" target="tESBProviderFault_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="teret"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSetKeystore_1" offsetLabelX="0" offsetLabelY="0" source="tSetKeystore_1" target="tESBProviderRequest_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tESBProviderRequest_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogCatcher_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetKeystore_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_32d58648-11e1-4075-9dca-73fe8fc991e8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>yrKpIH7iLtBBZQ1+a1rskXGjelhjonQZEuCpeZCk44AuVlZaCSfvNCrLIUv3+Tu29ORk0WZK+ABU
+/OK+D7Ro3Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d3010d35-8ac7-4737-b22b-9e7df0db8777"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>B19HCDbE189uxCdkDsoDryWLwRcGLOImX/o1BEMlpKBLFl6gEI6SvQmDhTVGXfLIkKTL8j8FAG1Q
+hCTjo3qmKg==</DigestValue></Reference></SignedInfo><SignatureValue>SO02VqZdgPvQNCPseoZIYnwfLzfCbAxLcJEYhm98AAqDjY5jRlPgoME0pV82qKoW5NFAYBOC5vEZ
+rsOmZ23fWDj8nBOj9c66maoinic3KpFL2jYOSYuHi6vsWOLyk0ZpV7NMRMLvW6PtihB2xc3Dqndl
+T4cYZNPQdVbyaOBW7mRd/qA5rsYvNcdSsYQfYnBiSGfo6r5Kc1eXTJy1J6rlWZXjoIklu5x1KKtx
+eh8pjPFA8n/xP+3Bd0CyqcXqdSwtLOfH5YoTwde4X+28walwNMvn4vCoEuWPJVtLtEmn7P5BSQxx
+Ozw9E9ppNeqluGBTPLORvt2zxCLi8H4p5aapbA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -134,4 +586,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_cd8ab03d-244d-4b17-bb5b-5461731fc6ca" Target="#_0a7230f6-4364-40e7-9060-dca7350f7daf"><Timestamp>2018-10-31 09:00:25</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d3010d35-8ac7-4737-b22b-9e7df0db8777" Target="#_32d58648-11e1-4075-9dca-73fe8fc991e8"><Timestamp>2018-10-31 09:33:51</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
