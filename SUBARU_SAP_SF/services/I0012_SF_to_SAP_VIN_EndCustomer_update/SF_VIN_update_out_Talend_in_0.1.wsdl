@@ -54,12 +54,8 @@
 			</xsd:element>
 			<xsd:complexType name="SF_VIN_update_out_Talend_in_RequestType">
 				<xsd:sequence>
-					<xsd:element minOccurs="1" maxOccurs="1" name="VIN" type="xsd:string">
-					</xsd:element>
-					<xsd:element name="VINX" type="xsd:boolean" />
-					<xsd:element minOccurs="1" maxOccurs="1" name="EndCustomer" type="xsd:string">
-					</xsd:element>
-					<xsd:element name="EndCustomerX" type="xsd:boolean" />
+					<xsd:element minOccurs="1" maxOccurs="1" name="VIN" type="xsd:string" />
+					<xsd:element minOccurs="1" maxOccurs="1" name="EndCustomer" type="xsd:string" />
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:element name="SF_VIN_update_out_Talend_in_Fault">
