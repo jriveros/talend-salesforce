@@ -1,61 +1,76 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<wsdl:definitions name="SAP_VIN_in"
-		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
-		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
-		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-		xmlns:tns="http://www.talend.org/service/"
-		targetNamespace="http://www.talend.org/service/">
-
-	<wsdl:types>
-		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-			targetNamespace="http://www.talend.org/service/">
-			<xsd:element name="SAP_VIN_inOperationRequest">
-				<xsd:complexType>
-					<xsd:sequence>
-						<xsd:element name="in" type="xsd:string"></xsd:element>
-					</xsd:sequence>
-				</xsd:complexType>
-			</xsd:element>
-			<xsd:element name="SAP_VIN_inOperationResponse">
-				<xsd:complexType>
-					<xsd:sequence>
-						<xsd:element name="out" type="xsd:string"></xsd:element>
-					</xsd:sequence>
-				</xsd:complexType>
-			</xsd:element>
-		</xsd:schema>
-	</wsdl:types>
-
-	<wsdl:message name="SAP_VIN_inOperationRequest">
-		<wsdl:part name="parameters" element="tns:SAP_VIN_inOperationRequest"></wsdl:part>
-	</wsdl:message>
-	<wsdl:message name="SAP_VIN_inOperationResponse">
-		<wsdl:part name="parameters" element="tns:SAP_VIN_inOperationResponse"></wsdl:part>
-	</wsdl:message>
-
-	<wsdl:portType name="SAP_VIN_inPortType">
-		<wsdl:operation name="SAP_VIN_inOperation">
-			<wsdl:input message="tns:SAP_VIN_inOperationRequest"></wsdl:input>
-			<wsdl:output message="tns:SAP_VIN_inOperationResponse"></wsdl:output>
-		</wsdl:operation>
-	</wsdl:portType>
-
-	<wsdl:binding name="SAP_VIN_inBinding" type="tns:SAP_VIN_inPortType">
-		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
-		<wsdl:operation name="SAP_VIN_inOperation">
-			<soap:operation soapAction="http://www.talend.org/service/SAP_VIN_inOperation" />
-			<wsdl:input>
-				<soap:body use="literal" />
-			</wsdl:input>
-			<wsdl:output>
-				<soap:body use="literal" />
-			</wsdl:output>
-		</wsdl:operation>
-	</wsdl:binding>
-
-	<wsdl:service name="SAP_VIN_in">
-		<wsdl:port name="SAP_VIN_inPort" binding="tns:SAP_VIN_inBinding">
-			<soap:address location="http://localhost:8090/services/SAP_VIN_in" />
-		</wsdl:port>
-	</wsdl:service>
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="urn:sap-com:document:sap:soap:functions:mc-style" targetNamespace="urn:sap-com:document:sap:soap:functions:mc-style">
+  <wsdl:documentation>
+    <sidl:sidl xmlns:sidl="http://www.sap.com/2007/03/sidl"/>
+  </wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:soap:functions:mc-style">
+      <xsd:complexType name="Zg70ExchangeFaultData">
+        <xsd:sequence>
+          <xsd:element name="FaultText" type="xsd:string"/>
+          <xsd:element name="FaultUrl" type="xsd:string"/>
+          <xsd:element name="FaultDetail" type="tns:Zg70ExchangeLogDataTab"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Zg70ExchangeLogData">
+        <xsd:sequence>
+          <xsd:element name="Severity" type="xsd:string"/>
+          <xsd:element name="Text" type="xsd:string"/>
+          <xsd:element name="Url" type="xsd:string"/>
+          <xsd:element name="Id" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Zg70ExchangeLogDataTab">
+        <xsd:sequence>
+          <xsd:element name="item" type="tns:Zg70ExchangeLogData" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ZFg81VinReceive">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Endcu" type="xsd:string"/>
+            <xsd:element name="Vin" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ZFg81VinReceiveResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Fault" type="tns:Zg70ExchangeFaultData"/>
+            <xsd:element name="Message" type="xsd:string"/>
+            <xsd:element name="Status" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ZFg81VinReceive">
+    <wsdl:part name="parameters" element="tns:ZFg81VinReceive"/>
+  </wsdl:message>
+  <wsdl:message name="ZFg81VinReceiveResponse">
+    <wsdl:part name="parameters" element="tns:ZFg81VinReceiveResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="ZII_G81_SAP_VIN_IN">
+    <wsdl:operation name="ZFg81VinReceive">
+      <wsdl:input message="tns:ZFg81VinReceive"/>
+      <wsdl:output message="tns:ZFg81VinReceiveResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SAP_VIN_IN_bind" type="tns:ZII_G81_SAP_VIN_IN">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="ZFg81VinReceive">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SAP_VIN_IN">
+    <wsdl:port name="SAP_VIN_IN_bind" binding="tns:SAP_VIN_IN_bind">
+      <soap:address location="https://sapdev.Subaru-Europe.be:44300/sap/bc/srt/rfc/sap/zii_g81_sap_vin_in/500/sap_vin_in/sap_vin_in_bind"/>
+    </wsdl:port>
+  </wsdl:service>
 </wsdl:definitions>
