@@ -157,6 +157,7 @@
     <module>jobs/process/I0012_SF_to_SAP_VIN_EndCustomer_update/sf_to_sap_vin_endcustomer_update_job_0.1</module>
     <module>jobs/services/I0012_SF_to_SAP_VIN_EndCustomer_update/sf_vin_update_out_talend_in_0.1</module>
     <module>jobs/process/I0005_SAP_Lead_to_SF_Opportunity/sap_lead_to_sf_opportunity_job_1.10</module>
+    <module>jobs/services/I0005_SAP_Lead_to_SF_Opportunity/sap_lead_out_talend_in_1.10</module>
   </modules>
   <properties>
     <talend.project.name>SUBARU_SAP_SF</talend.project.name>
