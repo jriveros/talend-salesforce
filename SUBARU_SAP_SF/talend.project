@@ -752,6 +752,19 @@
       <relatedItems xmi:id="_ixIdreamEei4cZYoNFZ1CQ" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_ixIdruamEei4cZYoNFZ1CQ" id="_ZOfT0ENBEeih8KkJgV_NKQ" version="1.10" type="services"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_SwFQ0OfjEeiWPvBJn_243g">
+      <baseItem xmi:id="_SwFQ0efjEeiWPvBJn_243g" id="_kherUOfiEeiWPvBJn_243g" version="0.1" type="job"/>
+      <relatedItems xmi:id="_SwFQ0ufjEeiWPvBJn_243g" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_SwFQ0-fjEeiWPvBJn_243g" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_SwFQ1OfjEeiWPvBJn_243g" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_SwFQ1efjEeiWPvBJn_243g" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_SwFQ1ufjEeiWPvBJn_243g" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_SwFQ1-fjEeiWPvBJn_243g" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_SwFQ2OfjEeiWPvBJn_243g" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_SwFQ2efjEeiWPvBJn_243g" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_SwFQ2ufjEeiWPvBJn_243g" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_SwFQ2-fjEeiWPvBJn_243g" id="Mathematical" version="Latest" type="routine"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_OD7-gDfeEei4GOOz00i4JQ" id="org.talend.designer.core.ui.preferences.migration.ChangeMysqlVersionForProjectSetting" breaks="5.2.0" version="5.1.3" status="ok"/>
     <migrationTask xmi:id="_OD7-gTfeEei4GOOz00i4JQ" id="org.talend.designer.core.ui.preferences.migration.ChangeOracleVersionForProjectSetting" breaks="5.2.0" version="5.2.1" status="ok"/>
     <migrationTask xmi:id="_OD7-gjfeEei4GOOz00i4JQ" id="org.talend.designer.maven.ui.ConfigMavenRepositoryRemove" breaks="6.0.1" version="6.0.2" status="ok"/>
