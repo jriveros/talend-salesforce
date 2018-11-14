@@ -54,13 +54,13 @@
 					</xsd:element>
 					<xsd:element minOccurs="0" maxOccurs="1" name="ExteriorPaint" nillable="true" type="xsd:string">
 					</xsd:element>
-					<xsd:element minOccurs="0" maxOccurs="1" name="TradeIn" nillable="true" type="xsd:date">
+					<xsd:element minOccurs="0" maxOccurs="1" name="TradeIn" nillable="true" type="xsd:string">
 					</xsd:element>
 					<xsd:element minOccurs="0" maxOccurs="1" name="Description" nillable="true" type="xsd:string">
 					</xsd:element>
 					<xsd:element minOccurs="0" maxOccurs="1" name="Remarks" nillable="true" type="xsd:string">
 					</xsd:element>
-					<xsd:element minOccurs="0" maxOccurs="1" name="Active" nillable="true" type="xsd:boolean">
+					<xsd:element minOccurs="0" maxOccurs="1" name="Active" nillable="true" type="xsd:string">
 					</xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
