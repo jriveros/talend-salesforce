@@ -12,7 +12,7 @@
     <contextParameter comment="" name="SalesForce_proxy_port" prompt="SalesForce_proxy_port?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_Integer" value=""/>
     <contextParameter comment="" name="SalesForce_proxy_userPassword_password" prompt="SalesForce_proxy_userPassword_password?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_Password" value=""/>
     <contextParameter comment="" name="SalesForce_proxy_userPassword_userId" prompt="SalesForce_proxy_userPassword_userId?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_String" value=""/>
-    <contextParameter comment="" name="SalesForce_sessionDirectory" prompt="SalesForce_sessionDirectory?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_String" value=""/>
+    <contextParameter comment="" name="SalesForce_sessionDirectory" prompt="SalesForce_sessionDirectory?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_String" value="C:\Talend"/>
     <contextParameter comment="" name="SalesForce_timeout" prompt="SalesForce_timeout?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_Integer" value="60000"/>
     <contextParameter comment="" name="SalesForce_userPassword_password" prompt="SalesForce_userPassword_password?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_Password" value="fijLMlBKikm5WOd2eLFrAA=="/>
     <contextParameter comment="" name="SalesForce_userPassword_securityKey" prompt="SalesForce_userPassword_securityKey?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_Password" value="abvSD/5xxQiwfs9G1DfK9IvC03SoBiPEYlXw8rt0OD8="/>
@@ -34,7 +34,7 @@
     <contextParameter comment="" name="SalesForce_proxy_port" prompt="SalesForce_proxy_port?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_Integer" value=""/>
     <contextParameter comment="" name="SalesForce_proxy_userPassword_password" prompt="SalesForce_proxy_userPassword_password?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_Password" value=""/>
     <contextParameter comment="" name="SalesForce_proxy_userPassword_userId" prompt="SalesForce_proxy_userPassword_userId?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_String" value=""/>
-    <contextParameter comment="" name="SalesForce_sessionDirectory" prompt="SalesForce_sessionDirectory?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_String" value=""/>
+    <contextParameter comment="" name="SalesForce_sessionDirectory" prompt="SalesForce_sessionDirectory?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_String" value="C:\Talend"/>
     <contextParameter comment="" name="SalesForce_timeout" prompt="SalesForce_timeout?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_Integer" value="60000"/>
     <contextParameter comment="" name="SalesForce_userPassword_password" prompt="SalesForce_userPassword_password?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_Password" value="gHNsfX16B9H+gufilG2jrg=="/>
     <contextParameter comment="" name="SalesForce_userPassword_securityKey" prompt="SalesForce_userPassword_securityKey?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_Password" value="8HSKOW9ucKwMS2kEARJzkl6Cr1JqGrjCbEHozUehHqc="/>
@@ -56,7 +56,7 @@
     <contextParameter comment="" name="SalesForce_proxy_port" prompt="SalesForce_proxy_port?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_Integer" value=""/>
     <contextParameter comment="" name="SalesForce_proxy_userPassword_password" prompt="SalesForce_proxy_userPassword_password?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_Password" value=""/>
     <contextParameter comment="" name="SalesForce_proxy_userPassword_userId" prompt="SalesForce_proxy_userPassword_userId?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_String" value=""/>
-    <contextParameter comment="" name="SalesForce_sessionDirectory" prompt="SalesForce_sessionDirectory?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_String" value=""/>
+    <contextParameter comment="" name="SalesForce_sessionDirectory" prompt="SalesForce_sessionDirectory?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_String" value="C:\Talend"/>
     <contextParameter comment="" name="SalesForce_timeout" prompt="SalesForce_timeout?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_Integer" value="60000"/>
     <contextParameter comment="" name="SalesForce_userPassword_password" prompt="SalesForce_userPassword_password?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_Password" value="fijLMlBKikm5WOd2eLFrAA=="/>
     <contextParameter comment="" name="SalesForce_userPassword_securityKey" prompt="SalesForce_userPassword_securityKey?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_Password" value="abvSD/5xxQiwfs9G1DfK9IvC03SoBiPEYlXw8rt0OD8="/>
@@ -78,7 +78,7 @@
     <contextParameter comment="" name="SalesForce_proxy_port" prompt="SalesForce_proxy_port?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_Integer" value=""/>
     <contextParameter comment="" name="SalesForce_proxy_userPassword_password" prompt="SalesForce_proxy_userPassword_password?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_Password" value=""/>
     <contextParameter comment="" name="SalesForce_proxy_userPassword_userId" prompt="SalesForce_proxy_userPassword_userId?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_String" value=""/>
-    <contextParameter comment="" name="SalesForce_sessionDirectory" prompt="SalesForce_sessionDirectory?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_String" value=""/>
+    <contextParameter comment="" name="SalesForce_sessionDirectory" prompt="SalesForce_sessionDirectory?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_String" value="C:\Talend"/>
     <contextParameter comment="" name="SalesForce_timeout" prompt="SalesForce_timeout?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_Integer" value="60000"/>
     <contextParameter comment="" name="SalesForce_userPassword_password" prompt="SalesForce_userPassword_password?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_Password" value="fijLMlBKikm5WOd2eLFrAA=="/>
     <contextParameter comment="" name="SalesForce_userPassword_securityKey" prompt="SalesForce_userPassword_securityKey?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_Password" value="abvSD/5xxQiwfs9G1DfK9IvC03SoBiPEYlXw8rt0OD8="/>
@@ -1359,13 +1359,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4b1e8b76-3fba-4c25-92c8-1a656282f2e4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>awQljLbNDBswzFnRa4NCwdAz9q2fdZT20EYan9wgJ4oMAbnDwmhXtSVsQESjq9/ct2C7x8l7Px0L
-oETTBllFDQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_09cd86be-1b04-4d1f-a2a5-14214e3b2710"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qXCsaS4JYlg78KLz4TxKdl2ElE4oRvM+udg6Xq7JUdDs02IrvFH7y91sH4BW3q8hZRLPTKrkQWj6
-oAmwDQgtaA==</DigestValue></Reference></SignedInfo><SignatureValue>TmTrK+0Lw5afTJtKRiFzD6R9t8sKjnZNH4CRhRQ+VYL4z0mytGvKGiQfNyPro+dLXKf+KojCRDUE
-Q1pXcH4j96CnXDokRkfDpfJqXkkemBuwYPekb6/0OkbnojkqyGEAMwUFXV2Dp54TBcxsar+0jlaF
-E8O44y5xJh1OeUrEAR8kYDrlVQ4f1R+zx3mxTBB/HQxvZaHzIUXrRyvj0Rq4DU8eFbJZ+a1KwYyK
-O0S0NR6V4zXFf/8+LzMwQt93tSN2LUPJ0G3Pg8R22jgLhMVuN+l2OUO/WuR0cLYOtdS/PKAHTkmZ
-Yb6u+WVhXUKZxcBMI6ApRaY5qId6KXOtPG9u0g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d09e7dc0-e5b9-449d-b8c8-b3f322c27b1c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dXdQk9kR9F6H6UunXLreGhMO8mRwreHWtWNZth44ag5DDKOlq7EM3FxxFKt7EPYIdRK7fJfv4ALY
+7hZTtXSVig==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_35cfe9ec-5d1b-45a7-9ec1-893a61bfae47"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>BI55EX2v+gTpXCF53bhav89H9bgJgMpfQsuE8l61pUg+mHRYjbgZF4gQbco1uXUQPGJdVPAPfSMI
+ImPbh+uZUA==</DigestValue></Reference></SignedInfo><SignatureValue>U3bx7q2MwO8YTufsQGooBeY6e/rCFh35f+t4wTNck2AWAexnGVQYadrNUNYYu5Q+8MUqqTO+SwpR
+2t0P07k31Wz7qcgypNdsNf1tpZnKMcljdiJ7+Vi1YbkpvUHuGEiATid6nmgsK6EFitFPmeB8ubx6
+KbVbn1ieoGo3Xl/bN1Jl6uhzQhwlRIsB03TDWVoOhSCROuNo6TiGWsNfCjgBvbXQpUkUme6lHP+K
+Zjf56AAUhqAutVx+HOBLELbokyAPOnCACAVwyiNaLsLe2C6T0vNipAVJetKL1+1gsWNG92/7dx6c
+QVRUEvlbxsK3iWPcJ4VsnagRQnp6U63f0zTm1w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1389,4 +1389,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_09cd86be-1b04-4d1f-a2a5-14214e3b2710" Target="#_4b1e8b76-3fba-4c25-92c8-1a656282f2e4"><Timestamp>2018-10-15 16:04:48</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_35cfe9ec-5d1b-45a7-9ec1-893a61bfae47" Target="#_d09e7dc0-e5b9-449d-b8c8-b3f322c27b1c"><Timestamp>2018-11-21 08:42:22</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
