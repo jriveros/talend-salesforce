@@ -4,7 +4,7 @@
     <contextParameter comment="" name="SalesForce_userPassword_userId" prompt="SalesForce_userPassword_userId?" promptNeeded="false" type="id_String" value="it@subaru.it.commdomain" xmi:id="_pWb7ckPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_clientId" prompt="SalesForce_clientId?" promptNeeded="false" type="id_String" value="" xmi:id="_pWb7c0PIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_oauth_tokenFile" prompt="SalesForce_oauth_tokenFile?" promptNeeded="false" type="id_String" value="" xmi:id="_pWb7dEPIEeih8KkJgV_NKQ"/>
-    <contextParameter comment="" name="SalesForce_sessionDirectory" prompt="SalesForce_sessionDirectory?" promptNeeded="false" type="id_String" value="" xmi:id="_pWb7dUPIEeih8KkJgV_NKQ"/>
+    <contextParameter comment="" name="SalesForce_sessionDirectory" prompt="SalesForce_sessionDirectory?" promptNeeded="false" type="id_String" value="C:\Talend" xmi:id="_pWb7dUPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_proxy_port" prompt="SalesForce_proxy_port?" promptNeeded="false" type="id_Integer" value="" xmi:id="_pWb7dkPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_apiVersion" prompt="SalesForce_apiVersion?" promptNeeded="false" type="id_String" value="39.0" xmi:id="_pWb7d0PIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_proxy_userPassword_userId" prompt="SalesForce_proxy_userPassword_userId?" promptNeeded="false" type="id_String" value="" xmi:id="_pWb7eEPIEeih8KkJgV_NKQ"/>
@@ -26,7 +26,7 @@
     <contextParameter comment="" name="SalesForce_userPassword_userId" prompt="SalesForce_userPassword_userId?" promptNeeded="false" type="id_String" value="it@subaru.it.commdomain" xmi:id="_pWb7h0PIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_clientId" prompt="SalesForce_clientId?" promptNeeded="false" type="id_String" value="" xmi:id="_pWb7iEPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_oauth_tokenFile" prompt="SalesForce_oauth_tokenFile?" promptNeeded="false" type="id_String" value="" xmi:id="_pWb7iUPIEeih8KkJgV_NKQ"/>
-    <contextParameter comment="" name="SalesForce_sessionDirectory" prompt="SalesForce_sessionDirectory?" promptNeeded="false" type="id_String" value="" xmi:id="_pWb7ikPIEeih8KkJgV_NKQ"/>
+    <contextParameter comment="" name="SalesForce_sessionDirectory" prompt="SalesForce_sessionDirectory?" promptNeeded="false" type="id_String" value="C:\Talend" xmi:id="_pWb7ikPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_proxy_port" prompt="SalesForce_proxy_port?" promptNeeded="false" type="id_Integer" value="" xmi:id="_pWb7i0PIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_apiVersion" prompt="SalesForce_apiVersion?" promptNeeded="false" type="id_String" value="39.0" xmi:id="_pWb7jEPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_proxy_userPassword_userId" prompt="SalesForce_proxy_userPassword_userId?" promptNeeded="false" type="id_String" value="" xmi:id="_pWb7jUPIEeih8KkJgV_NKQ"/>
@@ -48,7 +48,7 @@
     <contextParameter comment="" name="SalesForce_userPassword_userId" prompt="SalesForce_userPassword_userId?" promptNeeded="false" type="id_String" value="it@subaru.it" xmi:id="_pWb7nEPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_clientId" prompt="SalesForce_clientId?" promptNeeded="false" type="id_String" value="" xmi:id="_pWb7nUPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_oauth_tokenFile" prompt="SalesForce_oauth_tokenFile?" promptNeeded="false" type="id_String" value="" xmi:id="_pWb7nkPIEeih8KkJgV_NKQ"/>
-    <contextParameter comment="" name="SalesForce_sessionDirectory" prompt="SalesForce_sessionDirectory?" promptNeeded="false" type="id_String" value="" xmi:id="_pWb7n0PIEeih8KkJgV_NKQ"/>
+    <contextParameter comment="" name="SalesForce_sessionDirectory" prompt="SalesForce_sessionDirectory?" promptNeeded="false" type="id_String" value="C:\Talend" xmi:id="_pWb7n0PIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_proxy_port" prompt="SalesForce_proxy_port?" promptNeeded="false" type="id_Integer" value="" xmi:id="_pWb7oEPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_apiVersion" prompt="SalesForce_apiVersion?" promptNeeded="false" type="id_String" value="39.0" xmi:id="_pWb7oUPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_proxy_userPassword_userId" prompt="SalesForce_proxy_userPassword_userId?" promptNeeded="false" type="id_String" value="" xmi:id="_pWb7okPIEeih8KkJgV_NKQ"/>
@@ -65,13 +65,13 @@
     <contextParameter comment="" name="SAP_userId" prompt="SAP_userId?" promptNeeded="false" type="id_String" value="BATCH_SF" xmi:id="_pWb7rUPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SAP_userPasswd" prompt="SAP_userPasswd?" promptNeeded="false" type="id_Password" value="7fAoWUEUeyYm2X6Uoatz8sjNKTg6922/" xmi:id="_pWb7rkPIEeih8KkJgV_NKQ"/>
   </talendfile:ContextType>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2f3af841-5d4d-41b3-ae47-2ae71cf19df1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TnnqgECFwWowbK37P1Yaji8O5bV+jKD1rK+5a+i4HjwWoUdO8mUIJq82xt0TcNnHMz+eM9ArFMBI
-r84NBLyS6g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c1c6e8dc-1b08-47ce-b028-1cc722b265ad"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>OWtTi0ZrEtPJbuJygnGMCrami83r2jt5K9BmOKgsqoNl9AEEiVTr2hSpqjI3M/qiac6ZGDcCeJGe
-z3TlVFOocw==</DigestValue></Reference></SignedInfo><SignatureValue>QN+/RSyQKWbxS/3StBeAbfE0LDgH7hpOFITvBYGt2PB9RdD3TEAHBWiZsL0nMSlEfD9e8COSbGk2
-/LXiLVb4Sb3GCkIcTj1cw7QTUWm0bD6mLjijoOCRzVlDmi2F7l7mHz7+o0/ZBeQFbyy107KXB9ob
-w3XUkyfQmkVMoEl6SgUGnZvQ0NeZnJLmBW1j7DNkyM6cow/0fruzKRbe1rcu+M0PxHMlJmrgLgmX
-7RrLbF3sDClFZTWqC5IvIcAAp2OKjEk2fY7mFiNCAABHL+iY18kwmoepvNfMiRn/lDqMuWyF0ewH
-YnRZMfPMMDhc44PpfdlRIQ0qrFHnlAyDtuXnWA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3e5c9596-edb3-4917-a4ee-6831eafe562a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HTdFryawiB/ApxG4lwMqKupNDQz2OMqpX5TGFwRtzw3cI9mTn+IffluNz7E0Ek2iDmiQm1dtu+uh
+hzL/aWLebw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b1d247da-059b-4011-8b94-9db66322873f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8ADV3xsOFNRqcR/IDkptq+oPGVxmvfI/a2HMz/i/5dCPLkv14U0e7s5elTJxNpw6lRjX4S7rrfsK
+PvYd53bvHA==</DigestValue></Reference></SignedInfo><SignatureValue>srz09jM1Kma5LDeiOGbZX9al9W84ceY6ExcVSv/pkSWokWDzH+0xykm9Rr8vHVB31JyZsS4AfpbF
+M0NglwkDqvpz1SB2fBNiz0f/fijYlajB9KKkUFSvADqGg1WpocLNGzdPi6mnHuzcbDy2FWX355ym
+Fpaa4vlf3A8scjFANCITPJFva+rmBgEHa9tUe5Hgu0dysP0eqg4KvgmsDotAuv4xWp5oeOIc4zUc
+h+Z517NY7iCxQ+ANiOKb0uo6Z65L0kEe5cpedXRs0Xz3Z4u1ZGVpBUtn9p4SF8cbrtMmwaYu242y
+CIbjkzF7tNWShUjdNNeC4C98O8ZZKHvfJcAgNA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -95,4 +95,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c1c6e8dc-1b08-47ce-b028-1cc722b265ad" Target="#_2f3af841-5d4d-41b3-ae47-2ae71cf19df1"><Timestamp>2018-10-15 16:04:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b1d247da-059b-4011-8b94-9db66322873f" Target="#_3e5c9596-edb3-4917-a4ee-6831eafe562a"><Timestamp>2018-11-21 08:42:39</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
