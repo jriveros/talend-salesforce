@@ -60,7 +60,7 @@
     <contextParameter comment="" name="sysENVTYPE" prompt="sysENVTYPE?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_String" value="TEST"/>
   </context>
   <parameters>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="4"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
@@ -655,7 +655,7 @@
     <elementParameter field="TEXT" name="CORRELATION_VALUE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="ENABLE_CXF_MESSAGE_GZIP" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
-    <elementParameter field="TEXT" name="ESB_ENDPOINT" value="&quot;https://subaruitalia.my.salesforce.com/services/Soap/class/SAPtoSF&quot;"/>
+    <elementParameter field="TEXT" name="ESB_ENDPOINT" value="&quot;https://subaruitalia--Test.cs108.my.salesforce.com/services/Soap/u/44.0/00D1l0000008d27&quot;"/>
     <elementParameter field="TEXT" name="ENDPOINT" show="false" value="&quot;C:/Users/jezie/workspace/.repositories/485151994/master/SUBARU_SAP_SF/services/I0002_SAP_BP_to_SF_Account/SF_Account_in_1.0.wsdl&quot;"/>
     <elementParameter field="TEXT" name="SERVICE_NS" show="false" value="http://soap.sforce.com/schemas/class/SAPtoSF"/>
     <elementParameter field="TEXT" name="SERVICE_NAME" show="false" value="SAPtoSFService"/>
@@ -1106,23 +1106,20 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="credentialsRow">
-        <nodes name="userId" outgoingConnections="//@node.23/@nodeData/@connections.0" type="id_String" xpath="credentialsRow/userId"/>
-        <nodes name="password" outgoingConnections="//@node.23/@nodeData/@connections.1" type="id_String" xpath="credentialsRow/password"/>
-        <nodes name="token" outgoingConnections="//@node.23/@nodeData/@connections.2" type="id_String" xpath="credentialsRow/token"/>
+        <nodes name="userId" type="id_String" xpath="credentialsRow/userId"/>
+        <nodes name="password" type="id_String" xpath="credentialsRow/password"/>
+        <nodes name="token" type="id_String" xpath="credentialsRow/token"/>
       </inputTrees>
       <outputTrees name="loginRequestRow">
         <nodes expression="" name="payload" type="id_Document" xpath="loginRequestRow/payload">
           <children main="true" name="tns:login" type="id_String" xpath="loginRequestRow.payload:/tns:login" xsi:type="TalendXMLMap:OutputTreeNode">
             <children defaultValue="urn:partner.soap.sforce.com" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="loginRequestRow.payload:/tns:login/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="credentialsRow.userId" incomingConnections="//@node.23/@nodeData/@connections.0" loop="true" name="tns:username" type="id_String" xpath="loginRequestRow.payload:/tns:login/tns:username" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="credentialsRow.password + credentialsRow.token" incomingConnections="//@node.23/@nodeData/@connections.1 //@node.23/@nodeData/@connections.2" name="tns:password" type="id_String" xpath="loginRequestRow.payload:/tns:login/tns:password" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="&quot;it@subaru.it.test&quot;" loop="true" name="tns:username" type="id_String" xpath="loginRequestRow.payload:/tns:login/tns:username" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="&quot;Subaru_2017c25fFF9Eu14JqGIFCJHJTWGXy&quot;" name="tns:password" type="id_String" xpath="loginRequestRow.payload:/tns:login/tns:password" xsi:type="TalendXMLMap:OutputTreeNode"/>
           </children>
         </nodes>
       </outputTrees>
       <varTables minimized="true" name="Var"/>
-      <connections source="//@node.23/@nodeData/@inputTrees.0/@nodes.0" target="//@node.23/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.23/@nodeData/@inputTrees.0/@nodes.1" target="//@node.23/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.23/@nodeData/@inputTrees.0/@nodes.2" target="//@node.23/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="640">
@@ -1349,13 +1346,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7eca7409-9f82-41f4-8d94-099a5f387ac4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ddA5WvokmadmzeSGCtoat9IzSBJHsghKwCMuGNZyQ9UPB4PKohZ1SL0PEEB3h5CeMlekjVTYpbT/
-+JZNpkb0mQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_047b45cd-b2db-494e-91b8-e4873db96142"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>UXlmN/1qYED6aDcNDAc6831oecwFsY67K66kFVR/JgUTGMOLc7c6plq/Uwwb5hxRIO4yWRYabhg3
-jO+UsWLQ2Q==</DigestValue></Reference></SignedInfo><SignatureValue>4dBHNSnnHXU04De+2NZmYHyjf73KyhI74ACvyv7WWpdVF/jQ3pIiEXNsQusGADTAq0GdVxIZGUAu
-md6LhznZquElp4J2c7IrK3/oV+HLaXMCKau9Mq4483L/57fr3G6J1906BZ9t7lGsW3B6VoTP8amo
-fJqmJZFo6B23NNGHyoYpvXNDWTQMyawZEJQrpBXGv6/PcWbhJ9KZpmiTdq1RfWzn4Q5vfKIzZkPq
-PBQqPcfwm5asdP4wsS677Zuah/xqA7CK+mw1fg549uxLZymlT+H3UMMwRSp2KDdOvtvsCxN97i2G
-jMd3VZbBAagOux/MXVd5iwUi3y0q6sYdmy2JbA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6b3bfadc-c1fc-45a8-afb3-79c5210f6300"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rTymsBq749Nm1m2xt1QppZXSfrh6tmtG7DjyQvEQ1ehNYAdj2D9GlArGO2YvtYBLvq1w3wWKjPCa
+RWAZkIkRlQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4318d568-cdc9-4d47-bdf0-951dea665e55"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>84KU/wVap3F6mHiBRMccpIGQv8vhTtC6iSIee+sRsQqberJf9BjDy96xE0PJfxTKO9DrZo+YOMJi
+7jX9g83INA==</DigestValue></Reference></SignedInfo><SignatureValue>HdFLHaSvJiJBB84UNJC6vO/d/xJtW44xekGmW9XzLofCt7s1FBMti3R5ursonnEFfz2JMrxsNPtq
+aUy1Fe+l4FsSsJYQbO+Nhl42L4UkCS2qS5WS2XzAb95PY5oooUQpa9j+qrI4cuhLCijFXRXju8Z5
+XEyDD9PuTB/JSRUQEVu+mnElgxHNNeqT5iTGTQNnyw8M/5rUHtYRt1S+pGiJrifegQovhSHOIsYp
+/l8eSIWFXb/r+56W84lidADdVXsEgipNY3PIYv85R6Te7zYLuHnkHL43YhpJaOs5g3pTTpiZOqso
+T0KKYWjOZYyRHlejL9OwvM1YUA41XpPJhNdatg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1379,4 +1376,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_047b45cd-b2db-494e-91b8-e4873db96142" Target="#_7eca7409-9f82-41f4-8d94-099a5f387ac4"><Timestamp>2018-11-21 08:42:29</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4318d568-cdc9-4d47-bdf0-951dea665e55" Target="#_6b3bfadc-c1fc-45a8-afb3-79c5210f6300"><Timestamp>2018-11-23 11:48:53</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
