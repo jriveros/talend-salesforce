@@ -796,7 +796,7 @@
       <relatedItems xmi:id="_eFW5a-jHEeiDpo0HWtqG3A" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_eFW5bOjHEeiDpo0HWtqG3A" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_eFW5bejHEeiDpo0HWtqG3A" id="TalendStringUtil" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_eFW5bujHEeiDpo0HWtqG3A" id="_gjgB4MueEeiONb5zD3daLQ" version="1.2" type="services"/>
+      <relatedItems xmi:id="_pzJBwPFwEeivarVl0KwM_A" id="_gjgB4MueEeiONb5zD3daLQ" version="1.3" type="services"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_zzL1gOl8EeiiLe5a8Vvbbw">
       <baseItem xmi:id="_zzL1gel8EeiiLe5a8Vvbbw" id="_eLQq0Ol8EeiiLe5a8Vvbbw" version="0.1" type="job"/>
