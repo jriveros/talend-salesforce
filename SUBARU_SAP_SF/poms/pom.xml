@@ -169,6 +169,7 @@
     <module>jobs/services/I0007_SAP_Followup_to_SF_Task/sap_followup_out_talend_in_0.2</module>
     <module>jobs/services/I0006_SAP_TestDrive_to_SF_Test_Drive__c/sap_testdrive_out_talend_in_0.2</module>
     <module>jobs/services/I0005_SAP_Lead_to_SF_Opportunity/sap_lead_out_talend_in_1.11</module>
+    <module>jobs/services/I0003_SAP_fetch_BP_from_SF/sap_fetch_bp_from_sf_1.7</module>
   </modules>
   <properties>
     <talend.project.name>SUBARU_SAP_SF</talend.project.name>
