@@ -751,7 +751,7 @@
       <relatedItems xmi:id="_ixIdq-amEei4cZYoNFZ1CQ" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_ixIdrOamEei4cZYoNFZ1CQ" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_ixIdreamEei4cZYoNFZ1CQ" id="TalendStringUtil" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_ixIdruamEei4cZYoNFZ1CQ" id="_ZOfT0ENBEeih8KkJgV_NKQ" version="1.10" type="services"/>
+      <relatedItems xmi:id="_RZuU8PFyEeivarVl0KwM_A" id="_ZOfT0ENBEeih8KkJgV_NKQ" version="1.11" type="services"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_SwFQ0OfjEeiWPvBJn_243g">
       <baseItem xmi:id="_SwFQ0efjEeiWPvBJn_243g" id="_kherUOfiEeiWPvBJn_243g" version="0.1" type="job"/>
