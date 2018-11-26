@@ -165,6 +165,7 @@
     <module>jobs/services/I0010_SAP_VIN_to_SF_Asset/sap_vin_out_talend_in_1.2</module>
     <module>jobs/process/I0011_SAP_TradeIn_to_SF_Auto_possedute__c/i0011_sap_tradein_to_sf_auto_possedute__c_job_0.1</module>
     <module>jobs/services/I0010_SAP_VIN_to_SF_Asset/sap_vin_out_talend_in_1.3</module>
+    <module>jobs/services/I0008_SAP_Quotations_to_SF_Quote/sap_quotations_out_talend_in_0.5</module>
   </modules>
   <properties>
     <talend.project.name>SUBARU_SAP_SF</talend.project.name>
