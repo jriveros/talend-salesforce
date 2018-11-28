@@ -195,6 +195,7 @@
     <elementParameter field="TEXT" name="EXCHANGE_TIMEOUT" value="50"/>
     <elementParameter field="TEXT" name="MAX_PARALLEL_REQUESTS" value="1000"/>
     <elementParameter field="TEXT" name="REQUEST_PROCESSING_TIMEOUT" value="120"/>
+    <elementParameter field="TEXT" name="LABEL" value="SAP_TradeIn_Request"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tESBProviderRequest_1">
       <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
@@ -942,6 +943,7 @@
   <node componentName="tESBProviderResponse" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tESBProviderResponse_1"/>
     <elementParameter field="TABLE" name="SERVICE_ACTIVITY_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="SAP_TradeIn_Response"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tESBProviderResponse_1">
       <column comment="" key="false" length="0" name="message" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -980,7 +982,7 @@
       <column defaultValue="" key="false" length="3" name="code" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="288">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_4"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -1037,7 +1039,7 @@
       <column defaultValue="" key="false" length="3" name="code" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="15" offsetLabelY="0" posX="896" posY="288">
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="15" offsetLabelY="0" posX="864" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_4"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
@@ -1091,7 +1093,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tESBProviderFault_2"/>
     <elementParameter field="TEXT" name="ESB_FAULT_TITLE" value="&quot;Error Catcher&quot;"/>
     <elementParameter field="TABLE" name="SERVICE_ACTIVITY_CUSTOM_PROPERTIES" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="SAP_VIN_to_SF_Fault"/>
+    <elementParameter field="TEXT" name="LABEL" value="SAP_TradeIn_to_SF_Fault"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tESBProviderFault_2">
       <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
@@ -1226,13 +1228,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4449bf3c-ebcc-40d9-9dd1-75660fe3c5da"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Q5S4YBqHmOkiA+lO2liPgOZunmbbVxuKG0MFtERTb+D+18heZPhd1+QgczwDOmRNCghFawaDjjuq
-8Ze3EDDCFw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_424eaa88-511e-4647-aea2-b1e999c015e4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rcB6DSsMbaJNO7kKuI9vjEmokgQrAKew0H/i2S6oizPKAHnpQJZ8XUUyMaVLiTwRL/6hbHdcLIIe
-Sd8fKUcZGQ==</DigestValue></Reference></SignedInfo><SignatureValue>obbaMhKX2y7HCxNAF0mIWg2CSRXvCzkRWoV9DHZrETlfNHvhE0ROFqlwfzxCYpW/c8PX48lOc6C5
-4zPXXvJFGInZVjRYWP3RO84lTTm7IGXjPwPZ6o6ctfCrZjt1ozRZtAILRmO/yQECv5s58u0fMbVb
-e4cRJSQdXRxQdlIyS0yYfUNxA4nkLh14JBhDa1qubLmEOwgr1d/3GzfD0+MSYYJbugMR2e4Tuhj7
-nURwHOrdpEKyPyrd84BEzei5RSXmImaTv/lTxCYcsug116GODR6Yb2P0Owl9zbWupHCZu0lVTLr/
-YSN+bNnNGIrPzbfrXS2votMrqtd1DaAI2B8+qA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7e4a5838-190a-490f-a86e-6cb2d7114e51"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>OFGNDk5DwwUcLsXuUGN5ndf+9BTIniweA9JLqJtWVWow9y4rjrCaS09pi+lgTxmO9dfgwfHTOYkR
+No1OfAr05Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7459bf83-e2b2-4e66-b785-5a9acc413248"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6crjV9SV96TN7L9n+TgFYYwYLqd0rpmeFPulfdXFoosiZQZAGqZGz8/jthO1GXg4RTmlVt0CzWtX
+o2vRqT/1rw==</DigestValue></Reference></SignedInfo><SignatureValue>wG5JcvzccFo/hLlJ60hGCy4p3yULVlFM67WQwn1Au6iTJKzeol92xyp4CX/acVzcjskDywOkQg4b
+5MSXGMC4/Ju38alMQQ57kdJnzrGwth95KhhjMmSDE2B+IP26d2HWxz8DNbGqIugdKV5Xez64lEyd
+B79QTjnv9epnnpMwIa9DX3hcvsTFcWBbZ0q3EncmR/l/9wwjMtkMsrgsyb9ReU+KHWTecolAWI6j
+MnGj99D7U4hlXDn5JmhIKpTt5z/kJRDVsdFGCSrMk4wAoZvp/BcQjiIGOw4xjbMlV7SPRiNiwZl1
+eiksVRlZwO5xh+ma2NE1o6dzQcpUyA3+IFB0Xw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1256,4 +1258,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_424eaa88-511e-4647-aea2-b1e999c015e4" Target="#_4449bf3c-ebcc-40d9-9dd1-75660fe3c5da"><Timestamp>2018-11-28 10:43:04</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7459bf83-e2b2-4e66-b785-5a9acc413248" Target="#_7e4a5838-190a-490f-a86e-6cb2d7114e51"><Timestamp>2018-11-28 11:19:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
