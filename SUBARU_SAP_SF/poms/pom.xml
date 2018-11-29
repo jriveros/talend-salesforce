@@ -175,6 +175,7 @@
     <module>jobs/process/I0010_SAP_VIN_to_SF_Asset/sap_vin_to_sf_asset_job_1.3</module>
     <module>jobs/process/I0009_SAP_Order_to_SF_Order/sap_order_to_sf_order_job_1.0</module>
     <module>jobs/process/I0008_SAP_Quotations_to_SF_Quote/sap_quotations_to_sf_quote_job_1.0</module>
+    <module>jobs/process/I0007_SAP_Followup_to_SF_Task/sap_followup_to_sf_task_job_1.0</module>
   </modules>
   <properties>
     <talend.project.name>SUBARU_SAP_SF</talend.project.name>
