@@ -173,6 +173,7 @@
     <module>jobs/process/I0012_SF_to_SAP_VIN_EndCustomer_update/sf_to_sap_vin_endcustomer_update_job_1.0</module>
     <module>jobs/process/I0011_SAP_TradeIn_to_SF_Auto_possedute__c/sap_tradein_to_sf_auto_possedute__c_job_1.0</module>
     <module>jobs/process/I0010_SAP_VIN_to_SF_Asset/sap_vin_to_sf_asset_job_1.3</module>
+    <module>jobs/process/I0009_SAP_Order_to_SF_Order/sap_order_to_sf_order_job_1.0</module>
   </modules>
   <properties>
     <talend.project.name>SUBARU_SAP_SF</talend.project.name>
