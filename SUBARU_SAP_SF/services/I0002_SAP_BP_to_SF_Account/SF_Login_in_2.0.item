@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services" xmi:version="2.0">
+  <Services:ServiceConnection WSDLPath="C:/Users/sba/OneDrive - Hicron Sp. z o.o/Documents/_prj/Subaru - SF/intefaces/messages/partner.wsdl" servicePort="_rUizMDgdEeiWV5j5kWJyXA" xmi:id="_rTfqUDgdEeiWV5j5kWJyXA"/>
+  <Services:ServicePort id="_rUgW8DgdEeiWV5j5kWJyXA" name="Soap" serviceOperation="_rUizMTgdEeiWV5j5kWJyXA _rUizMjgdEeiWV5j5kWJyXA _rUizMzgdEeiWV5j5kWJyXA _rUizNDgdEeiWV5j5kWJyXA _rUizNTgdEeiWV5j5kWJyXA _rUizNjgdEeiWV5j5kWJyXA _rUizNzgdEeiWV5j5kWJyXA _rUizODgdEeiWV5j5kWJyXA _rUizOTgdEeiWV5j5kWJyXA _rUizOjgdEeiWV5j5kWJyXA _rUizOzgdEeiWV5j5kWJyXA _rUizPDgdEeiWV5j5kWJyXA _rUizPTgdEeiWV5j5kWJyXA _rUizPjgdEeiWV5j5kWJyXA _rUizPzgdEeiWV5j5kWJyXA _rUizQDgdEeiWV5j5kWJyXA _rUizQTgdEeiWV5j5kWJyXA _rUizQjgdEeiWV5j5kWJyXA _rUizQzgdEeiWV5j5kWJyXA _rUizRDgdEeiWV5j5kWJyXA _rUizRTgdEeiWV5j5kWJyXA _rUizRjgdEeiWV5j5kWJyXA _rUizRzgdEeiWV5j5kWJyXA _rUizSDgdEeiWV5j5kWJyXA _rUizSTgdEeiWV5j5kWJyXA _rUizSjgdEeiWV5j5kWJyXA _rUizSzgdEeiWV5j5kWJyXA _rUizTDgdEeiWV5j5kWJyXA _rUizTTgdEeiWV5j5kWJyXA _rUizTjgdEeiWV5j5kWJyXA _rUizTzgdEeiWV5j5kWJyXA _rUizUDgdEeiWV5j5kWJyXA _rUizUTgdEeiWV5j5kWJyXA _rUizUjgdEeiWV5j5kWJyXA _rUizUzgdEeiWV5j5kWJyXA _rUizVDgdEeiWV5j5kWJyXA _rUizVTgdEeiWV5j5kWJyXA _rUizVjgdEeiWV5j5kWJyXA _rUizVzgdEeiWV5j5kWJyXA _rUizWDgdEeiWV5j5kWJyXA _rUizWTgdEeiWV5j5kWJyXA _rUizWjgdEeiWV5j5kWJyXA _rUizWzgdEeiWV5j5kWJyXA _rUizXDgdEeiWV5j5kWJyXA _rUizXTgdEeiWV5j5kWJyXA _rUizXjgdEeiWV5j5kWJyXA _rUizXzgdEeiWV5j5kWJyXA _rUizYDgdEeiWV5j5kWJyXA _rUizYTgdEeiWV5j5kWJyXA _rUizYjgdEeiWV5j5kWJyXA _rUizYzgdEeiWV5j5kWJyXA _rUizZDgdEeiWV5j5kWJyXA _rUizZTgdEeiWV5j5kWJyXA _rUizZjgdEeiWV5j5kWJyXA _rUizZzgdEeiWV5j5kWJyXA _rUizaDgdEeiWV5j5kWJyXA _rUizaTgdEeiWV5j5kWJyXA _rUizajgdEeiWV5j5kWJyXA _rUizazgdEeiWV5j5kWJyXA _rUizbDgdEeiWV5j5kWJyXA _rUizbTgdEeiWV5j5kWJyXA" xmi:id="_rUizMDgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Login to the Salesforce.com SOAP Api" id="_rUgW8TgdEeiWV5j5kWJyXA" label="login" name="login" xmi:id="_rUizMTgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Describe an sObject" id="_rUgW8jgdEeiWV5j5kWJyXA" label="describeSObject" name="describeSObject" xmi:id="_rUizMjgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Describe multiple sObjects (upto 100)" id="_rUg-ADgdEeiWV5j5kWJyXA" label="describeSObjects" name="describeSObjects" xmi:id="_rUizMzgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Describe the Global state" id="_rUg-ATgdEeiWV5j5kWJyXA" label="describeGlobal" name="describeGlobal" xmi:id="_rUizNDgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Describe all the data category groups available for a given set of types" id="_rUg-AjgdEeiWV5j5kWJyXA" label="describeDataCategoryGroups" name="describeDataCategoryGroups" xmi:id="_rUizNTgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Describe the data category group structures for a given set of pair of types and data category group name" id="_rUg-AzgdEeiWV5j5kWJyXA" label="describeDataCategoryGroupStructures" name="describeDataCategoryGroupStructures" xmi:id="_rUizNjgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Describes your Knowledge settings, such as if knowledgeEnabled is on or off, its default language and supported languages" id="_rUg-BDgdEeiWV5j5kWJyXA" label="describeKnowledgeSettings" name="describeKnowledgeSettings" xmi:id="_rUizNzgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Describe the items in an AppMenu" id="_rUg-BTgdEeiWV5j5kWJyXA" label="describeAppMenu" name="describeAppMenu" xmi:id="_rUizODgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Describe Gloal and Themes" id="_rUg-BjgdEeiWV5j5kWJyXA" label="describeGlobalTheme" name="describeGlobalTheme" xmi:id="_rUizOTgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Describe Themes" id="_rUg-BzgdEeiWV5j5kWJyXA" label="describeTheme" name="describeTheme" xmi:id="_rUizOjgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Describe the layout of the given sObject or the given actionable global page." id="_rUg-CDgdEeiWV5j5kWJyXA" label="describeLayout" name="describeLayout" xmi:id="_rUizOzgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Describe the layout of the SoftPhone" id="_rUg-CTgdEeiWV5j5kWJyXA" label="describeSoftphoneLayout" name="describeSoftphoneLayout" xmi:id="_rUizPDgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Describe the search view of an sObject" id="_rUg-CjgdEeiWV5j5kWJyXA" label="describeSearchLayouts" name="describeSearchLayouts" xmi:id="_rUizPTgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Describe a list of entity names that reflects the current user's searchable entities" id="_rUg-CzgdEeiWV5j5kWJyXA" label="describeSearchableEntities" name="describeSearchableEntities" xmi:id="_rUizPjgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Describe a list of objects representing the order and scope of objects on a users search result page" id="_rUg-DDgdEeiWV5j5kWJyXA" label="describeSearchScopeOrder" name="describeSearchScopeOrder" xmi:id="_rUizPzgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Describe the compact layouts of the given sObject" id="_rUg-DTgdEeiWV5j5kWJyXA" label="describeCompactLayouts" name="describeCompactLayouts" xmi:id="_rUizQDgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Describe the Path Assistants for the given sObject and optionally RecordTypes" id="_rUg-DjgdEeiWV5j5kWJyXA" label="describePathAssistants" name="describePathAssistants" xmi:id="_rUizQTgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Describe the approval layouts of the given sObject" id="_rUg-DzgdEeiWV5j5kWJyXA" label="describeApprovalLayout" name="describeApprovalLayout" xmi:id="_rUizQjgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Describe the ListViews as SOQL metadata for the generation of SOQL." id="_rUg-EDgdEeiWV5j5kWJyXA" label="describeSoqlListViews" name="describeSoqlListViews" xmi:id="_rUizQzgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Execute the specified list view and return the presentation-ready results." id="_rUg-ETgdEeiWV5j5kWJyXA" label="executeListView" name="executeListView" xmi:id="_rUizRDgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Describe the ListViews of a SObject as SOQL metadata for the generation of SOQL." id="_rUg-EjgdEeiWV5j5kWJyXA" label="describeSObjectListViews" name="describeSObjectListViews" xmi:id="_rUizRTgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Describe the tabs that appear on a users page" id="_rUg-EzgdEeiWV5j5kWJyXA" label="describeTabs" name="describeTabs" xmi:id="_rUizRjgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Describe all tabs available to a user" id="_rUg-FDgdEeiWV5j5kWJyXA" label="describeAllTabs" name="describeAllTabs" xmi:id="_rUizRzgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Describe the primary compact layouts for the sObjects requested" id="_rUg-FTgdEeiWV5j5kWJyXA" label="describePrimaryCompactLayouts" name="describePrimaryCompactLayouts" xmi:id="_rUizSDgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Create a set of new sObjects" id="_rUg-FjgdEeiWV5j5kWJyXA" label="create" name="create" xmi:id="_rUizSTgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Update a set of sObjects" id="_rUg-FzgdEeiWV5j5kWJyXA" label="update" name="update" xmi:id="_rUizSjgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Update or insert a set of sObjects based on object id" id="_rUg-GDgdEeiWV5j5kWJyXA" label="upsert" name="upsert" xmi:id="_rUizSzgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Merge and update a set of sObjects based on object id" id="_rUg-GTgdEeiWV5j5kWJyXA" label="merge" name="merge" xmi:id="_rUizTDgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Delete a set of sObjects" id="_rUg-GjgdEeiWV5j5kWJyXA" label="delete" name="delete" xmi:id="_rUizTTgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Undelete a set of sObjects" id="_rUg-GzgdEeiWV5j5kWJyXA" label="undelete" name="undelete" xmi:id="_rUizTjgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Empty a set of sObjects from the recycle bin" id="_rUg-HDgdEeiWV5j5kWJyXA" label="emptyRecycleBin" name="emptyRecycleBin" xmi:id="_rUizTzgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Get a set of sObjects" id="_rUg-HTgdEeiWV5j5kWJyXA" label="retrieve" name="retrieve" xmi:id="_rUizUDgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Submit an entity to a workflow process or process a workitem" id="_rUhlEDgdEeiWV5j5kWJyXA" label="process" name="process" xmi:id="_rUizUTgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="convert a set of leads" id="_rUhlETgdEeiWV5j5kWJyXA" label="convertLead" name="convertLead" xmi:id="_rUizUjgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Logout the current user, invalidating the current session." id="_rUhlEjgdEeiWV5j5kWJyXA" label="logout" name="logout" xmi:id="_rUizUzgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Logs out and invalidates session ids" id="_rUhlEzgdEeiWV5j5kWJyXA" label="invalidateSessions" name="invalidateSessions" xmi:id="_rUizVDgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Get the IDs for deleted sObjects" id="_rUhlFDgdEeiWV5j5kWJyXA" label="getDeleted" name="getDeleted" xmi:id="_rUizVTgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Get the IDs for updated sObjects" id="_rUhlFTgdEeiWV5j5kWJyXA" label="getUpdated" name="getUpdated" xmi:id="_rUizVjgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Create a Query Cursor" id="_rUhlFjgdEeiWV5j5kWJyXA" label="query" name="query" xmi:id="_rUizVzgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Create a Query Cursor, including deleted sObjects" id="_rUhlFzgdEeiWV5j5kWJyXA" label="queryAll" name="queryAll" xmi:id="_rUizWDgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Gets the next batch of sObjects from a query" id="_rUhlGDgdEeiWV5j5kWJyXA" label="queryMore" name="queryMore" xmi:id="_rUizWTgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Search for sObjects" id="_rUhlGTgdEeiWV5j5kWJyXA" label="search" name="search" xmi:id="_rUizWjgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Gets server timestamp" id="_rUhlGjgdEeiWV5j5kWJyXA" label="getServerTimestamp" name="getServerTimestamp" xmi:id="_rUizWzgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Set a user's password" id="_rUhlGzgdEeiWV5j5kWJyXA" label="setPassword" name="setPassword" xmi:id="_rUizXDgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Change the current user's password" id="_rUhlHDgdEeiWV5j5kWJyXA" label="changeOwnPassword" name="changeOwnPassword" xmi:id="_rUizXTgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Reset a user's password" id="_rUhlHTgdEeiWV5j5kWJyXA" label="resetPassword" name="resetPassword" xmi:id="_rUizXjgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Returns standard information relevant to the current user" id="_rUhlHjgdEeiWV5j5kWJyXA" label="getUserInfo" name="getUserInfo" xmi:id="_rUizXzgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Delete a set of sObjects by example. The passed SOBject is a template for the object to delete" id="_rUhlHzgdEeiWV5j5kWJyXA" label="deleteByExample" name="deleteByExample" xmi:id="_rUizYDgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Send existing draft EmailMessage" id="_rUhlIDgdEeiWV5j5kWJyXA" label="sendEmailMessage" name="sendEmailMessage" xmi:id="_rUizYTgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Send outbound email" id="_rUhlITgdEeiWV5j5kWJyXA" label="sendEmail" name="sendEmail" xmi:id="_rUizYjgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Perform a template merge on one or more blocks of text." id="_rUhlIjgdEeiWV5j5kWJyXA" label="renderEmailTemplate" name="renderEmailTemplate" xmi:id="_rUizYzgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Perform a template merge using an email template stored in the database." id="_rUhlIzgdEeiWV5j5kWJyXA" label="renderStoredEmailTemplate" name="renderStoredEmailTemplate" xmi:id="_rUizZDgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Perform a series of predefined actions such as quick create or log a task" id="_rUhlJDgdEeiWV5j5kWJyXA" label="performQuickActions" name="performQuickActions" xmi:id="_rUizZTgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Describe the details of a series of quick actions" id="_rUhlJTgdEeiWV5j5kWJyXA" label="describeQuickActions" name="describeQuickActions" xmi:id="_rUizZjgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Describe the details of a series of quick actions available for the given contextType" id="_rUhlJjgdEeiWV5j5kWJyXA" label="describeAvailableQuickActions" name="describeAvailableQuickActions" xmi:id="_rUizZzgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Retrieve the template sobjects, if appropriate, for the given quick action names in a given context" id="_rUhlJzgdEeiWV5j5kWJyXA" label="retrieveQuickActionTemplates" name="retrieveQuickActionTemplates" xmi:id="_rUizaDgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Retrieve the template sobjects, if appropriate, for the given quick action names in a given contexts when used a mass quick action" id="_rUhlKDgdEeiWV5j5kWJyXA" label="retrieveMassQuickActionTemplates" name="retrieveMassQuickActionTemplates" xmi:id="_rUizaTgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Describe visualforce for an org" id="_rUhlKTgdEeiWV5j5kWJyXA" label="describeVisualForce" name="describeVisualForce" xmi:id="_rUizajgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Find duplicates for a set of sObjects" id="_rUhlKjgdEeiWV5j5kWJyXA" label="findDuplicates" name="findDuplicates" xmi:id="_rUizazgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Find duplicates for a set of ids" id="_rUhlKzgdEeiWV5j5kWJyXA" label="findDuplicatesByIds" name="findDuplicatesByIds" xmi:id="_rUizbDgdEeiWV5j5kWJyXA"/>
+  <Services:ServiceOperation documentation="Return the renameable nouns from the server for use in presentation using the salesforce grammar engine" id="_rUhlLDgdEeiWV5j5kWJyXA" label="describeNouns" name="describeNouns" xmi:id="_rUizbTgdEeiWV5j5kWJyXA"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_54f3f1c1-d76d-4d30-9212-4396879333b4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TpFLxGC7xg2SohR1ia5Ka6KDSUrE/KPYE0928NtFvN7FeTCq7hOI2xHLmGoCrDBC58sOxR/dv3Dj
+a8ZyhuDiOQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_046a1d5d-3cc6-409b-a0a3-285d4daf17e5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>H1jR/1mSNxIy6JDziksqM0V+SL3Z8SoW8lukMCRY/wlBSPG3KUZV6U1i+1RWC5WlS1PudwcF1e6B
+Q1K7bt37kA==</DigestValue></Reference></SignedInfo><SignatureValue>XE8GFmVCf2E5H/R1AbDtKsQFOfv6xFq6iJ8Gj/k1IxSkcjjycg1uSMLRfe9qLs7uoJ9SqLi9UuMX
+R0jmiSAzLX3O4n9T953UUZ8WkzN2C/IcGJmAi3pg8co2q08gWr/pxB2uUcrrEbNp3v1jIpS+8oHL
+yxum7r1daJUhyXvLOF2u+OSgoy/vKCP3vv7pBYmMv0FfYl97NhQEJr3yHm4z+hjXzLEPwKr+6tP1
+PkvhiGp/zLV87V60cg0tXrN1I/3NrVH3o9k1rzxU/VoMe3ju0OprGII8hcTLqcp/iBIHWGychP3p
+K3a6AYdL4Bv+mf0fXuBiYJRu98KYZgErCi3j6g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_046a1d5d-3cc6-409b-a0a3-285d4daf17e5" Target="#_54f3f1c1-d76d-4d30-9212-4396879333b4"><Timestamp>2018-11-29 11:38:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
