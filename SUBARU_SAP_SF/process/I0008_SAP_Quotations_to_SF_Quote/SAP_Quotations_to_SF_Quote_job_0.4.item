@@ -3,13 +3,13 @@
     <contextParameter comment="" name="SalesForce_apiVersion" prompt="SalesForce_apiVersion?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_String" value="39.0"/>
     <contextParameter comment="" name="SalesForce_clientId" prompt="SalesForce_clientId?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_String" value=""/>
     <contextParameter comment="" name="SalesForce_endpoint" prompt="SalesForce_endpoint?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_String" value="https://login.salesforce.com/services/Soap/c/43.0/0DF0O000000GG0g"/>
-    <contextParameter comment="" name="SalesForce_I0002_customAPI" prompt="SalesForce_I0002_customAPI?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_String" value="?"/>
+    <contextParameter comment="" name="SalesForce_I0002_customAPI" prompt="SalesForce_I0002_customAPI?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_String" value="https://cs89.salesforce.com/services/Soap/class/SAPtoSF"/>
     <contextParameter comment="" name="SalesForce_oauth_callbackHost" prompt="SalesForce_oauth_callbackHost?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_String" value=""/>
     <contextParameter comment="" name="SalesForce_oauth_callbackPort" prompt="SalesForce_oauth_callbackPort?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_Integer" value=""/>
     <contextParameter comment="" name="SalesForce_oauth_clientId" prompt="SalesForce_oauth_clientId?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_String" value=""/>
     <contextParameter comment="" name="SalesForce_oauth_clientSecret" prompt="SalesForce_oauth_clientSecret?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_Password" value=""/>
     <contextParameter comment="" name="SalesForce_oauth_tokenFile" prompt="SalesForce_oauth_tokenFile?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_String" value=""/>
-    <contextParameter comment="" name="SalesForce_OwnerID" prompt="SalesForce_OwnerID?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_String" value="?"/>
+    <contextParameter comment="" name="SalesForce_OwnerID" prompt="SalesForce_OwnerID?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_String" value="0050O000007y2tHQAQ"/>
     <contextParameter comment="" name="SalesForce_proxy_host" prompt="SalesForce_proxy_host?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_String" value=""/>
     <contextParameter comment="" name="SalesForce_proxy_port" prompt="SalesForce_proxy_port?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_Integer" value=""/>
     <contextParameter comment="" name="SalesForce_proxy_userPassword_password" prompt="SalesForce_proxy_userPassword_password?" promptNeeded="false" repositoryContextId="_JvmscDfnEeiIvauO6eCPcA" type="id_Password" value=""/>
@@ -2397,13 +2397,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_375aceab-485c-43b6-977b-c6640cdf0c80"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>N8tsI35FqfjUQTI5pMyxL8/IXmnz39tH4zwfg29fCXwt8qY2M5RRUdUT6tWZ/h8wA08ibc/e12vu
-iBaXGJ6OTA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2efa5c80-c730-4fed-8fe4-614d3edfc7b5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gaPj5NJ7iwlUl7+Gi1W+rDwd8Zgs4VkbFmwobhLnbD6fNP5IhMOyI9QTst0DJTnASWBtPJ5KczZf
-vHzw/HCx9w==</DigestValue></Reference></SignedInfo><SignatureValue>Y+IMXRqqVkfSc672WQFaNNQOQcaWklZbjBZCdMm1sMJFziBz7Vwntu/iOY3kKbiuiuAmlSnRCL3A
-VZwi4JblAtwMq2p3qUlljxvSHryI26kCrbHDqYv7KArwhMGOJlrZRXNRSShYNJx0JUIkPqRjoJeq
-KHiJe1zJl306WWGUMVzpT6g1QSZEA4beP+gAD126ASHyr1ZfTRLGrfsSwIO3xOaoDnRFtRqIIzhR
-f4A3iipJpiqZmekoFme/bQ5QOYQZiPaGfG0ZLr+Q6/CA4nmpxODBFr+2ZwKUtS1UQCh9sOlX/YMq
-HDq696UDtG4go6a7QHlhhRg661Ga7FB4I9FOkA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_936ce01f-c32d-496f-900a-c75b4e31d0bc"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Sn2/A6IeeYoXDhVn5tGlSvQg10ix8MFFNjH2hAZ6blFBscMTIHosWSFKaD0nD1j1uExPhVo2SGeQ
+1yZCg7EtTw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5daa2ae3-4a88-4652-a6e2-a0def8df1b87"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bNoEmXihZpoB6FwOoJDXk0RtSvat+4xTclzBBEODgjot44vLmKDRYCnUxuHXk4jMfVbcIQHPLEcd
+CpD3B3aptA==</DigestValue></Reference></SignedInfo><SignatureValue>e3YMUMfKauYQxHshtiDSU0bFXrNjMbloHeG2GdiF5KbX8LMLd/gO6GjnpGwaq3hZxTb0B8/cBX9t
+ntylKSxZxaPhL/aP2CLV5tBiEBAkpKuizPdCkSgq7ftHw7kkZfSp1qIyNHNNlpvsQfVzACPFCB4V
+WJJxdTAo92sJELLiCQ/qrqYJniF3vg7gPh0Zo9Bh6++W/M1gwM6fpVEdaLgxRJM2LiZhlPlOjgdt
+mo67aVP6c2UNQjQoavjT79s7dX6tUMgEoVP+zEkK3J4Jt1xTc7ShKKxA4pJQDE5Ww4jZTWDMpNNs
+d8JmCUGaRUnT2uG0szYf+AGUkqMnJ+EFh+AHYw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -2427,4 +2427,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2efa5c80-c730-4fed-8fe4-614d3edfc7b5" Target="#_375aceab-485c-43b6-977b-c6640cdf0c80"><Timestamp>2018-11-28 12:15:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5daa2ae3-4a88-4652-a6e2-a0def8df1b87" Target="#_936ce01f-c32d-496f-900a-c75b4e31d0bc"><Timestamp>2018-11-29 11:33:01</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
