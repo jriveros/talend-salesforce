@@ -182,6 +182,7 @@
     <module>jobs/process/I0003_SAP_fetch_BP_from_SF/sap_fetch_bp_from_sf_job_2.0</module>
     <module>jobs/process/I0002_SAP_BP_to_SF_Account/sap_bp_to_sf_account_job_4.1</module>
     <module>jobs/process/I0001_SF_Account_to_SAP_BP/sf_account_to_sap_bp_job_2.1</module>
+    <module>jobs/services/I0012_SF_to_SAP_VIN_EndCustomer_update/sf_vin_update_out_talend_in_1.0</module>
   </modules>
   <properties>
     <talend.project.name>SUBARU_SAP_SF</talend.project.name>
