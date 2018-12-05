@@ -267,24 +267,44 @@
       <column comment="" key="false" length="-1" name="payload" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row6">
+        <nodes name="moment" outgoingConnections="//@node.2/@nodeData/@connections.1" type="id_Date" xpath="row6/moment"/>
+        <nodes name="pid" type="id_String" xpath="row6/pid"/>
+        <nodes name="root_pid" type="id_String" xpath="row6/root_pid"/>
+        <nodes name="father_pid" type="id_String" xpath="row6/father_pid"/>
+        <nodes name="project" type="id_String" xpath="row6/project"/>
+        <nodes name="job" outgoingConnections="//@node.2/@nodeData/@connections.5" type="id_String" xpath="row6/job"/>
+        <nodes name="context" outgoingConnections="//@node.2/@nodeData/@connections.3" type="id_String" xpath="row6/context"/>
+        <nodes name="priority" type="id_Integer" xpath="row6/priority"/>
+        <nodes name="type" outgoingConnections="//@node.2/@nodeData/@connections.2" type="id_String" xpath="row6/type"/>
+        <nodes name="origin" outgoingConnections="//@node.2/@nodeData/@connections.4" type="id_String" xpath="row6/origin"/>
+        <nodes name="message" outgoingConnections="//@node.2/@nodeData/@connections.0" type="id_String" xpath="row6/message"/>
+        <nodes name="code" type="id_Integer" xpath="row6/code"/>
+      </inputTrees>
       <outputTrees name="teret">
         <nodes expression="" name="payload" pattern="" type="id_Document" xpath="teret/payload">
           <children main="true" name="tns:SAP_Quotations_out_Talend_inFault" type="id_String" xpath="teret.payload:/tns:SAP_Quotations_out_Talend_inFault" xsi:type="TalendXMLMap:OutputTreeNode">
             <children defaultValue="urn:subaru.eu:ECC:VehSales:QuotationsOut" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="teret.payload:/tns:SAP_Quotations_out_Talend_inFault/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
             <children loop="true" main="true" name="standard" type="id_String" xpath="teret.payload:/tns:SAP_Quotations_out_Talend_inFault/standard" xsi:type="TalendXMLMap:OutputTreeNode">
-              <children expression="row9.message" name="faultText" type="id_String" xpath="teret.payload:/tns:SAP_Quotations_out_Talend_inFault/standard/faultText" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row9.moment" name="faultUrl" type="id_String" xpath="teret.payload:/tns:SAP_Quotations_out_Talend_inFault/standard/faultUrl" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row6.message" incomingConnections="//@node.2/@nodeData/@connections.0" name="faultText" type="id_String" xpath="teret.payload:/tns:SAP_Quotations_out_Talend_inFault/standard/faultText" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row6.moment" incomingConnections="//@node.2/@nodeData/@connections.1" name="faultUrl" type="id_String" xpath="teret.payload:/tns:SAP_Quotations_out_Talend_inFault/standard/faultUrl" xsi:type="TalendXMLMap:OutputTreeNode"/>
               <children main="true" name="faultDetail" type="id_String" xpath="teret.payload:/tns:SAP_Quotations_out_Talend_inFault/standard/faultDetail" xsi:type="TalendXMLMap:OutputTreeNode">
-                <children expression="row9.type" name="severity" type="id_String" xpath="teret.payload:/tns:SAP_Quotations_out_Talend_inFault/standard/faultDetail/severity" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                <children expression="row9.context" name="text" type="id_String" xpath="teret.payload:/tns:SAP_Quotations_out_Talend_inFault/standard/faultDetail/text" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                <children expression="row9.origin" name="url" type="id_String" xpath="teret.payload:/tns:SAP_Quotations_out_Talend_inFault/standard/faultDetail/url" xsi:type="TalendXMLMap:OutputTreeNode"/>
-                <children expression="row9.job" name="id" type="id_String" xpath="teret.payload:/tns:SAP_Quotations_out_Talend_inFault/standard/faultDetail/id" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="row6.type" incomingConnections="//@node.2/@nodeData/@connections.2" name="severity" type="id_String" xpath="teret.payload:/tns:SAP_Quotations_out_Talend_inFault/standard/faultDetail/severity" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="row6.context" incomingConnections="//@node.2/@nodeData/@connections.3" name="text" type="id_String" xpath="teret.payload:/tns:SAP_Quotations_out_Talend_inFault/standard/faultDetail/text" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="row6.origin" incomingConnections="//@node.2/@nodeData/@connections.4" name="url" type="id_String" xpath="teret.payload:/tns:SAP_Quotations_out_Talend_inFault/standard/faultDetail/url" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="row6.job" incomingConnections="//@node.2/@nodeData/@connections.5" name="id" type="id_String" xpath="teret.payload:/tns:SAP_Quotations_out_Talend_inFault/standard/faultDetail/id" xsi:type="TalendXMLMap:OutputTreeNode"/>
               </children>
             </children>
           </children>
         </nodes>
       </outputTrees>
       <varTables minimized="true" name="Var"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.10" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.0" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.8" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.6" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.9" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.5" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2/@children.3" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
   <node componentName="tESBProviderFault" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="224">
@@ -2397,13 +2417,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c43197ed-8056-4dd3-ae01-dc7366fe87ac"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Fmf+/cMnzxuiazXDErur9iqYeGVjS2iHPEV8Y7+ZqMRfwu/gk3r80mX8/ZUgQQ39fAGE9I3ExFT9
-ErWovg0urg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c184027b-5c2e-4704-a894-7e82c94b0c74"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>RSyLTgtmCq08jcCi2+VoDo3nJ4Yh9xZ5q0IKrcwTW/z78RV8yavBvmAQOecmdJ0HrWVNy2gTfXMM
-kLR6XjfXiQ==</DigestValue></Reference></SignedInfo><SignatureValue>EI5saeZTV8rA1Wv3Lb5HPODHoLdsithsFn7BWP8fg5XHEUqXBpXFO1Iq2ClMsnfDcgG2Y5PfZ/Z/
-szpWAhGuYjDdAwZHehGxIRKHjaVuubowZ0iVUwWVJ1wGRs7YN3XcFsgW0X5hFCyYGtPsukvvcwkf
-C+MXhs/M4uBLBkQ93ByNpye7lbuwvZqU4gehXhUy8S5dISnmlYlaLpnoNXlfj7uaAqH891GFepV6
-SS0E/Ssof9plhV4QfRt9h8swHNZMw58vkFlmkKvb183K8F41NcKtOns5pi8dfgSJFHfQtkm+4TKq
-b9nOQkUQHa1uNfKsKZJuo4NAisiao3sQLjLL1Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ac4794e9-b6c5-4657-9d3d-b878126045f2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>O/0VrnWB9oyaZ6fA4JaduIs1qsgq/92Pb00WhyTu3TkKyMAAUgZW9+YHIa1LK9hAta0zz81APPPb
+j+2GlTYOCA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a8842179-707a-4f8b-b9ba-b27725636a77"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2mHJ+kqO4ghGk2BjL8v4SP8BZ6fer3ksvQvEwm8aF0KzekfxN+uEuHSBQDqnmvNolWr6FmKVMHGA
+UFQFA2pnRQ==</DigestValue></Reference></SignedInfo><SignatureValue>s2NmDW45vmuM7yQYotXoSi+m3YreSkfb103QNBZ/mGy2F98muqlPqwyFVgvCTWeakeTQrWKUyx4A
+FjZRAZCCBx86FwMc7Ovr4/dJsqhHxesioiSMfgM3MP7v/VjUqiOxsdME/Ac7VJgvomZ5X1NU9iwX
+1rYEGJIbKVMZ/SCPnLbohOb6BbPgutLSHA0s25lpd5Q9i3lPyxtnVnaPZXMMZBVdGctppe+0RRhf
+BK3fpclo9GA/g+306gY8R4qkqgV7+S9cIfsJ8LiVir0IvMUtYU0F7u4S2/zST9kqYilmtKaH362d
+55SuzXWA84qa+0FxZCooksOvsVqh8I22bAY45g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -2427,4 +2447,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c184027b-5c2e-4704-a894-7e82c94b0c74" Target="#_c43197ed-8056-4dd3-ae01-dc7366fe87ac"><Timestamp>2018-11-29 11:41:51</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a8842179-707a-4f8b-b9ba-b27725636a77" Target="#_ac4794e9-b6c5-4657-9d3d-b878126045f2"><Timestamp>2018-12-05 10:40:12</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
