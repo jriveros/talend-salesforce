@@ -1424,19 +1424,66 @@
       <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row5">
+        <nodes name="Id" nullable="false" type="id_String" xpath="row5/Id"/>
+        <nodes name="WhoId" type="id_String" xpath="row5/WhoId"/>
+        <nodes name="WhatId" type="id_String" xpath="row5/WhatId"/>
+        <nodes name="WhoCount" type="id_Integer" xpath="row5/WhoCount"/>
+        <nodes name="WhatCount" type="id_Integer" xpath="row5/WhatCount"/>
+        <nodes name="Subject" type="id_String" xpath="row5/Subject"/>
+        <nodes name="ActivityDate" type="id_Date" xpath="row5/ActivityDate"/>
+        <nodes name="Status" nullable="false" type="id_String" xpath="row5/Status"/>
+        <nodes name="Priority" nullable="false" type="id_String" xpath="row5/Priority"/>
+        <nodes name="IsHighPriority" nullable="false" type="id_Boolean" xpath="row5/IsHighPriority"/>
+        <nodes name="OwnerId" nullable="false" type="id_String" xpath="row5/OwnerId"/>
+        <nodes name="Description" type="id_String" xpath="row5/Description"/>
+        <nodes name="Type" type="id_String" xpath="row5/Type"/>
+        <nodes name="IsDeleted" nullable="false" type="id_Boolean" xpath="row5/IsDeleted"/>
+        <nodes name="AccountId" type="id_String" xpath="row5/AccountId"/>
+        <nodes name="IsClosed" nullable="false" type="id_Boolean" xpath="row5/IsClosed"/>
+        <nodes name="CreatedDate" nullable="false" type="id_Date" xpath="row5/CreatedDate"/>
+        <nodes name="CreatedById" nullable="false" type="id_String" xpath="row5/CreatedById"/>
+        <nodes name="LastModifiedDate" nullable="false" type="id_Date" xpath="row5/LastModifiedDate"/>
+        <nodes name="LastModifiedById" nullable="false" type="id_String" xpath="row5/LastModifiedById"/>
+        <nodes name="SystemModstamp" nullable="false" type="id_Date" xpath="row5/SystemModstamp"/>
+        <nodes name="IsArchived" nullable="false" type="id_Boolean" xpath="row5/IsArchived"/>
+        <nodes name="CallDurationInSeconds" type="id_Integer" xpath="row5/CallDurationInSeconds"/>
+        <nodes name="CallType" type="id_String" xpath="row5/CallType"/>
+        <nodes name="CallDisposition" type="id_String" xpath="row5/CallDisposition"/>
+        <nodes name="CallObject" type="id_String" xpath="row5/CallObject"/>
+        <nodes name="ReminderDateTime" type="id_Date" xpath="row5/ReminderDateTime"/>
+        <nodes name="IsReminderSet" nullable="false" type="id_Boolean" xpath="row5/IsReminderSet"/>
+        <nodes name="RecurrenceActivityId" type="id_String" xpath="row5/RecurrenceActivityId"/>
+        <nodes name="IsRecurrence" nullable="false" type="id_Boolean" xpath="row5/IsRecurrence"/>
+        <nodes name="RecurrenceStartDateOnly" type="id_Date" xpath="row5/RecurrenceStartDateOnly"/>
+        <nodes name="RecurrenceEndDateOnly" type="id_Date" xpath="row5/RecurrenceEndDateOnly"/>
+        <nodes name="RecurrenceTimeZoneSidKey" type="id_String" xpath="row5/RecurrenceTimeZoneSidKey"/>
+        <nodes name="RecurrenceType" type="id_String" xpath="row5/RecurrenceType"/>
+        <nodes name="RecurrenceInterval" type="id_Integer" xpath="row5/RecurrenceInterval"/>
+        <nodes name="RecurrenceDayOfWeekMask" type="id_Integer" xpath="row5/RecurrenceDayOfWeekMask"/>
+        <nodes name="RecurrenceDayOfMonth" type="id_Integer" xpath="row5/RecurrenceDayOfMonth"/>
+        <nodes name="RecurrenceInstance" type="id_String" xpath="row5/RecurrenceInstance"/>
+        <nodes name="RecurrenceMonthOfYear" type="id_String" xpath="row5/RecurrenceMonthOfYear"/>
+        <nodes name="RecurrenceRegeneratedType" type="id_String" xpath="row5/RecurrenceRegeneratedType"/>
+        <nodes name="TaskSubtype" type="id_String" xpath="row5/TaskSubtype"/>
+        <nodes name="Data_Svolgimento__c" type="id_Date" xpath="row5/Data_Svolgimento__c"/>
+        <nodes name="ID_Univoco__c" outgoingConnections="//@node.6/@nodeData/@connections.0" type="id_String" xpath="row5/ID_Univoco__c"/>
+        <nodes name="Ora_svolgimento__c" type="id_String" xpath="row5/Ora_svolgimento__c"/>
+      </inputTrees>
       <outputTrees name="response">
         <nodes expression="" name="payload" type="id_Document" xpath="response/payload">
           <children loop="true" main="true" name="tns:SAP_Followup_out_Talend_inOperationResponse" type="id_String" xpath="response.payload:/tns:SAP_Followup_out_Talend_inOperationResponse" xsi:type="TalendXMLMap:OutputTreeNode">
             <children defaultValue="urn:subaru.eu:ECC:VehSales:FollowupOut" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="response.payload:/tns:SAP_Followup_out_Talend_inOperationResponse/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
             <children name="result" type="id_String" xpath="response.payload:/tns:SAP_Followup_out_Talend_inOperationResponse/result" xsi:type="TalendXMLMap:OutputTreeNode">
               <children name="message" type="id_String" xpath="response.payload:/tns:SAP_Followup_out_Talend_inOperationResponse/result/message" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row4.ID_Univoco__c" name="SF_record_ID" type="id_String" xpath="response.payload:/tns:SAP_Followup_out_Talend_inOperationResponse/result/SF_record_ID" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row5.ID_Univoco__c" incomingConnections="//@node.6/@nodeData/@connections.0" name="SF_record_ID" type="id_String" xpath="response.payload:/tns:SAP_Followup_out_Talend_inOperationResponse/result/SF_record_ID" xsi:type="TalendXMLMap:OutputTreeNode"/>
               <children name="status" type="id_String" xpath="response.payload:/tns:SAP_Followup_out_Talend_inOperationResponse/result/status" xsi:type="TalendXMLMap:OutputTreeNode"/>
             </children>
           </children>
         </nodes>
       </outputTrees>
       <varTables minimized="true" name="Var"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.42" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.1" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
   <node componentName="tESBProviderResponse" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="128">
@@ -1638,13 +1685,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6bb06624-e527-4b48-8ade-60873f93e374"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xKU5h/12Dx7qKCMU4Sh/xQIH2DDuCfaLEJkxHYbtLKFmWAxWzbobruIFiyrO6OYZJlq8gYxBwo5C
-tGuADbph+w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c15468b2-fb52-4f1f-bda3-c10c47fe7bce"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>P1DH0Q7dxN0ZHgBLa1VyOiNGmbjzavZxwZsaPYxa9PJFp7tffev/pOdF30PotnQrRwawn6chQc7C
-/WarLWr00w==</DigestValue></Reference></SignedInfo><SignatureValue>dZYJBNY6tN0lG8cda1O6nNgWwMrIo/shu7Lii0m0zbptPv/0PsbrTVJJcW/C01f1/LYiTDB9lUnW
-sUL06JkBwMcWHob42seRZxRTSjZMX4wzF9yB2kPKCdOTC5VADW3UpbvekODwCYkrMDNqRCvkcyut
-cHczn1dbdqu98s048Xucyed2Mq8cO6shdiT0QJWy+YOZr+YS786n6yhbC39okiU82sIzp+1XGaOj
-rWJLR2Pzo1qikgA2GWwoX2+8l92yu9p2onse4+Ed2oWWICjtPJMX4nCxSySNFCnJaI8cBiM7vTc7
-EOtyXMbuOSwFjbm4e+T35qvKMaYTzqLn87BP2w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1eddc4ca-aa3e-4f4f-8e65-fb1f6629ff9b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2OdqqkbdgmspZZF2+hPrNaPvBZv8Z0eccfwdGFLeVlvshtD6Oqw+AIxVDCuqFTHYJLFvynwYG8WA
+F+USCCQ+JQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_05b120cd-b04b-4e05-a164-f417b61cd6d7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jvi/AMvWdhFoz+fOgiLN6MDIMhNZhd+0cIiwcsnmxQFoWhoU6WpTX2e6YZLlgbucB2v/Uw4Yd+Mb
+UYMmYXW70Q==</DigestValue></Reference></SignedInfo><SignatureValue>IKwZ+3pdJQHGBqIxB50e2S05Wn0oITSDXw9Ja9z7XZQ5VJlKuN/XTXj1DPy/BWF7zcXVF5Mawj2j
+jlRsrbch9aKIjfLeGUszQq8N0pmkuxey0HCArH8Gs5jPGKEB9nJvx7CtW8Hvd+u516dh2cDhgEt9
+GA3BIxqGVfNNheckjLNP6U0QAyUBDB8FZcFzeQhJlRN1rUMzHDIsf54jhth/cpBHl7NrMeHrXrdo
+s5eQ3+UGMpLNlmIkEf7O4XiBmyvk2P0bPmaUCPCbqr7PKrQ7mlJtHCNwxiesyzqBb2kdZrMNaBL7
+BxN/HvsYS1W51MkPe6ZEX7bNGzR1tul2OKDiUw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1668,4 +1715,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c15468b2-fb52-4f1f-bda3-c10c47fe7bce" Target="#_6bb06624-e527-4b48-8ade-60873f93e374"><Timestamp>2018-12-05 10:41:28</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_05b120cd-b04b-4e05-a164-f417b61cd6d7" Target="#_1eddc4ca-aa3e-4f4f-8e65-fb1f6629ff9b"><Timestamp>2018-12-05 10:45:38</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
