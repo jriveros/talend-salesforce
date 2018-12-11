@@ -381,20 +381,43 @@
         <nodes expression="" name="payload" type="id_Document" xpath="row6/payload">
           <children loop="true" main="true" name="tns:SAP_VIN_out_Talend_inOperationRequest" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest">
             <children defaultValue="urn:subaru.eu:ECC:VehSales:VINOut" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/xmlns:tns"/>
+            <children defaultValue="http://www.w3.org/2001/XMLSchema-instance" name="xsi" nodeType="NAME_SPACE" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/xmlns:xsi"/>
             <children name="SapVINId" outgoingConnections="//@node.6/@nodeData/@connections.1" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/SapVINId"/>
             <children name="Name" outgoingConnections="//@node.6/@nodeData/@connections.2" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/Name"/>
             <children name="BPId" outgoingConnections="//@node.6/@nodeData/@connections.3" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/BPId"/>
-            <children name="DealerId" outgoingConnections="//@node.6/@nodeData/@connections.4" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/DealerId"/>
-            <children name="LicensePlate" outgoingConnections="//@node.6/@nodeData/@connections.5" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/LicensePlate"/>
-            <children name="PurchaseDate" outgoingConnections="//@node.6/@nodeData/@connections.6" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/PurchaseDate"/>
-            <children name="Model" outgoingConnections="//@node.6/@nodeData/@connections.7" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/Model"/>
-            <children name="Engine" outgoingConnections="//@node.6/@nodeData/@connections.8" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/Engine"/>
-            <children name="Transmission" outgoingConnections="//@node.6/@nodeData/@connections.9" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/Transmission"/>
-            <children name="LocalOptions" outgoingConnections="//@node.6/@nodeData/@connections.10" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/LocalOptions"/>
-            <children name="FactoryOptions" outgoingConnections="//@node.6/@nodeData/@connections.11" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/FactoryOptions"/>
-            <children name="ExteriorPaint" outgoingConnections="//@node.6/@nodeData/@connections.12" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/ExteriorPaint"/>
-            <children name="Upholstery" outgoingConnections="//@node.6/@nodeData/@connections.13" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/Upholstery"/>
-            <children name="ModelYear" outgoingConnections="//@node.6/@nodeData/@connections.14" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/ModelYear"/>
+            <children name="DealerId" outgoingConnections="//@node.6/@nodeData/@connections.4" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/DealerId">
+              <children name="xsi:nil" nodeType="ATTRIBUT" outgoingConnections="//@node.6/@nodeData/@connections.25" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/DealerId/@xsi:nil"/>
+            </children>
+            <children name="LicensePlate" outgoingConnections="//@node.6/@nodeData/@connections.5" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/LicensePlate">
+              <children name="xsi:nil" nodeType="ATTRIBUT" outgoingConnections="//@node.6/@nodeData/@connections.15" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/LicensePlate/@xsi:nil"/>
+            </children>
+            <children name="PurchaseDate" outgoingConnections="//@node.6/@nodeData/@connections.6" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/PurchaseDate">
+              <children name="xsi:nil" nodeType="ATTRIBUT" outgoingConnections="//@node.6/@nodeData/@connections.16" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/PurchaseDate/@xsi:nil"/>
+            </children>
+            <children name="Model" outgoingConnections="//@node.6/@nodeData/@connections.7" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/Model">
+              <children name="xsi:nil" nodeType="ATTRIBUT" outgoingConnections="//@node.6/@nodeData/@connections.17" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/Model/@xsi:nil"/>
+            </children>
+            <children name="Engine" outgoingConnections="//@node.6/@nodeData/@connections.8" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/Engine">
+              <children name="xsi:nil" nodeType="ATTRIBUT" outgoingConnections="//@node.6/@nodeData/@connections.18" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/Engine/@xsi:nil"/>
+            </children>
+            <children name="Transmission" outgoingConnections="//@node.6/@nodeData/@connections.9" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/Transmission">
+              <children name="xsi:nil" nodeType="ATTRIBUT" outgoingConnections="//@node.6/@nodeData/@connections.19" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/Transmission/@xsi:nil"/>
+            </children>
+            <children name="LocalOptions" outgoingConnections="//@node.6/@nodeData/@connections.10" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/LocalOptions">
+              <children name="xsi:nil" nodeType="ATTRIBUT" outgoingConnections="//@node.6/@nodeData/@connections.20" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/LocalOptions/@xsi:nil"/>
+            </children>
+            <children name="FactoryOptions" outgoingConnections="//@node.6/@nodeData/@connections.11" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/FactoryOptions">
+              <children name="xsi:nil" nodeType="ATTRIBUT" outgoingConnections="//@node.6/@nodeData/@connections.21" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/FactoryOptions/@xsi:nil"/>
+            </children>
+            <children name="ExteriorPaint" outgoingConnections="//@node.6/@nodeData/@connections.12" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/ExteriorPaint">
+              <children name="xsi:nil" nodeType="ATTRIBUT" outgoingConnections="//@node.6/@nodeData/@connections.22" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/ExteriorPaint/@xsi:nil"/>
+            </children>
+            <children name="Upholstery" outgoingConnections="//@node.6/@nodeData/@connections.13" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/Upholstery">
+              <children name="xsi:nil" nodeType="ATTRIBUT" outgoingConnections="//@node.6/@nodeData/@connections.23" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/Upholstery/@xsi:nil"/>
+            </children>
+            <children name="ModelYear" outgoingConnections="//@node.6/@nodeData/@connections.14" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/ModelYear">
+              <children name="xsi:nil" nodeType="ATTRIBUT" outgoingConnections="//@node.6/@nodeData/@connections.24" type="id_String" xpath="row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/ModelYear/@xsi:nil"/>
+            </children>
           </children>
         </nodes>
       </inputTrees>
@@ -402,7 +425,7 @@
         <nodes expression="" name="payload" nullable="false" type="id_Document" xpath="upsertRequestRow1/payload">
           <children loop="true" main="true" name="tns:upsertAsset" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAsset" xsi:type="TalendXMLMap:OutputTreeNode">
             <children defaultValue="http://soap.sforce.com/schemas/class/SAPtoSF" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAsset/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children name="tns:fieldsToIgnore" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAsset/tns:fieldsToIgnore" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="&quot;&quot; + (([row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/LicensePlate/@xsi:nil] != null &amp;&amp; [row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/LicensePlate/@xsi:nil].contains(&quot;true&quot;)) ? &quot;&lt;Targa__c&gt;&quot; : &quot;&quot;) +&#13;&#10;(([row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/PurchaseDate/@xsi:nil] != null &amp;&amp; [row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/PurchaseDate/@xsi:nil].contains(&quot;true&quot;)) ? &quot;&lt;PurchaseDate&gt;&quot; : &quot;&quot;) +&#13;&#10;(([row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/Model/@xsi:nil] != null &amp;&amp; [row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/Model/@xsi:nil].contains(&quot;true&quot;)) ? &quot;&lt;Modello__c&gt;&quot; : &quot;&quot;) +&#13;&#10;(([row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/Engine/@xsi:nil] != null &amp;&amp; [row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/Engine/@xsi:nil].contains(&quot;true&quot;)) ? &quot;&lt;Motore__c&gt;&quot; : &quot;&quot;) +&#13;&#10;(([row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/Transmission/@xsi:nil] != null &amp;&amp; [row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/Transmission/@xsi:nil].contains(&quot;true&quot;)) ? &quot;&lt;Trasmissione__c&gt;&quot; : &quot;&quot;) +&#13;&#10;(([row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/LocalOptions/@xsi:nil] != null &amp;&amp; [row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/LocalOptions/@xsi:nil].contains(&quot;true&quot;)) ? &quot;&lt;Equipaggiamento__c&gt;&quot; : &quot;&quot;) +&#13;&#10;(([row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/FactoryOptions/@xsi:nil] != null &amp;&amp; [row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/FactoryOptions/@xsi:nil].contains(&quot;true&quot;)) ? &quot;&lt;Allestimento__c&gt;&quot; : &quot;&quot;) +&#13;&#10;(([row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/ExteriorPaint/@xsi:nil] != null &amp;&amp; [row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/ExteriorPaint/@xsi:nil].contains(&quot;true&quot;)) ? &quot;&lt;Colore__c&gt;&quot; : &quot;&quot;) +&#13;&#10;(([row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/Upholstery/@xsi:nil] != null &amp;&amp; [row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/Upholstery/@xsi:nil].contains(&quot;true&quot;)) ? &quot;&lt;Interni__c&gt;&quot; : &quot;&quot;) +&#13;&#10;(([row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/ModelYear/@xsi:nil] != null &amp;&amp; [row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/ModelYear/@xsi:nil].contains(&quot;true&quot;)) ? &quot;&lt;Model_Year__c&gt;&quot; : &quot;&quot;) +&#13;&#10;(([row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/DealerId/@xsi:nil] != null &amp;&amp; [row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/DealerId/@xsi:nil].contains(&quot;true&quot;)) ? &quot;&lt;Concessionario__r&gt;&quot; : &quot;&quot;) " incomingConnections="//@node.6/@nodeData/@connections.15 //@node.6/@nodeData/@connections.16 //@node.6/@nodeData/@connections.17 //@node.6/@nodeData/@connections.18 //@node.6/@nodeData/@connections.19 //@node.6/@nodeData/@connections.20 //@node.6/@nodeData/@connections.21 //@node.6/@nodeData/@connections.22 //@node.6/@nodeData/@connections.23 //@node.6/@nodeData/@connections.24 //@node.6/@nodeData/@connections.25" name="tns:fieldsToIgnore" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAsset/tns:fieldsToIgnore" xsi:type="TalendXMLMap:OutputTreeNode"/>
             <children name="tns:sap_ass" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAsset/tns:sap_ass" xsi:type="TalendXMLMap:OutputTreeNode">
               <children name="tns:Id" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAsset/tns:sap_ass/tns:Id" xsi:type="TalendXMLMap:OutputTreeNode"/>
               <children expression="[row6.payload:/tns:SAP_VIN_out_Talend_inOperationRequest/SapVINId]" incomingConnections="//@node.6/@nodeData/@connections.1" name="tns:Telaio__c" type="id_String" xpath="upsertRequestRow1.payload:/tns:upsertAsset/tns:sap_ass/tns:Telaio__c" xsi:type="TalendXMLMap:OutputTreeNode"/>
@@ -432,20 +455,31 @@
         <nodes expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new Date()) " name="ts_str" outgoingConnections="//@node.6/@nodeData/@connections.0" type="id_String"/>
       </varTables>
       <connections source="//@node.6/@nodeData/@varTables.0/@nodes.0" target="//@node.6/@nodeData/@outputTrees.0/@nodes.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.2" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.3" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.4" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.4/@children.0" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.5" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.6" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.7" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.7" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.8" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.8" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.9" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.9" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.10" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.10" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.11" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.11" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.12" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.12" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.13" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.13" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.14" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.14" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.4" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.4/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.5" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.7" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.6" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.8" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.7" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.9" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.8" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.10" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.9" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.11" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.10" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.12" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.11" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.13" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.12" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.14" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.13" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.15" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.14" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.0" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.7/@children.0" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.8/@children.0" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.9/@children.0" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.10/@children.0" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.11/@children.0" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.12/@children.0" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.13/@children.0" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.14/@children.0" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.15/@children.0" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.0" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="224">
@@ -1321,13 +1355,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8b9be6cd-04eb-41b3-b801-150136a2b9a3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>evIUaKXEsICR/mi9uS39hlzZjo730FMBG3y5wjX2cKy53GJTEFYjPQcnil+Y3rk50krHKBuzj0oJ
-oCZW06Ufrw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0738c13e-0478-468a-add4-335c66efc2f8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>XyzTCEZ4gIITulv9d+CdNLDYa7yKOu/5cN9dO14zND2MzB2ldI8e+2vSkWP6IE7kt5Kxwoj0ncSr
-Pv82qY6gmw==</DigestValue></Reference></SignedInfo><SignatureValue>Zde7EAFf7GpELyWXXTaXnhAWV+JIu8NIdGj6m+67DQAUHdLdf4PQpl45ZGEkspCWyhULYRLffqex
-tL/HW0IZYgtjobnX3mvbCFDhWPTKz8pXb5zZzlyxYfIWLUPBR6eidkiNRXkpqqyUdquYZE4+2Y7J
-VYSSKWZpjf6K62Tt5ZusDbda8/4Nm6PJ1A/8R7QVL5abbLiN9Dm9jZgb8xBFVmIAq27xrLtH2ciy
-YR+sOLPsxev3UWO3x2oBecATtLgUAH+VaJpent2FHL6wTHkKVx3vay1u+EJhg8bgH1UKh7FLlH6Y
-lwrixjtPgTXlvE+4QB9rh53TpsGsBjaNPgwAEg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c79c40d4-a32f-4b56-a082-37d47bc0aa35"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YK/USx/9n2jr/Rw43gHTL8Le47n7EAMA5KVvaE0mq55X5eeXsTYYgRWbLNpciDl3gbU9FVAeDmw0
+6L2N9SJ5QA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e2e3651f-3113-4d38-ba4b-0c52b9f2c88e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mbJD4xv3YKOGIfaG+N33dSExkKQLT4fBEbHhZFVtr7jKF3y0qimMNJsK1hnGBOfaXU8AVESPQSoM
+tfOsSk2tZA==</DigestValue></Reference></SignedInfo><SignatureValue>Y332dhFhq1qwnW5ewrtoO8wqVdiFFVBImtEd3/liHSo+bOp0x2o87Z/dBed4gQX5QBasvi34AIbJ
+eUPlSrNU3CqspdjzvLdc4wYErwmdnntc6oou0JcWQH6j9feqqnLmMbqV5jg7VlRd/7G0SkLh16Kh
+vGa0Gn+lzxDnOCnWJMsH0Sw3RBShxnk+j4K8S6Bbv9tjQEbOZUsn+CJzsHcnNTJ5PSSLuQOtlMeL
+4FQKtCS8f7zse064S7rDiaSE8iRl6xRmMOXgc7Ftal8XVAvOsn2YwlXZMsUiTAcoB+n3wyJJwkFm
+RfY1ZATLwbCFXkKINBdcdjJ2UR+Lm+PAGsC2PQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1351,4 +1385,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0738c13e-0478-468a-add4-335c66efc2f8" Target="#_8b9be6cd-04eb-41b3-b801-150136a2b9a3"><Timestamp>2018-12-11 11:15:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e2e3651f-3113-4d38-ba4b-0c52b9f2c88e" Target="#_c79c40d4-a32f-4b56-a082-37d47bc0aa35"><Timestamp>2018-12-11 12:42:55</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
