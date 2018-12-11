@@ -92,7 +92,7 @@
    </xsd:complexType>
    <xsd:complexType name="sObject">
     <xsd:sequence>
-     <xsd:element name="Id" nillable="true" type="tns:ID"/>
+     <xsd:element name="Id" minOccurs="0" nillable="true" type="tns:ID"/>
     </xsd:sequence>
    </xsd:complexType>
    <xsd:complexType name="Concessionario_community__r_TYPE">
