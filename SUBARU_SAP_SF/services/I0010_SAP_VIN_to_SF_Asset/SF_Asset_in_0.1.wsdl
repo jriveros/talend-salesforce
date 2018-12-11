@@ -107,7 +107,7 @@
        <xsd:element name="Telaio__c" minOccurs="0" type="xsd:string" nillable="true"/>
        <xsd:element name="Name" minOccurs="0" type="xsd:string" nillable="true"/>
        <xsd:element name="AccountId" minOccurs="0" type="tns:ID" nillable="true"/>
-       <xsd:element name="Concessionario_community__r" type="tns:Concessionario_community__r_TYPE" minOccurs="0"/>
+       <xsd:element name="Concessionario__r" type="tns:Concessionario_community__r_TYPE" minOccurs="0"/>
        <xsd:element name="Targa__c" minOccurs="0" type="xsd:string" nillable="true"/>
        <xsd:element name="PurchaseDate" minOccurs="0" type="xsd:date" nillable="true"/>
        <xsd:element name="Modello__c" minOccurs="0" type="xsd:string" nillable="true"/>
