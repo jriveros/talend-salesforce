@@ -104,10 +104,22 @@
     <xsd:complexContent>
      <xsd:extension base="tns:sObject">
       <xsd:sequence>
-       <xsd:element name="" minOccurs="0" type="xsd:string" nillable="true"/>
-       <xsd:element name="" minOccurs="0" type="tns:ID" nillable="true"/>
-       <xsd:element name="" minOccurs="0" type="xsd:boolean" nillable="true"/>
+       <xsd:element name="Telaio__c" minOccurs="0" type="xsd:string" nillable="true"/>
+       <xsd:element name="Name" minOccurs="0" type="xsd:string" nillable="true"/>
+       <xsd:element name="AccountId" minOccurs="0" type="tns:ID" nillable="true"/>
        <xsd:element name="Concessionario_community__r" type="tns:Concessionario_community__r_TYPE" minOccurs="0"/>
+       <xsd:element name="Targa__c" minOccurs="0" type="xsd:string" nillable="true"/>
+       <xsd:element name="PurchaseDate" minOccurs="0" type="xsd:date" nillable="true"/>
+       <xsd:element name="Modello__c" minOccurs="0" type="xsd:string" nillable="true"/>
+       <xsd:element name="Motore__c" minOccurs="0" type="xsd:string" nillable="true"/>
+       <xsd:element name="Trasmissione__c" minOccurs="0" type="xsd:string" nillable="true"/>
+       <xsd:element name="Equipaggiamento__c" minOccurs="0" type="xsd:string" nillable="true"/>
+       <xsd:element name="Allestimento__c" minOccurs="0" type="xsd:string" nillable="true"/>
+       <xsd:element name="Colore__c" minOccurs="0" type="xsd:string" nillable="true"/>
+       <xsd:element name="Interni__c" minOccurs="0" type="xsd:string" nillable="true"/>
+       <xsd:element name="Model_Year__c" minOccurs="0" type="xsd:string" nillable="true"/>
+       <xsd:element name="OwnerId" minOccurs="0" type="tns:ID" nillable="true"/>
+       <xsd:element name="from_sap__c" minOccurs="0" type="xsd:boolean" nillable="true"/>
       </xsd:sequence>
      </xsd:extension>
     </xsd:complexContent>
