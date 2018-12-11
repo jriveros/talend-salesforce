@@ -2330,16 +2330,16 @@
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row12">
         <nodes expression="" name="payload" type="id_Document" xpath="row12/payload">
-          <children main="true" name="tns:upsertAccountResponse" type="id_String" xpath="row12.payload:/tns:upsertAccountResponse">
-            <children defaultValue="http://soap.sforce.com/schemas/class/SAPtoSF" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="row12.payload:/tns:upsertAccountResponse/xmlns:tns"/>
-            <children main="true" name="tns:result" type="id_String" xpath="row12.payload:/tns:upsertAccountResponse/tns:result">
-              <children loop="true" main="true" name="tns:conflicting_fields" optional="true" type="id_String" xpath="row12.payload:/tns:upsertAccountResponse/tns:result/tns:conflicting_fields">
-                <children name="tns:name" optional="true" type="id_String" xpath="row12.payload:/tns:upsertAccountResponse/tns:result/tns:conflicting_fields/tns:name"/>
-                <children name="tns:value" optional="true" type="id_String" xpath="row12.payload:/tns:upsertAccountResponse/tns:result/tns:conflicting_fields/tns:value"/>
+          <children loop="true" main="true" name="tns:upsertAssetResponse" type="id_String" xpath="row12.payload:/tns:upsertAssetResponse">
+            <children defaultValue="http://soap.sforce.com/schemas/class/SAPtoSF" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="row12.payload:/tns:upsertAssetResponse/xmlns:tns"/>
+            <children name="tns:result" type="id_String" xpath="row12.payload:/tns:upsertAssetResponse/tns:result">
+              <children name="tns:conflicting_fields" type="id_String" xpath="row12.payload:/tns:upsertAssetResponse/tns:result/tns:conflicting_fields">
+                <children name="tns:name" type="id_String" xpath="row12.payload:/tns:upsertAssetResponse/tns:result/tns:conflicting_fields/tns:name"/>
+                <children name="tns:value" type="id_String" xpath="row12.payload:/tns:upsertAssetResponse/tns:result/tns:conflicting_fields/tns:value"/>
               </children>
-              <children name="tns:message" optional="true" outgoingConnections="//@node.20/@nodeData/@connections.0" type="id_String" xpath="row12.payload:/tns:upsertAccountResponse/tns:result/tns:message"/>
-              <children name="tns:SF_record_ID" optional="true" outgoingConnections="//@node.20/@nodeData/@connections.1" type="id_String" xpath="row12.payload:/tns:upsertAccountResponse/tns:result/tns:SF_record_ID"/>
-              <children name="tns:status" optional="true" outgoingConnections="//@node.20/@nodeData/@connections.2" type="id_String" xpath="row12.payload:/tns:upsertAccountResponse/tns:result/tns:status"/>
+              <children name="tns:message" outgoingConnections="//@node.20/@nodeData/@connections.0" type="id_String" xpath="row12.payload:/tns:upsertAssetResponse/tns:result/tns:message"/>
+              <children name="tns:SF_record_ID" outgoingConnections="//@node.20/@nodeData/@connections.1" type="id_String" xpath="row12.payload:/tns:upsertAssetResponse/tns:result/tns:SF_record_ID"/>
+              <children name="tns:status" outgoingConnections="//@node.20/@nodeData/@connections.2" type="id_String" xpath="row12.payload:/tns:upsertAssetResponse/tns:result/tns:status"/>
             </children>
           </children>
         </nodes>
@@ -2349,9 +2349,9 @@
           <children loop="true" main="true" name="tns:SAP_VIN_out_Talend_inOperationResponse" type="id_String" xpath="copyOfresponseRow.payload:/tns:SAP_VIN_out_Talend_inOperationResponse" xsi:type="TalendXMLMap:OutputTreeNode">
             <children defaultValue="urn:subaru.eu:ECC:VehSales:VINOut" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="copyOfresponseRow.payload:/tns:SAP_VIN_out_Talend_inOperationResponse/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
             <children name="result" type="id_String" xpath="copyOfresponseRow.payload:/tns:SAP_VIN_out_Talend_inOperationResponse/result" xsi:type="TalendXMLMap:OutputTreeNode">
-              <children expression="[row12.payload:/tns:upsertAccountResponse/tns:result/tns:message]" incomingConnections="//@node.20/@nodeData/@connections.0" name="message" type="id_String" xpath="copyOfresponseRow.payload:/tns:SAP_VIN_out_Talend_inOperationResponse/result/message" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="[row12.payload:/tns:upsertAccountResponse/tns:result/tns:SF_record_ID]" incomingConnections="//@node.20/@nodeData/@connections.1" name="SF_record_ID" type="id_String" xpath="copyOfresponseRow.payload:/tns:SAP_VIN_out_Talend_inOperationResponse/result/SF_record_ID" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="[row12.payload:/tns:upsertAccountResponse/tns:result/tns:status]" incomingConnections="//@node.20/@nodeData/@connections.2" name="status" type="id_String" xpath="copyOfresponseRow.payload:/tns:SAP_VIN_out_Talend_inOperationResponse/result/status" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[row12.payload:/tns:upsertAssetResponse/tns:result/tns:message] " incomingConnections="//@node.20/@nodeData/@connections.0" name="message" type="id_String" xpath="copyOfresponseRow.payload:/tns:SAP_VIN_out_Talend_inOperationResponse/result/message" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[row12.payload:/tns:upsertAssetResponse/tns:result/tns:SF_record_ID] " incomingConnections="//@node.20/@nodeData/@connections.1" name="SF_record_ID" type="id_String" xpath="copyOfresponseRow.payload:/tns:SAP_VIN_out_Talend_inOperationResponse/result/SF_record_ID" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="[row12.payload:/tns:upsertAssetResponse/tns:result/tns:status] " incomingConnections="//@node.20/@nodeData/@connections.2" name="status" type="id_String" xpath="copyOfresponseRow.payload:/tns:SAP_VIN_out_Talend_inOperationResponse/result/status" xsi:type="TalendXMLMap:OutputTreeNode"/>
             </children>
           </children>
         </nodes>
@@ -2962,13 +2962,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8867ec89-6803-4c7c-aba3-9ff7ea8c2831"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pJktabwHrpbdEoZOWnzJGciUajncPdD9IdnRfm2BvGrOAlFw8Eoayx5EvK0JakJafhZq3A3ITiMa
-JGQc7MhwDA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bd4242cc-e5ea-4698-ac97-64e15cce833b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YyUxW7gFNrAyFrkM5j93wrVg07y8l4qUaBqrrg4R0kro3uDQPAY4lDcy3+eo48EO1AyrdAoxtWL1
-bWXlvRl6/A==</DigestValue></Reference></SignedInfo><SignatureValue>goQkZX3E3ZVglFkb5JP8jo7v2U173VztEuY3Z2HAh/kc7nM1g0TQJ3/xMBs8RkRjKZ0jy1WcHYET
-JnfSX+kuXEPnyaRAVVyGq6yetpe3iJSo1R4DMitnPskZyPG3f7cbfFj+JJk5MIOQm8NOjvpHd9/b
-w9AKkYBM2SluVhqhFAkUjYnfVqswqC3a0LHqoDS7+/G/fZfhKEgbKTth7UIxUZaRUq81wEBs5Tnt
-cdX967HrUoz5B20cBwCAd5X5iCvHNcHbsvWo/+FwOZSUHfPo2HGDCdzFe7dn29Nz0A0xlJMQaVkv
-5bSFRY5rQaGc648SBqYin42qVsXBTBlcoCZLdg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bd51292b-9994-42fe-8de4-cf43aa3c2a32"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>72AcT3h0aSxnRKGOk6KseL2k08Qwx5DlX2y1YnqRndaQOs7jKPe7rus9GVccZUdXQ0sIhmnKlmgb
+plImh2nPFw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_546d4d51-6644-4f34-b042-55d6499c1367"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tWJ9pUPn0mruq0O9j/Vibq+dLAgefIHGy1ej0z/J60aWEo8eYYeVq8ECANteGEkSfAdgfhgAbxR7
+qyJy95gZIg==</DigestValue></Reference></SignedInfo><SignatureValue>eQ9iXmu0fR+OAtdL9032xBVumKSiKiMmgW36SUnrHdCh3wUmmxbVNLT248vPVYzcxI609A9aVbOq
+ZApcvt5LwiSGCAP+tYhIg3qVBqDA07H4RQJc31YUE7vovkrW9YtuMszGqKvIJ8fjSW4U+V9fI2aq
+Gs/WcY4xG5cJqQ7oXyPRmQWlHA1PsG+9C0EC1E7DLUUL+MgIRQJ/vQnXVFMLo0+UMNHtPFeOnlqs
+UuTAE1+eMwXNVrcut9rGrIKpekg8RoULyi+Tle7zl9bhSFxeefEBo+MeA4simb8X/tNb26TD7i71
+p7o0Ty0l4SdfF9D90AI1HjiwqTymWoEmxTeWOA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -2992,4 +2992,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bd4242cc-e5ea-4698-ac97-64e15cce833b" Target="#_8867ec89-6803-4c7c-aba3-9ff7ea8c2831"><Timestamp>2018-12-11 09:17:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_546d4d51-6644-4f34-b042-55d6499c1367" Target="#_bd51292b-9994-42fe-8de4-cf43aa3c2a32"><Timestamp>2018-12-11 09:22:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
