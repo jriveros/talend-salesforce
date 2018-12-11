@@ -1118,20 +1118,23 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="credentialsRow">
-        <nodes name="userId" type="id_String" xpath="credentialsRow/userId"/>
-        <nodes name="password" type="id_String" xpath="credentialsRow/password"/>
-        <nodes name="token" type="id_String" xpath="credentialsRow/token"/>
+        <nodes name="userId" outgoingConnections="//@node.23/@nodeData/@connections.0" type="id_String" xpath="credentialsRow/userId"/>
+        <nodes name="password" outgoingConnections="//@node.23/@nodeData/@connections.1" type="id_String" xpath="credentialsRow/password"/>
+        <nodes name="token" outgoingConnections="//@node.23/@nodeData/@connections.2" type="id_String" xpath="credentialsRow/token"/>
       </inputTrees>
       <outputTrees name="loginRequestRow">
         <nodes expression="" name="payload" type="id_Document" xpath="loginRequestRow/payload">
           <children main="true" name="tns:login" type="id_String" xpath="loginRequestRow.payload:/tns:login" xsi:type="TalendXMLMap:OutputTreeNode">
             <children defaultValue="urn:partner.soap.sforce.com" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="loginRequestRow.payload:/tns:login/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="&quot;it@subaru.it.test&quot;" loop="true" name="tns:username" type="id_String" xpath="loginRequestRow.payload:/tns:login/tns:username" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="&quot;Subaru_2017c25fFF9Eu14JqGIFCJHJTWGXy&quot;" name="tns:password" type="id_String" xpath="loginRequestRow.payload:/tns:login/tns:password" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression=" credentialsRow.userId" incomingConnections="//@node.23/@nodeData/@connections.0" loop="true" name="tns:username" type="id_String" xpath="loginRequestRow.payload:/tns:login/tns:username" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="credentialsRow.password + credentialsRow.token " incomingConnections="//@node.23/@nodeData/@connections.1 //@node.23/@nodeData/@connections.2" name="tns:password" type="id_String" xpath="loginRequestRow.payload:/tns:login/tns:password" xsi:type="TalendXMLMap:OutputTreeNode"/>
           </children>
         </nodes>
       </outputTrees>
       <varTables minimized="true" name="Var"/>
+      <connections source="//@node.23/@nodeData/@inputTrees.0/@nodes.0" target="//@node.23/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.23/@nodeData/@inputTrees.0/@nodes.1" target="//@node.23/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.23/@nodeData/@inputTrees.0/@nodes.2" target="//@node.23/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="640">
@@ -1358,13 +1361,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f16a60cb-a7fc-4227-ace4-9fb408d6d9cb"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1nlD+zJ+qMqpfQI+glJid1veLNibkW+JVSCiLt45Wvt/rGaZbO5ajvG3kqCDJh5sKdHRXtIzdxeM
-hLUXUk6JUQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f3cd1cec-49b0-4c5f-8376-d4469745613d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rVLTjHkCPngGd+b1qNxh5BRACJwSHNcg0pyOpfAoSSQcrVIUVOhEKUGSkhi+Sbeu6RldI+nW9FiW
-Waqzo2xz5A==</DigestValue></Reference></SignedInfo><SignatureValue>lRyM/wOjsaoT65/qzeJSRBaX99cr1QErKNni5j7hbFqZmLGnbzMHAitoGUWUviiMPjLfiPTJe5Sx
-EVfDkLIuIVDgODJpUQsiFlLXQ5ER5pdHp+7i7TptJXVE1fnKHRWL6ArfH6KVxnfEiG1sT7GxpPAm
-pQxTbt5NIdsicD/3UmTUaOe2JZz+Fzuf1AOPLF0WbW9lMcxfIjY5TY2iOfQoDQEyyrJ3gsTCQDMi
-plcnQn43o3FAo6FrhcqZ2ACQ5XSYg57yqpjk+ygRPwnE4OueicWGmGXd7FvQgdCWzDdIL5ZBAUvi
-D9/dbkALCRyKzSGEHA9IZOPzY47AxqTzVmrRYg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_507df8f5-5d1d-4824-b1dd-d4fcf239a2b0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>V/jdVoaGY+AxhHCZYtqr0kOUGC7OzbC5jSLDIjk3HSZxUAqKTEN2tCULKE5Yd6B59vmayK5OFL3b
+M5NUUmsvng==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_332bb1e9-8121-4872-856e-6c7d1f95beb2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>s6EkSkl3w73fKV/AsD0l5a/rEnyYtg4MCd6UgSxgtFgxYz4mxsgC3Kv2aSxv/beMD0WYXC+/bIOV
+/ekv0t6TyA==</DigestValue></Reference></SignedInfo><SignatureValue>VyI/9h+vwJT22HShbo1B64trnD0+96fX8QHfQGi1JRRnIgHn4cmsoyHcKyfTH95Ws3M2y2zpa0k6
+dHVxz7trKr74becLLfZ4eyiX/fRNW8Rd5hGbsGuATziIERbI/9iigkMlRVzv5LdnOPxgbEAo+kFe
+L/5eACF/jVidYxSLVKu0VeXgysmUJn5cKaTfKHgywAPw4PQrvSTImguBdV24W8L1eTm6Q6+wJHUq
+ZoqFCEOCjxtLiz97C8rfsc4v2GoerKLrlO7i2wTnIwgtMHod2/Aciao5QdE1GZxcreeBZBl6KjzC
+vq57jSk0PqUrYBgI5wD5HZc62cRHVPcUX0ClzA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1388,4 +1391,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f3cd1cec-49b0-4c5f-8376-d4469745613d" Target="#_f16a60cb-a7fc-4227-ace4-9fb408d6d9cb"><Timestamp>2018-12-07 09:18:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_332bb1e9-8121-4872-856e-6c7d1f95beb2" Target="#_507df8f5-5d1d-4824-b1dd-d4fcf239a2b0"><Timestamp>2018-12-11 08:17:58</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
