@@ -224,7 +224,7 @@
  <service name="SAPtoSFService">
   <documentation/>
   <port binding="tns:SAPtoSFBinding" name="SAPtoSF">
-   <soap:address location="https://cs87.salesforce.com/services/Soap/class/SAPtoSF"/>
+   <soap:address location="https://subaruitalia--test.cs108.my.salesforce.com/services/Soap/class/SAPtoSF"/>
   </port>
  </service>
 </definitions>
