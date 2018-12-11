@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--
+ Web Services API : SAPtoSF
+--><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://soap.sforce.com/schemas/class/SAPtoSF" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://soap.sforce.com/schemas/class/SAPtoSF">
+ <types>
+  <xsd:schema elementFormDefault="qualified" targetNamespace="http://soap.sforce.com/schemas/class/SAPtoSF">
+   <xsd:element name="AllowFieldTruncationHeader">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="allowFieldTruncation" type="xsd:boolean"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="CallOptions">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="client" type="xsd:string"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="DebuggingHeader">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="categories" minOccurs="0" maxOccurs="unbounded" type="tns:LogInfo"/>
+      <xsd:element name="debugLevel" type="tns:LogType"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:complexType name="LogInfo">
+    <xsd:sequence>
+     <xsd:element name="category" type="tns:LogCategory"/>
+     <xsd:element name="level" type="tns:LogCategoryLevel"/>
+    </xsd:sequence>
+   </xsd:complexType>
+   <xsd:simpleType name="LogCategory">
+    <xsd:restriction base="xsd:string">
+     <xsd:enumeration value="Db"/>
+     <xsd:enumeration value="Workflow"/>
+     <xsd:enumeration value="Validation"/>
+     <xsd:enumeration value="Callout"/>
+     <xsd:enumeration value="Apex_code"/>
+     <xsd:enumeration value="Apex_profiling"/>
+     <xsd:enumeration value="Visualforce"/>
+     <xsd:enumeration value="System"/>
+     <xsd:enumeration value="Wave"/>
+     <xsd:enumeration value="Nba"/>
+     <xsd:enumeration value="All"/>
+    </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:simpleType name="LogCategoryLevel">
+    <xsd:restriction base="xsd:string">
+     <xsd:enumeration value="None"/>
+     <xsd:enumeration value="Finest"/>
+     <xsd:enumeration value="Finer"/>
+     <xsd:enumeration value="Fine"/>
+     <xsd:enumeration value="Debug"/>
+     <xsd:enumeration value="Info"/>
+     <xsd:enumeration value="Warn"/>
+     <xsd:enumeration value="Error"/>
+    </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:simpleType name="LogType">
+    <xsd:restriction base="xsd:string">
+     <xsd:enumeration value="None"/>
+     <xsd:enumeration value="Debugonly"/>
+     <xsd:enumeration value="Db"/>
+     <xsd:enumeration value="Profiling"/>
+     <xsd:enumeration value="Callout"/>
+     <xsd:enumeration value="Detail"/>
+    </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:element name="DebuggingInfo">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="debugLog" type="xsd:string"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="SessionHeader">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="sessionId" type="xsd:string"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:complexType name="QueryResult">
+    <xsd:sequence>
+     <xsd:element name="done" type="xsd:boolean"/>
+     <xsd:element name="queryLocator" type="xsd:string" nillable="true"/>
+     <xsd:element name="records" minOccurs="0" maxOccurs="unbounded" type="tns:sObject" nillable="true"/>
+     <xsd:element name="size" type="xsd:int"/>
+    </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="sObject">
+    <xsd:sequence>
+     <xsd:element name="Id" minOccurs="0" nillable="true" type="tns:ID"/>
+    </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="Concessionario_community__r_TYPE">
+       	 <xsd:sequence>
+       		<xsd:element name="Codice_concessionario_SAP__c" minOccurs="0" type="xsd:string" nillable="true"/>
+       	 </xsd:sequence>
+       </xsd:complexType>
+   <xsd:complexType name="Asset">
+    <xsd:complexContent>
+     <xsd:extension base="tns:sObject">
+      <xsd:sequence>
+       <xsd:element name="Telaio__c" minOccurs="0" type="xsd:string" nillable="true"/>
+       <xsd:element name="Name" minOccurs="0" type="xsd:string" nillable="true"/>
+       <xsd:element name="AccountId" minOccurs="0" type="tns:ID" nillable="true"/>
+       <xsd:element name="Concessionario__r" type="tns:Concessionario_community__r_TYPE" minOccurs="0"/>
+       <xsd:element name="Targa__c" minOccurs="0" type="xsd:string" nillable="true"/>
+       <xsd:element name="PurchaseDate" minOccurs="0" type="xsd:date" nillable="true"/>
+       <xsd:element name="Modello__c" minOccurs="0" type="xsd:string" nillable="true"/>
+       <xsd:element name="Motore__c" minOccurs="0" type="xsd:string" nillable="true"/>
+       <xsd:element name="Trasmissione__c" minOccurs="0" type="xsd:string" nillable="true"/>
+       <xsd:element name="Equipaggiamento__c" minOccurs="0" type="xsd:string" nillable="true"/>
+       <xsd:element name="Allestimento__c" minOccurs="0" type="xsd:string" nillable="true"/>
+       <xsd:element name="Colore__c" minOccurs="0" type="xsd:string" nillable="true"/>
+       <xsd:element name="Interni__c" minOccurs="0" type="xsd:string" nillable="true"/>
+       <xsd:element name="Model_Year__c" minOccurs="0" type="xsd:string" nillable="true"/>
+       <xsd:element name="OwnerId" minOccurs="0" type="tns:ID" nillable="true"/>
+       <xsd:element name="from_sap__c" minOccurs="0" type="xsd:boolean" nillable="true"/>
+      </xsd:sequence>
+     </xsd:extension>
+    </xsd:complexContent>
+   </xsd:complexType>
+   <xsd:simpleType name="ID">
+    <xsd:restriction base="xsd:string">
+     <xsd:length value="18"/>
+     <xsd:pattern value="[a-zA-Z0-9]{18}"/>
+    </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:complexType name="CustomAnswer">
+    <xsd:sequence>
+     <xsd:element name="conflicting_fields" minOccurs="0" maxOccurs="unbounded" type="tns:conflict_fields" nillable="true"/>
+     <xsd:element name="message" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="SF_record_ID" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="status" minOccurs="0" type="xsd:string" nillable="true"/>
+    </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="conflict_fields">
+    <xsd:sequence>
+     <xsd:element name="name" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="value" minOccurs="0" type="xsd:string" nillable="true"/>
+    </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="address">
+    <xsd:complexContent>
+     <xsd:extension base="tns:location">
+      <xsd:sequence>
+       <xsd:element name="city" type="xsd:string"/>
+       <xsd:element name="country" type="xsd:string"/>
+       <xsd:element name="countryCode" type="xsd:string"/>
+       <xsd:element name="geocodeAccuracy" type="xsd:string"/>
+       <xsd:element name="postalCode" type="xsd:string"/>
+       <xsd:element name="state" type="xsd:string"/>
+       <xsd:element name="stateCode" type="xsd:string"/>
+       <xsd:element name="street" type="xsd:string"/>
+      </xsd:sequence>
+     </xsd:extension>
+    </xsd:complexContent>
+   </xsd:complexType>
+   <xsd:complexType name="location">
+    <xsd:sequence>
+     <xsd:element name="latitude" type="xsd:double"/>
+     <xsd:element name="longitude" type="xsd:double"/>
+    </xsd:sequence>
+   </xsd:complexType>
+   <xsd:element name="upsertAsset">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="fieldsToIgnore" type="xsd:string"/>
+      <xsd:element name="sap_ass" nillable="true" type="tns:Asset"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="upsertAssetResponse">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="result" type="tns:CustomAnswer" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+  </xsd:schema>
+ </types>
+<!-- Message for the header parts -->
+ <message name="Header">
+  <part element="tns:AllowFieldTruncationHeader" name="AllowFieldTruncationHeader"/>
+  <part element="tns:CallOptions" name="CallOptions"/>
+  <part element="tns:DebuggingHeader" name="DebuggingHeader"/>
+  <part element="tns:DebuggingInfo" name="DebuggingInfo"/>
+  <part element="tns:SessionHeader" name="SessionHeader"/>
+ </message>
+ <!-- Operation Messages -->
+ <message name="upsertAssetRequest">
+  <part element="tns:upsertAsset" name="parameters"/>
+ </message>
+ <message name="upsertAssetResponse">
+  <part element="tns:upsertAssetResponse" name="parameters"/>
+ </message>
+ <portType name="SAPtoSFPortType">
+  <operation name="upsertAsset">
+   <input message="tns:upsertAssetRequest"/>
+   <output message="tns:upsertAssetResponse"/>
+  </operation>
+ </portType>
+ <binding name="SAPtoSFBinding" type="tns:SAPtoSFPortType">
+  <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+  <operation name="upsertAsset">
+   <soap:operation soapAction=""/>
+   <input>
+    <soap:header message="tns:Header" part="SessionHeader" use="literal"/>
+    <soap:header message="tns:Header" part="CallOptions" use="literal"/>
+    <soap:header message="tns:Header" part="DebuggingHeader" use="literal"/>
+    <soap:header message="tns:Header" part="AllowFieldTruncationHeader" use="literal"/>
+    <soap:body parts="parameters" use="literal"/>
+   </input>
+   <output>
+    <soap:header message="tns:Header" part="DebuggingInfo" use="literal"/>
+    <soap:body use="literal"/>
+   </output>
+  </operation>
+ </binding>
+ <service name="SAPtoSFService">
+  <documentation/>
+  <port binding="tns:SAPtoSFBinding" name="SAPtoSF">
+   <soap:address location="https://subaruitalia--test.cs108.my.salesforce.com/services/Soap/class/SAPtoSF"/>
+  </port>
+ </service>
+</definitions>
