@@ -214,6 +214,7 @@
     <module>jobs/process/I0010_SAP_VIN_to_SF_Asset/sap_vin_to_sf_asset_job_1.10</module>
     <module>jobs/services/I0010_SAP_VIN_to_SF_Asset/sap_vin_out_talend_in_1.10</module>
     <module>jobs/process/I0010_SAP_VIN_to_SF_Asset/sap_vin_to_sf_asset_job_1.11</module>
+    <module>jobs/services/I0010_SAP_VIN_to_SF_Asset/sap_vin_out_talend_in_1.11</module>
   </modules>
   <properties>
     <talend.project.name>SUBARU_SAP_SF</talend.project.name>
