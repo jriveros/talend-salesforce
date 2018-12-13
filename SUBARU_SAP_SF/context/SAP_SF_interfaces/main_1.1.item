@@ -31,8 +31,8 @@
     <contextParameter comment="" name="sysENVTYPE" prompt="sysENVTYPE?" promptNeeded="false" type="id_String" value="PROD" xmi:id="_pWb7m0PIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_userPassword_userId" prompt="SalesForce_userPassword_userId?" promptNeeded="false" type="id_String" value="it@subaru.it" xmi:id="_pWb7nEPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_sessionDirectory" prompt="SalesForce_sessionDirectory?" promptNeeded="false" type="id_String" value="C:\Talend" xmi:id="_pWb7n0PIEeih8KkJgV_NKQ"/>
-    <contextParameter comment="" name="SalesForce_apiVersion" prompt="SalesForce_apiVersion?" promptNeeded="false" type="id_String" value="39.0" xmi:id="_pWb7oUPIEeih8KkJgV_NKQ"/>
-    <contextParameter comment="" name="SalesForce_endpoint" prompt="SalesForce_endpoint?" promptNeeded="false" type="id_String" value="https://login.salesforce.com/services/Soap/c/43.0/0DF0O000000GG0g" xmi:id="_pWb7qEPIEeih8KkJgV_NKQ"/>
+    <contextParameter comment="" name="SalesForce_apiVersion" prompt="SalesForce_apiVersion?" promptNeeded="false" type="id_String" value="43.0" xmi:id="_pWb7oUPIEeih8KkJgV_NKQ"/>
+    <contextParameter comment="" name="SalesForce_endpoint" prompt="SalesForce_endpoint?" promptNeeded="false" type="id_String" value="https://login.salesforce.com/services/Soap/u/43.0/0DF0O000000GG0g" xmi:id="_pWb7qEPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_userPassword_securityKey" prompt="SalesForce_userPassword_securityKey?" promptNeeded="false" type="id_Password" value="8HSKOW9ucKwMS2kEARJzkl6Cr1JqGrjCbEHozUehHqc=" xmi:id="_pWb7qUPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SalesForce_userPassword_password" prompt="SalesForce_userPassword_password?" promptNeeded="false" type="id_Password" value="gHNsfX16B9H+gufilG2jrg==" xmi:id="_pWb7rEPIEeih8KkJgV_NKQ"/>
     <contextParameter comment="" name="SAP_userId" prompt="SAP_userId?" promptNeeded="false" type="id_String" value="BATCH_SF" xmi:id="_pWb7rUPIEeih8KkJgV_NKQ"/>
@@ -41,13 +41,13 @@
     <contextParameter comment="" name="SalesForce_I0002_customAPI" prompt="SalesForce_I0002_customAPI?" promptNeeded="false" type="id_String" value="https://subaruitalia.my.salesforce.com/services/Soap/class/SAPtoSF" xmi:id="_QCbEUfLyEeitYe7aUOG8Lw"/>
     <contextParameter comment="" name="SAP_host_url" prompt="SAP_host_url?" promptNeeded="false" type="id_String" value="https://sapp01ci.subaru-europe.be:44300" xmi:id="__lizEfoAEeiLZoaia3LxGQ"/>
   </talendfile:ContextType>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e2f0f5fe-2193-40d3-8cea-fe4b6b199af9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hjVeEEcT8jyJO5oMlJ+uNeAS0wUUzdH67lULXFgIPknC92IV8rMK+BRyRywpZeGu1ScZmmYrkDnk
-8Mfj1dA99g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8d8f2766-05bb-4201-9de7-cdef5e4cf5de"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4cAYcV7YHHP1S0Q4Anq8Wzgay+chNqfS2LTT6KqAf9ILRVIrOBqudzsQ64vKmYvYP3qxCeYf8+KE
-cHrWHloDWA==</DigestValue></Reference></SignedInfo><SignatureValue>EySma4ZTMxH9RaCkx1NHNahLgz26AJeN/OKES3uk+166FihBrODcKM6z0LvdM4rFlazaYxPRJTRS
-KfB7iVC93xXLiQq3/b5Ed3qF6Ns8HlDVZroKTIsMeUNbo72KSv+eRYrSdqsHedtM1zdDsNpcZgz8
-Z32l6wILF/fuafoE6pfg6aRPMNsSbN7+6fM/dhFt5mhetm3AIu5DMCsiXYZPy4nJCT3sHF+oW94J
-tlp9II4WMAyNSDfdMFQotG4vUh9jHI4jCgOVPo0rgyXotbO4jRl7WLq1XNouBwhx5X9kH7CmpBWS
-zzcH+Mpy/ViEenWOwo54c4o8bpHGW6Bt42GG7A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_eeed8499-2ffe-4230-906d-038af73616d7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LJjLSuXceFZP0Fewu2FJhjCEn8UkEHy79vCDAc6SZPqKMOdLHeHSwDdqxFNZaS70+tCoIFO4v6PO
+brPm7tLgpA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d19d69c2-1f7b-4c4f-a4e1-2c25a509f63d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>eGtPOHuvmAH2yrkL/wVo4UZYA8L1oqVaysadBaI/5zI3W2dT0TxLOuLGHuElPAWMC79fnpNrU6ro
+VPShNSyQLw==</DigestValue></Reference></SignedInfo><SignatureValue>Pg91MgWB3mmlQzg8iYmo9BygXzxMrP4w7tBbrJfM/XAh2zBPmSvjdZFob7m08T+ENkf0SeDS/DDS
+qWmxm+ClMPIJe0OgMAHujtfwOWK9htelN8MxJMsyDQM7k5UQG7bL0qlF+Xuzo7tq3iihDj/t67sq
+FjusFMC6u9WkT8QC8BbVvBSBdnFRQeBNZf0OoHbZiayOscpnsgv+MqklgUalc+TEBaY9HcstC4uX
+5DtHtYKjqr7s2fdapNhRv0tNOUHABnO8Rk6Qfub2Xt305Kpko1YbCXx+PJ39zCBiK1Hh79D/R7oJ
+Wzb7vGIonEUL4n7Y+BGpahUTZJLm+cWJJ4hfTw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -71,4 +71,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8d8f2766-05bb-4201-9de7-cdef5e4cf5de" Target="#_e2f0f5fe-2193-40d3-8cea-fe4b6b199af9"><Timestamp>2018-12-11 10:34:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d19d69c2-1f7b-4c4f-a4e1-2c25a509f63d" Target="#_eeed8499-2ffe-4230-906d-038af73616d7"><Timestamp>2018-12-13 12:55:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
