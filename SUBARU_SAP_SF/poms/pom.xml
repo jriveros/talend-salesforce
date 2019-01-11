@@ -218,6 +218,7 @@
     <module>jobs/process/I0010_SAP_VIN_to_SF_Asset/sap_vin_to_sf_asset_job_2.0</module>
     <module>jobs/services/I0010_SAP_VIN_to_SF_Asset/sap_vin_out_talend_in_2.0</module>
     <module>jobs/process/I0008_SAP_Quotations_to_SF_Quote/sap_quotations_to_sf_quote_job_1.1</module>
+    <module>jobs/services/I0008_SAP_Quotations_to_SF_Quote/sap_quotations_out_talend_in_1.1</module>
   </modules>
   <properties>
     <talend.project.name>SUBARU_SAP_SF</talend.project.name>
