@@ -1,2 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2018-12-11T10:52:18.076+0100"/>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2019-02-12T10:04:48.842+0100">
+  <deletedItems id="_wGoNoB5VEem8AZsc94e0Jw" path="I0008_SAP_Quotations_to_SF_Quote" type="PROCESS"/>
+</recyclebin:RecycleBin>
