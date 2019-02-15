@@ -1608,4 +1608,5 @@
   <TalendProperties:User xmi:id="_rAoNEZDPEeipfqy76796eA" login="monitoring@subaru.eu" firstName="monitoring" lastName="monitoring" type="DI" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_xXNKQbgDEeig6rp1_G5XBQ" login="bho@hicron.com" firstName="Bartosz" lastName="Hoffmann" type="DI" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_pg510S93EemZ0a2uU4BUHw" login="developer@subatu.it" firstName="developer" lastName="account" type="DI" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_h0ZRcTEJEemjqM0vjdes4A" login="developer@subaru.it" firstName="developer" lastName="account" type="DI" additionnalData="{}"/>
 </xmi:XMI>
