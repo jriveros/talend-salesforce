@@ -1230,7 +1230,7 @@
       <relatedItems xmi:id="_ihga-zR-EemMmuoQy72iLg" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_ihga_DR-EemMmuoQy72iLg" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_ihga_TR-EemMmuoQy72iLg" id="TalendStringUtil" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_ihga_jR-EemMmuoQy72iLg" id="_bsr4kD4zEeih8KkJgV_NKQ" version="2.2" type="services"/>
+      <relatedItems xmi:id="_X_FIkDR_EemMmuoQy72iLg" id="_bsr4kD4zEeih8KkJgV_NKQ" version="2.3" type="services"/>
     </ItemsRelations>
     <migrationTask xmi:id="_OD7-gDfeEei4GOOz00i4JQ" id="org.talend.designer.core.ui.preferences.migration.ChangeMysqlVersionForProjectSetting" breaks="5.2.0" version="5.1.3" status="ok"/>
     <migrationTask xmi:id="_OD7-gTfeEei4GOOz00i4JQ" id="org.talend.designer.core.ui.preferences.migration.ChangeOracleVersionForProjectSetting" breaks="5.2.0" version="5.2.1" status="ok"/>
