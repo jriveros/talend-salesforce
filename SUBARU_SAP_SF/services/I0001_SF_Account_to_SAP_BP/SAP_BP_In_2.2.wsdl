@@ -119,6 +119,8 @@
             <xsd:element name="CampaignActivityOfOriginX" type="n0:char1"/>
             <xsd:element name="City" type="n0:char40" minOccurs="0"/>
             <xsd:element name="CityX" type="n0:char1"/>
+            <xsd:element name="ConsentDate" type="n0:char33" minOccurs="0"/>
+			<xsd:element name="ConsentDateX" type="n0:char1"/>
             <xsd:element name="Countrycode" type="n0:char3" minOccurs="0"/>
             <xsd:element name="CountrycodeX" type="n0:char1"/>
             <xsd:element name="Dealer" type="n0:char10" minOccurs="0"/>
