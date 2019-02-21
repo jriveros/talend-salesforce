@@ -1246,7 +1246,7 @@
       <relatedItems xmi:id="_yTc7KzW6EemNSaaydr35Yg" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_yTc7LDW6EemNSaaydr35Yg" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_yTc7LTW6EemNSaaydr35Yg" id="TalendStringUtil" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_yTc7LjW6EemNSaaydr35Yg" id="_2hTRgMAPEeimM-Aeo5_5cg" version="1.0" type="services"/>
+      <relatedItems xmi:id="_Vpv6UDW7EemNSaaydr35Yg" id="_2hTRgMAPEeimM-Aeo5_5cg" version="1.1" type="services"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_0U_8IDW6EemNSaaydr35Yg">
       <baseItem xmi:id="_0U_8ITW6EemNSaaydr35Yg" id="_s27_AMekEei_Xv6I3ykkew" version="1.1" type="job"/>
