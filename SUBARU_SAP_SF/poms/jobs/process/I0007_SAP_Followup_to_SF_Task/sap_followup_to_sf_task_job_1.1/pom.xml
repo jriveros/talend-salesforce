@@ -30,10 +30,10 @@
     <talend.pigudf.groupid>org.subaru.subaru_sap_sf.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.subaru.subaru_sap_sf.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.jvmargs>-Xms256M -Xmx1024M </talend.job.jvmargs>
+    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <bundle.config.export.service>@BundleConfigExportService@</bundle.config.export.service>
     <talend.job.stat>true</talend.job.stat>
-    <talend.job.context>Default</talend.job.context>
+    <talend.job.context>TEST</talend.job.context>
     <talend.project.branch>master</talend.project.branch>
     <bundle.config.bundle.classpath>@BundleConfigBundleClasspath@</bundle.config.bundle.classpath>
     <lib.path>${resources.path}/lib</lib.path>
