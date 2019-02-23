@@ -233,6 +233,7 @@
     <module>jobs/services/I0007_SAP_Followup_to_SF_Task/sap_followup_out_talend_in_1.1</module>
     <module>jobs/services/I0006_SAP_TestDrive_to_SF_Test_Drive__c/sap_testdrive_out_talend_in_1.1</module>
     <module>jobs/process/I0007_SAP_Followup_to_SF_Task/sap_followup_to_sf_task_job_1.2</module>
+    <module>jobs/services/I0007_SAP_Followup_to_SF_Task/sap_followup_out_talend_in_1.2</module>
   </modules>
   <properties>
     <talend.project.name>SUBARU_SAP_SF</talend.project.name>
