@@ -1333,7 +1333,6 @@
     <ItemsRelations xmi:id="_gctg4DqNEemTw5sLeKrvew">
       <baseItem xmi:id="_gctg4TqNEemTw5sLeKrvew" id="_gZcKcDqNEemTw5sLeKrvew" version="0.1" type="job"/>
       <relatedItems xmi:id="_gctg4jqNEemTw5sLeKrvew" id="_JvmscDfnEeiIvauO6eCPcA" version="Latest" type="context"/>
-      <relatedItems xmi:id="_gctg4zqNEemTw5sLeKrvew" id="_aUvOwL2WEeiWPeFvt8qNhA - _aYHS4L2WEeiWPeFvt8qNhA - _aYHS4b2WEeiWPeFvt8qNhA" version="Latest" type="property"/>
       <relatedItems xmi:id="_gctg5DqNEemTw5sLeKrvew" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="_gctg5TqNEemTw5sLeKrvew" id="Numeric" version="Latest" type="routine"/>
       <relatedItems xmi:id="_gctg5jqNEemTw5sLeKrvew" id="TalendString" version="Latest" type="routine"/>
@@ -1344,7 +1343,8 @@
       <relatedItems xmi:id="_gctg6zqNEemTw5sLeKrvew" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_gctg7DqNEemTw5sLeKrvew" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_gctg7TqNEemTw5sLeKrvew" id="TalendStringUtil" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_gctg7jqNEemTw5sLeKrvew" id="_aUvOwL2WEeiWPeFvt8qNhA" version="1.3" type="services"/>
+      <relatedItems xmi:id="_bZlv0DqOEemTw5sLeKrvew" id="_cjamADqLEemTw5sLeKrvew - _cmquUDqLEemTw5sLeKrvew - _cmquUTqLEemTw5sLeKrvew" version="Latest" type="property"/>
+      <relatedItems xmi:id="_bZlv0TqOEemTw5sLeKrvew" id="_cjamADqLEemTw5sLeKrvew" version="0.1" type="services"/>
     </ItemsRelations>
     <migrationTask xmi:id="_OD7-gDfeEei4GOOz00i4JQ" id="org.talend.designer.core.ui.preferences.migration.ChangeMysqlVersionForProjectSetting" breaks="5.2.0" version="5.1.3" status="ok"/>
     <migrationTask xmi:id="_OD7-gTfeEei4GOOz00i4JQ" id="org.talend.designer.core.ui.preferences.migration.ChangeOracleVersionForProjectSetting" breaks="5.2.0" version="5.2.1" status="ok"/>
