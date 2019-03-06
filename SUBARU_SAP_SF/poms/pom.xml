@@ -249,6 +249,7 @@
     <module>jobs/process/I0008_SAP_Quotations_to_SF_Quote/sap_quotations_to_sf_quote_job_3.0</module>
     <module>jobs/services/I0001_SF_Account_to_SAP_BP/sf_account_out_talend_in_3.0</module>
     <module>jobs/services/I0008_SAP_Quotations_to_SF_Quote/sap_quotations_out_talend_in_3.0</module>
+    <module>jobs/process/I0006_SAP_TestDrive_to_SF_Test_Drive__c/sap_testdrive_to_sf_test_drive__c_job_1.4</module>
   </modules>
   <properties>
     <talend.project.name>SUBARU_SAP_SF</talend.project.name>
