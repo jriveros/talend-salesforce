@@ -253,6 +253,7 @@
     <module>jobs/services/I0006_SAP_TestDrive_to_SF_Test_Drive__c/sap_testdrive_out_talend_in_1.4</module>
     <module>jobs/process/I0006_SAP_TestDrive_to_SF_Test_Drive__c/sap_testdrive_to_sf_test_drive__c_job_1.5</module>
     <module>jobs/services/I0006_SAP_TestDrive_to_SF_Test_Drive__c/sap_testdrive_out_talend_in_1.5</module>
+    <module>jobs/process/I0006_SAP_TestDrive_to_SF_Test_Drive__c/sap_testdrive_to_sf_test_drive__c_job_1.6</module>
   </modules>
   <properties>
     <talend.project.name>SUBARU_SAP_SF</talend.project.name>
